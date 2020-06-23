@@ -21,7 +21,8 @@ body {
 }
 
 .card {
-    background-color: white;
+    border:1px black dashed;
+    margin: 5px;
 }
 
 .sofa-main {

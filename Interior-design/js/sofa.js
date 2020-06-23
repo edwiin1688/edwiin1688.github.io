@@ -1,31 +1,31 @@
 var sofaItems = [
     {
         id: 13,
-        img: '../img/ia_3600000013.png',
+        img: 'img/ia_3600000013.png',
         name: 'soft 13',
         price: '100',
     },
     {
         id: 27,
-        img: '../img/ia_3600000027.png',
+        img: 'img/ia_3600000027.png',
         name: 'soft 27',
         price: '200',
     },
     {
         id: 40,
-        img: '../img/ia_3600000040.png',
+        img: 'img/ia_3600000040.png',
         name: 'soft 40',
         price: '300',
     },
     {
         id: 79,
-        img: '../img/ia_3600000079.png',
+        img: 'img/ia_3600000079.png',
         name: 'soft 79',
         price: '400',
     },
     {
         id: 92,
-        img: '../img/ia_3600000092.png',
+        img: 'img/ia_3600000092.png',
         name: 'soft 92',
         price: '500',
     }
