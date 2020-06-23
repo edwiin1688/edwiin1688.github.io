@@ -1,25 +1,25 @@
 var lightItems = [
     {
         id: 156,
-        img: 'img/ia_100000000156.png',
+        img: 'img/ia_1000000156.png',
         name: 'light 156',
         price: '100',
     },
     {
         id: 157,
-        img: 'img/ia_100000000157.png',
+        img: 'img/ia_1000000157.png',
         name: 'light 157',
         price: '200',
     },
     {
         id: 158,
-        img: 'img/ia_100000000158.png',
+        img: 'img/ia_1000000158.png',
         name: 'light 158',
         price: '300',
     },
     {
         id: 169,
-        img: 'img/ia_100000000169.png',
+        img: 'img/ia_1000000169.png',
         name: 'light 169',
         price: '400',
     }
