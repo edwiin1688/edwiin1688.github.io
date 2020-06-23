@@ -1,0 +1,41 @@
+body {
+    background-image: url('../img/wall.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sofa {
+    width: 30%;
+
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+
+#light {
+    width: 30%;
+
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+
+.card {
+    background-color: white;
+}
+
+.sofa-main {
+    display: flex;
+
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+}
+
+.light-main {
+    display: flex;
+
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+}

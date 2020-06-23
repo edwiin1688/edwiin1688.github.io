@@ -6,111 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>室內設計</title>
 
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <style>
-        body {
-            background-image: url('img/wall.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
 
-        #sofa {
-            width: 30%;
-
-            position: absolute;
-            top: 30%;
-            left: 45%;
-        }
-
-        #light {
-            width: 30%;
-
-            position: absolute;
-            top: 10%;
-            left: 15%;
-        }
-
-        .card {
-            background-color: white;
-        }
-
-        .d-flex {
-            display: flex;
-
-            position: absolute;
-            bottom: 5%;
-            left: 30%;
-        }
     </style>
 </head>
 
 <body>
     <img id="sofa" src="img/ia_3600000013.png">
-    <img id="light" src="img/ia_100000001522.webp">
+    <img id="light" src="img/ia_100000000156.png">
 
-    <div class="d-flex">
+    <div class="sofa-main">
     </div>
 
+    <div class="light-main">
+    </div>
+
+    <script type="text/javascript" src="js/sofa.js"></script>
+    <script type="text/javascript" src="js/light.js"></script>
     <script>
-
-        var sofaItems = [
-            {
-                id: 13,
-                img: 'img/ia_3600000013.png',
-                name: 'soft 13',
-                price: '100',
-            },
-            {
-                id: 27,
-                img: 'img/ia_3600000027.png',
-                name: 'soft 27',
-                price: '200',
-            },
-            {
-                id: 40,
-                img: 'img/ia_3600000040.png',
-                name: 'soft 40',
-                price: '300',
-            },
-            {
-                id: 79,
-                img: 'img/ia_3600000079.png',
-                name: 'soft 79',
-                price: '400',
-            },
-            {
-                id: 92,
-                img: 'img/ia_3600000092.png',
-                name: 'soft 92',
-                price: '500',
-            }
-        ];
-
-        var elem = document.querySelector('.d-flex');
-
-        sofaItems.forEach(e => {
-            elem.innerHTML += `
-            <div class="card">
-                <img id="img-${e.id}" src="${e.img}" width="100 px" alt="">
-            </div>
-            `;
-        });
-
-        var sofa = document.querySelector('#sofa');
-
-        sofaItems.forEach(e => {
-            let cardImg = document.querySelector(`#img-${e.id}`);
-            console.log(`${cardImg.id} add OnClick`);
-            cardImg.addEventListener("click", addSofaClick, false);
-        });
-
-        function addSofaClick(e) {
-            console.log(`${e.target.id} OnClick`);
-
-            const found = sofaItems.find(x => e.target.id == `img-${x.id}`);
-            if (found != undefined) {
-                sofa.setAttribute('src', found.img);
-            }
-        }
 
     </script>
 </body>
