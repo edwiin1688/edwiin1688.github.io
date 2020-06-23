@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Station</title>
+
+    <!-- 引用 vue -->
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
+
+    <!-- 引用　jQuery -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+    <!-- 引用 css -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+</head>
+
+<body>
+    <div id="app">
+        <div class="title_area">
+            <h1>台灣<br>天氣地圖<br></h1>
+            <div class="forcast" v-if="now_area">
+                <h5>{{now_area.place}} {{now_area.tag}}</h5>
+                <h4>{{now_area.low}}~{{now_area.high}}°C</h4>
+                <h3>降雨機率：{{now_area.PoP}}％</h3>
+                <h2>{{now_area.weather}}</h2>
+                <img data-aos="flip-up" v-bind:src="now_area.weatherIcon" />
+                <h6>空氣品質：{{now_area.Status}}</h6>
+                <h6>PM2.5：{{now_area.PM25}}</h6>
+            </div>
+        </div>
+    </div>
+
+    <!-- 寫入 svg -->
+    <script type="text/javascript" src="js/svg.js"></script>
+    <!-- 載入地點資訊 -->
+    <script type="text/javascript" src="js/data.js"></script>
+    <!-- 抓取 API -->
+    <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+
+</html>
