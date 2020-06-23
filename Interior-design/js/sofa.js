@@ -31,10 +31,10 @@ var sofaItems = [
     }
 ];
 
-var elem = document.querySelector('.sofa-main');
+var sofaMain = document.querySelector('.sofa-main');
 
 sofaItems.forEach(e => {
-    elem.innerHTML += `
+    sofaMain.innerHTML += `
             <div class="card">
                 <img id="img-${e.id}" src="${e.img}" width="100 px" alt="">
             </div>

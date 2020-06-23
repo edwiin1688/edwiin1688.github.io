@@ -25,10 +25,10 @@ var lightItems = [
     }
 ];
 
-var elem = document.querySelector('.light-main');
+var lightMain = document.querySelector('.light-main');
 
 lightItems.forEach(e => {
-    elem.innerHTML += `
+    lightMain.innerHTML += `
             <div class="card">
                 <img id="img-${e.id}" src="${e.img}" width="100 px" alt="">
             </div>
