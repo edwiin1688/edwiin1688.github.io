@@ -1,16 +1,25 @@
 var swiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
+    spaceBetween: 30,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
     loop: true,
-    autoplay: 3000
+    autoplay: {
+        delay: 5000
+    }
 });
 
 var v = document.getElementsByTagName("video")[0];
 
 v.addEventListener("canplay", function () {
-    mySwiper.stopAutoplay();
+    swiper.stopAutoplay();
 }, true);
 
 v.addEventListener("ended", function () {
-    mySwiper.startAutoplay();
+    swiper.startAutoplay();
 }, true);

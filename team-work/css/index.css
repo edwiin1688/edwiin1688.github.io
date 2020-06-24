@@ -7,10 +7,23 @@
     overflow: hidden;
 }
 
+/* 圖片填滿畫面 */
+.img-full {
+    margin-left: calc( (100vw - (100vh * 1.7))/2 );
+    margin-right: calc( (100vw - (100vh * 1.7))/2 );
+    /* 56 是 NavBar */
+    min-height: calc( 100vh - 56px);
+    min-width: 100vw;
+
+    margin-left: 0;
+}
+
+/* 影片填滿畫面 */
 video {
-    margin-left: calc((100vw - (100vh * 1.7))/2);
-    margin-right: calc((100vw - (100vh * 1.7))/2);
-    min-height: 100vh;
+    margin-left: calc( (100vw - (100vh * 1.7))/2 );
+    margin-right: calc( (100vw - (100vh * 1.7))/2 );
+    /* 56 是 NavBar */
+    min-height: calc( 100vh - 56px);
     min-width: 100vw;
 }
 
@@ -19,13 +32,6 @@ video {
       margin-left: 0;
     }
   }
-  
-
-.box {
-    width: 200px;
-    height: 200px;
-    background-color: aqua;
-}
 
 #Card-3 {
     padding-top: 50px;
