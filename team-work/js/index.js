@@ -20,3 +20,6 @@ v.addEventListener("canplay", function () {
 v.addEventListener("ended", function () {
     swiper.startAutoplay();
 }, true);
+
+
+
