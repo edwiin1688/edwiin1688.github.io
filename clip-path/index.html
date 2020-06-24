@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS clip-path maker</title>
+
+    <!-- 引用 bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <style>
+        /* 宣告變數 */
+        :root {
+            --clipPath: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
+
+        .demo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box {
+            width: 300px;
+            height: 300px;
+            background-image: url('./img/girl-01.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            clip-path: var(--clipPath);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo">
+        <div class="box"></div>
+    </div>
+    <button id="type1" type="button" class="btn btn-primary">三角形</button>
+    <button id="type2" type="button" class="btn btn-primary">圓形</button>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+
+        <script>
+
+            let type1 = document.querySelector('#type1');
+            type1.addEventListener('click',ftype1,false);
+            
+            let type2 = document.querySelector('#type2');
+            type2.addEventListener('click',ftype2,false);
+
+            function ftype1()
+            {
+                console.log('三角形');
+                document.documentElement.style.setProperty(`--clipPath`, 'polygon(50% 0%, 0% 100%, 100% 100%)');
+                document.documentElement.style.setProperty(`--clipPath`, 'polygon(50% 0%, 0% 100%, 100% 100%)');
+            }
+
+            function ftype2()
+            {
+                console.log('圓形');
+                document.documentElement.style.setProperty(`--clipPath`, 'circle(50% at 50% 50%)');
+                document.documentElement.style.setProperty(`--clipPath`, 'circle(50% at 50% 50%)');
+            }
+
+
+        </script>
+</body>
+
+</html>
