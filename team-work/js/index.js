@@ -8,10 +8,7 @@ var swiper = new Swiper('.swiper-container', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    loop: true,
-    autoplay: {
-        delay: 5000
-    }
+    autoplay: 3000
 });
 
 var v = document.getElementsByTagName("video")[0];
