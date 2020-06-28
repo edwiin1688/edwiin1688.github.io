@@ -13,7 +13,9 @@
     <!-- 引用 swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
-    <link rel="stylesheet" href="./css/loading.css">
+    <!-- Loading 載入地球動畫 -->
+    <link rel="stylesheet" href="./css/earth-loader.css">
+
     <link rel="stylesheet" href="./css/index.css">
 
     <style>
@@ -22,8 +24,21 @@
 
 <body>
 
-    <!-- loading -->
-    <div id="loader"></div>
+    <!-- Loading 載入地球動畫 -->
+    <div class="loading-mask" data-role="loader">
+        <div class="wrapper">            
+        </div>
+        <div class="text">
+            <span class="letter">L</span>
+            <span class="letter">O</span>
+            <span class="letter">A</span>
+            <span class="letter">D</span>
+            <span class="letter">I</span>
+            <span class="letter">N</span>
+            <span class="letter">G</span>
+        </div>
+    </div>
+
 
     <div class="d-flex justify-content-end fixed-bottom">
         <button type="button" class="btn btn-dark">
@@ -59,10 +74,12 @@
     <div class="swiper-container">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
+            
             <!-- Slides -->
             <div class="swiper-slide">
                 <video src="./video/video-01.mp4" autoplay muted></video>
             </div>
+
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
@@ -165,7 +182,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
-    <script src="./js/loading.js"></script>
+    <!-- Loading 載入地球動畫 -->
+    <script src="./js/earth-loader-svg.js"></script>
+    <script src="./js/earth-loader.js"></script>
+
     <script src="./js/index.js"></script>
     <script>
 
