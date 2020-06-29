@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Work</title>
 
+    <!-- <link rel="shortcut icon" href="#" /> -->
+    <link href="favicon.ico" rel="shortcut icon">
+
     <!-- 引用 bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -15,6 +18,9 @@
 
     <!-- Loading 載入地球動畫 -->
     <link rel="stylesheet" href="./css/earth-loader.css">
+
+    <!-- NavBar 漢堡條 -->
+    <link rel="stylesheet" href="./css/Burger.css">
 
     <link rel="stylesheet" href="./css/index.css">
 
@@ -26,7 +32,7 @@
 
     <!-- Loading 載入地球動畫 -->
     <div class="loading-mask" data-role="loader">
-        <div class="wrapper">            
+        <div class="wrapper">
         </div>
         <div class="text">
             <span class="letter">L</span>
@@ -46,35 +52,34 @@
         </button>
     </div>
 
-    <!-- Nav -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#Card-3">Card</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Parallax">Parallax</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Title-2">Title-2</a>
-                </li>
+    <!-- NavBar 漢堡條 -->
+    <div class="screen">
+        <div class="navbar"></div>
+        <div class="circle"></div>
+        <div class="menu">
+            <ul>
+                <li><a href="">經營理念</a></li>
+                <li><a href="">環境導覽</a></li>
+                <li><a href="">活動體驗</a></li>
+                <li><a href="">形成資訊</a></li>
+                <li><a href="">立即預訂</a></li>
+                <li><a href="">媒體報導</a></li>
             </ul>
-        </div>
-    </nav>
+        </div>			            
+        <div class="burger">
+            <div class="x"></div>
+            <div class="y"></div>
+            <div class="z"></div>
+        </div>    
+
+    </div>
 
     <!-- Slider -->
     <!-- Slider main container -->
     <div class="swiper-container">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
-            
+
             <!-- Slides -->
             <div class="swiper-slide">
                 <video src="./video/video-01.mp4" autoplay muted></video>
@@ -185,6 +190,9 @@
     <!-- Loading 載入地球動畫 -->
     <script src="./js/earth-loader-svg.js"></script>
     <script src="./js/earth-loader.js"></script>
+
+    <!-- NavBar 漢堡條 -->
+    <script src="./js/Burger.js"></script>
 
     <script src="./js/index.js"></script>
     <script>

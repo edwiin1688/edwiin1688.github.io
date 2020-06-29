@@ -11,15 +11,6 @@ var swiper = new Swiper('.swiper-container', {
     autoplay: 3000
 });
 
-var v = document.getElementsByTagName("video")[0];
-
-v.addEventListener("canplay", function () {
-    swiper.stopAutoplay();
-}, true);
-
-v.addEventListener("ended", function () {
-    swiper.startAutoplay();
-}, true);
 
 
 

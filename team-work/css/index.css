@@ -11,8 +11,7 @@
 .img-full {
     margin-left: calc( (100vw - (100vh * 1.7))/2 );
     margin-right: calc( (100vw - (100vh * 1.7))/2 );
-    /* 56 是 NavBar */
-    min-height: calc( 100vh - 56px);
+    min-height: 100vh;
     min-width: 100vw;
 
     margin-left: 0;
@@ -22,8 +21,7 @@
 video {
     margin-left: calc( (100vw - (100vh * 1.7))/2 );
     margin-right: calc( (100vw - (100vh * 1.7))/2 );
-    /* 56 是 NavBar */
-    min-height: calc( 100vh - 56px);
+    min-height: 100vh;
     min-width: 100vw;
 }
 
