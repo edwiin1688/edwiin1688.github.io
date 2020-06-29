@@ -16,6 +16,12 @@ $('div.menu ul li a').on(click, function (e) {
     closeMenu();
 });
 
+$('div.circle').on(click, function (e) {
+    e.preventDefault();
+    closeMenu();
+});
+
+
 
 function openMenu() {
 
