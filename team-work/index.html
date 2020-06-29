@@ -24,6 +24,8 @@
 
     <link rel="stylesheet" href="./css/index.css">
 
+    <!-- Timeline -->
+    <link rel="stylesheet" href="./css/Timeline.css">
     <style>
     </style>
 </head>
@@ -58,19 +60,19 @@
         <div class="circle"></div>
         <div class="menu">
             <ul>
-                <li><a href="">經營理念</a></li>
-                <li><a href="">環境導覽</a></li>
-                <li><a href="">活動體驗</a></li>
-                <li><a href="">形成資訊</a></li>
-                <li><a href="">立即預訂</a></li>
-                <li><a href="">媒體報導</a></li>
+                <li><a href="#Parallax">經營理念</a></li>
+                <li><a href="#Parallax">環境導覽</a></li>
+                <li><a href="#Parallax">活動體驗</a></li>
+                <li><a href="#stroke-timeline">行程資訊</a></li>
+                <li><a href="#Parallax">立即預訂</a></li>
+                <li><a href="#Parallax">媒體報導</a></li>
             </ul>
-        </div>			            
+        </div>
         <div class="burger">
             <div class="x"></div>
             <div class="y"></div>
             <div class="z"></div>
-        </div>    
+        </div>
 
     </div>
 
@@ -96,6 +98,12 @@
         <!-- If we need scrollbar -->
         <div class="swiper-scrollbar"></div>
     </div>
+
+
+
+
+
+
 
     <!-- Card -->
     <div id="Card-3">
@@ -132,6 +140,105 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Timeline -->
+    <div id="stroke-timeline" class="timeline-container">
+        <h1 class="project-name">行程資訊</h1>
+        <div id="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                </div>
+                <div class="timeline-content">
+                    <h2>週六</h2>
+                    <p>
+                        早餐進場時間
+                    </p>
+                    <span class="time-stamp">08:00-9:00</span>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+                </div>
+                <div class="timeline-content right">
+                    <h2>週六</h2>
+                    <p>
+                        收拾行李 Check out
+                    </p>
+                    <span class="time-stamp">09:00-09:30</span>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-icon success">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="timeline-content">
+                    <h2>週六</h2>
+                    <p>
+                        入場介紹環境
+                    </p>
+                    <span class="time-stamp">14:00-15:00</span>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                </div>
+                <div class="timeline-content right">
+                    <h2>週六</h2>
+                    <p>
+                        精緻下午餐點、溪遊
+                    </p>
+                    <span class="time-stamp">15:00~17:00</span>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                </div>
+                <div class="timeline-content">
+                    <h2>週六</h2>
+                    <p>
+                        星光燭火晚餐
+                    </p>
+                    <span class="time-stamp">18:00-20:00</span>
+                </div>
+            </div>
+
+            <div class="timeline-item right">
+                <div class="timeline-icon">
+                    <i class="fa fa-key" aria-hidden="true"></i>
+                </div>
+                <div class="timeline-content right">
+                    <h2>週六</h2>
+                    <p>
+                        戶外電影院、夜間抓蝦
+                    </p>
+                    <span class="time-stamp">19:00-21:00</span>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-icon success">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="timeline-content">
+                    <h2>週六</h2>
+                    <p>
+                        星空宵夜場
+                    </p>
+                    <span class="time-stamp">21:00-22:00</span>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -193,6 +300,9 @@
 
     <!-- NavBar 漢堡條 -->
     <script src="./js/Burger.js"></script>
+
+    <!-- Timeline -->
+    <script src="./js/Timeline.js"></script>
 
     <script src="./js/index.js"></script>
     <script>
