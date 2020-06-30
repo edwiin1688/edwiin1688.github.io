@@ -40,9 +40,6 @@ function openMenu() {
         $('div.x').addClass('rotate45');
         $('div.z').addClass('rotate135');
     }, 120);
-
-
-
 }
 
 function closeMenu() {

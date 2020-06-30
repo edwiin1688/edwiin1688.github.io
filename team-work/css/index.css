@@ -7,6 +7,10 @@
     overflow: hidden;
 }
 
+.pagination {
+    overflow: hidden;
+}
+
 /* 圖片填滿畫面 */
 .img-full {
     margin-left: calc( (100vw - (100vh * 1.7))/2 );
@@ -23,6 +27,9 @@ video {
     margin-right: calc( (100vw - (100vh * 1.7))/2 );
     min-height: 100vh;
     min-width: 100vw;
+
+    /* mask:url('../img/tile.png');
+    -webkit-mask-box-image:url('../img/tile.png'); */
 }
 
 @media (min-aspect-ratio: 16/9) {

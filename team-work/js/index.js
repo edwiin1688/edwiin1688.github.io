@@ -11,6 +11,8 @@ var swiper = new Swiper('.swiper-container', {
     autoplay: 3000
 });
 
+$('.swiper-button-next').hide();
+$('.swiper-button-prev').hide();
 
 
 
