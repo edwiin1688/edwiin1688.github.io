@@ -1,6 +1,6 @@
 // 動態加入行程
 var tl = document.querySelector('#timeline');
-$.getJSON('../json/timeline.json', function (data) {
+$.getJSON('../json/time-line.json', function (data) {
 	$.each(data.timeline, function (i, f) {
 		tl.innerHTML += `
 				<div class="timeline-item">
