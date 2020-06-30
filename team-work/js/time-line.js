@@ -1,4 +1,8 @@
 // 動態加入行程
+console.log('href: ' + window.location.href);
+console.log('pathname: ' + window.location.pathname);
+console.log('search: ' + window.location.search);
+
 var tl = document.querySelector('#timeline');
 $.getJSON('./json/time-line.json', function (data) {
 	$.each(data.timeline, function (i, f) {
