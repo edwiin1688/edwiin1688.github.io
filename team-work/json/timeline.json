@@ -47,8 +47,7 @@
             "iconType": "",
             "icon": "fa fa-key",
             "direction": "right"
-        }
-        ,
+        },
         {
             "title": "週六",
             "content": "星空宵夜場",
@@ -59,3 +58,5 @@
         }
     ]
 }
+
+
