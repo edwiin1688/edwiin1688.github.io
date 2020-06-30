@@ -1,11 +1,11 @@
 // 動態加入行程
 var tl = document.querySelector('#timeline');
-$.getJSON('../json/time-line.json', function (data) {
+$.getJSON('./json/time-line.json', function (data) {
 	$.each(data.timeline, function (i, f) {
 		tl.innerHTML += `
 				<div class="timeline-item">
 					<div class="timeline-icon ${f.iconType}">
-						<i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+						<i class="fa ${f.icon}" aria-hidden="true"></i>
 					</div>
 					<div class="timeline-content ${f.direction}">
 						<h2>${f.title}</h2>

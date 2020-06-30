@@ -13,7 +13,7 @@
             "content": "收拾行李 Check out",
             "time": "09:00-09:30",
             "iconType": "",
-            "icon": "fa fa-envelope-open-o",
+            "icon": "fa-envelope-open-o",
             "direction": "right"
         },
         {
@@ -21,7 +21,7 @@
             "content": "入場介紹環境",
             "time": "14:00-15:00",
             "iconType": "success",
-            "icon": "fa fa-star",
+            "icon": "fa-star",
             "direction": ""
         },
         {
@@ -29,7 +29,7 @@
             "content": "精緻下午餐點、溪遊",
             "time": "15:00~17:00",
             "iconType": "",
-            "icon": "fa fa-check-square-o",
+            "icon": "fa-check-square-o",
             "direction": "right"
         },
         {
@@ -37,7 +37,7 @@
             "content": "星光燭火晚餐",
             "time": "18:00-20:00",
             "iconType": "",
-            "icon": "fa fa-user-circle-o",
+            "icon": "fa-user-circle-o",
             "direction": ""
         },
         {
@@ -45,7 +45,7 @@
             "content": "戶外電影院、夜間抓蝦",
             "time": "19:00-21:00",
             "iconType": "",
-            "icon": "fa fa-key",
+            "icon": "fa-key",
             "direction": "right"
         },
         {
@@ -53,7 +53,7 @@
             "content": "星空宵夜場",
             "time": "21:00-22:00",
             "iconType": "success",
-            "icon": "fa fa-star",
+            "icon": "fa-star",
             "direction": ""
         }
     ]

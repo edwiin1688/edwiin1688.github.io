@@ -9,22 +9,21 @@
     <!-- <link rel="shortcut icon" href="#" /> -->
     <link href="favicon.ico" rel="shortcut icon">
 
-    <!-- 引用 bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- 引用 bootstrap 的 css -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 
     <!-- 引用 swiper 的 css -->
     <link rel="stylesheet" href="./node_modules/swiper/css/swiper.min.css">
 
-    <!-- Loading 載入地球動畫 -->
+    <!-- 引用 Loading 載入地球動畫的 css  -->
     <link rel="stylesheet" href="./css/earth-loader.css">
 
-    <!-- Swiper -->
+    <!-- 引用 Swiper 的 css  -->
     <link rel="stylesheet" href="./css/swiper.css">
 
     <link rel="stylesheet" href="./css/index.css">
 
-    <!-- Timeline -->
+    <!-- 引用 Timeline 的 css -->
     <link rel="stylesheet" href="./css/time-line.css">
     <style>
     </style>
@@ -83,8 +82,8 @@
         <!-- 經營理念 -->
         <section id="business-philosophy">
             <div class="d-flex justify-content-center">
-                <img src="./img/business-philosophy.png" alt="" class="center">
-            </div>            
+                <img class="business-philosophy-bg" src="./img/business-philosophy.png" alt="經營理念底圖">
+            </div>
         </section>
 
         <!-- 行程資訊 -->
@@ -101,19 +100,13 @@
 
     <!-- footer -->
     <footer id="footer">
-        本網頁僅供教學及練習使用，若有冒犯請恰 0912-345678
+        本網頁僅供教學及練習使用，若有冒犯請恰 0928-960931
     </footer>
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
+    <!-- 引用 Bootstrap 的 js -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap 需要 jQuery -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- 引用 Swiper 的 js -->
     <script src="./node_modules/swiper/js/swiper.min.js"></script>
@@ -134,4 +127,3 @@
 </body>
 
 </html>
-
