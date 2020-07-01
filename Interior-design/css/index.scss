@@ -1,0 +1,58 @@
+body {
+    background-image: url('../img/wall.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sofa {
+    width: 30%;
+
+    position: absolute;
+    top: 15vw;
+    left: 45vw;
+}
+
+#light {
+    width: 30%;
+
+    position: absolute;
+    top: 10vw;
+    left: 15vw;
+}
+
+.swiper-container {
+    background-color: lightgray;
+
+    transform: scale(0.3);
+
+    .swiper-wrapper {
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .img {
+                -webkit-filter: drop-shadow(8px 8px 10px #000); /* Safari */
+                filter: drop-shadow(8px 8px 10px #000);
+                &:hover {
+                    transform: scale(1.5);
+                  }
+            }
+        }
+
+    }
+}
+
+
+#sofa {
+    &:hover {
+        transform: scale(1.25);
+      }
+}
+
+#light {
+    &:hover {
+        transform: scale(1.25);
+      }
+}
