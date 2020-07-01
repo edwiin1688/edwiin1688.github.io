@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One Page Website</title>
-	
-	<!-- <link rel="shortcut icon" href="#" /> -->
-	<link href="favicon.ico" rel="shortcut icon">
+
+    <!-- <link rel="shortcut icon" href="#" /> -->
+    <link href="favicon.ico" rel="shortcut icon">
 
     <!-- 引用 bootstrap 離線版 -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -18,7 +18,9 @@
     <!-- loading -->
     <link rel="stylesheet" href="./css/loading.css">
 
+    <link rel="stylesheet" href="./css/swiper.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <style>
         /*  */
     </style>
@@ -30,14 +32,21 @@
     <!-- loading -->
     <div id="loader"></div>
 
+    <!-- SCROLL DOWN -->
+    <div class="d-flex justify-content-center fixed-bottom">
+        <button type="button" class="btn btn-dark">
+            <a class="nav-link" href="#Card-3">SCROLL DOWN<span class="sr-only">(current)</span></a>
+        </button>
+    </div>
 
+    <!-- 回到首頁 -->
     <div class="d-flex justify-content-end fixed-bottom">
         <button type="button" class="btn btn-dark">
             <a class="nav-link" href="#">Top<span class="sr-only">(current)</span></a>
         </button>
     </div>
 
-    <!-- Nav -->
+    <!-- bootstrap - Nav -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -48,119 +57,147 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#Card-3">Card</a>
+                    <a class="nav-link" href="#about">關於我們</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#Parallax">Parallax</a>
+                    <a class="nav-link" href="#product">產品介紹</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#Title-2">Title-2</a>
+                    <a class="nav-link" href="#store">門市地點</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#join">加入我們</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- Slider -->
-    <!-- Slider main container -->
-    <div class="swiper-container">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-                <img class="img-full" src="./img/girl-01.jpg" alt="">
-            </div>
-            <div class="swiper-slide">
-                <img class="img-full" src="./img/girl-02.jpg" alt="">
-            </div>
-            <div class="swiper-slide">
-                <img class="img-full" src="./img/girl-03.jpg" alt="">
-            </div>
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+    <main>
+        <!-- Banner -->
+        <section>
+            <!-- Slider -->
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img class="img-full" src="./img/banner-1.jpg" alt="">
+                    </div>
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img class="img-full" src="./img/banner-2.jpg" alt="">
+                    </div>
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img class="img-full" src="./img/banner-3.jpg" alt="">
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
 
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-    </div>
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
 
-    <!-- Card -->
-    <div id="Card-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-4">
-                    <div class="card">
-                        <img src="./img/girl-01.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">
-                                眾多日韓垃圾投入你們配件環保實施逐步意味着網易工藝熱點，參觀我就為你只不過鄉民們姓名力量寬頻對待，費用細節壓力最為民族管理系統凱文現在文本文字培訓解放，收藏實行熱點專門相關站內財富精美防治利益聰明看法，偉大老人參數尤其文檔升級，安全初音，操作優點，排名當。
-                            </p>
+        <!-- 關於我們 -->
+        <section>
+
+        </section>
+
+        <!-- 轉則點 -->
+        <section>
+            <!-- bootstrap - Card -->
+            <div id="Turning_point">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <!-- <img src="" class="card-img-top" alt="..."> -->
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        嚴選優質茶葉、食材與包材，並逐批或定期送SGS檢驗，落實食品<br>
+                                        安全衛生自主管理，期許所奉上的每杯手搖飲料，都能帶給消費者<br>
+                                        的幸福感。<br>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-4">
-                    <div class="card">
-                        <img src="./img/girl-02.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">
-                                上升網通資格，都說時候搭配隨後，白色上有刪除需要覺得一套治理一種天然公路精英職工以及客服，清楚眾人高雄導致為什麼即可告訴我這些放棄化工，你是電話衝突報紙數碼相機開展，讀書心中招生，的確所在地這些當前位置猶豫光臨主持，手裡基層，機票股市皇帝，主角口氣，安徽。
-                            </p>
+            </div>
+        </section>
+
+        <!-- 產品介紹 -->
+        <section>
+            <!-- bootstrap - Card -->
+            <div id="product">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <img src="./img/menu.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-4">
-                    <div class="card">
-                        <img src="./img/girl-03.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">
-                                相比成功可能會遠程，裝備激情大全，評估尤其是總統網絡日常市場價農業最新多個你們，財務我的心她是並在當中當年情節支持女朋友及時點評有效，也有數學法律責任將其隊伍閲讀遺憾，有一完成馬上女士衛生風雲，關鍵字小心邀請微笑這款祝福金屬，浪費暴力網頁班定義，從來沒初。
-                            </p>
+            </div>
+        </section>
+
+        <!-- 門市據點 -->
+        <section>
+            <!-- bootstrap - Card -->
+            <div id="store">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <img src="./img/store.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <!-- Parallax -->
-    <div id="Parallax" class="parallax">Parallax</div>
-
-    <!-- Title -->
-    <div id="Title-2" class="container">
-        <div class="row">
-            <div class="title-1 col-sm">Title</div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-sm-6">
-                <div class="d-flex flex-column flex-sm-column">
-                    <img src="./img/girl-01.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">
-                            奇怪聊天意識用來富岡寶寶聯繫方式危險，地理成績更大有利於體現共同，化工新鮮超市傳說人員在他，禮物本站尚未不然設為，上傳環境有關部門參考一身，增強品質妻子走出房東地上網站四周內容，註冊看出能否感興趣改善，多麼味道通信長時間幻想總統存在智能，怎麼世界上祝福厲。
-                        </p>
+        <!-- 加入我們 -->
+        <section>
+            <!-- bootstrap - Card -->
+            <div id="join">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <img src="./img/logo.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6">
-                <div class="d-flex flex-column flex-sm-column-reverse">
-                    <img src="./img/girl-02.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">
-                            出版貸款增加選單事項法規關鍵鄉民違反自主規格資訊網，人才召開看看只有數字他對找不到看起來浙江閲讀者，學者事實上好友凱文全文裝飾瞬間，不敢獎勵有些證券結合生活環節幽默看出名字有什麼級別富岡，鎖定攻擊將其教育廣大長期房屋長度，共有原始碼代理烏日股東很熱卻是信。
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
     <!-- footer -->
-    <div id="footer">
+    <footer id="footer">
         本網頁僅供教學及練習使用，若有冒犯請恰 0912-345678
-    </div>
+    </footer>
 
     <!-- 引用 jquery 2.2.4 (npm install jquery@2.2.4) 離線版 -->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
