@@ -20,8 +20,8 @@ body {
 
 .swiper-container {
   background-color: lightgray;
-  -webkit-transform: scale(0.3);
-          transform: scale(0.3);
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
 }
 
 .swiper-container .swiper-wrapper .swiper-slide {
@@ -36,24 +36,18 @@ body {
           align-items: center;
 }
 
-.swiper-container .swiper-wrapper .swiper-slide .img {
-  -webkit-filter: drop-shadow(8px 8px 10px #000);
-  /* Safari */
-  filter: drop-shadow(8px 8px 10px #000);
-}
-
 .swiper-container .swiper-wrapper .swiper-slide .img:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }
 
 #sofa:hover {
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #light:hover {
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=index.css.map */

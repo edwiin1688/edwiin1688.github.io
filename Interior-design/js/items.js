@@ -76,19 +76,16 @@ items.forEach(e => {
 
 items.forEach(e => {
     let cardImg = document.querySelector(`#img-${e.id}`);
-    console.log(`${cardImg.id} add OnClick`);
-    cardImg.addEventListener("click", addSofaClick, false);
+    cardImg.addEventListener("click", addClick, false);
 });
 
-function addSofaClick(e) {
-    console.log(`${e.target.id} OnClick`);
-
-    const found = items.find(x => e.target.id == `img-${x.id}`);
-    if (found != undefined) {
-        
-        if(e.target.hasAttribute('itemType'))
+function addClick(e) {
+    let t = e.target;
+    const found = items.find(x => t.id == `img-${x.id}`);
+    if (found != undefined) {        
+        if(t.hasAttribute('itemType'))
         {
-            let itemType = e.target.getAttribute('itemType');
+            let itemType = t.getAttribute('itemType');
             let item;
             if(itemType == 'soft')
             {
