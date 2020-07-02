@@ -1,37 +1,26 @@
-## Welcome to GitHub Pages
+## 這是 edwiin1688 的 GitHub
 
-You can use the [editor on GitHub](https://github.com/edwiin1688/edwiin1688.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+` https://edwiin1688.github.io` 會自動轉址到 [團體專案: team-work](https://edwiin1688.github.io/team-work) 目錄
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+---
 
-### Markdown
+[team-work](https://edwiin1688.github.io/team-work) 目錄 -> 團體專案 DEMO 網址
+![](https://i.imgur.com/e3u9UcY.png =500x)
+[one-page-website](https://edwiin1688.github.io/one-page-website) -> 一頁式專案 DEMO 網址
+![](https://i.imgur.com/nQMJRqP.png =500x)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+---
 
-```markdown
-Syntax highlighted code block
+[Interior-design](https://edwiin1688.github.io/Interior-design) 目錄 -> 家俱規劃 DEMO 網址
+![](https://i.imgur.com/GHd4si1.png =500x)
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+---
 
-1. Numbered
-2. List
+[clip-path](https://edwiin1688.github.io/clip-path) 目錄 -> 圖片裁切 DEMO 網址
+![](https://i.imgur.com/pghfYhH.png =500x)
 
-**Bold** and _Italic_ and `Code` text
+---
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/edwiin1688/edwiin1688.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+[weather-station](https://edwiin1688.github.io/weather-station) 目錄 -> 氣象預報 DEMO 網址
+![](https://i.imgur.com/G4VCDHx.png =500x)
