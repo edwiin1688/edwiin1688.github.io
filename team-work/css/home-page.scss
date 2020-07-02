@@ -1,0 +1,793 @@
+
+.home-page{
+  width: 100%;
+  height: 100vh;
+  min-height: 650px;
+  background-color: rgb(52, 80, 80);
+  position: relative;
+  overflow: hidden;
+  animation: home-page 2s ease-out;
+  animation-fill-mode: backwards;
+  .slider-nav {
+    width: 7%;
+    min-width: 68px;
+    height: 100%;
+    background-color: rgb(51, 48, 47);
+    position: absolute;
+    right: 0%;
+    animation: guide 2s ease-in-out;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    opacity: 0;
+    z-index: 2;
+    transition: 0.5s;
+    &:hover{
+      opacity: 1;
+    }
+    &:hover ~.burger-box .burger-bun-top{
+      background: black;
+    }
+    &:hover ~.burger-box .burger-bun-bot{
+      background: rgb(168, 18, 18);
+    }
+    &:hover ~.burger-box .burger-filling{
+      background: black;
+    }
+    div{
+      display: none;
+      @media(max-width: 650px){
+        display: block;
+        color: white;
+        font-size: 32px;
+        line-height: 68px;
+        width: 235px;
+       
+        margin: auto;
+      }
+    }
+    @media(max-width: 650px){
+      width: 100%;
+      height: 68px;
+      top: 0;
+      opacity: 0.8;
+      background-color: gray;
+    }
+  }
+  #white-line{
+  width: 7%;
+  min-width: 68px;
+  height: 25px;
+  position: absolute;
+  right: 0%;
+  border-left: 2px rgb(255, 255, 255) solid;
+    @media(max-width: 650px){
+    display: none;
+    }
+  }
+  .menu-container {
+    width: 100%;
+    height: 100%;
+    // background-color: rgb(154, 194, 206);
+    background-color: gray;
+    transform: translateX(100%);
+    transition: 1s;
+    display: flex;
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    @media(max-width: 650px){
+      height: calc(100% - 68px);
+     
+    }
+    
+    .nav-bg {
+      width: 66%;
+      height: 100%;
+      background-image: url("https://content.shopback.com/tw/wp-content/uploads/2018/03/12153038/%E9%B7%97%E6%BC%AB1.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      @media(max-width: 1200px){
+        width: 60%;
+      }
+      @media(max-width: 1000px){
+        width: 55%;
+      }
+      @media(max-width: 900px){
+        width: 50%;
+        background-size: contain;
+        margin: 0 0 0 20px;
+      }
+      @media(max-width: 800px){
+        width: 40%;
+        margin: 0 0 0 50px;
+      }
+      @media(max-width: 650px){
+        display: none;
+      }
+    }
+    .menu-content {
+      width: 34%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      .menu-title{
+        width: 100%;
+        height: 13%;
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        @media(max-width: 650px){
+          display: none;
+        }
+        #title {
+          width: 250px;
+          margin: 45px 0 0 0;
+          font-size: 36px;
+          font-weight: bolder;
+          color: snow;
+          transform: translateX(90px);
+          @media(max-width: 700px){
+            transform: translateX(45px);
+          }
+          @media(max-width: 700px){
+            transform: translateX(0);
+            margin: 0 0 0 90px;
+           font-size: 32px;
+          }
+          @media(max-width: 550px){
+            margin: 0 0 0 20px;
+          }
+        }
+      }
+      .info-box{
+        width: 50%;
+        height: 87%;
+        min-height: calc(100vh - 80px);
+        .info {
+          width: 100%;
+          height: 70%;
+          min-height: 396px;
+          padding: 0 0 0 0px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          color: snow;
+          div {
+            width: 100px;
+            height: 40px;
+            font-size: 24px;
+            line-height: 40px;
+            text-align: center;
+            margin: 10px 0 10px 0;
+            transform: translateX(90px);
+            @media(max-width: 700px){
+              transform: translateX(45px);
+            }
+            @media(max-width: 650px){
+              transform: translateX(0);
+              margin: auto;
+            }
+            a {
+              text-decoration: none;
+              color: snow;
+            }
+          }
+          @media(max-width: 650px){
+            width: 100%;
+            height: 90%;
+          }
+        }
+        .menu-footer{
+          width: 100%;
+          height: 30%;
+          min-height: 250px;
+          color: snow;
+          #follow {
+          width: 130px;
+          height: 30px;
+          line-height: 30px;
+          font-size: 24px;
+          transform: translateX(90px);
+          margin: 0 0 20px 0;
+            @media(max-width: 700px){
+              transform: translateX(45px);
+            }
+            @media(max-width: 650px){
+              display: none;
+            }
+          }
+          .menu-icon-box {
+            width: 150px;
+            height: 70px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            transform: translateX(90px);
+            div:nth-child(1) {
+              width: 60px;
+              height: 60px;
+              border-radius: 100%;
+              background-color: steelblue;
+              cursor: pointer;
+              margin: 0 20px 0 0;
+            }
+            div:nth-child(2) {
+              width: 60px;
+              height: 60px;
+              border-radius: 100%;
+              background-color: steelblue;
+              cursor: pointer;
+            }
+            @media(max-width: 700px){
+              transform: translateX(45px);
+            }
+            @media(max-width: 650px){
+              transform: translateX(0);
+            margin: auto;
+            }
+          }
+          #copyright {
+            width: 130px;
+            height: 15px;
+            /* border: white 1px solid; */
+            font-size: 12px;
+            margin: 20px 0 0 0;
+            transform: translateX(90px);
+            @media(max-width: 700px){
+              transform: translateX(45px);
+            }
+            @media(max-width: 650px){
+              display: none;
+            }
+          }
+          @media(max-width: 650px){
+            min-height: unset;
+            height: calc(100vh - 630px);
+            min-height: 130px;
+            display: flex;
+            align-items: center;
+          }
+        }
+        @media(max-width: 650px){
+          height: 70%;
+          width: 100%;
+          min-height: 396px;
+          border-top: 1px solid white;
+        }
+      }
+      .menu-drawing {
+        width: 48%;
+        height: 85%;
+        background-image: url("../img/slider-pic.png");
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: contain;
+        @media(max-width: 650px){
+          display: none;
+        }
+      }
+      @media(max-width: 1200px){
+      width: 40%;
+      }
+      @media(max-width: 1000px){
+        width: 45%;
+      }
+      @media(max-width: 900px){
+        width: 50%;
+      }
+      @media(max-width: 800px){
+        width: 60%;
+      }
+      @media(max-width: 650px){
+        width: 100%;
+        display: block;
+        min-width: 320px;
+      }
+    }
+    @media(max-width: 650px){
+      transform: translateX(0);
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+  @media(max-width: 650px){
+    min-height: unset;
+    min-width: 320px;
+  }
+}
+@keyframes home-page{
+  0%{
+      background-color: whitesmoke;
+  }
+  99%{
+      background-color: whitesmoke;
+  }
+}
+.menu-container.act {
+  transform: translateX(0);
+  transition: 1s;
+  opacity: 1;
+  @media(max-width: 650px){
+    transform: translateY(68px);
+    opacity: 1;
+  }
+}
+.slider-nav.opacity {
+  opacity: 1;
+}
+@keyframes guide {
+  from {
+      top: -100%;
+      opacity: 1;
+  }
+
+  to {
+      top: 0%;
+      opacity: 0;
+  }
+}
+
+@keyframes burger {
+  0% {
+      opacity: 0
+  }
+
+  50% {
+      opacity: 0;
+  }
+
+  51% {
+      opacity: 1;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+
+// 漢堡條套件(改)  備註: (.burger-box裡的元素) 以下以下以下以下以下以下以下以下以下以下以下以下
+
+// vars
+$color: rgb(0, 0, 0);		  // icon color
+$blue:#f0ffff ;	  // background color
+$animation: 0.6s;	// animation speed
+$scale: 1;			  // icon scale 68/68 default
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+ }
+
+// spacing + background-color
+// body {
+//   background: $blue;
+//   padding: 40px;
+// }
+
+h4 {
+  font-family: arial,helvetica,serif;
+  color: $color;
+  font-size: 18px;
+  text-align: center;
+  margin: 40px 0 0;
+  
+}
+.burger-box{
+  width: 7%;
+  min-width: 68px;
+  height: 20%;
+  position: absolute;
+  right: 0%;
+  &:hover .burger-bun-bot{
+    background-color: rgb(187, 64, 64);
+  }
+  &:hover .burger-bun-top{
+  background: black;
+  }
+  &:hover .burger-filling{
+    background: black;
+  }
+  .hamburglar {
+    // transform: scale($scale);
+    width: 68px;
+    height: 50%;
+    margin: 40px auto;
+    animation: burger 2s linear forwards;
+    animation-delay: 1s;
+    opacity: 0;
+    z-index: 5;
+    position: relative;
+    display: block;
+    // background: $blue;
+    -webkit-touch-callout: none;
+    user-select: none;
+    @media(max-width: 650px){
+      margin: 0;
+    }
+  }
+  @media(max-width: 650px){
+    width: 60px;
+    height: 60px;
+    margin: 0 15px 0 0;
+    &:hover .burger-bun-bot{
+      background-color: rgb(187, 64, 64);
+    }
+    &:hover .burger-bun-top{
+    background: black;
+    }
+    &:hover .burger-filling{
+      background: black;
+    }
+  }
+}
+
+
+// transition mask
+.path-burger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 68px;
+  width: 68px;
+  // two masks because... browser support.
+  mask: url(#mask);
+  -webkit-mask-box-image: url(https://raygun.io/upload/mask.svg);
+}
+
+.animate-path {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 68px;
+  height: 68px;
+
+}
+
+// what this does is create a small square that I then rotate behind an svg mask, giving the apparence of the line animating
+.path-rotation {
+  height: 34px;
+  width: 34px;
+  margin: 34px 34px 0 0;
+  transform: rotate(0deg);
+  transform-origin: 100% 0;
+  &:before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 34px;
+    margin: 0 4px 0 0;
+    background: $color;
+  }
+}
+
+// box rotation animation
+@keyframes rotate-out {
+  0% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-in {
+  0% {
+    transform: rotate(360deg);
+  }
+  40% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+// offset moves
+// dasharray is the dash size
+// need to be able to control dash space size.
+
+.hamburglar.is-open {
+  .path {
+    animation: dash-in $animation linear normal;
+    animation-fill-mode:backwards;
+  }
+  .animate-path {
+    animation: rotate-in $animation linear normal;
+    animation-fill-mode:backwards;
+  }
+}
+
+.hamburglar.is-closed {
+  .path {
+    animation: dash-out $animation linear normal;
+    animation-fill-mode:backwards;
+  }
+  .animate-path {
+    animation: rotate-out $animation linear normal;
+    animation-fill-mode:backwards;
+  }
+}
+
+.path {
+  stroke-dasharray: 240;
+  stroke-dashoffset: 240;
+  stroke-linejoin: round;
+}
+
+@keyframes dash-in {
+  0% {
+    stroke-dashoffset: 240;
+  }
+  40% {
+    stroke-dashoffset: 240;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash-out {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 240;
+  }
+  100% {
+    stroke-dashoffset: 240;
+  }
+}
+
+
+
+// All good burgers need filling!
+
+.burger-icon {
+  padding: 20px 16px;
+  height: 68px;
+  width: 68px;
+  margin: auto;
+}
+
+.burger-container {
+  position: relative;
+  height: 28px;
+  width: 36px;
+}
+
+.burger-bun-top,
+.burger-bun-bot,
+.burger-filling {
+  position: absolute;
+  display: block;
+  height: 4px;
+  width: 36px;
+  border-radius: 2px;
+  background: $blue;
+  margin: auto;
+}
+
+.burger-bun-top {
+  top: 0;
+  transform-origin: 34px 2px;
+}
+
+.burger-bun-bot {
+  bottom: 0;
+  transform-origin: 34px 2px;
+}
+
+.burger-bun-top.black{
+  background: $color;
+}
+.burger-bun-bot.black{
+  background: $color;
+}
+.burger-filling.black{
+  background: $color;
+}
+
+
+//.burger-filling {
+//  @include transition(all,($animation/2.5),ease-in-//out);
+//}
+// relative parent is the button
+.burger-filling {
+  top: 12px;
+}
+
+
+
+
+
+// burger ring container
+.burger-ring {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 68px;
+  height: 68px;
+  
+}
+
+.svg-ring {
+  width: 68px;
+  height: 68px;
+ color: $color;
+ 
+}
+
+
+// bun animations 
+.hamburglar.is-open {
+  .burger-bun-top {
+    animation: bun-top-out $animation linear normal;
+    animation-fill-mode:forwards;
+  }
+  .burger-bun-bot {
+    animation: bun-bot-out $animation linear normal;
+    animation-fill-mode:forwards;
+  }
+}
+.hamburglar.is-closed {
+  .burger-bun-top {
+    animation: bun-top-in $animation linear normal;
+    animation-fill-mode:forwards;
+  }
+  .burger-bun-bot {
+    animation: bun-bot-in $animation linear normal;
+    animation-fill-mode:forwards;
+  }
+}
+
+@keyframes bun-top-out {
+  0% {
+    left: 0;
+    top: 0;
+    transform: rotate(0deg);
+  }
+  20% {
+    left: 0;
+    top: 0;
+    transform: rotate(15deg);
+  }
+  80% {
+    left: -5px;
+    top: 0;
+    transform: rotate(-60deg);
+  }
+  100% {
+    left: -5px;
+    top: 1px;
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes bun-bot-out {
+  0% {
+    left: 0;
+    transform: rotate(0deg);
+  }
+  20% {
+    left: 0;
+    transform: rotate(-15deg);
+  }
+  80% {
+    left: -5px;
+    transform: rotate(60deg);
+  }
+  100% {
+    left: -5px;
+    transform: rotate(45deg);
+  }
+}
+
+
+@keyframes bun-top-in {
+  0% {
+    left: -5px;
+    bot: 0;
+    transform: rotate(-45deg);
+  }
+  20% {
+    left: -5px;
+    bot: 0;
+    transform: rotate(-60deg);
+  }
+  80% {
+    left: 0;
+    bot: 0;
+    transform: rotate(15deg);
+  }
+  100% {
+    left: 0;
+    bot: 1px;
+    transform: rotate(0deg);
+    color: $blue;
+  }
+}
+
+@keyframes bun-bot-in {
+  0% {
+    left: -5px;
+    transform: rotate(45deg);
+  }
+  20% {
+    left: -5px;
+    bot: 0;
+    transform: rotate(60deg);
+  }
+  80% {
+    left: 0;
+    bot: 0;
+    transform: rotate(-15deg);
+  }
+  100% {
+    left: 0;
+    transform: rotate(0deg);
+    color: $blue;
+  }
+}
+
+
+// burger filling
+.hamburglar.is-open {
+  .burger-filling {
+    animation: burger-fill-out $animation linear normal;
+    animation-fill-mode:forwards;
+  }
+}
+
+.hamburglar.is-closed {
+  .burger-filling {
+    animation: burger-fill-in $animation linear normal;
+    animation-fill-mode:forwards;
+  }
+}
+
+@keyframes burger-fill-in {
+  0% {
+    width: 0;
+    left: 36px;
+  }
+  40% {
+    width: 0;
+    left: 40px;
+  }
+  80% {
+    width: 36px;
+    left: -6px;
+  }
+  100% {
+    width: 36px;
+    left: 0px;
+  }
+}
+
+@keyframes burger-fill-out {
+  0% {
+    width: 36px;
+    left: 0px;
+  }
+  20% {
+    width: 42px;
+    left: -6px;
+  }
+
+  40% {
+    width: 0;
+    left: 40px;
+  }
+
+  100% {
+    width: 0;
+    left: 36px;
+  }
+}
+// 漢堡條套件(改)  備註: (.burger-box裡的元素) 以上 以上 以上 以上 以上 以上 以上 以上 以上 以上
