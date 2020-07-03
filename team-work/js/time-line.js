@@ -1,12 +1,10 @@
 // 動態加入行程
-console.log('href: ' + window.location.href);
-console.log('pathname: ' + window.location.pathname);
-console.log('search: ' + window.location.search);
-
 var tl = document.querySelector('#timeline');
 $.getJSON('./json/time-line.json', function (data) {
 	$.each(data.timeline, function (i, f) {
-		tl.innerHTML += `
+		if(f.direction == 'right')
+		{
+			tl.innerHTML += `
 				<div class="timeline-item">
 					<div class="timeline-icon ${f.iconType}">
 						<i class="fa ${f.icon}" aria-hidden="true"></i>
@@ -18,8 +16,35 @@ $.getJSON('./json/time-line.json', function (data) {
 						</p>
 						<span class="time-stamp">${f.time}</span>
 					</div>
+
+					<div class="timeline-content">
+						<img src="${f.image}" alt="">
+					</div>
 				</div>
 				`;
+		}
+		else{
+			tl.innerHTML += `
+				<div class="timeline-item">
+					<div class="timeline-icon ${f.iconType}">
+						<i class="fa ${f.icon}" aria-hidden="true"></i>
+					</div>
+
+					<div class="timeline-content right">
+						<img src="${f.image}" alt="">
+					</div>
+
+					<div class="timeline-content ${f.direction}">
+						<h2>${f.title}</h2>
+						<p>
+							${f.content}
+						</p>
+						<span class="time-stamp">${f.time}</span>
+					</div>
+				</div>
+				`;
+		}
+		
 	});
 });
 
