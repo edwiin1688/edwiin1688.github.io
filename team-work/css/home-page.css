@@ -15,7 +15,8 @@
   width: 7%;
   min-width: 68px;
   height: 100%;
-  background-color: #33302f;
+  background: -webkit-gradient(linear, left top, left bottom, from(gray), to(black));
+  background: linear-gradient(to bottom, gray, black);
   position: absolute;
   right: 0%;
   -webkit-animation: guide 2s ease-in-out;
@@ -530,22 +531,28 @@
 }
 
 @-webkit-keyframes guide {
-  from {
+  0% {
     top: -100%;
     opacity: 1;
   }
-  to {
+  40% {
+    opacity: 1;
+  }
+  100% {
     top: 0%;
     opacity: 0;
   }
 }
 
 @keyframes guide {
-  from {
+  0% {
     top: -100%;
     opacity: 1;
   }
-  to {
+  40% {
+    opacity: 1;
+  }
+  100% {
     top: 0%;
     opacity: 0;
   }

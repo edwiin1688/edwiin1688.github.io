@@ -12,7 +12,8 @@
     width: 7%;
     min-width: 68px;
     height: 100%;
-    background-color: rgb(51, 48, 47);
+    // background-color: rgb(90, 86, 85);
+    background: linear-gradient(to bottom,gray,black);
     position: absolute;
     right: 0%;
     animation: guide 2s ease-in-out;
@@ -337,12 +338,14 @@
   opacity: 1;
 }
 @keyframes guide {
-  from {
+  0% {
       top: -100%;
       opacity: 1;
   }
-
-  to {
+  40%{
+  opacity: 1;
+  }
+  100% {
       top: 0%;
       opacity: 0;
   }
