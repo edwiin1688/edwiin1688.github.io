@@ -4,7 +4,7 @@
   height: 100vh;
   position: fixed;
   right: 0%;
-  background-color: #df0606;
+  background-color: white;
   opacity: 0.11;
 }
 
@@ -23,18 +23,6 @@
 }
 
 #invisible-bar:hover ~ .home-page .burger-box .burger-filling {
-  background-color: orange;
-}
-
-.burger-box:hover .burger-bun-top.black {
-  background-color: orange;
-}
-
-.burger-box:hover .burger-bun-bot.black {
-  background-color: orange;
-}
-
-.burger-box:hover .burger-filling.black {
   background-color: orange;
 }
 
@@ -665,6 +653,35 @@ h4 {
   background-color: white;
 }
 
+.burger-box:hover .burger-bun-bot.black {
+  background-color: orange;
+}
+
+.burger-box:hover .burger-bun-top.black {
+  background-color: orange;
+}
+
+.burger-box:hover .burger-filling.black {
+  background-color: orange;
+}
+
+@media (max-width: 650px) {
+  .burger-box {
+    width: 60px;
+    height: 60px;
+    margin: 0 15px 0 0;
+  }
+  .burger-box:hover .burger-bun-bot {
+    background-color: white;
+  }
+  .burger-box:hover .burger-bun-top {
+    background: white;
+  }
+  .burger-box:hover .burger-filling {
+    background: white;
+  }
+}
+
 .burger-box .hamburglar {
   width: 68px;
   height: 50%;
@@ -687,23 +704,6 @@ h4 {
 @media (max-width: 650px) {
   .burger-box .hamburglar {
     margin: 0;
-  }
-}
-
-@media (max-width: 650px) {
-  .burger-box {
-    width: 60px;
-    height: 60px;
-    margin: 0 15px 0 0;
-  }
-  .burger-box:hover .burger-bun-bot {
-    background-color: white;
-  }
-  .burger-box:hover .burger-bun-top {
-    background: white;
-  }
-  .burger-box:hover .burger-filling {
-    background: white;
   }
 }
 
