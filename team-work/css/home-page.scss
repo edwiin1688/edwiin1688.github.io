@@ -133,7 +133,7 @@
           }
           @media(max-width: 700px){
             transform: translateX(0);
-            margin: 0 0 0 90px;
+            margin: 0 0 0 45px;
            font-size: 32px;
           }
           @media(max-width: 550px){
@@ -154,6 +154,15 @@
           flex-direction: column;
           justify-content: center;
           color: snow;
+          @media(max-width: 650px){
+            min-height: 500px;
+          }
+          @media(max-width: 400px){
+            min-height: 430px;
+          }
+          @media(max-width: 350px){
+            min-height: 380px;
+          }
           div {
             width: 100px;
             height: 40px;
@@ -167,11 +176,21 @@
             }
             @media(max-width: 650px){
               transform: translateX(0);
+              margin: 50px auto 0 auto;
+              height: 40px;
+              position: relative;
+              
+            }
+            @media(max-width: 450px){
+              height: 40px;
               margin: auto;
             }
             a {
               text-decoration: none;
               color: snow;
+             position: absolute;
+             right: 0px;
+             width: 100px;
             }
           }
           @media(max-width: 650px){
