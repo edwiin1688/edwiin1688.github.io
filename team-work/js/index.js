@@ -30,6 +30,3 @@ var swiper_guided_tour = new Swiper('.guided_tour', {
         delay: 2000
     }
 });
-
-
-
