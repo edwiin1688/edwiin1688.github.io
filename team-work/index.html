@@ -55,6 +55,8 @@
             <a class="nav-link" href="#">Top<span class="sr-only">(current)</span></a>
         </button>
     </div>
+
+    <div id="invisible-bar"></div>
     <section class="home-page">
         <div class="slider-nav">
             <div>飛鳥恰恰(圖.)</div>
@@ -87,7 +89,7 @@
                 </svg>
                 <div class="path-burger">
                     <div class="animate-path">
-                        <div class="path-rotation"></div>
+                        <!-- <div class="path-rotation"></div> -->
                     </div>
                 </div>
             </div>
@@ -208,6 +210,21 @@
     <script src="./js/home-page.js"></script>
     <script>
         // 寫自己的 JS 程式碼在這邊
+        window.addEventListener("scroll", () => {
+           var burger_top=document.querySelector(".burger-bun-top")
+           var burger_filling=document.querySelector(".burger-filling")
+           var burger_bot=document.querySelector(".burger-bun-bot")
+            var scrolled = window.scrollY
+            if (scrolled >= window.innerHeight - 85) {
+                burger_top.classList.add("black")
+                burger_filling.classList.add("black")
+                burger_bot.classList.add("black")
+            } else {
+                burger_top.classList.remove("black")
+                burger_filling.classList.remove("black")
+                burger_bot.classList.remove("black")
+            }
+        })
     </script>
 </body>
 

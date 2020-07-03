@@ -1,4 +1,33 @@
-
+#invisible-bar{
+  width: 7%;
+  min-width: 68px;
+  height: 100vh;
+  position: fixed;
+  right: 0%;
+  background-color: rgb(223, 6, 6);
+  opacity: 0.11;
+  @media(max-width: 650px){
+    display: none;
+  }
+}
+#invisible-bar:hover~ .home-page .burger-box .burger-bun-top{
+  background-color: orange;
+}
+#invisible-bar:hover~ .home-page .burger-box .burger-bun-bot{
+  background-color: orange;
+}
+#invisible-bar:hover~ .home-page .burger-box .burger-filling{
+  background-color: orange;
+}
+.burger-box:hover .burger-bun-top.black{
+  background-color: orange;
+}
+.burger-box:hover .burger-bun-bot.black{
+  background-color: orange;
+}
+.burger-box:hover .burger-filling.black{
+  background-color: orange;
+}
 .home-page{
   width: 100%;
   height: 100vh;
@@ -8,12 +37,13 @@
   overflow: hidden;
   animation: home-page 2s ease-out;
   animation-fill-mode: backwards;
+ 
   .slider-nav {
     width: 7%;
     min-width: 68px;
     height: 100%;
-    // background-color: rgb(90, 86, 85);
-    background: linear-gradient(to bottom,gray,black);
+    background-color: rgb(90, 86, 85);
+   
     position: absolute;
     right: 0%;
     animation: guide 2s ease-in-out;
@@ -26,13 +56,13 @@
       opacity: 1;
     }
     &:hover ~.burger-box .burger-bun-top{
-      background: black;
+      background: rgb(255, 255, 255);
     }
     &:hover ~.burger-box .burger-bun-bot{
-      background: rgb(168, 18, 18);
+      background: rgb(255, 255, 255);
     }
     &:hover ~.burger-box .burger-filling{
-      background: black;
+      background: rgb(255, 255, 255);
     }
     div{
       display: none;
@@ -49,6 +79,7 @@
     @media(max-width: 650px){
       width: 100%;
       height: 68px;
+      position: fixed;
       top: 0;
       opacity: 0.8;
       background-color: gray;
@@ -74,6 +105,7 @@
     transition: 1s;
     display: flex;
     position: relative;
+    position: fixed;
     z-index: 2;
     opacity: 0;
     @media(max-width: 650px){
@@ -204,6 +236,7 @@
           height: 30%;
           min-height: 250px;
           color: snow;
+         
           #follow {
           width: 130px;
           height: 30px;
@@ -275,6 +308,7 @@
           width: 100%;
           min-height: 396px;
           border-top: 1px solid white;
+          
         }
       }
       .menu-drawing {
@@ -339,10 +373,12 @@
 }
 @keyframes guide {
   0% {
+  
       top: -100%;
       opacity: 1;
   }
-  40%{
+  80%{
+   
   opacity: 1;
   }
   100% {
@@ -403,14 +439,16 @@ h4 {
   height: 20%;
   position: absolute;
   right: 0%;
+  position: fixed;
+  z-index: 3;
   &:hover .burger-bun-bot{
-    background-color: rgb(187, 64, 64);
+    background-color: white;
   }
   &:hover .burger-bun-top{
-  background: black;
+    background-color: white;
   }
   &:hover .burger-filling{
-    background: black;
+    background-color: white;
   }
   .hamburglar {
     // transform: scale($scale);
@@ -435,13 +473,13 @@ h4 {
     height: 60px;
     margin: 0 15px 0 0;
     &:hover .burger-bun-bot{
-      background-color: rgb(187, 64, 64);
+      background-color: rgb(255, 255, 255);
     }
     &:hover .burger-bun-top{
-    background: black;
+    background: rgb(255, 255, 255);
     }
     &:hover .burger-filling{
-      background: black;
+      background: rgb(255, 255, 255);
     }
   }
 }
@@ -470,6 +508,7 @@ h4 {
 
 // what this does is create a small square that I then rotate behind an svg mask, giving the apparence of the line animating
 .path-rotation {
+  color: none;
   height: 34px;
   width: 34px;
   margin: 34px 34px 0 0;
