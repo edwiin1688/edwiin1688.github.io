@@ -103,3 +103,20 @@
   font-size: 40px;
   color: brown;
 }
+
+.form_container {
+  width: 900px;
+  margin: auto;
+}
+
+.form_group {
+  margin-bottom: 20px;
+}
+
+.file input {
+  margin: auto;
+}
+
+.submit {
+  margin: auto;
+}

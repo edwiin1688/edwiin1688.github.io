@@ -14,3 +14,8 @@ var swiper = new Swiper('.bannr', {
         delay: 2000
     }
 });
+
+var join = document.querySelector('.join');
+join.addEventListener('click', function() {
+    console.log('click');
+});

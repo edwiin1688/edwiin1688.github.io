@@ -241,7 +241,23 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
-                                <img src="./img/store.jpg" class="card-img-top" alt="...">
+                                <img src="./img/store.png" class="card-img-top" alt="..." usemap="#workmap">
+                                <map name="workmap">
+                                    <area target="_blank" alt="台灣" title="台灣" href="taiwan" coords="342,353,40,172"
+                                        shape="rect">
+                                    <area target="_blank" alt="香港" title="香港" href="hong_kong" coords="408,170,711,352"
+                                        shape="rect">
+                                    <area target="_blank" alt="新加坡" title="新加坡" href="singapore"
+                                        coords="778,170,1077,352" shape="rect">
+                                    <area target="_blank" alt="菲律賓" title="菲律賓" href="philippines"
+                                        coords="39,462,340,642" shape="rect">
+                                    <area target="_blank" alt="馬來西亞" title="馬來西亞" href="malaysia"
+                                        coords="408,461,709,643" shape="rect">
+                                    <area target="_blank" alt="澳門" title="澳門" href="macao" coords="780,462,1076,642"
+                                        shape="rect">
+                                </map>
+
+
                                 <div class="card-body">
                                     <p class="card-text">
                                     </p>
@@ -251,6 +267,7 @@
                     </div>
                 </div>
             </div>
+
         </section>
 
         <!-- 加入我們 -->
@@ -261,7 +278,9 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
-                                <img src="./img/logo.jpg" class="card-img-top" alt="...">
+                                <!-- img trigger modal -->
+                                <img src="./img/logo.jpg" class="card-img-top join" alt="..." data-toggle="modal"
+                                    data-target="#joinModalCenter">
                                 <div class="card-body">
                                     <p class="card-text">
                                     </p>
@@ -271,6 +290,55 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="joinModalCenter" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">加入我們</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- 輸入表單 -->
+                            <div class="form_container">
+                                <form action="">
+                                    <div class="form_group">
+                                        <label for="name"></label>*姓名
+                                        <input type="text" id="name" required>
+                                    </div>
+                                    <div class="form_group">
+                                        <label for="phone"></label>*電話
+                                        <input type="phone" id="phone" required>
+                                    </div>
+                                    <div class="form_group">
+                                        <label for="mail"></label>*信箱
+                                        <input type="email" id="mail" required>
+                                    </div>
+                                    <div class="form_group">
+                                        <label for="message"></label>*訊息
+                                        <input type="text" id="message" required>
+                                    </div>
+                                    <div class="form_group">
+                                        <div class="file">
+                                            <div class="text">相關附件</div>
+                                            <input type="file" required><br>
+                                            <input type="file" required><br>
+                                            <input type="file" required><br>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="submit">送出</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
 
