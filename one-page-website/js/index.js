@@ -1,4 +1,4 @@
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.bannr', {
     spaceBetween: 30,
     effect: 'fade',
     pagination: {

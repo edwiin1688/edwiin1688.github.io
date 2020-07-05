@@ -1,1 +1,28 @@
 // 定義常用的色調與字型大小
+
+// 大標題
+$headline-color:"#FCB13C";
+
+// 副標題
+$subtitle-color:"#FCB13C";
+
+// 文件內文
+$doc-text-color:"#FCB13C";
+
+// 文件內文字 
+@mixin doc-text-font($c){
+    background-color: $c;
+
+    // 字型大小
+    font-size: large;
+
+    // 字距
+    letter-spacing: 10px;
+
+    // 行距
+    line-height: 50px;
+};
+// @include doc-text-font( red );
+
+// 常用色碼
+$gold-color:#FCB13C;
