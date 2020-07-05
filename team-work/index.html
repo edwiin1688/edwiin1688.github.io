@@ -57,7 +57,7 @@
         </a>
     </div>
 
-    
+
 
     <!-- 回首頁 -->
     <div class="d-flex justify-content-end fixed-bottom">
@@ -189,51 +189,8 @@
             Slider main container -->
             <div class="swiper-container guided_tour">
                 <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div class="card__img">
-                                <img src="./img/girl-01.jpg" alt="">
-                            </div>
-                            <div class="card__body">
-                                <h2 class="card__title">
-                                    美美的女生1 <br>
-                                    <span>女生1</span>
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div class="card__img">
-                                <img src="./img/girl-02.jpg" alt="">
-                            </div>
-                            <div class="card__body">
-                                <h2 class="card__title">
-                                    美美的女生2 <br>
-                                    <span>女生2</span>
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div class="card__img">
-                                <img src="./img/girl-03.jpg" alt="">
-                            </div>
-                            <div class="card__body">
-                                <h2 class="card__title">
-                                    美美的女生3 <br>
-                                    <span>女生3</span>
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="swiper-wrapper guided_tour_wrapper">
+                    <!-- 動態加入 Slides 照片-->
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
@@ -251,80 +208,7 @@
         <section>
             <h1 class="d-flex justify-content-center">瀑布流</h1>
             <div class="masonry">
-                <div class="item">
-                    1
-                    <img
-                        src="./img/1.jpg">
-                </div>
-                <div class="item">
-                    2
-                    <img src="./img/2.jpg">
-                </div>
-                <div class="item">
-                    3
-                    <img
-                        src="./img/3.jpg">
-                </div>
-                <div class="item">
-                    5
-                    <img src="./img/5.jpg">
-                </div>
-                <div class="item">
-                    7
-                    <img
-                        src="./img/7.jpg">
-                </div>
-                <div class="item">
-                    8
-                    <img
-                        src="./img/8.jpg">
-                </div>
-                <div class="item">
-                    9
-                    <img src="./img/9.jpg">
-                </div>
-                <div class="item">
-                    12
-                    <img
-                        src="./img/12.jpg">
-                </div>
-                <div class="item">
-                    1
-                    <img
-                        src="./img/1.jpg">
-                </div>
-                <div class="item">
-                    2
-                    <img src="./img/2.jpg">
-                </div>
-                <div class="item">
-                    3
-                    <img
-                        src="./img/3.jpg">
-                </div>
-                <div class="item">
-                    5
-                    <img src="./img/5.jpg">
-                </div>
-                <div class="item">
-                    7
-                    <img
-                        src="./img/7.jpg">
-                </div>
-                <div class="item">
-                    8
-                    <img
-                        src="./img/8.jpg">
-                </div>
-                <div class="item">
-                    9
-                    <img src="./img/9.jpg">
-                </div>
-                <div class="item">
-                    12
-                    <img
-                        src="./img/12.jpg">
-                </div>                
+                <!-- 動態放入瀑布流照片 -->
         </section>
 
         <!-- 行程資訊 -->
@@ -341,7 +225,18 @@
 
     <!-- footer -->
     <footer id="footer">
-        本網頁僅供教學及練習使用，若有冒犯請恰 0928-960931
+        <div>
+            本網頁僅供教學及練習使用，若有冒犯請恰 0928-960931
+        </div>
+        
+        <div class="d-flex justify-content-center align-content-center">
+            <div class="footer">
+                <img src="./img/qr-code-1.png" alt="">
+                <img src="./img/qr-code-2.png" alt="">
+                <img src="./img/qr-code-3.png" alt="">          
+            </div>
+        </div>
+        
     </footer>
 
     <!-- 引用 Bootstrap 的 js -->
@@ -358,8 +253,16 @@
     <script src="./js/earth-loader-svg.js"></script>
     <script src="./js/earth-loader.js"></script>
 
+    <!-- 環境導覽(輪撥效果) -->
+    <script src="./js/guided_tour_data.js"></script>
+    <script src="./js/guided_tour.js"></script>
+
     <!-- Timeline -->
     <script src="./js/time-line.js"></script>
+
+    <!--  瀑布流 -->
+    <script src="./js/masonry-data.js"></script>
+    <script src="./js/masonry.js"></script>
 
     <script src="./js/index.js"></script>
     <script src="./js/home-page.js"></script>
