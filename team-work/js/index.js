@@ -30,3 +30,9 @@ var swiper_guided_tour = new Swiper('.guided_tour', {
         delay: 2000
     }
 });
+
+var join = document.querySelector('#quick-icon');
+join.addEventListener('click', function() {
+    console.log('快捷 ICON');
+    $('html, body').animate({scrollTop: $('#footer').offset().top}, 1000)
+});
