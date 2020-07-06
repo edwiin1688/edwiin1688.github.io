@@ -6,7 +6,7 @@ var timeline_data = [
         "iconType": "",
         "icon": "fa fa-envelope-o",
         "direction": "",
-        "image": "./img/girl-01.jpg"
+        "image": "./img/girl-01.webp"
     },
     {
         "title": "週六",
@@ -15,7 +15,7 @@ var timeline_data = [
         "iconType": "",
         "icon": "fa-envelope-open-o",
         "direction": "right",
-        "image": "./img/girl-02.jpg"
+        "image": "./img/girl-02.webp"
     },
     {
         "title": "週六",
@@ -24,7 +24,7 @@ var timeline_data = [
         "iconType": "success",
         "icon": "fa-star",
         "direction": "",
-        "image": "./img/girl-03.jpg"
+        "image": "./img/girl-03.webp"
     },
     {
         "title": "週六",
@@ -33,7 +33,7 @@ var timeline_data = [
         "iconType": "",
         "icon": "fa-check-square-o",
         "direction": "right",
-        "image": "./img/girl-01.jpg"
+        "image": "./img/girl-01.webp"
     },
     {
         "title": "週六",
@@ -42,7 +42,7 @@ var timeline_data = [
         "iconType": "",
         "icon": "fa-user-circle-o",
         "direction": "",
-        "image": "./img/girl-02.jpg"
+        "image": "./img/girl-02.webp"
     },
     {
         "title": "週六",
@@ -51,7 +51,7 @@ var timeline_data = [
         "iconType": "",
         "icon": "fa-key",
         "direction": "right",
-        "image": "./img/girl-03.jpg"
+        "image": "./img/girl-03.webp"
     },
     {
         "title": "週六",
@@ -60,6 +60,6 @@ var timeline_data = [
         "iconType": "success",
         "icon": "fa-star",
         "direction": "",
-        "image": "./img/girl-01.jpg"
+        "image": "./img/girl-01.webp"
     }
 ];
