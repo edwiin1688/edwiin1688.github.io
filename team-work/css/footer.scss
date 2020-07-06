@@ -1,8 +1,10 @@
+@import '_style_guild';
+
 #footer {
     text-align: center;
     line-height: 50px;
 
-    background-color: black;
+    background-color: $dark_green;
     color: white;
 
     height: 50px;

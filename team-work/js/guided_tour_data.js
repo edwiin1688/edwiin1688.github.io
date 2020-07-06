@@ -1,17 +1,17 @@
 var guided_tour_data = [
     {
-        text: "美美的女生1",
+        text: "營區導覽1",
         src: "./img/guided_tour_1.png",
-        subText: "女生1"
+        subText: "導覽1"
     },
     {
-        text: "美美的女生2",
+        text: "營區導覽2",
         src: "./img/guided_tour_1.png",
-        subText: "女生2"
+        subText: "導覽2"
     },
     {
-        text: "美美的女生3",
+        text: "營區導覽3",
         src: "./img/guided_tour_1.png",
-        subText: "女生3"
+        subText: "導覽3"
     }
 ];
