@@ -5,7 +5,7 @@
   position: fixed;
   right: 0%;
   background-color: white;
-  opacity: 0.11;
+  opacity: 0;
 }
 
 @media (max-width: 650px) {
@@ -127,7 +127,8 @@
   width: 100%;
   height: 100%;
   min-height: 650px;
-  background-color: gray;
+  max-height: 1080px;
+  background-color: #608D4C;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: 1s;
@@ -139,6 +140,9 @@
   position: fixed;
   z-index: 3;
   opacity: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 650px) {
@@ -151,7 +155,7 @@
 .home-page .menu-container .nav-bg {
   width: 66%;
   height: 100%;
-  background-image: url("https://content.shopback.com/tw/wp-content/uploads/2018/03/12153038/%E9%B7%97%E6%BC%AB1.jpg");
+  background-image: url("../img/menu1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -221,7 +225,7 @@
 
 .home-page .menu-container .menu-content .menu-title #title {
   width: 250px;
-  height: 150px;
+  height: 120px;
   margin: 50px 0 0 0;
   font-size: 36px;
   font-weight: bolder;
@@ -245,7 +249,6 @@
     -webkit-transform: translateX(0);
             transform: translateX(0);
     margin: 0 0 0 45px;
-    font-size: 32px;
   }
 }
 
@@ -257,15 +260,14 @@
 
 .home-page .menu-container .menu-content .info-box {
   width: 50%;
-  height: 87%;
-  min-height: calc(100vh - 80px);
+  height: 75%;
 }
 
 .home-page .menu-container .menu-content .info-box .info {
   width: 100%;
   height: 70%;
-  min-height: 396px;
-  padding: 0 0 0 0px;
+  min-height: 350px;
+  padding: 0px 0 0 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -273,9 +275,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   color: snow;
 }
 
@@ -350,7 +352,6 @@
 .home-page .menu-container .menu-content .info-box .menu-footer {
   width: 100%;
   height: 30%;
-  min-height: 250px;
   color: snow;
 }
 
@@ -397,7 +398,10 @@
   width: 60px;
   height: 60px;
   border-radius: 100%;
-  background-color: steelblue;
+  background-image: url(../img/icon_fb.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   cursor: pointer;
   margin: 0 20px 0 0;
 }
@@ -406,7 +410,10 @@
   width: 60px;
   height: 60px;
   border-radius: 100%;
-  background-color: steelblue;
+  background-image: url(../img/icon_line.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   cursor: pointer;
 }
 
@@ -474,10 +481,9 @@
 .home-page .menu-container .menu-content .menu-drawing {
   width: 48%;
   height: 75%;
-  margin-top: 20px;
   background-image: url("../img/menu_pic.png");
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: bottom center;
   background-size: contain;
 }
 
@@ -1295,4 +1301,3 @@ h4 {
     left: 36px;
   }
 }
-/*# sourceMappingURL=home-page.css.map */
