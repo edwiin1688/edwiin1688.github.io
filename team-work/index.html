@@ -65,7 +65,8 @@
         .fixed-bottom {
             z-index: 1;
         }
-        #booking{
+
+        #booking {
             width: 250px;
             height: 250px;
             background-image: url("./img/booknow.png");
@@ -77,8 +78,9 @@
             bottom: 138px;
             z-index: 1;
         }
+
         @media (max-width: 750px) {
-            #booking{
+            #booking {
                 display: none;
             }
         }
@@ -86,21 +88,17 @@
 </head>
 
 <body>
+    <!-- 引用 jQuery 的 js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
-    <!-- Loading 載入地球動畫 -->
-    <div class="loading-mask" data-role="loader">
-        <div class="wrapper">
-        </div>
-        <div class="text">
-            <span class="letter">L</span>
-            <span class="letter">O</span>
-            <span class="letter">A</span>
-            <span class="letter">D</span>
-            <span class="letter">I</span>
-            <span class="letter">N</span>
-            <span class="letter">G</span>
-        </div>
-    </div>
+
+            <!-- 上面是相依的 js -->
+        <!-- 上面是相依的 js -->
+    <!-- 上面是相依的 js -->
+
+
+    <!-- Loading 載入地球動畫 -->    
+    <script src="./js/earth-loader.js"></script>
 
     <!-- SCROLL DOWN -->
     <div class="d-flex justify-content-center fixed-bottom">
@@ -110,10 +108,12 @@
     </div>
 
     <!-- 快捷 ICON  -->
-            <img src="./img/booknow.png" alt="快捷 ICON">
-        </button>
-    </div> -->
-    <a href=""><div id="booking"></div></a>
+    <img src="./img/booknow.png" alt="快捷 ICON">
+
+
+    <a href="">
+        <div id="booking"></div>
+    </a>
     <!-- TODO -->
 
     <div id="invisible-bar"></div>
@@ -246,7 +246,7 @@
                             設備，依照季節變化與在地食<br>
                             材，營照出台灣指標性的「一<br>
                             泊五食」新露營體驗。<br>
-                        </div>                        
+                        </div>
                         <!-- 圓框 parallax -->
                         <div id="circle_parallax_1">
                             <!-- 圓圈 -->
@@ -468,8 +468,12 @@
                 </div>
             </div>
             <div class="f-icon-box">
-                <a href=""><div id="f-fb"></div></a>
-                <a href=""><div id="f-line"></div></a>
+                <a href="">
+                    <div id="f-fb"></div>
+                </a>
+                <a href="">
+                    <div id="f-line"></div>
+                </a>
             </div>
         </div>
 
@@ -503,6 +507,7 @@
 
     </footer> -->
 
+
     <!-- 引用 Bootstrap 的 js -->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap 需要 jQuery -->
@@ -511,12 +516,7 @@
     <!-- 引用 Swiper 的 js -->
     <script src="./node_modules/swiper/js/swiper.min.js"></script>
 
-    <!-- 引用 jQuery 的 js -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
-    <!-- Loading 載入地球動畫 -->
-    <script src="./js/earth-loader-svg.js"></script>
-    <script src="./js/earth-loader.js"></script>
+    
 
     <!-- 環境導覽(輪撥效果) -->
     <script src="./js/guided_tour_data.js"></script>
