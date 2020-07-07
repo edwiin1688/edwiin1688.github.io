@@ -80,12 +80,20 @@
 
 @media (max-width: 650px) {
   .home-page .slider-nav div {
+    width: 235px;
+    height: 60px;
     display: block;
     color: white;
     font-size: 32px;
     line-height: 68px;
-    width: 235px;
     margin: auto;
+    padding: 8px 0 0 0;
+    background-image: url("../img/LOGO.png");
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-box-sizing: unset;
+            box-sizing: unset;
   }
 }
 
@@ -118,6 +126,7 @@
 .home-page .menu-container {
   width: 100%;
   height: 100%;
+  min-height: 650px;
   background-color: gray;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -135,6 +144,7 @@
 @media (max-width: 650px) {
   .home-page .menu-container {
     height: calc(100% - 68px);
+    min-height: unset;
   }
 }
 
@@ -211,12 +221,16 @@
 
 .home-page .menu-container .menu-content .menu-title #title {
   width: 250px;
-  margin: 45px 0 0 0;
+  height: 150px;
+  margin: 50px 0 0 0;
   font-size: 36px;
   font-weight: bolder;
-  color: snow;
-  -webkit-transform: translateX(90px);
-          transform: translateX(90px);
+  background-image: url("../img/LOGO.png");
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transform: translateX(80px);
+          transform: translateX(80px);
 }
 
 @media (max-width: 700px) {
@@ -459,8 +473,9 @@
 
 .home-page .menu-container .menu-content .menu-drawing {
   width: 48%;
-  height: 85%;
-  background-image: url("../img/slider-pic.png");
+  height: 75%;
+  margin-top: 20px;
+  background-image: url("../img/menu_pic.png");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: contain;
@@ -1280,3 +1295,4 @@ h4 {
     left: 36px;
   }
 }
+/*# sourceMappingURL=home-page.css.map */
