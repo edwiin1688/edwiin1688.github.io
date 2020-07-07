@@ -105,7 +105,7 @@
     display: flex;
     position: relative;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     opacity: 0;
     @media(max-width: 650px){
       height: calc(100% - 68px);
@@ -445,7 +445,7 @@ h4 {
   position: absolute;
   right: 0%;
   position: fixed;
-  z-index: 3;
+  z-index: 4;
   &:hover .burger-bun-bot{
     background-color: white;
   }
