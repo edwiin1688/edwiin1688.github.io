@@ -1,4 +1,4 @@
-// 定義常用的色調與字型大小
+// TODO 定義常用的色調與字型大小
 
 // 綠色
 $light_green: #93b568;
@@ -6,6 +6,17 @@ $dark_green: #608d4c;
 
 // 背景
 $bg_color: #f3ece2;
+
+// 字體顏色
+$light_font: white;
+$dark_font: black;
+
+// 字體粗系
+$font_weight_xxl: 900;
+$font_weight_xl: bolder;
+$font_weight_l: bold;
+$font_weight_m: normal;
+$font_weight_s: lighter;
 
 // 圓圈
 $circle_color: #e68c3d

@@ -1,0 +1,27 @@
+#business_philosophy {
+  background-color: #f3ece2;
+}
+
+#business_philosophy .business_philosophy_2 {
+  background-color: yellow;
+}
+
+#business_philosophy .business_philosophy_2 img {
+  margin-top: 10%;
+  margin-bottom: 20%;
+  margin-left: 10%;
+}
+
+#business_philosophy .business_philosophy_1 img {
+  margin-top: 10%;
+  margin-bottom: 20%;
+  margin-left: 10%;
+}
+
+#business_philosophy .circle_parallax_1 .circle_img_1 {
+  z-index: 0;
+}
+
+#business_philosophy .circle_parallax_1 .circle_red_img_1 {
+  z-index: 0;
+}

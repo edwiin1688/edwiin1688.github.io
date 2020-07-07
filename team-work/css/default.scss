@@ -1,0 +1,14 @@
+@import '_style_guild';
+
+// 指定預設背景顏色
+.default_bg {
+    background-color: $bg_color;
+
+    border: none;
+}
+
+// 指定背景透明
+.transparent_bg {
+    background-color: rgba(0,0,0,0);
+}
+

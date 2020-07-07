@@ -44,3 +44,8 @@ scroll_down.addEventListener('click', function() {
     console.log('SCROLL DOWN');
     $('html, body').animate({scrollTop: $('#business-philosophy').offset().top}, 1000)
 });
+
+// 圓框 parallax.js
+parallaxInstance1 = new Parallax( document.getElementById( "circle_parallax_1" ) );
+parallaxInstance2 = new Parallax( document.getElementById( "circle_parallax_2" ) );
+parallaxInstance3 = new Parallax( document.getElementById( "circle_parallax_3" ) );

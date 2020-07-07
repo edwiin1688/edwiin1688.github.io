@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Work</title>
+    <title>Team Work - Project F</title>
 
+    <!-- FIXME 解決 favicon 錯誤方法 -->
     <!-- <link rel="shortcut icon" href="#" /> -->
     <link href="favicon.ico" rel="shortcut icon">
 
@@ -15,25 +16,49 @@
     <!-- 引用 swiper 的 css -->
     <link rel="stylesheet" href="./node_modules/swiper/css/swiper.min.css">
 
+    <!-- Parallax v3.1.0 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+
+            <!-- // TODO 以上是外部引用 -->
+        <!-- // TODO 以上是外部引用 -->
+    <!-- // TODO 以上是外部引用 -->
+
+
     <!-- 引用 Loading 載入地球動畫的 css  -->
     <link rel="stylesheet" href="./css/earth-loader.css">
 
-    <!-- 引用 Swiper 的 css  -->
-    <link rel="stylesheet" href="./css/swiper.css">
+    <!-- navbar 的 css -->
+    <link rel="stylesheet" href="./css/home-page.css">
 
+
+    <!-- Main 主題引用的 css -->
+
+    <!-- 主要的 css -->
     <link rel="stylesheet" href="./css/index.css">
 
-    <!-- 引用 Timeline 的 css -->
+    <!-- 「Banner」與「環境導覽」引用 Swiper 的 css  -->
+    <link rel="stylesheet" href="./css/swiper.css">
+
+    <!-- 經營理念 -->
+    <link rel="stylesheet" href="./css/business-philosophy.css">
+
+    <!-- 瀑布流 -->
+    <link rel="stylesheet" href="./css/masonry.css">
+
+    <!-- 「行程資訊」引用 Timeline 的 css -->
     <link rel="stylesheet" href="./css/time-line.css">
 
-    <!-- 首頁 的 css -->
-    <link rel="stylesheet" href="./css/home-page.css">
-    <link rel="stylesheet" href="./css/footer.css">
     <!-- 首頁活動區塊(section-4)部分 -->
     <link rel="stylesheet" href="./css/homepage-activity.css">
+
+    <!-- footer 的 css -->
+    <link rel="stylesheet" href="./css/footer.css">
+
+
     <style>
         /* 貓咪和向下箭頭 */
-        .fixed-bottom{
+        .fixed-bottom {
             z-index: 2;
         }
     </style>
@@ -66,9 +91,11 @@
     <!-- 快捷 ICON  -->
     <div class="d-flex justify-content-end fixed-bottom">
         <button type="button" id="quick-icon" class="btn">
-            <img src="./img/fat_cat.png" alt="快捷 ICON">
-        </button>        
+            <img src="./img/booknow.png" alt="快捷 ICON">
+        </button>
     </div>
+
+    <!-- TODO -->
 
     <div id="invisible-bar"></div>
     <section class="home-page">
@@ -151,6 +178,8 @@
     </section>
 
 
+    <!-- TODO -->
+
 
     <main>
         <!-- 首頁 -->
@@ -179,15 +208,117 @@
             </div>
         </section>
 
+        <!-- TODO -->
         <!-- 經營理念 -->
-        <section id="business-philosophy">
-            <div class="d-flex justify-content-center">
-                <img class="business-philosophy-bg" src="./img/business-philosophy.png" alt="經營理念底圖">
+        <section id="business_philosophy" class="">
+            <div class="container-fluid">
+                <!-- 1. 帶著家人 走進自然 -->
+                <div class="row">
+                    <div class="col-4">
+                        <h2>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            帶著家人<br>
+                            &emsp;&emsp;走進自然<br>
+                            <br>
+                            <br>
+                            <br>
+                        </h2>
+                        <p>
+                            帶著衣物即可輕鬆走入大自<br>
+                            然，各式各樣活動促進親子互<br>
+                            動，在地生態資源、頂級露營<br>
+                            設備，依照季節變化與在地食<br>
+                            材，營照出台灣指標性的「一<br>
+                            泊五食」新露營體驗。<br>
+                        </p>
+                        <!-- 圓框 parallax -->
+                        <div id="circle_parallax_1">
+                            <!-- 圓圈 -->
+                            <img src="./img/circle.svg" class="circle_img_1" alt="...">
+                            <!-- 圓框 -->
+                            <img src="./img/circle-red.svg" class="circle_red_img_1" alt="...">
+                        </div>
+                    </div>
+
+                    <div class="business_philosophy_1">
+                        <img src="./img/explore.png" class="" alt="...">
+                    </div>
+                </div>
+
+                <!-- 2. 創造美好 露營回憶 -->
+                <div class="row">
+                    <div class="col-8">
+                        <div id="business_philosophy_2">
+                            <img src="./img/create.png" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <h2>
+                            創造美好<br>
+                            &emsp;&emsp;露營回憶<br>
+                            <br>
+                            <br>
+                            <br>
+                        </h2>
+                        <p>
+                            自然環境是露營不可取代之元<br>
+                            素，我們擁有絕佳的天然環境<br>
+                            ，不但鮮少蛟蟲，溪流溫度適<br>
+                            宜物種豐富，四季都能樂在中。<br>
+                        </p>
+                        <!-- 圓框 parallax -->
+                        <!-- 圓框 parallax -->
+                        <div id="circle_parallax_2">
+                            <!-- 圓圈 -->
+                            <img src="./img/circle.svg" class="circle_img_1" alt="...">
+                            <!-- 圓框 -->
+                            <img src="./img/circle-red.svg" class="circle_red_img_1" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. 享受自然 森林芬多精 -->
+                <div class="row">
+                    <div class="col-4">
+                        <h2>
+                            享受自然<br>
+                            &emsp;&emsp;森林芬多精<br>
+                            <br>
+                            <br>
+                            <br>
+                        </h2>
+                        <p>
+                            飛鳥恰恰位於新竹五峰山區，<br>
+                            依山傍水、草地聚實、景觀優<br>
+                            美，望著山谷風景，孩子們開<br>
+                            心溪水嬉戲沉浸在原始溪流<br>
+                            與森林芬多精內。<br>
+                        </p>
+                        <!-- 圓框 parallax -->
+                        <div id="circle_parallax_3">
+                            <!-- 圓圈 -->
+                            <img src="./img/circle.svg" class="circle_img_1" alt="...">
+                            <!-- 圓框 -->
+                            <img src="./img/circle-red.svg" class="circle_red_img_1" alt="...">
+                        </div>
+                    </div>
+
+                    <div class="col-8">
+                        <img src="./img/enjoy.png" alt="...">
+                    </div>
+                </div>
             </div>
         </section>
 
+        <!-- TODO -->
+
         <!-- 環境導覽 -->
-        <section id="guided_tour">
+        <section id="guided_tour" class="default_bg">
             <h1 class="d-flex justify-content-center">環境導覽</h1>
             <!-- Slider
             Slider main container -->
@@ -207,6 +338,9 @@
                 <div class="swiper-scrollbar"></div>
             </div>
         </section>
+
+        <!-- TODO -->
+
         <section id="section-4">
             <div class="container">
                 <div class="activity-box activity-box1">
@@ -214,51 +348,68 @@
                     <div class="pic2"></div>
                     <div class="pic3"></div>
                     <div class="mask mask1"></div>
-                     <a href=""><div class="for-more for-more1">了解更多 ></div></a>
+                    <a href="">
+                        <div class="for-more for-more1">了解更多 ></div>
+                    </a>
                 </div>
                 <div class="activity-box activity-box2">
                     <div class="pic1"></div>
                     <div class="pic2"></div>
                     <div class="pic3"></div>
-                   <div class="mask mask2"></div>
-                   <a href=""><div class="for-more for-more2">了解更多 ></div></a>
+                    <div class="mask mask2"></div>
+                    <a href="">
+                        <div class="for-more for-more2">了解更多 ></div>
+                    </a>
                 </div>
                 <div class="activity-box activity-box3">
                     <div class="pic1"></div>
                     <div class="pic2"></div>
                     <div class="pic3"></div>
                     <div class="mask mask3"></div>
-                     <a href=""><div class="for-more for-more3">了解更多 ></div></a>
+                    <a href="">
+                        <div class="for-more for-more3">了解更多 ></div>
+                    </a>
                 </div>
                 <div class="text-box1">
-                  <div class="big-text">ENJOY</div>
-                  <div class="text">星空影院</div>
+                    <div class="big-text">ENJOY</div>
+                    <div class="text">星空影院</div>
                 </div>
                 <div class="text-box2">
-                  <div class="big-text">PLAY</div>
-                  <div class="text">生態體驗</div>
+                    <div class="big-text">PLAY</div>
+                    <div class="text">生態體驗</div>
                 </div>
                 <div class="text-box3">
-                  <div class="big-text">DIY</div>
-                  <div class="text">手做披薩</div>
+                    <div class="big-text">DIY</div>
+                    <div class="text">手做披薩</div>
                 </div>
                 <div id="flag-l"></div>
                 <div id="flag-r"></div>
-                <a href=""><div class="for-more-phone1">了解更多 ></div></a>
-                <a href=""><div class="for-more-phone2">了解更多 ></div></a>
-                <a href=""><div class="for-more-phone3">了解更多 ></div></a>
+                <a href="">
+                    <div class="for-more-phone1">了解更多 ></div>
+                </a>
+                <a href="">
+                    <div class="for-more-phone2">了解更多 ></div>
+                </a>
+                <a href="">
+                    <div class="for-more-phone3">了解更多 ></div>
+                </a>
             </div>
         </section>
+
+        <!-- TODO -->
+
         <!-- 瀑布流 -->
-        <section>
+        <section id="masonry" class="default_bg">
             <h1 class="d-flex justify-content-center">瀑布流</h1>
             <div class="masonry">
                 <!-- 動態放入瀑布流照片 -->
-            </div>          
+            </div>
         </section>
 
+        <!-- TODO -->
+
         <!-- 行程資訊 -->
-        <section id="Time-line">
+        <section id="Time-line" class="default_bg">
             <div id="stroke-timeline" class="timeline-container">
                 <h1 class="project-name">行程資訊</h1>
                 <img src="./img/time-line-0.png" alt="">
@@ -270,25 +421,34 @@
 
     </main>
 
+    <!-- TODO -->
+
     <!-- 回首頁 -->
-    <div class="d-flex justify-content-center align-content-center">
+    <div class="default_bg d-flex justify-content-center align-content-center">
         <button type="button" class="btn btn-dark">
-            <a class="nav-link" href="#">Top<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">回首頁<span class="sr-only">(current)</span></a>
         </button>
-    </div>    
+    </div>
+
+    <!-- TODO -->
+
 
     <!-- footer -->
-    <footer id="footer">
+    <footer id="footer" class="">
         <div>
             本網頁僅供教學及練習使用，若有冒犯請恰 0928-960931
         </div>
 
-        <div class="d-flex justify-content-center align-content-center">
-            <div class="footer">
-                <img src="./img/qr-code-1.webp" alt="">
-                <img src="./img/qr-code-2.webp" alt="">
-                <img src="./img/qr-code-3.webp" alt="">
-            </div>
+        <!-- TODO -->
+
+        <div class="footer d-flex justify-content-around align-content-center">
+
+            <!-- TODO -->
+
+            <!-- QR Code -->
+            <img src="./img/qr-code-1.webp" alt="QR Code">
+            <img src="./img/qr-code-2.webp" alt="QR Code">
+            <img src="./img/qr-code-3.webp" alt="QR Code">
         </div>
 
     </footer>
@@ -301,6 +461,7 @@
     <!-- 引用 Swiper 的 js -->
     <script src="./node_modules/swiper/js/swiper.min.js"></script>
 
+    <!-- 引用 jQuery 的 js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
     <!-- Loading 載入地球動畫 -->

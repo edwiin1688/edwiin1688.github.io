@@ -1,17 +1,17 @@
 var guided_tour_data = [
     {
-        text: "營區導覽1",
+        text: "",
         src: "./img/guided_tour_1.png",
-        subText: "導覽1"
+        subText: "行程介紹"
     },
     {
-        text: "營區導覽2",
-        src: "./img/guided_tour_1.png",
-        subText: "導覽2"
+        text: "",
+        src: "./img/guided_tour_2.png",
+        subText: "營區導覽"
     },
     {
-        text: "營區導覽3",
-        src: "./img/guided_tour_1.png",
-        subText: "導覽3"
+        text: "",
+        src: "./img/guided_tour_3.png",
+        subText: "美食饗宴"
     }
 ];

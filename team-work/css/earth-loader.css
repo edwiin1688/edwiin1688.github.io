@@ -6,7 +6,7 @@ body>.loading-mask {
     width: 100%;
     height: 100%;
 
-    background-color: #78909C;
+    background-color: #f3ece2;
 }
 
 body>.loading-mask>.wrapper {

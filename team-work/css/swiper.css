@@ -38,7 +38,7 @@ video {
 #guided_tour .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: #f3ece2;
   width: 100vw;
   background-repeat: no-repeat;
   background-position: center center;
@@ -55,6 +55,10 @@ video {
   align-items: center;
 }
 
+#guided_tour .swiper-slide img {
+  background-color: #f3ece2;
+}
+
 #guided_tour .swiper-button-prev:hover {
   background-color: red;
 }
@@ -62,4 +66,3 @@ video {
 #guided_tour .swiper-button-next:hover {
   background-color: red;
 }
-/*# sourceMappingURL=swiper.css.map */

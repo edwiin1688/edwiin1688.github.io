@@ -1,0 +1,53 @@
+// 
+// 經營理念
+// 
+
+@import '_style_guild';
+
+#business_philosophy {
+    background-color: $bg_color;
+
+    // 大圖
+    // 2. 創造美好 露營回憶
+    .business_philosophy_2 {
+        // 檢視一下顯示範圍
+        background-color: yellow;
+
+        img {
+            margin-top: 10%;
+            margin-bottom: 20%;
+
+            margin-left: 10%;
+        }
+    }
+
+    // 大圖
+    // 1. 帶著家人 走進自然
+    // 3. 享受自然 森林芬多精
+    .business_philosophy_1 {
+        // 檢視一下顯示範圍
+        // background-color: red;
+
+        img {
+            margin-top: 10%;
+            margin-bottom: 20%;
+
+            margin-left: 10%;
+        }
+    }
+
+    // 圓框 parallax
+    .circle_parallax_1 {
+        // 圓圈
+        .circle_img_1 {
+
+            z-index: 0;            
+        }
+    
+        // 圓框
+        .circle_red_img_1 { 
+
+            z-index: 0;
+        }
+    }
+}
