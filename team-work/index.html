@@ -64,6 +64,23 @@
         .fixed-bottom {
 		 z-index: 1;
         }
+        #booking{
+            width: 250px;
+            height: 250px;
+            background-image: url("./img/booknow.png");
+            background-position: center bottom;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: fixed;
+            right: 0;
+            bottom: 138px;
+            z-index: 1;
+        }
+        @media (max-width: 750px) {
+            #booking{
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -92,12 +109,12 @@
     </div>
 
     <!-- 快捷 ICON  -->
-    <div class="d-flex justify-content-end fixed-bottom">
+    <!-- <div class="d-flex justify-content-end fixed-bottom">
         <button type="button" id="quick-icon" class="btn">   
             <img src="./img/booknow.png" alt="快捷 ICON">
         </button>
-    </div>
-
+    </div> -->
+    <a href=""><div id="booking"></div></a>
     <!-- TODO -->
 
     <div id="invisible-bar"></div>
