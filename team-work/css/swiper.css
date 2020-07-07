@@ -59,6 +59,10 @@ video {
   background-color: #f3ece2;
 }
 
+#guided_tour .swiper-slide h1 {
+  background-color: #f3ece2;
+}
+
 #guided_tour .swiper-button-prev:hover {
   background-color: red;
 }

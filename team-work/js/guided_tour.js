@@ -8,7 +8,7 @@ guided_tour_data.forEach(x => {
                 <img src="${x.src}" alt="">
             </div>
             <div class="card__body">
-                <h2 class="card__title">
+                <h2 class="card__title default_bg">
                     ${x.text} <br>
                     <span>${x.subText}</span>
                 </h2>
