@@ -56,12 +56,31 @@
 
     <!-- footer 的 css -->
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/the-footer.css">
+    <!-- <link rel="stylesheet" href="./css/footer.css"> -->
 
 
     <style>
         /* 貓咪和向下箭頭 */
         .fixed-bottom {
             z-index: 1;
+        }
+        #booking{
+            width: 250px;
+            height: 250px;
+            background-image: url("./img/booknow.png");
+            background-position: center bottom;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: fixed;
+            right: 0;
+            bottom: 138px;
+            z-index: 1;
+        }
+        @media (max-width: 750px) {
+            #booking{
+                display: none;
+            }
         }
     </style>
 </head>
@@ -91,12 +110,10 @@
     </div>
 
     <!-- 快捷 ICON  -->
-    <div class="d-flex justify-content-end fixed-bottom">
-        <button type="button" id="quick-icon" class="btn">
             <img src="./img/booknow.png" alt="快捷 ICON">
         </button>
-    </div>
-
+    </div> -->
+    <a href=""><div id="booking"></div></a>
     <!-- TODO -->
 
     <div id="invisible-bar"></div>
@@ -416,35 +433,75 @@
     <!-- TODO -->
 
     <!-- 回首頁 -->
-    <div class="default_bg d-flex justify-content-center align-content-center">
+    <!-- <div class="default_bg d-flex justify-content-center align-content-center">
         <button type="button" class="btn btn-dark">
             <a class="nav-link" href="#">回首頁<span class="sr-only">(current)</span></a>
         </button>
-    </div>
+    </div> -->
 
     <!-- TODO -->
 
 
     <!-- footer -->
-    <footer id="footer">
+    <footer>
+        <a href="">
+            <div id="top-btn">
+                <div id="f-arrow"></div>
+                <div id="f-top">Top</div>
+            </div>
+        </a>
+        <div class="container">
+            <div id="footer-title"></div>
+            <div id="footer-line"></div>
+            <div class="f-infomation-box">
+                <div class="f-phone">
+                    <div id="phone-icon"></div>
+                    <div id="phone-text">預約專線 0930816898</div>
+                </div>
+                <div class="f-mail">
+                    <div id="mail-icon"></div>
+                    <div id="mail-text">info@icaping.tw</div>
+                </div>
+                <div class="f-adress">
+                    <div id="adress-icon"></div>
+                    <div id="adress-text">新竹縣五峰鄉花園村10鄰天湖205-12號</div>
+                </div>
+            </div>
+            <div class="f-icon-box">
+                <a href=""><div id="f-fb"></div></a>
+                <a href=""><div id="f-line"></div></a>
+            </div>
+        </div>
+
+        <div id="copyright">© 2020 Flybird Glamping</div>
+    </footer>
+
+
+
+
+
+
+
+
+    <!-- <footer id="footer">
         <div>
             本網頁僅供教學及練習使用，若有冒犯請恰 0928-960931
         </div>
 
 
-        <!-- TODO -->
+        TODO
 
         <div class="footer d-flex justify-content-around align-content-center">
 
-            <!-- TODO -->
+            TODO
 
-            <!-- QR Code -->
+            QR Code
             <img src="./img/qr-code-1.webp" alt="QR Code">
             <img src="./img/qr-code-2.webp" alt="QR Code">
             <img src="./img/qr-code-3.webp" alt="QR Code">
         </div>
 
-    </footer>
+    </footer> -->
 
     <!-- 引用 Bootstrap 的 js -->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
