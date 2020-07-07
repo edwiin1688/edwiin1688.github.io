@@ -10,10 +10,10 @@
     <!-- <link rel="shortcut icon" href="#" /> -->
     <link href="favicon.ico" rel="shortcut icon">
 
-    <!-- 引用 bootstrap 的 css -->
+    <!-- 引用 bootstrap 的 css (離線版) -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 
-    <!-- 引用 swiper 的 css -->
+    <!-- 引用 swiper 的 css (離線版) -->
     <link rel="stylesheet" href="./node_modules/swiper/css/swiper.min.css">
 
     <!-- Parallax v3.1.0 -->
@@ -27,37 +27,26 @@
 
     <!-- 引用 Loading 載入地球動畫的 css  -->
     <link rel="stylesheet" href="./css/earth-loader.css">
-
     <!-- navbar 的 css -->
     <link rel="stylesheet" href="./css/home-page.css">
-
-
-    <!-- Main 主題引用的 css -->
-
     <!-- 主要的 css -->
     <link rel="stylesheet" href="./css/default.css">
-
+    <!-- index -->
     <link rel="stylesheet" href="./css/index.css">
-
     <!-- 「Banner」與「環境導覽」引用 Swiper 的 css  -->
     <link rel="stylesheet" href="./css/swiper.css">
-
     <!-- 經營理念 -->
     <link rel="stylesheet" href="./css/business-philosophy.css">
-
     <!-- 瀑布流 -->
     <link rel="stylesheet" href="./css/masonry.css">
-
     <!-- 「行程資訊」引用 Timeline 的 css -->
     <link rel="stylesheet" href="./css/time-line.css">
-
     <!-- 首頁活動區塊(section-4)部分 -->
     <link rel="stylesheet" href="./css/homepage-activity.css">
 
     <!-- footer 的 css -->
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/the-footer.css">
-    <!-- <link rel="stylesheet" href="./css/footer.css"> -->
 
 
     <style>
@@ -90,6 +79,12 @@
 <body>
     <!-- 引用 jQuery 的 js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- 引用 jQuery 的 js (離線版－沒辦法使用!?) -->
+    <!-- <script src="./node_modules/jquery/dist/jquery.min.js"></script> -->
+    <!-- Bootstrap 需要 jQuery (離線版) -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- 引用 Swiper 的 js (離線版) -->
+    <script src="./node_modules/swiper/js/swiper.min.js"></script>
 
 
             <!-- 上面是相依的 js -->
@@ -106,6 +101,9 @@
             <img src="./img/scroll_down.png" alt="SCROLL DOWN">
         </button>
     </div>
+
+    <!-- index !? -->
+    <script src="./js/index.js"></script>
 
     <!-- 快捷 ICON  -->
     <img src="./img/booknow.png" alt="快捷 ICON">
@@ -203,28 +201,7 @@
     <main>
         <!-- 首頁 -->
         <section id="banner">
-            <!-- Slider
-            Slider main container -->
-            <div class="swiper-container banner">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <video src="./video/video-01.mp4" autoplay muted loop></video>
-                    </div>
-
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
-            </div>
+            <script src="./js/swiper.js"></script>
         </section>
 
         <!-- TODO -->
@@ -322,30 +299,22 @@
                     </div>
                 </div>
             </div>
+
+            <script>
+                // 圓框 parallax.js
+                parallaxInstance1 = new Parallax( document.getElementById( "circle_parallax_1" ) );
+                parallaxInstance2 = new Parallax( document.getElementById( "circle_parallax_2" ) );
+                parallaxInstance3 = new Parallax( document.getElementById( "circle_parallax_3" ) );
+            </script>
+            
         </section>
 
         <!-- TODO -->
 
         <!-- 環境導覽 -->
         <section id="guided_tour" class="default_bg">
-            <h1 class="default_bg d-flex justify-content-center">環境導覽</h1>
-            <!-- Slider
-            Slider main container -->
-            <div class="swiper-container guided_tour">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper guided_tour_wrapper">
-                    <!-- 動態加入 Slides 照片-->
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
-            </div>
+            <!-- <script src="./js/guided_tour_data.js"></script> -->
+            <script src="./js/guided_tour.js"></script>
         </section>
 
         <!-- TODO -->
@@ -430,14 +399,6 @@
 
     </main>
 
-    <!-- TODO -->
-
-    <!-- 回首頁 -->
-    <!-- <div class="default_bg d-flex justify-content-center align-content-center">
-        <button type="button" class="btn btn-dark">
-            <a class="nav-link" href="#">回首頁<span class="sr-only">(current)</span></a>
-        </button>
-    </div> -->
 
     <!-- TODO -->
 
@@ -481,47 +442,6 @@
     </footer>
 
 
-
-
-
-
-
-
-    <!-- <footer id="footer">
-        <div>
-            本網頁僅供教學及練習使用，若有冒犯請恰 0928-960931
-        </div>
-
-
-        TODO
-
-        <div class="footer d-flex justify-content-around align-content-center">
-
-            TODO
-
-            QR Code
-            <img src="./img/qr-code-1.webp" alt="QR Code">
-            <img src="./img/qr-code-2.webp" alt="QR Code">
-            <img src="./img/qr-code-3.webp" alt="QR Code">
-        </div>
-
-    </footer> -->
-
-
-    <!-- 引用 Bootstrap 的 js -->
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap 需要 jQuery -->
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <!-- 引用 Swiper 的 js -->
-    <script src="./node_modules/swiper/js/swiper.min.js"></script>
-
-    
-
-    <!-- 環境導覽(輪撥效果) -->
-    <script src="./js/guided_tour_data.js"></script>
-    <script src="./js/guided_tour.js"></script>
-
     <!-- Timeline -->
     <script src="./js/time-line-data.js"></script>
     <script src="./js/time-line.js"></script>
@@ -530,7 +450,7 @@
     <script src="./js/masonry-data.js"></script>
     <script src="./js/masonry.js"></script>
 
-    <script src="./js/index.js"></script>
+    
     <script src="./js/home-page.js"></script>
     <script>
         // 寫自己的 JS 程式碼在這邊
