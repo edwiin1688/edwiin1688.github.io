@@ -19,5 +19,3 @@ var join = document.querySelector('.join');
 join.addEventListener('click', function() {
     console.log('click');
 });
-
-parallaxInstance1 = new Parallax( document.getElementById( "parallax" ) );
