@@ -24,7 +24,7 @@
 .text_background_1 {
   width: 100%;
   height: 100%;
-  background-image: url("../img/about-1-text-bg.png");
+  background-image: url("../img/about-1-text-bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -89,7 +89,7 @@
 
 .parallax {
   /* The image used */
-  background-image: url("../img/logo.jpg");
+  background-image: url("../img/logo.webp");
   /* Set a specific height */
   height: 500px;
   /* Create the parallax scrolling effect */
