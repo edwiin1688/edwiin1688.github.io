@@ -59,9 +59,11 @@
             position: relative;
             background-color: #F3ECE2;
         }
-        #to-booking{
+
+        #to-booking {
             display: inline;
         }
+
         #booking {
             width: 200px;
             height: 200px;
@@ -74,8 +76,8 @@
             left: 100%;
             bottom: 0px;
             z-index: 3;
-            
-            
+
+
         }
 
         @media (max-width: 750px) {
@@ -238,7 +240,7 @@
                         </div>
                     </div>
 
-                    <div class="col-8">
+                    <div class="col-8 no_padding">
                         <div class="business_philosophy_1">
                             <img src="./img/explore.png" alt="...">
                         </div>
@@ -247,7 +249,7 @@
 
                 <!-- 2. 創造美好 露營回憶 -->
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col-8 no_padding">
                         <div id="business_philosophy_2">
                             <img src="./img/create.png" alt="...">
                         </div>
@@ -297,7 +299,7 @@
                         </div>
                     </div>
 
-                    <div class="col-8">
+                    <div class="col-8 no_padding">
                         <div class="business_philosophy_1">
                             <img src="./img/enjoy.png" alt="...">
                         </div>
@@ -307,9 +309,9 @@
 
             <script>
                 // 圓框 parallax.js
-                parallaxInstance1 = new Parallax(document.getElementById("circle_parallax_1"));
-                parallaxInstance2 = new Parallax(document.getElementById("circle_parallax_2"));
-                parallaxInstance3 = new Parallax(document.getElementById("circle_parallax_3"));
+                var parallaxInstance1 = new Parallax(document.getElementById("circle_parallax_1"));
+                var parallaxInstance2 = new Parallax(document.getElementById("circle_parallax_2"));
+                var parallaxInstance3 = new Parallax(document.getElementById("circle_parallax_3"));
             </script>
 
         </section>

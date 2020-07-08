@@ -85,13 +85,9 @@
     .business_philosophy_2 {
         // 檢視一下顯示範圍
         // background-color: yellow;
-
-        img {
-            margin-top: 10%;
-            margin-bottom: 20%;
-
-            margin-left: 10%;
-        }
+        
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     // 大圖
@@ -101,11 +97,14 @@
         // 檢視一下顯示範圍
         // background-color: red;
 
-        img {
-            margin-top: 10%;
-            margin-bottom: 20%;
+        padding-top: 10%;
+        padding-bottom: 30%;
 
-            margin-left: 10%;
-        }
+        margin-left: 10%;
+    }
+
+    .no_padding {
+        padding-right: 0; 
+        padding-left: 0;
     }
 }
