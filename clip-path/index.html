@@ -6,42 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS clip-path maker</title>
 
-	<link href="favicon.ico" rel="shortcut icon">
+    <link href="favicon.ico" rel="shortcut icon">
     <!-- 引用 bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
+    <!-- 引用 swiper 離線版 -->
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+
     <style>
-        /* 宣告變數 */
-        :root {
-            --clipPath: polygon(50% 0%, 0% 100%, 100% 100%);
+        html,
+        body {
+            position: relative;
+            height: 100%;
         }
 
-        .demo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        body {
+            background: #000;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
         }
 
-        .box {
-            width: 300px;
+        .swiper-container {
+            width: 100%;
             height: 300px;
-            background-image: url('./img/girl-01.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-            clip-path: var(--clipPath);
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .gallery-top {
+            height: 80%;
+            width: 100%;
+        }
+
+        .gallery-thumbs {
+            height: 20%;
+            box-sizing: border-box;
+            padding: 10px 0;
+        }
+
+        .gallery-thumbs .swiper-slide {
+            width: 25%;
+            height: 100%;
+            opacity: 0.4;
+        }
+
+        .gallery-thumbs .swiper-slide-thumb-active {
+            opacity: 1;
         }
     </style>
 </head>
 
 <body>
-    <div class="demo">
-        <div class="box"></div>
+    <!-- Swiper -->
+    <div class="swiper-container gallery-top">
+        <div class="swiper-wrapper swiper">
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
     </div>
-    <button id="type1" type="button" class="btn btn-primary">三角形</button>
-    <button id="type2" type="button" class="btn btn-primary">圓形</button>
-
+    <div class="swiper-container gallery-thumbs">
+        <div class="swiper-wrapper arrows">
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -53,31 +89,129 @@
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
 
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
 
-        <script>
 
-            let type1 = document.querySelector('#type1');
-            type1.addEventListener('click',ftype1,false);
+
+    <script>
+
+        var data = [
+            {
+                code: 'clip-path: polygon(50% 0%, 0% 100%, 100% 100%);'
+            },
+            {
+                code: 'clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);'
+            },
+            {
+                code: 'clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);'
+            },
+            {
+                code: 'clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);'
+            },
+            {
+                code: 'clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);'
+            },
+            {
+                code: 'clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);'
+            },
+            {
+                code: 'clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);'
+            },
+            {
+                code: 'clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);'
+            }
+
+            // {
+            //     code: 'clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);'
+            // },
+            // {
+            //     code: 'clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);'
+            // },
+            // {
+            //     code: 'clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);'
+            // },
+            // {
+            //     code: 'clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+            // },
+            // {
+            //     code: 'clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);'
+            // },
+            // {
+            //     code: 'clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);'
+            // },
+            // {
+            //     code: 'clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);'
+            // },
+            // {
+            //     code: 'clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);'
+            // },
+            // {
+            //     code: 'clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);'
+            // },
+            // {
+            //     code: 'clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);'
+            // },
+            // {
+            //     code: 'clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);'
+            // },
+            // {
+            //     code: 'clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);'
+            // },
+            // {
+            //     code: 'clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);'
+            // },
+            // {
+            //     code: 'clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);'
+            // },
+            // {
+            //     code: 'clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);'
+            // },
+            // {
+            //     code: 'clip-path: inset(5% 20% 15% 10%);'
+            // },
+            // {
+            //     code: 'clip-path: polygon();'
+            // },
+            // {
+            //     code: 'clip-path: circle(50% at 50% 50%);'
+            // },
+            // {
+            //     code: 'clip-path: ellipse(25% 40% at 50% 50%);'
+            // }
             
-            let type2 = document.querySelector('#type2');
-            type2.addEventListener('click',ftype2,false);
+        ];
 
-            function ftype1()
-            {
-                console.log('三角形');
-                document.documentElement.style.setProperty(`--clipPath`, 'polygon(50% 0%, 0% 100%, 100% 100%)');
-                document.documentElement.style.setProperty(`--clipPath`, 'polygon(50% 0%, 0% 100%, 100% 100%)');
+        var sw = document.querySelector('.swiper');
+        var ar = document.querySelector('.arrows');
+
+        data.forEach(x => {
+            sw.innerHTML += `
+            <div class="swiper-slide" title="${x.code}" style="background-image:url(./img/girl-01.webp); ${x.code}"></div>
+            `;
+            ar.innerHTML += `
+            <div class="swiper-slide" title="${x.code}" style="background-image:url(./img/girl-01.webp); ${x.code}"></div>
+            `;
+        });
+
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+        });
+        var galleryTop = new Swiper('.gallery-top', {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            thumbs: {
+                swiper: galleryThumbs
             }
+        });
 
-            function ftype2()
-            {
-                console.log('圓形');
-                document.documentElement.style.setProperty(`--clipPath`, 'circle(50% at 50% 50%)');
-                document.documentElement.style.setProperty(`--clipPath`, 'circle(50% at 50% 50%)');
-            }
-
-
-        </script>
+    </script>
 </body>
 
 </html>
