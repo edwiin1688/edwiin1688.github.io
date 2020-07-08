@@ -55,17 +55,27 @@
             z-index: 1;
         }
 
+        main {
+            position: relative;
+            background-color: #F3ECE2;
+        }
+        #to-booking{
+            display: inline;
+        }
         #booking {
-            width: 250px;
-            height: 250px;
+            width: 200px;
+            height: 200px;
             background-image: url("./img/booknow.png");
-            background-position: center bottom;
+            background-position: center;
+            background-position-y: 50px;
             background-size: contain;
             background-repeat: no-repeat;
-            position: fixed;
-            right: 0;
-            bottom: 138px;
-            z-index: 1;
+            position: sticky;
+            left: 100%;
+            bottom: 0px;
+            z-index: 3;
+            
+            
         }
 
         @media (max-width: 750px) {
@@ -87,12 +97,12 @@
     <script src="./node_modules/swiper/js/swiper.min.js"></script>
 
 
-            <!-- 上面是相依的 js -->
-        <!-- 上面是相依的 js -->
+    <!-- 上面是相依的 js -->
+    <!-- 上面是相依的 js -->
     <!-- 上面是相依的 js -->
 
 
-    <!-- Loading 載入地球動畫 -->    
+    <!-- Loading 載入地球動畫 -->
     <script src="./js/earth-loader.js"></script>
 
     <!-- SCROLL DOWN -->
@@ -105,9 +115,7 @@
     <!-- index !? -->
     <script src="./js/index.js"></script>
 
-    <a href="">
-        <div id="booking"></div>
-    </a>
+
     <!-- TODO -->
 
     <div id="invisible-bar"></div>
@@ -193,12 +201,13 @@
 
     <!-- TODO -->
 
+    <!-- 首頁 備註:從main裡面改出來讓影片能固定在上面不跑位-->
+    <section id="banner">
+        <script src="./js/swiper.js"></script>
+    </section>
 
     <main>
-        <!-- 首頁 -->
-        <section id="banner">
-            <script src="./js/swiper.js"></script>
-        </section>
+
 
         <!-- TODO -->
         <!-- 經營理念 -->
@@ -298,11 +307,11 @@
 
             <script>
                 // 圓框 parallax.js
-                parallaxInstance1 = new Parallax( document.getElementById( "circle_parallax_1" ) );
-                parallaxInstance2 = new Parallax( document.getElementById( "circle_parallax_2" ) );
-                parallaxInstance3 = new Parallax( document.getElementById( "circle_parallax_3" ) );
+                parallaxInstance1 = new Parallax(document.getElementById("circle_parallax_1"));
+                parallaxInstance2 = new Parallax(document.getElementById("circle_parallax_2"));
+                parallaxInstance3 = new Parallax(document.getElementById("circle_parallax_3"));
             </script>
-            
+
         </section>
 
         <!-- TODO -->
@@ -392,7 +401,9 @@
                 </div>
             </div>
         </section>
-
+        <a href="" id="to-booking">
+            <div id="booking"></div>
+        </a>
     </main>
 
 
@@ -446,7 +457,7 @@
     <script src="./js/masonry-data.js"></script>
     <script src="./js/masonry.js"></script>
 
-    
+
     <script src="./js/home-page.js"></script>
     <script>
         // 寫自己的 JS 程式碼在這邊
