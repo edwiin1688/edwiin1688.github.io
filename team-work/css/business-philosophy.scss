@@ -8,20 +8,45 @@
     background-color: $bg_color;
 
     #circle_parallax_1 {
+        left: 30%;
         img {
             padding-top: 70%;
         }
     }
 
     #circle_parallax_2 {
+        top: -10%;
+        left: -15%;
+        img {
+            padding-top: 70%;
+
+            z-index: -1;
+        }
+    }
+
+    #circle_parallax_3 {
+        left: 30%;
         img {
             padding-top: 70%;
         }
     }
 
-    #circle_parallax_3 {
-        img {
-            padding-top: 70%;
+
+    .bp_left {
+        .bp_title {
+            color: black;
+        }
+    }
+
+    .bp_right {
+        .bp_title {
+            color: black;
+
+            top: 8%;
+        }
+
+        .bp_text {
+            left: 10%;
         }
     }
 
@@ -45,7 +70,7 @@
 
         position: absolute;
         top: 60%;
-        left: 30%;
+        left: 60%;
 
         z-index: 2;
 
