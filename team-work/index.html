@@ -97,7 +97,7 @@
     <!-- 引用 Swiper 的 js (離線版) -->
     <script src="./node_modules/swiper/js/swiper.min.js"></script>
     <!-- 引用 lax.js 的 js (離線版) -->
-    <script src="/node_modules/lax.js/lib/lax.min.js"></script>
+    <script src="./node_modules/lax.js/lib/lax.min.js"></script>
     <script>
         // 初始化 lax.js
         window.onload = function () {
@@ -111,6 +111,11 @@
             window.requestAnimationFrame(updateLax);
         }
     </script>
+
+    <!-- npm install lazyload -->
+    <!-- <script type="text/javascript" src="jquery-1.11.3.min.js"></script> -->
+    <script src="./node_modules/lazyload/lazyload.min.js"></script>
+
     <!-- 上面是相依的 js -->
     <!-- 上面是相依的 js -->
     <!-- 上面是相依的 js -->
@@ -216,7 +221,7 @@
 
         <!-- TODO -->
         <!-- 經營理念 -->
-        <section id="business_philosophy" class="">
+        <section id="philosophy" class="">
             <div class="container-fluid">
 
                 <!-- 1. 帶著家人 走進自然 -->
@@ -245,7 +250,7 @@
 
                     <div class="col-8 no_padding">
                         <div class="business_philosophy_1">
-                            <img src="./img/explore.png" alt="...">
+                            <img src="./img/explore.webp" alt="...">
                         </div>
                     </div>
                 </div>
@@ -254,7 +259,7 @@
                 <div class="row">
                     <div class="col-8 no_padding">
                         <div id="business_philosophy_2">
-                            <img src="./img/create.png" alt="...">
+                            <img src="./img/create.webp" alt="...">
                         </div>
                     </div>
 
@@ -304,7 +309,7 @@
 
                     <div class="col-8 no_padding">
                         <div class="business_philosophy_1">
-                            <img src="./img/enjoy.png" alt="...">
+                            <img src="./img/enjoy.webp" alt="...">
                         </div>
                     </div>
                 </div>
@@ -400,7 +405,7 @@
         <section id="Time-line" class="default_bg">
             <div id="stroke-timeline" class="timeline-container">
                 <h1 class="project-name">行程資訊</h1>
-                <img src="./img/time-line-0.png" alt="">
+                <img src="./img/time-line-0.webp" alt="">
                 <div id="timeline">
                     <!-- 動態放入行程資料 -->
                 </div>
@@ -468,7 +473,8 @@
         <h6 style="z-index: 2;">scrollTop</h6>
     </div>
     <div class="d-flex justify-content-center fixed-bottom">
-        <img id="scroll_down" class="lax" data-lax-opacity="0 1, 100 0" src="./img/scroll_down.png" alt="SCROLL DOWN">
+        <img id="scroll_down" class="lax" data-lax-opacity="0 1, 100 0" src="./img/scroll_down.webp" alt="SCROLL DOWN">
+        <!-- data-lax-opacity 語法參考網址：https://github.com/alexfoxy/lax.js -->
     </div>
     <script>
         // 偵測 scroll 高
@@ -477,7 +483,7 @@
         });
 
         console.log('#banner:　' + document.querySelector('#banner').offsetTop);
-        console.log('#business_philosophy:　' + document.querySelector('#business_philosophy').offsetTop);
+        console.log('#philosophy:　' + document.querySelector('#philosophy').offsetTop);
         console.log('#guided_tour:　' + document.querySelector('#guided_tour').offsetTop);
         console.log('#section-4:　' + document.querySelector('#section-4').offsetTop);
         console.log('#masonry:　' + document.querySelector('#masonry').offsetTop);
@@ -506,6 +512,9 @@
                 burger_bot.classList.remove("black")
             }
         })
+
+        // lazyload
+        $("img.lazyload").lazyload();
     </script>
 </body>
 

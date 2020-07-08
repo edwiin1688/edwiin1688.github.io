@@ -1,47 +1,47 @@
-#business_philosophy {
+#philosophy {
   background-color: #f3ece2;
 }
 
-#business_philosophy #circle_parallax_1 {
+#philosophy #circle_parallax_1 {
   left: 30%;
 }
 
-#business_philosophy #circle_parallax_1 img {
+#philosophy #circle_parallax_1 img {
   padding-top: 70%;
 }
 
-#business_philosophy #circle_parallax_2 {
+#philosophy #circle_parallax_2 {
   top: -10%;
   left: -15%;
 }
 
-#business_philosophy #circle_parallax_2 img {
+#philosophy #circle_parallax_2 img {
   padding-top: 70%;
   z-index: -1;
 }
 
-#business_philosophy #circle_parallax_3 {
+#philosophy #circle_parallax_3 {
   left: 30%;
 }
 
-#business_philosophy #circle_parallax_3 img {
+#philosophy #circle_parallax_3 img {
   padding-top: 70%;
 }
 
-#business_philosophy .bp_left .bp_title {
+#philosophy .bp_left .bp_title {
   color: black;
 }
 
-#business_philosophy .bp_right .bp_title {
+#philosophy .bp_right .bp_title {
   color: black;
   top: 8%;
 }
 
-#business_philosophy .bp_right .bp_text {
+#philosophy .bp_right .bp_text {
   left: 10%;
 }
 
-#business_philosophy .bp_title {
+#philosophy .bp_title {
   color: black;
   position: absolute;
   top: 20%;
@@ -53,7 +53,7 @@
   line-height: 108px;
 }
 
-#business_philosophy .bp_text {
+#philosophy .bp_text {
   color: white;
   position: absolute;
   top: 60%;
@@ -65,18 +65,18 @@
   line-height: 24px;
 }
 
-#business_philosophy .business_philosophy_2 {
+#philosophy .business_philosophy_2 {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-#business_philosophy .business_philosophy_1 {
+#philosophy .business_philosophy_1 {
   padding-top: 10%;
   padding-bottom: 30%;
   margin-left: 10%;
 }
 
-#business_philosophy .no_padding {
+#philosophy .no_padding {
   padding-right: 0;
   padding-left: 0;
 }

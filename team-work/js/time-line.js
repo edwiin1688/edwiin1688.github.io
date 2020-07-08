@@ -17,7 +17,7 @@ timeline_data.forEach(f => {
                 </div>
 
                 <div class="timeline-content">
-                    <img src="${f.image}" alt="">
+                    <img src="${f.image}" alt="" data-src="./img/loader.gif">
                 </div>
             </div>
             `;
@@ -29,8 +29,8 @@ timeline_data.forEach(f => {
                     <i class="fa ${f.icon}" aria-hidden="true"></i>
                 </div>
 
-                <div class="timeline-content right">
-                    <img src="${f.image}" alt="">
+                <div class="timeline-content right lazyload">
+                    <img src="${f.image}" alt="" data-src="./img/loader.gif">
                 </div>
 
                 <div class="timeline-content ${f.direction}">
