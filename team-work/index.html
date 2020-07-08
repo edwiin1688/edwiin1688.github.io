@@ -45,7 +45,6 @@
     <link rel="stylesheet" href="./css/homepage-activity.css">
 
     <!-- footer 的 css -->
-    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/the-footer.css">
 
 
@@ -97,8 +96,21 @@
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- 引用 Swiper 的 js (離線版) -->
     <script src="./node_modules/swiper/js/swiper.min.js"></script>
+    <!-- 引用 lax.js 的 js (離線版) -->
+    <script src="/node_modules/lax.js/lib/lax.min.js"></script>
+    <script>
+        // 初始化 lax.js
+        window.onload = function () {
+            lax.setup() // init
 
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
 
+            window.requestAnimationFrame(updateLax);
+        }
+    </script>
     <!-- 上面是相依的 js -->
     <!-- 上面是相依的 js -->
     <!-- 上面是相依的 js -->
@@ -107,15 +119,6 @@
     <!-- Loading 載入地球動畫 -->
     <script src="./js/earth-loader.js"></script>
 
-    <!-- SCROLL DOWN -->
-    <div class="d-flex justify-content-center fixed-bottom">
-        <button type="button" id="scroll_down" class="btn">
-            <img src="./img/scroll_down.png" alt="SCROLL DOWN">
-        </button>
-    </div>
-
-    <!-- index !? -->
-    <script src="./js/index.js"></script>
 
 
     <!-- TODO -->
@@ -413,7 +416,7 @@
 
 
     <!-- footer -->
-    <footer>
+    <footer id="end">
         <a href="">
             <div id="top-btn">
                 <div id="f-arrow"></div>
@@ -460,7 +463,32 @@
     <script src="./js/masonry.js"></script>
 
 
+    <!-- SCROLL DOWN -->
+    <div class="d-flex justify-content-center fixed-top">
+        <h6 style="z-index: 2;">scrollTop</h6>
+    </div>
+    <div class="d-flex justify-content-center fixed-bottom">
+        <img id="scroll_down" class="lax" data-lax-opacity="0 1, 100 0" src="./img/scroll_down.png" alt="SCROLL DOWN">
+    </div>
+    <script>
+        // 偵測 scroll 高
+        $(window).scroll(function () {
+            $('h6').text('scrollTop: ' + $(window).scrollTop());
+        });
+
+        console.log('#banner:　' + document.querySelector('#banner').offsetTop);
+        console.log('#business_philosophy:　' + document.querySelector('#business_philosophy').offsetTop);
+        console.log('#guided_tour:　' + document.querySelector('#guided_tour').offsetTop);
+        console.log('#section-4:　' + document.querySelector('#section-4').offsetTop);
+        console.log('#masonry:　' + document.querySelector('#masonry').offsetTop);
+        console.log('#Time-line:　' + document.querySelector('#Time-line').offsetTop);
+        console.log('#end:　' + document.querySelector('#end').offsetTop);
+    </script>
+
     <script src="./js/home-page.js"></script>
+
+    <!-- index !? -->
+    <script src="./js/index.js"></script>
     <script>
         // 寫自己的 JS 程式碼在這邊
         window.addEventListener("scroll", () => {
