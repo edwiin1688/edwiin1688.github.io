@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/home-page.css">
+    <link rel="stylesheet" href="./css/the-footer.css">
+<style>
+   
+</style>
+
+
+</head>
+
+<body>
+    <!-- nav-bar -->
+    <div id="invisible-bar"></div>
+    <section class="home-page">
+        <div class="slider-nav">
+            <div></div>
+        </div>
+        <div id="white-line"></div>
+        <div class="burger-box">
+            <div id="hamburger" class="hamburglar">
+                <div class="burger-icon">
+                    <div class="burger-container">
+                        <span class="burger-bun-top"></span>
+                        <span class="burger-filling"></span>
+                        <span class="burger-bun-bot"></span>
+                    </div>
+                </div>
+
+                <!-- svg ring containter -->
+                <div class="burger-ring">
+                    <svg class="svg-ring">
+                        <path class="path" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"
+                            d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2" />
+                    </svg>
+                </div>
+                <!-- the masked path that animates the fill to the ring -->
+
+                <svg width="0" height="0">
+                    <mask id="mask">
+                        <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000" stroke-miterlimit="10"
+                            stroke-width="4" d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4" />
+                    </mask>
+                </svg>
+                <div class="path-burger">
+                    <div class="animate-path">
+                        <!-- <div class="path-rotation"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-container">
+            <div class="nav-bg"></div>
+            <div class="menu-content">
+                <div class="menu-title">
+                    <div id="title"></div>
+                </div>
+                <div class="info-box">
+                    <div class="info">
+                        <div>
+                            <a href="" id="a-margin">經營理念</a>
+                        </div>
+                        <div>
+                            <a href="">營區導覽</a>
+                        </div>
+                        <div>
+                            <a href="">活動體驗</a>
+                        </div>
+                        <div>
+                            <a href="">行程資訊</a>
+                        </div>
+                        <div>
+                            <a href="">美食佳餚</a>
+                        </div>
+                        <div>
+                            <a href="">媒體報導</a>
+                        </div>
+                    </div>
+                    <div class="menu-footer">
+                        <div id="follow">follow us</div>
+                        <div class="menu-icon-box">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div id="copyright">©2020 Flybird copyright</div>
+                    </div>
+                </div>
+                <div class="menu-drawing"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+<!-- footer -->
+    <footer>
+        <a href="">
+            <div id="top-btn">
+                <div id="f-arrow"></div>
+                <div id="f-top">Top</div>
+            </div>
+        </a>
+        <div class="container">
+            <div id="footer-title"></div>
+            <div id="footer-line"></div>
+            <div class="f-infomation-box">
+                <div class="f-phone">
+                    <div id="phone-icon"></div>
+                    <div id="phone-text">預約專線 0930816898</div>
+                </div>
+                <div class="f-mail">
+                    <div id="mail-icon"></div>
+                    <div id="mail-text">info@icaping.tw</div>
+                </div>
+                <div class="f-adress">
+                    <div id="adress-icon"></div>
+                    <div id="adress-text">新竹縣五峰鄉花園村10鄰天湖205-12號</div>
+                </div>
+            </div>
+            <div class="f-icon-box">
+                <a href="">
+                    <div id="f-fb"></div>
+                </a>
+                <a href="">
+                    <div id="f-line"></div>
+                </a>
+            </div>
+        </div>
+
+        <div id="copyright">© 2020 Flybird Glamping</div>
+    </footer>
+
+
+    <script src="./js/home-page.js"></script>
+</body>
+
+</html>
