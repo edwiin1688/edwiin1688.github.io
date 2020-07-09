@@ -41,7 +41,7 @@ footer{
     .container{
         width: 865px;
         height: 80px;
-        // border: 1px dashed white;
+        border: 1px dashed white;
         margin: 0 auto 0 auto;
         position: relative;
         top: 30px;
@@ -79,10 +79,10 @@ footer{
             }
         }
         .f-infomation-box{
-            width: 300px;
+            width: 320px;
             height: 70px;
             
-            // border: 1px white solid;
+            border: 1px white solid;
             // display: inline-block;
             margin: 0 0 0 26px;
             @media (max-width:750px){
@@ -92,9 +92,9 @@ footer{
                 margin: 0;
             }
             .f-phone{
-                width: 290px;
+                width: 310px;
                 height: 22px;
-                // border: 1px red solid;
+                border: 1px red solid;
                 display: flex;
                 #phone-icon{
                     width: 25px;
@@ -107,10 +107,10 @@ footer{
                 #phone-text{
                     width: 240px;
                     height: 20px;
-                    // border: blanchedalmond 1px solid;
+                    border: blanchedalmond 1px solid;
                     margin: 0 0 0 15px;
                     color: white;
-                    font-size: 12px;
+                    font-size: 14px;
                     line-height: 20px;
                     letter-spacing: 1.5px;
                     
@@ -140,15 +140,15 @@ footer{
                     // border: blanchedalmond 1px solid;
                     margin: 0 0 0 15px;
                     color: white;
-                    font-size: 12px;
+                    font-size: 14px;
                     line-height: 20px;
                     letter-spacing: 1.5px;
                 }
             }
             .f-adress{
-                width: 290px;
+                width: 320px;
                 height: 22px;
-                // border: 1px rgb(204, 137, 13) solid;
+                border: 1px rgb(204, 137, 13) solid;
                 display: flex;
                 #adress-icon{
                     width: 25px;
@@ -159,12 +159,12 @@ footer{
                     background-repeat: no-repeat;
                 }
                 #adress-text{
-                    width: 240px;
+                    width: 290px;
                     height: 20px;
-                    // border: blanchedalmond 1px solid;
+                    border: blanchedalmond 1px solid;
                     margin: 0 0 0 15px;
                     color: white;
-                    font-size: 12px;
+                    font-size: 14px;
                     line-height: 20px;
                     letter-spacing: 1.5px;
                 }
@@ -173,7 +173,7 @@ footer{
         .f-icon-box{
             width: 150px;
             height: 70px;
-            // border: 1px white solid;
+            border: 1px white solid;
             display: flex;
             align-items: center;
             justify-content: space-evenly;
@@ -210,5 +210,6 @@ footer{
         position: absolute;
         bottom: 15px;
         left: calc(50% - 75px);
+        color: white;
     }
 }

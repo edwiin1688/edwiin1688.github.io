@@ -49,6 +49,7 @@ footer a #top-btn #f-top {
 footer .container {
   width: 865px;
   height: 80px;
+  border: 1px dashed white;
   margin: 0 auto 0 auto;
   position: relative;
   top: 30px;
@@ -104,8 +105,9 @@ footer .container #footer-line {
 }
 
 footer .container .f-infomation-box {
-  width: 300px;
+  width: 320px;
   height: 70px;
+  border: 1px white solid;
   margin: 0 0 0 26px;
 }
 
@@ -122,8 +124,9 @@ footer .container .f-infomation-box {
 }
 
 footer .container .f-infomation-box .f-phone {
-  width: 290px;
+  width: 310px;
   height: 22px;
+  border: 1px red solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,9 +144,10 @@ footer .container .f-infomation-box .f-phone #phone-icon {
 footer .container .f-infomation-box .f-phone #phone-text {
   width: 240px;
   height: 20px;
+  border: blanchedalmond 1px solid;
   margin: 0 0 0 15px;
   color: white;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 20px;
   letter-spacing: 1.5px;
 }
@@ -177,14 +181,15 @@ footer .container .f-infomation-box .f-mail #mail-text {
   height: 20px;
   margin: 0 0 0 15px;
   color: white;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 20px;
   letter-spacing: 1.5px;
 }
 
 footer .container .f-infomation-box .f-adress {
-  width: 290px;
+  width: 320px;
   height: 22px;
+  border: 1px #cc890d solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,11 +205,12 @@ footer .container .f-infomation-box .f-adress #adress-icon {
 }
 
 footer .container .f-infomation-box .f-adress #adress-text {
-  width: 240px;
+  width: 290px;
   height: 20px;
+  border: blanchedalmond 1px solid;
   margin: 0 0 0 15px;
   color: white;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 20px;
   letter-spacing: 1.5px;
 }
@@ -212,6 +218,7 @@ footer .container .f-infomation-box .f-adress #adress-text {
 footer .container .f-icon-box {
   width: 150px;
   height: 70px;
+  border: 1px white solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,4 +257,5 @@ footer #copyright {
   position: absolute;
   bottom: 15px;
   left: calc(50% - 75px);
+  color: white;
 }
