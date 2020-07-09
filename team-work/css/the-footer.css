@@ -5,7 +5,7 @@ footer {
   position: relative;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   footer {
     height: 252px;
   }
@@ -47,9 +47,8 @@ footer a #top-btn #f-top {
 }
 
 footer .container {
-  width: 865px;
+  width: 720px;
   height: 80px;
-  border: 1px dashed white;
   margin: 0 auto 0 auto;
   position: relative;
   top: 30px;
@@ -59,7 +58,7 @@ footer .container {
   padding-top: 5px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   footer .container {
     width: 350px;
     height: 185px;
@@ -86,7 +85,7 @@ footer .container #footer-title {
   background-size: contain;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   footer .container #footer-title {
     display: none;
   }
@@ -98,7 +97,7 @@ footer .container #footer-line {
   border-right: 1px white solid;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   footer .container #footer-line {
     display: none;
   }
@@ -107,11 +106,10 @@ footer .container #footer-line {
 footer .container .f-infomation-box {
   width: 320px;
   height: 70px;
-  border: 1px white solid;
   margin: 0 0 0 26px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   footer .container .f-infomation-box {
     height: 80px;
   }
@@ -124,17 +122,16 @@ footer .container .f-infomation-box {
 }
 
 footer .container .f-infomation-box .f-phone {
-  width: 310px;
+  width: 305px;
   height: 22px;
-  border: 1px red solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 footer .container .f-infomation-box .f-phone #phone-icon {
-  width: 25px;
-  height: 22px;
+  width: 22px;
+  height: 20px;
   background-image: url("../img/footer_phone.png");
   background-position: center;
   background-size: contain;
@@ -144,8 +141,7 @@ footer .container .f-infomation-box .f-phone #phone-icon {
 footer .container .f-infomation-box .f-phone #phone-text {
   width: 240px;
   height: 20px;
-  border: blanchedalmond 1px solid;
-  margin: 0 0 0 15px;
+  margin: 0 0 0 7px;
   color: white;
   font-size: 14px;
   line-height: 20px;
@@ -161,15 +157,15 @@ footer .container .f-infomation-box .f-mail {
   margin: 2.5px 0 2.5px 0;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   footer .container .f-infomation-box .f-mail {
     margin: 5px 0 5px 0;
   }
 }
 
 footer .container .f-infomation-box .f-mail #mail-icon {
-  width: 25px;
-  height: 22px;
+  width: 22px;
+  height: 20px;
   background-image: url("../img/footer_mail.png");
   background-position: center;
   background-size: contain;
@@ -179,25 +175,24 @@ footer .container .f-infomation-box .f-mail #mail-icon {
 footer .container .f-infomation-box .f-mail #mail-text {
   width: 240px;
   height: 20px;
-  margin: 0 0 0 15px;
+  margin: 0 0 0 7px;
   color: white;
   font-size: 14px;
   line-height: 20px;
-  letter-spacing: 1.5px;
+  letter-spacing: 4.5px;
 }
 
 footer .container .f-infomation-box .f-adress {
-  width: 320px;
+  width: 305px;
   height: 22px;
-  border: 1px #cc890d solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 footer .container .f-infomation-box .f-adress #adress-icon {
-  width: 25px;
-  height: 22px;
+  width: 22px;
+  height: 20px;
   background-image: url("../img/footer_adress.png");
   background-position: center;
   background-size: contain;
@@ -207,8 +202,7 @@ footer .container .f-infomation-box .f-adress #adress-icon {
 footer .container .f-infomation-box .f-adress #adress-text {
   width: 290px;
   height: 20px;
-  border: blanchedalmond 1px solid;
-  margin: 0 0 0 15px;
+  margin: 0 0 0 7px;
   color: white;
   font-size: 14px;
   line-height: 20px;
@@ -218,7 +212,6 @@ footer .container .f-infomation-box .f-adress #adress-text {
 footer .container .f-icon-box {
   width: 150px;
   height: 70px;
-  border: 1px white solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

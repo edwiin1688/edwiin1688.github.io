@@ -4,7 +4,7 @@ footer{
     height: 160px;
     background-color: #608D4B;
     position: relative;
-    @media (max-width:750px){
+    @media (max-width:768px){
         height: 252px;
     }
     a{ 
@@ -39,15 +39,15 @@ footer{
     }
    
     .container{
-        width: 865px;
+        width: 720px;
         height: 80px;
-        border: 1px dashed white;
+        // border: 1px dashed white;
         margin: 0 auto 0 auto;
         position: relative;
         top: 30px;
         display: flex;
         padding-top: 5px;
-        @media (max-width:750px){
+        @media (max-width:768px){
             width: 350px;
             height: 185px;
             flex-wrap: wrap;
@@ -65,7 +65,7 @@ footer{
             background-size: contain;
             // border: 1px black solid;
             // display: inline-block;
-            @media (max-width:750px) {
+            @media (max-width:768px) {
                 display: none;
             }
         }
@@ -74,7 +74,7 @@ footer{
             height: 75px;
             border-right: 1px white solid;
             // display: inline-block;
-            @media (max-width:750px){
+            @media (max-width:768px){
                 display: none;
             }
         }
@@ -82,23 +82,23 @@ footer{
             width: 320px;
             height: 70px;
             
-            border: 1px white solid;
+            // border: 1px white solid;
             // display: inline-block;
             margin: 0 0 0 26px;
-            @media (max-width:750px){
+            @media (max-width:768px){
                 height: 80px;
             }
             @media (max-width:360px){
                 margin: 0;
             }
             .f-phone{
-                width: 310px;
+                width: 305px;
                 height: 22px;
-                border: 1px red solid;
+                // border: 1px red solid;
                 display: flex;
                 #phone-icon{
-                    width: 25px;
-                    height: 22px;
+                    width: 22px;
+                    height: 20px;
                     background-image: url("../img/footer_phone.png");
                     background-position: center;
                     background-size: contain;
@@ -107,8 +107,8 @@ footer{
                 #phone-text{
                     width: 240px;
                     height: 20px;
-                    border: blanchedalmond 1px solid;
-                    margin: 0 0 0 15px;
+                    // border: blanchedalmond 1px solid;
+                    margin: 0 0 0 7px;
                     color: white;
                     font-size: 14px;
                     line-height: 20px;
@@ -123,12 +123,12 @@ footer{
                 // border: 1px rgb(44, 14, 151) solid;
                 display: flex;
                 margin: 2.5px 0 2.5px 0;
-                @media (max-width:750px){
+                @media (max-width:768px){
                     margin: 5px 0 5px 0;
                 }
                 #mail-icon{
-                    width: 25px;
-                    height: 22px;
+                    width: 22px;
+                    height: 20px;
                     background-image: url("../img/footer_mail.png");
                     background-position: center;
                     background-size: contain;
@@ -138,21 +138,21 @@ footer{
                     width: 240px;
                     height: 20px;
                     // border: blanchedalmond 1px solid;
-                    margin: 0 0 0 15px;
+                    margin: 0 0 0 7px;
                     color: white;
                     font-size: 14px;
                     line-height: 20px;
-                    letter-spacing: 1.5px;
+                    letter-spacing: 4.5px;
                 }
             }
             .f-adress{
-                width: 320px;
+                width: 305px;
                 height: 22px;
-                border: 1px rgb(204, 137, 13) solid;
+                // border: 1px rgb(204, 137, 13) solid;
                 display: flex;
                 #adress-icon{
-                    width: 25px;
-                    height: 22px;
+                    width: 22px;
+                    height: 20px;
                     background-image: url("../img/footer_adress.png");
                     background-position: center;
                     background-size: contain;
@@ -161,8 +161,8 @@ footer{
                 #adress-text{
                     width: 290px;
                     height: 20px;
-                    border: blanchedalmond 1px solid;
-                    margin: 0 0 0 15px;
+                    // border: blanchedalmond 1px solid;
+                    margin: 0 0 0 7px;
                     color: white;
                     font-size: 14px;
                     line-height: 20px;
@@ -173,7 +173,7 @@ footer{
         .f-icon-box{
             width: 150px;
             height: 70px;
-            border: 1px white solid;
+            // border: 1px white solid;
             display: flex;
             align-items: center;
             justify-content: space-evenly;

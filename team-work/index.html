@@ -72,19 +72,33 @@
             background-position-y: 50px;
             background-size: contain;
             background-repeat: no-repeat;
-            position: sticky;
-            left: 100%;
+            position: fixed;
+            right: 0px;
             bottom: 0px;
             z-index: 3;
-
+            /* border: 1px red solid; */
+        }
+        #booking.act{
+            width: 200px;
+            height: 200px;
+            background-image: url("./img/booknow.webp");
+            background-position: center;
+            background-position-y: 50px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            right:0px;
+            bottom: 0px;
 
         }
-
-        @media (max-width: 750px) {
+        /* @media (max-width: 750px) {
             #booking {
                 display: none;
             }
-        }
+            #booking.act{
+                display: none;
+            }
+        }  */
     </style>
 </head>
 
@@ -517,6 +531,20 @@
                 burger_bot.classList.remove("black")
             }
         })
+
+        
+        window.addEventListener("scroll", () => {
+            var booking = document.querySelector("#booking")
+            var scrolled = window.scrollY
+            if (scrolled >= 6710) {
+               booking.classList.add("act")
+            } else {
+                booking.classList.remove("act")
+            }
+        })
+        
+
+
 
         // lazyload
         $("img.lazyload").lazyload();
