@@ -63,6 +63,7 @@ footer{
             background-position: center bottom;
             background-repeat: no-repeat;
             background-size: contain;
+            cursor: pointer;
             // border: 1px black solid;
             // display: inline-block;
             @media (max-width:768px) {
@@ -186,6 +187,9 @@ footer{
                     background-position: center;
                     background-size: contain;
                     background-repeat: no-repeat;
+                    &:hover{
+                        background-image: url("../img/icon_fb_h.png");
+                    }
                 }
             }
             a{
@@ -197,6 +201,9 @@ footer{
                     background-position: center;
                     background-size: contain;
                     background-repeat: no-repeat;
+                    &:hover{
+                        background-image: url("../img/icon_line_h.png");
+                    }
                 }
             }
             

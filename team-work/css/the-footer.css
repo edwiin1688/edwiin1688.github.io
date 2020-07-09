@@ -83,6 +83,7 @@ footer .container #footer-title {
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: contain;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -233,6 +234,10 @@ footer .container .f-icon-box a #f-fb {
   background-repeat: no-repeat;
 }
 
+footer .container .f-icon-box a #f-fb:hover {
+  background-image: url("../img/icon_fb_h.png");
+}
+
 footer .container .f-icon-box a #f-line {
   width: 50px;
   height: 50px;
@@ -241,6 +246,10 @@ footer .container .f-icon-box a #f-line {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+footer .container .f-icon-box a #f-line:hover {
+  background-image: url("../img/icon_line_h.png");
 }
 
 footer #copyright {

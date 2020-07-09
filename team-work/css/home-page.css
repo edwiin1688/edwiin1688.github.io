@@ -406,6 +406,10 @@
   margin: 0 20px 0 0;
 }
 
+.home-page .menu-container .menu-content .info-box .menu-footer .menu-icon-box div:nth-child(1):hover {
+  background-image: url(../img/icon_fb_h.png);
+}
+
 .home-page .menu-container .menu-content .info-box .menu-footer .menu-icon-box div:nth-child(2) {
   width: 60px;
   height: 60px;
@@ -415,6 +419,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
+}
+
+.home-page .menu-container .menu-content .info-box .menu-footer .menu-icon-box div:nth-child(2):hover {
+  background-image: url(../img/icon_line_h.png);
 }
 
 @media (max-width: 700px) {

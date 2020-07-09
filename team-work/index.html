@@ -94,6 +94,7 @@
                 display: none;
             }
         } 
+        
     </style>
 </head>
 
@@ -221,7 +222,10 @@
 
     <!-- TODO -->
 
+    <!-- to-top的錨點 -->
+    <div id="thetop"></div>
     <!-- 首頁 備註:從main裡面改出來讓影片能固定在上面不跑位-->
+
     <section id="banner">
         <script src="./js/swiper.js"></script>
     </section>
@@ -438,14 +442,14 @@
 
     <!-- footer -->
     <footer id="end">
-        <a href="">
+        <a href="#thetop">
             <div id="top-btn">
                 <div id="f-arrow"></div>
                 <div id="f-top">Top</div>
             </div>
         </a>
         <div class="container">
-            <div id="footer-title"></div>
+            <div id="footer-title" onclick="window.location.href='https://edwiin1688.github.io/team-work/'"></div>
             <div id="footer-line"></div>
             <div class="f-infomation-box">
                 <div class="f-phone">
@@ -518,7 +522,7 @@
             }
         })
 
-        
+        // 立即預購的小人卡在footer效果
         window.addEventListener("scroll", () => {
             var main = document.querySelector("main")
             var booking = document.querySelector("#booking")
@@ -530,8 +534,9 @@
                 booking.classList.remove("act")
             }
         })
+     
+    
         
-
 
 
         // lazyload

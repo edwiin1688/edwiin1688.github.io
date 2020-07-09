@@ -279,6 +279,9 @@
               background-repeat: no-repeat;
               cursor: pointer;
               margin: 0 20px 0 0;
+              &:hover{
+                background-image: url(../img/icon_fb_h.png);
+              }
             }
             div:nth-child(2) {
               width: 60px;
@@ -290,6 +293,9 @@
               background-repeat: no-repeat;
               // background-color: steelblue;
               cursor: pointer;
+              &:hover{
+                background-image: url(../img/icon_line_h.png);
+              }
             }
             @media(max-width: 700px){
               transform: translateX(45px);
