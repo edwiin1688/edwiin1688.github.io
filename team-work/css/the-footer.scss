@@ -66,6 +66,10 @@ footer{
             cursor: pointer;
             // border: 1px black solid;
             // display: inline-block;
+            &:hover{
+                filter: drop-shadow(5px 5px 5px #333);
+                
+              }
             @media (max-width:768px) {
                 display: none;
             }

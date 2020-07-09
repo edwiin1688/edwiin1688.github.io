@@ -86,6 +86,11 @@ footer .container #footer-title {
   cursor: pointer;
 }
 
+footer .container #footer-title:hover {
+  -webkit-filter: drop-shadow(5px 5px 5px #333);
+          filter: drop-shadow(5px 5px 5px #333);
+}
+
 @media (max-width: 768px) {
   footer .container #footer-title {
     display: none;

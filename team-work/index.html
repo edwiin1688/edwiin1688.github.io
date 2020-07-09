@@ -87,15 +87,16 @@
             right: 0px;
             bottom: 0px;
         }
+
         @media (max-width: 750px) {
             #booking {
                 display: none;
             }
-            #booking.act{
+
+            #booking.act {
                 display: none;
             }
-        } 
-        
+        }
     </style>
 </head>
 
@@ -143,7 +144,9 @@
     <div id="invisible-bar"></div>
     <section class="home-page">
         <div class="slider-nav">
-            <div></div>
+            <a href="" onclick="window.location.href='https://edwiin1688.github.io/team-work/'">
+                <div id="title"></div>
+            </a>
         </div>
         <div id="white-line"></div>
         <div class="burger-box">
@@ -183,7 +186,9 @@
             <div class="nav-bg"></div>
             <div class="menu-content">
                 <div class="menu-title">
-                    <a href=""><div id="title"></div></a>
+                    <a href="" onclick="window.location.href='https://edwiin1688.github.io/team-work/'">
+                        <div id="title"></div>
+                    </a>
                 </div>
                 <div class="info-box">
                     <div class="info">
@@ -270,7 +275,7 @@
                         </div>
                     </div>
 
-                    
+
                 </div>
 
                 <!-- 2. 創造美好 露營回憶 -->
@@ -533,15 +538,15 @@
             var main = document.querySelector("main")
             var booking = document.querySelector("#booking")
             var scrolled = window.scrollY
-            var change = main.scrollHeight;- 160
+            var change = main.scrollHeight; - 160
             if (scrolled >= change) {
                 booking.classList.add("act")
             } else {
                 booking.classList.remove("act")
             }
         })
-    
-        
+
+
 
 
 
