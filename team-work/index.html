@@ -74,7 +74,8 @@
             z-index: 3;
             /* border: 1px red solid; */
         }
-        #booking.act{
+
+        #booking.act {
             width: 200px;
             height: 200px;
             background-image: url("./img/booknow.webp");
@@ -83,10 +84,11 @@
             background-size: contain;
             background-repeat: no-repeat;
             position: absolute;
-            right:0px;
+            right: 0px;
             bottom: 0px;
 
         }
+
         /* @media (max-width: 750px) {
             #booking {
                 display: none;
@@ -237,7 +239,14 @@
 
                 <!-- 1. 帶著家人 走進自然 -->
                 <div class="row">
-                    <div class="col-4 bp_left">
+
+                    <div class="col-8 order-1 no_padding">
+                        <div class="business_philosophy_1">
+                            <img src="./img/explore.webp" alt="...">
+                        </div>
+                    </div>
+
+                    <div class="col-4 order-0 bp_left">
                         <div class="bp_title">
                             帶著家人<br>
                             &emsp;&emsp;走進自然<br>
@@ -259,11 +268,7 @@
                         </div>
                     </div>
 
-                    <div class="col-8 no_padding">
-                        <div class="business_philosophy_1">
-                            <img src="./img/explore.webp" alt="...">
-                        </div>
-                    </div>
+                    
                 </div>
 
                 <!-- 2. 創造美好 露營回憶 -->
@@ -290,14 +295,21 @@
                             <!-- 圓圈 -->
                             <img data-depth="0.2" src="./img/circle.svg" lt="...">
                             <!-- 圓框 -->
-                            <img data-depth="-2" src="./img/circle-red.svg" alt="...">
+                            <img class="img_top" data-depth="-2" src="./img/circle-red.svg" alt="...">
                         </div>
                     </div>
                 </div>
 
                 <!-- 3. 享受自然 森林芬多精 -->
                 <div class="row">
-                    <div class="col-4 bp_left">
+
+                    <div class="col-8 order-1 no_padding">
+                        <div class="business_philosophy_1">
+                            <img src="./img/enjoy.webp" alt="...">
+                        </div>
+                    </div>
+
+                    <div class="col-4 order-0 bp_left">
                         <div class="bp_title">
                             享受自然<br>
                             &emsp;&emsp;森林芬多精<br>
@@ -318,11 +330,6 @@
                         </div>
                     </div>
 
-                    <div class="col-8 no_padding">
-                        <div class="business_philosophy_1">
-                            <img src="./img/enjoy.webp" alt="...">
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -519,17 +526,17 @@
             }
         })
 
-        
+
         window.addEventListener("scroll", () => {
             var booking = document.querySelector("#booking")
             var scrolled = window.scrollY
             if (scrolled >= 6710) {
-               booking.classList.add("act")
+                booking.classList.add("act")
             } else {
                 booking.classList.remove("act")
             }
         })
-        
+
 
 
 
