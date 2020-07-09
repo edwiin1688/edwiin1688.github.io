@@ -68,6 +68,7 @@ video {
         align-items: center;
 
         img {
+            width: 100%;// ! 不設定 圖片會很大
             background-color: $bg_color;
         }
 

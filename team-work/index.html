@@ -37,10 +37,6 @@
     <link rel="stylesheet" href="./css/swiper.css">
     <!-- 經營理念 -->
     <link rel="stylesheet" href="./css/business-philosophy.css">
-    <!-- 瀑布流 -->
-    <link rel="stylesheet" href="./css/masonry.css">
-    <!-- 「行程資訊」引用 Timeline 的 css -->
-    <link rel="stylesheet" href="./css/time-line.css">
     <!-- 首頁活動區塊(section-4)部分 -->
     <link rel="stylesheet" href="./css/homepage-activity.css">
     <!-- 首頁瀑布流(section-5)部分 -->
@@ -423,12 +419,14 @@
                 <div id="sliderpic-13"></div>
             </div>
             <div class="slidetext-box">
-                <div id="slidetext"><pre>加入飛鳥   體驗樂活人生</pre></div>
+                <div id="slidetext">
+                    <pre>加入飛鳥   體驗樂活人生</pre>
+                </div>
                 <div id="slideline"></div>
             </div>
         </section>
 
-       
+
         <a href="" id="to-booking">
             <div id="booking"></div>
         </a>
@@ -477,15 +475,6 @@
     </footer>
 
 
-    <!-- Timeline -->
-    <script src="./js/time-line-data.js"></script>
-    <script src="./js/time-line.js"></script>
-
-    <!--  瀑布流 -->
-    <script src="./js/masonry-data.js"></script>
-    <script src="./js/masonry.js"></script>
-
-
     <!-- SCROLL DOWN -->
     <div class="d-flex justify-content-center fixed-top">
         <h6 style="z-index: 2;">scrollTop</h6>
@@ -504,8 +493,6 @@
         console.log('#philosophy:　' + document.querySelector('#philosophy').offsetTop);
         console.log('#guided_tour:　' + document.querySelector('#guided_tour').offsetTop);
         console.log('#section-4:　' + document.querySelector('#section-4').offsetTop);
-        console.log('#masonry:　' + document.querySelector('#masonry').offsetTop);
-        console.log('#Time-line:　' + document.querySelector('#Time-line').offsetTop);
         console.log('#end:　' + document.querySelector('#end').offsetTop);
     </script>
 
