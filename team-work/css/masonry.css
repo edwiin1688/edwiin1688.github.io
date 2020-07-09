@@ -3,10 +3,13 @@
 }
 
 .masonry {
+  -webkit-column-count: 4;
   column-count: 4;
+  -webkit-column-gap: 1em;
   column-gap: 1em;
   margin: 1.5em;
   padding: 0;
+  -webkit-column-gap: 1.5em;
   column-gap: 1.5em;
   font-size: .85em;
 }
@@ -37,7 +40,8 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-shadow: 2px 2px 4px 0 #ccc;
+  -webkit-box-shadow: 2px 2px 4px 0 #ccc;
+          box-shadow: 2px 2px 4px 0 #ccc;
 }
 
 .masonry .item img {
@@ -46,24 +50,28 @@
 
 @media only screen and (max-width: 320px) {
   .masonry .masonry {
+    -webkit-column-count: 1;
     column-count: 1;
   }
 }
 
 @media only screen and (min-width: 321px) and (max-width: 768px) {
   .masonry .masonry {
+    -webkit-column-count: 2;
     column-count: 2;
   }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
   .masonry .masonry {
+    -webkit-column-count: 3;
     column-count: 3;
   }
 }
 
 @media only screen and (min-width: 1201px) {
   .masonry .masonry {
+    -webkit-column-count: 4;
     column-count: 4;
   }
 }

@@ -1,0 +1,296 @@
+#section-5{
+    margin: auto;
+    width: 100%;
+    height: calc(80vw + 100px);
+    max-height: 1330px;
+    background-color: blanchedalmond;
+    position: relative;
+    @media (max-width:576px){
+        height: calc(250vw + 160px);
+        max-height: 900px;
+    }
+    .waterflow-container{
+        position: relative;
+        top: 80px;
+        width: 77vw;
+        height: 56vw;
+       /* max-height: 1080px; */
+        //  border: 1px brown solid;
+        display: flex;
+        flex-wrap: wrap;
+        @media (max-width:576px) {
+            min-height: 600px;
+            height: 120vh;
+            max-height: 600px;
+        }
+        div{
+            width: 23%;
+            height: 18.5%;
+            border: cadetblue 1px solid;
+            margin: 10px 10px 10px 10px;
+        }
+        #sliderpic-1{
+            position: absolute;
+            top: calc(55.5% + 67px);
+             margin: 10px 10px 10px 0;
+            width: 23%;
+            height: calc(37% + 20px);
+            background-image: url("../img/waterfall3.webp");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            @media (max-width:576px){
+               width: calc(35% + 20px);
+                height: calc(42% + 20px);
+                top: 0;
+            }
+        }
+        #sliderpic-2{
+            position: absolute;
+            top: calc(37% + 45px);
+            left: calc(23% + 20px);
+             margin: 10px 10px 10px 0;
+            width: 23%;
+            height: calc(37% + 20px);
+            background-image: url("../img/waterfall7.webp");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            @media (max-width:576px){
+                width: calc(35% + 20px);
+                height: calc(21% + 0px);
+                top: calc(84% + 80px);
+                left: calc(35% + 40px);
+                border-radius: 0 0 50px 0;
+            }
+        }
+        #sliderpic-3{
+            position: absolute;
+            top: 0%;
+            left: calc(46% + 45px);
+             margin: 10px 10px 10px 0px;
+            width: 23%;
+            height: calc(37% + 20px);
+            background-image: url("../img/waterfall2.webp");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            @media (max-width:576px){
+                width: calc(35% + 20px);
+                height: calc(42% + 20px);
+                left: 0;
+                top: calc(63% + 60px);
+            }
+        }
+        #sliderpic-4{
+            position: absolute;
+            top: 0%;
+            left: 0;
+             margin: 10px 10px 10px 0;
+            width: 23%;
+            height: 18%.5;
+            background-image: url("../img/waterfall8.webp");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            @media (max-width:576px){
+                width: calc(35% + 20px);
+                height: calc(21% + 0px);
+                top: calc(63% + 60px);
+                left: calc(35% + 40px);
+                border-radius: 0;
+            }
+        }
+        #sliderpic-5{
+            position: absolute;
+            top: calc(18.5% + 20px);
+            left: calc(23% + 20px);
+             margin: 10px 10px 10px 0;
+            width: 23%;
+            height: 18%.5;
+            background-image: url("../img/waterfall4.webp");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            @media (max-width:576px){
+                width: calc(35% + 20px);
+                 height: calc(21% + 0px);
+                 top: calc(21% + 20px);
+                 left: calc(35% + 40px);
+             }
+        }
+        #sliderpic-6{
+            position: absolute;
+            top: 0%;
+            left: calc(69% + 65px);
+             margin: 10px 10px 10px 0;
+            width: 23%;
+            height: 18%.5;
+            background-image: url("../img/waterfall5.webp");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 0 50px 0 0 ;
+            @media (max-width:576px){
+                width: calc(35% + 20px);
+                height: calc(21% + 0px);
+                 top: 0;
+                 left: calc(35% + 40px);
+             }
+        }
+        #sliderpic-7{
+            position: absolute;
+            top: calc(37% + 45px);
+            left: calc(69% + 65px);
+             margin: 10px 10px 10px 0;
+            width: 23%;
+            height: 18%.5;
+            background-image: url("../img/waterfall1.webp");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            @media (max-width:576px){
+               display: none;
+            }
+        }
+        #sliderpic-8{
+            position: absolute;
+            top: calc(55.5% + 67px);
+            left: calc(46% + 45px);
+             margin: 10px 10px 10px 0;
+            width: calc(46% + 20px);
+            height: calc(37% + 20px);
+            background-image: url("../img/waterfall9.webp");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 0 0 50px 0;
+            @media (max-width:576px){
+                width: calc(70% + 60px);
+                height: calc(21% + 0px);
+                top: calc(42% + 40px);
+                left: 0;
+                border-radius: 0;
+            }
+        }
+        #sliderpic-9{
+            position: absolute;
+            top: calc(18.5% + 23px);
+             margin: 10px 10px 10px 0;
+            width: 23%;
+            height: calc(37% + 20px);
+            background-color: #ADC9E0;
+            // opacity: 0.9;
+            /* background-image: url("./img/waterfall3.jpg"); */
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            @media (max-width:576px){
+                display: none;
+            }
+        }
+        #sliderpic-10{
+            position: absolute;
+            top: 0%;
+            left: calc(23% + 20px);
+             margin: 10px 10px 10px 0;
+            width: 23%;
+            height: 18%.5;
+            background-color: #EFC97D;
+            // opacity: 0.9;
+            /* background-image: url("./img/waterfall4.jpg"); */
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            @media (max-width:576px){
+                display: none;
+            }
+        }
+        #sliderpic-11{
+            position: absolute;
+            top: calc(37% + 45px);
+            left: calc(46% + 45px);
+             margin: 10px 10px 10px 0;
+            width: 23%;
+            height: 18%.5;
+            background-color:#EFB6C8;
+            // opacity: 0.9;
+            /* background-image: url("./img/waterfall4.jpg"); */
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            @media (max-width:576px){
+                display: none;
+            }
+        }
+        #sliderpic-12{
+            position: absolute;
+            top: calc(18.5% + 20px);
+            left: calc(69% + 65px);
+             margin: 10px 10px 10px 0;
+            width: 23%;
+            height: 18%.5;
+            background-color: #CBE59A;
+            // opacity: 0.9;
+            /* background-image: url("./img/waterfall4.jpg"); */
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            @media (max-width:576px){
+                display: none;
+            }
+        }
+        #sliderpic-13{
+            position: absolute;
+            top: calc(74% + 87px);
+            left: calc(23% + 20px);
+             margin: 10px 10px 10px 0;
+            width: 23%;
+            height: 18%.5;
+            background-color: #E6B6E4;
+            // opacity: 0.9;
+            /* background-image: url("./img/waterfall4.jpg"); */
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            @media (max-width:576px){
+                display: none;
+            }
+        }
+    }
+    .slidetext-box{
+        width: 60px;
+        height: 44vw;
+        // border: 1px red solid;
+        position: absolute;
+        top: 90px;
+        left: 86vw;
+       
+        @media (max-width:576px) {
+            left: 76vw;
+        }
+        #slidetext{
+            width: 100%;
+            writing-mode: vertical-rl;
+            line-height: 60px;
+            font-size: 1.5vw;
+            font-weight: bolder;
+            letter-spacing: 5px;
+            // border: 1px blue solid;
+            @media (max-width:1050px){
+                font-size: 2vw;
+            }
+            @media (max-width:576px){
+                font-size: 4vw;
+            }
+        }
+        #slideline{
+            width: 50%;
+            height: 4vw;
+            border-right: 1px black solid;
+            @media (max-width:576px){
+                height: 8vw;
+            }
+        }
+    }
+}
