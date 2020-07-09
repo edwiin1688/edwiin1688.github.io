@@ -86,7 +86,7 @@
     color: white;
     font-size: 32px;
     line-height: 68px;
-    margin: auto;
+    margin: 0 0 0 60px;
     padding: 8px 0 0 0;
     background-image: url("../img/LOGO.png");
     background-position: top;
@@ -226,7 +226,12 @@
   }
 }
 
-.home-page .menu-container .menu-content .menu-title #title {
+.home-page .menu-container .menu-content .menu-title a:hover {
+  -webkit-transform: skewX(5deg);
+          transform: skewX(5deg);
+}
+
+.home-page .menu-container .menu-content .menu-title a #title {
   width: 250px;
   height: 120px;
   font-size: 36px;
@@ -239,15 +244,20 @@
           transform: translateX(80px);
 }
 
+.home-page .menu-container .menu-content .menu-title a #title:hover {
+  -webkit-filter: drop-shadow(5px 5px 5px #333);
+          filter: drop-shadow(5px 5px 5px #333);
+}
+
 @media (max-width: 700px) {
-  .home-page .menu-container .menu-content .menu-title #title {
+  .home-page .menu-container .menu-content .menu-title a #title {
     -webkit-transform: translateX(45px);
             transform: translateX(45px);
   }
 }
 
 @media (max-width: 700px) {
-  .home-page .menu-container .menu-content .menu-title #title {
+  .home-page .menu-container .menu-content .menu-title a #title {
     -webkit-transform: translateX(0);
             transform: translateX(0);
     margin: 0 0 0 45px;
@@ -255,7 +265,7 @@
 }
 
 @media (max-width: 550px) {
-  .home-page .menu-container .menu-content .menu-title #title {
+  .home-page .menu-container .menu-content .menu-title a #title {
     margin: 0 0 0 20px;
   }
 }
@@ -373,6 +383,14 @@
   width: 100px;
 }
 
+.home-page .menu-container .menu-content .info-box .info div a:hover {
+  opacity: 0.7;
+  -webkit-transform: skewX(5deg);
+          transform: skewX(5deg);
+  -webkit-filter: drop-shadow(5px 5px 5px #333);
+          filter: drop-shadow(5px 5px 5px #333);
+}
+
 @media (max-width: 650px) {
   .home-page .menu-container .menu-content .info-box .info {
     width: 100%;
@@ -395,6 +413,7 @@
 }
 
 .home-page .menu-container .menu-content .info-box .menu-footer #follow {
+  cursor: pointer;
   width: 130px;
   height: 30px;
   line-height: 30px;
@@ -402,6 +421,22 @@
   -webkit-transform: translateX(90px);
           transform: translateX(90px);
   margin: 0 0 20px 0;
+}
+
+.home-page .menu-container .menu-content .info-box .menu-footer #follow a {
+  text-decoration: none;
+  color: snow;
+  position: absolute;
+  right: 0px;
+  width: 100%;
+}
+
+.home-page .menu-container .menu-content .info-box .menu-footer #follow a:hover {
+  opacity: 0.7;
+  -webkit-transform: skewX(5deg);
+          transform: skewX(5deg);
+  -webkit-filter: drop-shadow(5px 5px 5px #333);
+          filter: drop-shadow(5px 5px 5px #333);
 }
 
 @media (max-width: 700px) {

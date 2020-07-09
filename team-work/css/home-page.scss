@@ -65,7 +65,7 @@
         color: white;
         font-size: 32px;
         line-height: 68px;
-        margin: auto;
+        margin: 0 0 0 60px;
         padding: 8px 0 0 0;
         background-image: url("../img/LOGO.png");
         background-position: top;
@@ -159,29 +159,38 @@
         @media(max-width: 650px){
           display: none;
         }
-        #title {
-          width: 250px;
-          // border: 1px solid blue;
-          height: 120px;
-          font-size: 36px;
-          font-weight: bolder;
-          background-image: url("../img/LOGO.png");
-          background-position: center left;
-          background-repeat: no-repeat;
-          background-size: contain;
-          transform: translateX(80px);
-          @media(max-width: 700px){
-            transform: translateX(45px);
+        a{
+          &:hover{
+            transform: skewX(5deg);
           }
-          @media(max-width: 700px){
-            transform: translateX(0);
-            margin: 0 0 0 45px;
-           
-          }
-          @media(max-width: 550px){
-            margin: 0 0 0 20px;
+          #title {
+            width: 250px;
+            // border: 1px solid blue;
+            height: 120px;
+            font-size: 36px;
+            font-weight: bolder;
+            background-image: url("../img/LOGO.png");
+            background-position: center left;
+            background-repeat: no-repeat;
+            background-size: contain;
+            transform: translateX(80px);
+            &:hover{
+              filter: drop-shadow(5px 5px 5px #333);
+            }
+            @media(max-width: 700px){
+              transform: translateX(45px);
+            }
+            @media(max-width: 700px){
+              transform: translateX(0);
+              margin: 0 0 0 45px;
+             
+            }
+            @media(max-width: 550px){
+              margin: 0 0 0 20px;
+            }
           }
         }
+     
       }
       .info-box{
         width: 50%;
@@ -231,6 +240,7 @@
             text-align: center;
             margin: 15px 0 15px 0;
             transform: translateX(90px);
+            
             @media(max-width: 700px){
               transform: translateX(45px);
             }
@@ -255,6 +265,11 @@
              position: absolute;
              right: 0px;
              width: 100px;
+             &:hover{
+              opacity: 0.7;
+              transform: skewX(5deg);
+              filter: drop-shadow(5px 5px 5px #333);
+            }
             }
           }
          
@@ -276,13 +291,29 @@
             bottom: calc(-40% + 30px);
         }
           #follow {
+           cursor: pointer;
           width: 130px;
           height: 30px;
           line-height: 30px;
           font-size: 24px;
           transform: translateX(90px);
           margin: 0 0 20px 0;
+         
+         
+          a {
+            text-decoration: none;
+            color: snow;
+           position: absolute;
+           right: 0px;
+           width: 100%;
+            &:hover{
+            opacity: 0.7;
+            transform: skewX(5deg);
+            filter: drop-shadow(5px 5px 5px #333);
+            }
+          }
           // border: 1px solid blue;
+          
             @media(max-width: 700px){
               transform: translateX(45px);
             }
