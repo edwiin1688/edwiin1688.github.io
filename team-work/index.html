@@ -89,16 +89,15 @@
             position: absolute;
             right:0px;
             bottom: 0px;
-
         }
-        /* @media (max-width: 750px) {
+        @media (max-width: 750px) {
             #booking {
                 display: none;
             }
             #booking.act{
                 display: none;
             }
-        }  */
+        } 
     </style>
 </head>
 
@@ -534,9 +533,11 @@
 
         
         window.addEventListener("scroll", () => {
+            var main = document.querySelector("main")
             var booking = document.querySelector("#booking")
             var scrolled = window.scrollY
-            if (scrolled >= 6710) {
+            var change = main.scrollHeight;- 160
+            if (scrolled >= change) {
                booking.classList.add("act")
             } else {
                 booking.classList.remove("act")
