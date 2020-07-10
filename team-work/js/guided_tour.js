@@ -1,3 +1,5 @@
+
+
 // 環境導覽(輪撥效果)
 $.getScript('./js/guided_tour_data.js', function () {
     // do something...

@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Work - Project F</title>
 
-    <!-- FIXME 解決 favicon 錯誤方法 -->
+    <!-- ! FIXME 解決 favicon 錯誤方法 -->
     <!-- <link rel="shortcut icon" href="#" /> -->
     <link href="favicon.ico" rel="shortcut icon">
 
-    <!-- 引用 bootstrap 的 css (離線版) -->
+    <!-- ? 引用 bootstrap 的 css (離線版) -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 
-    <!-- 引用 swiper 的 css (離線版) -->
+    <!-- todo 引用 swiper 的 css (離線版) -->
     <link rel="stylesheet" href="./node_modules/swiper/css/swiper.min.css">
 
-    <!-- Parallax v3.1.0 -->
+    <!-- x Parallax v3.1.0 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 
 
@@ -43,6 +43,9 @@
     <link rel="stylesheet" href="./css/home-waterfall.css">
     <!-- footer 的 css -->
     <link rel="stylesheet" href="./css/the-footer.css">
+
+
+    <link rel="stylesheet" href="./css/Product.css">
 
 
     <style>
@@ -354,7 +357,82 @@
         <!-- 環境導覽 -->
         <section id="guided_tour" class="default_bg">
             <!-- <script src="./js/guided_tour_data.js"></script> -->
-            <script src="./js/guided_tour.js"></script>
+
+            <div class="swiper-block">
+
+                <div class="row mb-cunstom">
+                    <div class="col-12 swiper-block">
+                        <div class="swiper-container">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="picture">
+                                        <div class="mask"></div>
+                                        <img class="swiper-lazy" src="./img/guided_tour/ill_schedule.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="picture">
+                                        <div class="mask"></div>
+                                        <img class="swiper-lazy" src="./img/guided_tour/ill_camp.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="picture">
+                                        <div class="mask"></div>
+                                        <img class="swiper-lazy" src="./img/guided_tour/ill_food.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <i class="swiper-button-prev-custom swiper-button fas fa-chevron-circle-left"></i>
+                        <i class="swiper-button-next-custom swiper-button fas fa-chevron-circle-right"></i>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <script>
+                var swiper = new Swiper(".swiper-container", {
+                        effect: "coverflow",
+                        grabCursor: true,
+                        centeredSlides: true,
+                        slidesPerView: "auto",
+                        loop: true,
+                        lazy: true,
+                        coverflowEffect: {
+                            rotate: 0,
+                            stretch: 400,
+                            depth: 300,
+                            modifier: 1,
+                            slideShadows: true
+                        },
+                        pagination: {
+                            el: ".swiper-pagination",
+                            type: 'custom',
+                            renderCustom: function (swiper, current, total) {
+                                return '<span class="pagination-text">' + ('0' + current).slice(-2) + '  /  ' + ('0' + total).slice(-2) + '</span>';
+                            }
+                        },
+                        loop: true,
+                        autoplay: {
+                            delay: 2000
+                        }
+
+                    },
+                        $('.swiper-button-next-custom').click(function () {
+                            swiper.slideNext();
+                        }),
+                        $('.swiper-button-prev-custom').click(function () {
+                            swiper.slidePrev();
+                        })
+                    );
+            </script>
         </section>
 
         <!-- TODO -->
@@ -516,7 +594,11 @@
     <!-- index !? -->
     <script src="./js/index.js"></script>
     <script>
+        // TODO:
+        // FIXME:
+
         // 寫自己的 JS 程式碼在這邊
+
         window.addEventListener("scroll", () => {
             var burger_top = document.querySelector(".burger-bun-top")
             var burger_filling = document.querySelector(".burger-filling")
