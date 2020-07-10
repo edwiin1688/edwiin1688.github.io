@@ -13,8 +13,8 @@ body>.loading-mask>.wrapper {
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 140px;
-    width: 140px;
+    height: 300px;/* default: 140px */
+    width: 300px;/* default: 140px */
     min-width: auto;
     overflow: hidden;
     border: 2px solid #263238;
@@ -30,7 +30,7 @@ body>.loading-mask .loader {
 
 body>.loading-mask>.wrapper>svg {
     stroke: #263238;
-    animation: rotation 5s linear 0s infinite;
+    /* animation: rotation 5s linear 0s infinite; */
     max-width: 1000px;
 }
 
