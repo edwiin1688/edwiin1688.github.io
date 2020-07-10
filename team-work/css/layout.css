@@ -31,7 +31,7 @@
   width: 7%;
   min-width: 68px;
   height: 100%;
-  background-color: #5a5655;
+  background-color: #608D4C;
   position: fixed;
   top: 0;
   right: 0%;
@@ -1071,8 +1071,28 @@
   }
 }
 
-.slider-nav.opacity {
+.slider-nav:hover {
   opacity: 1;
+}
+
+.slider-nav.opacity {
+  opacity: 0;
+}
+
+.slider-nav.opacity:hover {
+  opacity: 0;
+}
+
+.slider-nav.opacity:hover ~ .home-page .burger-box .burger-bun-top.black {
+  background-color: orange;
+}
+
+.slider-nav.opacity:hover ~ .home-page .burger-box .burger-bun-bot.black {
+  background-color: orange;
+}
+
+.slider-nav.opacity:hover ~ .home-page .burger-box .burger-filling.black {
+  background-color: orange;
 }
 
 @-webkit-keyframes guide {
@@ -1159,15 +1179,15 @@ h4 {
 }
 
 .burger-box:hover .burger-bun-bot {
-  background-color: #242323;
+  background-color: orange;
 }
 
 .burger-box:hover .burger-bun-top {
-  background-color: #242323;
+  background-color: orange;
 }
 
 .burger-box:hover .burger-filling {
-  background-color: #242323;
+  background-color: orange;
 }
 
 .burger-box:hover .burger-bun-bot.black {

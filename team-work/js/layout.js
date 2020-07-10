@@ -36,7 +36,7 @@ window.addEventListener("scroll", () => {
     
    
     var scrolled = window.scrollY
-    if (scrolled >= window.innerHeight - 85) {
+    if (scrolled >= 450) {
        slider_nav.classList.add("opacity")
     } else {
         slider_nav.classList.remove("opacity")

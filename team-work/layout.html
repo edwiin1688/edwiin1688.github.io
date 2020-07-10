@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/bookman-for-paging.css">
     <link rel="stylesheet" href="./css/the-footer.css">
 <style>
    main{
@@ -14,6 +15,7 @@
        background-color: rgb(236, 67, 101);
        opacity: 0.2;
    }
+   
 </style>
 
 
@@ -28,6 +30,7 @@
     </div>
     <div id="invisible-bar"></div>
     <section class="home-page">
+       
         <div class="paging-top">
             <!-- 分頁手繪圖 -->
             <div id="paging-food-pic"></div>
@@ -141,6 +144,9 @@
 
 <!-- footer -->
 <footer id="end">
+    <a href="" id="to-booking">
+        <div id="booking"></div>
+    </a>
     <a href="#thetop">
         <div id="top-btn">
             <div id="f-arrow"></div>
@@ -178,38 +184,38 @@
 </footer>
 
 
-    <script src="./js/home-page.js"></script>
+    <script src="./js/layout.js"></script>
 
 
     <script>
-        //  window.addEventListener("scroll", () => {
-        //         var burger_top = document.querySelector(".burger-bun-top")
-        //         var burger_filling = document.querySelector(".burger-filling")
-        //         var burger_bot = document.querySelector(".burger-bun-bot")
-        //         var scrolled = window.scrollY
-        //         if (scrolled >= 450) {
-        //             burger_top.classList.add("black")
-        //             burger_filling.classList.add("black")
-        //             burger_bot.classList.add("black")
-        //         } else {
-        //             burger_top.classList.remove("black")
-        //             burger_filling.classList.remove("black")
-        //             burger_bot.classList.remove("black")
-        //         }
-        //     })
+         window.addEventListener("scroll", () => {
+                var burger_top = document.querySelector(".burger-bun-top")
+                var burger_filling = document.querySelector(".burger-filling")
+                var burger_bot = document.querySelector(".burger-bun-bot")
+                var scrolled = window.scrollY
+                if (scrolled >= 450) {
+                    burger_top.classList.add("black")
+                    burger_filling.classList.add("black")
+                    burger_bot.classList.add("black")
+                } else {
+                    burger_top.classList.remove("black")
+                    burger_filling.classList.remove("black")
+                    burger_bot.classList.remove("black")
+                }
+            })
     
             // 立即預購的小人卡在footer效果
-            // window.addEventListener("scroll", () => {
-            //     var main = document.querySelector("main")
-            //     var booking = document.querySelector("#booking")
-            //     var scrolled = window.scrollY
-            //     var change = main.scrollHeight; - 160
-            //     if (scrolled >= change) {
-            //         booking.classList.add("act")
-            //     } else {
-            //         booking.classList.remove("act")
-            //     }
-            // })
+            window.addEventListener("scroll", () => {
+                var main = document.querySelector("main")
+                var booking = document.querySelector("#booking")
+                var scrolled = window.scrollY
+                var change = main.scrollHeight - 300
+                if (scrolled >= change) {
+                    booking.classList.add("act")
+                } else {
+                    booking.classList.remove("act")
+                }
+            })
     </script>
 </body>
 

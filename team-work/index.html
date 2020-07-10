@@ -41,6 +41,8 @@
     <link rel="stylesheet" href="./css/homepage-activity.css">
     <!-- 首頁瀑布流(section-5)部分 -->
     <link rel="stylesheet" href="./css/home-waterfall.css">
+    <!-- booking小人 -->
+    <link rel="stylesheet" href="./css/bookman.css">
     <!-- footer 的 css -->
     <link rel="stylesheet" href="./css/the-footer.css">
 
@@ -54,52 +56,7 @@
             z-index: 1;
         }
 
-        main {
-            position: relative;
-            background-color: #F3ECE2;
-        }
-
-        #to-booking {
-            display: inline;
-        }
-
-        #booking {
-            width: 200px;
-            height: 200px;
-            background-image: url("./img/booknow.webp");
-            background-position: center;
-            background-position-y: 50px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            position: fixed;
-            right: 0px;
-            bottom: 0px;
-            z-index: 3;
-            /* border: 1px red solid; */
-        }
-
-        #booking.act {
-            width: 200px;
-            height: 200px;
-            background-image: url("./img/booknow.webp");
-            background-position: center;
-            background-position-y: 50px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            position: absolute;
-            right: 0px;
-            bottom: 0px;
-        }
-
-        @media (max-width: 750px) {
-            #booking {
-                display: none;
-            }
-
-            #booking.act {
-                display: none;
-            }
-        }
+       
     </style>
 </head>
 
@@ -600,6 +557,7 @@
         // 寫自己的 JS 程式碼在這邊
 
         window.addEventListener("scroll", () => {
+            
             var burger_top = document.querySelector(".burger-bun-top")
             var burger_filling = document.querySelector(".burger-filling")
             var burger_bot = document.querySelector(".burger-bun-bot")
@@ -620,7 +578,7 @@
             var main = document.querySelector("main")
             var booking = document.querySelector("#booking")
             var scrolled = window.scrollY
-            var change = main.scrollHeight; - 160
+            var change = main.scrollHeight - 0
             if (scrolled >= change) {
                 booking.classList.add("act")
             } else {

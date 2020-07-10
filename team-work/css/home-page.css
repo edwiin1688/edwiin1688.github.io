@@ -43,8 +43,8 @@
   width: 7%;
   min-width: 68px;
   height: 100%;
-  background-color: #5a5655;
-  position: absolute;
+  background-color: #608D4C;
+  position: fixed;
   right: 0%;
   -webkit-animation: guide 2s ease-in-out;
           animation: guide 2s ease-in-out;
@@ -56,10 +56,6 @@
   z-index: 3;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-
-.home-page .slider-nav:hover {
-  opacity: 1;
 }
 
 .home-page .slider-nav:hover ~ .burger-box .burger-bun-top {
@@ -712,8 +708,28 @@
   }
 }
 
-.slider-nav.opacity {
+.slider-nav:hover {
   opacity: 1;
+}
+
+.slider-nav.opacity {
+  opacity: 0;
+}
+
+.slider-nav.opacity:hover {
+  opacity: 0;
+}
+
+.slider-nav.opacity:hover ~ .burger-box .burger-bun-top {
+  background-color: orange;
+}
+
+.slider-nav.opacity:hover ~ .burger-box .burger-bun-bot {
+  background-color: orange;
+}
+
+.slider-nav.opacity:hover ~ .burger-box .burger-filling {
+  background-color: orange;
 }
 
 @-webkit-keyframes guide {
@@ -799,15 +815,15 @@ h4 {
 }
 
 .burger-box:hover .burger-bun-bot {
-  background-color: white;
+  background-color: orange;
 }
 
 .burger-box:hover .burger-bun-top {
-  background-color: white;
+  background-color: orange;
 }
 
 .burger-box:hover .burger-filling {
-  background-color: white;
+  background-color: orange;
 }
 
 .burger-box:hover .burger-bun-bot.black {
