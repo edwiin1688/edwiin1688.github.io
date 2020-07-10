@@ -85,7 +85,7 @@
 .home-page{
   width: 100%;
   height: 450px;
-  background-image: url("../img/layout/");
+  background-image: url("../img/layout/bg.png");
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -189,7 +189,7 @@
       h1{
         width: 100%;
         height: 65%;
-        background-image: url(../img/layout/美食饗宴.svg);
+        background-image: url("../img/layout/營區導覽.svg");
         background-repeat: no-repeat;
         @media (max-width:900px){
           font-size: 48px;
