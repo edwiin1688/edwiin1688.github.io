@@ -30,9 +30,9 @@
 .slider-nav {
   width: 7%;
   min-width: 68px;
-  height: 450px;
+  height: 100%;
   background-color: #608D4C;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0%;
   -webkit-animation: guide 2s ease-in-out;

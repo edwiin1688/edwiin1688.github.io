@@ -38,7 +38,9 @@ window.addEventListener("scroll", () => {
     var scrolled = window.scrollY
     if (scrolled >= window.innerHeight - 85) {
         invisible_bar.classList.add("z-index")
+        burger_box.classList.add("z-index")
     } else {
         invisible_bar.classList.remove("z-index")
+        burger_box.classList.remove("z-index")
     }
 })
