@@ -1,65 +1,84 @@
+// iconType 為 success 中間圓球會變綠色
 var timeline_data = [
     {
-        "title": "週六",
-        "content": "早餐進場時間",
-        "time": "08:00-9:00",
-        "iconType": "",
-        "icon": "fa fa-envelope-o",
-        "direction": "",
-        "image": "./img/create.webp"
-    },
-    {
-        "title": "週六",
-        "content": "收拾行李 Check out",
-        "time": "09:00-09:30",
+        "title": "入場介紹環境",
+        "content": "抵達營區後管家會幫您安排入住登記與簡單環境介紹，並<br>開小牛車幫你把行禮載運到帳篷旁",
+        "time": "11:00",
         "iconType": "",
         "icon": "fa-envelope-open-o",
         "direction": "right",
-        "image": "./img/enjoy.webp"
+        "image": "./img/schedule/schedule1.jpg"
     },
     {
-        "title": "週六",
-        "content": "入場介紹環境",
-        "time": "14:00-15:00",
-        "iconType": "success",
+        "title": "手作 PIZZA DIY",
+        "content": "內容後面再補打",
+        "time": "12:00~13:00",
+        "iconType": "",
+        "icon": "fa fa-envelope-o",
+        "direction": "",
+        "image": "./img/schedule/schedule7.jpg"
+    },
+    {
+        "title": "溪遊玩水",
+        "content": "內容後面再補打",
+        "time": "13:00~15:00",
+        "iconType": "",
+        "icon": "fa-envelope-open-o",
+        "direction": "right",
+        "image": "./img/schedule/schedule9.jpg"
+    },
+    {
+        "title": "精緻下午餐點",
+        "content": "內容後面再補打",
+        "time": "15:00~17:00",
+        "iconType": "",
         "icon": "fa-star",
         "direction": "",
-        "image": "./img/explore.webp"
+        "image": "./img/schedule/schedule2.jpg"
     },
     {
-        "title": "週六",
-        "content": "精緻下午餐點、溪遊",
-        "time": "15:00~17:00",
+        "title": "星光燭火晚餐",
+        "content": "內容後面再補打",
+        "time": "18:00~20:00",
         "iconType": "",
         "icon": "fa-check-square-o",
         "direction": "right",
-        "image": "./img/create.webp"
+        "image": "./img/schedule/schedule3.jpg"
     },
     {
-        "title": "週六",
-        "content": "星光燭火晚餐",
-        "time": "18:00-20:00",
-        "iconType": "",
-        "icon": "fa-user-circle-o",
-        "direction": "",
-        "image": "./img/enjoy.webp"
-    },
-    {
-        "title": "週六",
-        "content": "戶外電影院、夜間抓蝦",
-        "time": "19:00-21:00",
+        "title": "戶外電影院、夜間抓蝦",
+        "content": "內容後面再補打",
+        "time": "19:00~21:00",
         "iconType": "",
         "icon": "fa-key",
-        "direction": "right",
-        "image": "./img/explore.webp"
+        "direction": "",
+        "image": "./img/schedule/schedule4.jpg"
     },
     {
-        "title": "週六",
-        "content": "星空宵夜場",
-        "time": "21:00-22:00",
-        "iconType": "success",
+        "title": "星空宵夜場",
+        "content": "內容後面再補打",
+        "time": "21:00~22:00",
+        "iconType": "",
         "icon": "fa-star",
+        "direction": "right",
+        "image": "./img/schedule/schedule5.jpg"
+    },
+    {
+        "title": "早餐進場時間",
+        "content": "內容後面再補打",
+        "time": "08:00~09:00",
+        "iconType": "",
+        "icon": "fa-key",
         "direction": "",
-        "image": "./img/create.webp"
+        "image": "./img/schedule/schedule6.jpg"
+    },
+    {
+        "title": "收拾行李 Check out",
+        "content": "內容後面再補打",
+        "time": "21:00~22:00",
+        "iconType": "",
+        "icon": "fa-star",
+        "direction": "right",
+        "image": "./img/schedule/schedule8.jpg"
     }
 ];

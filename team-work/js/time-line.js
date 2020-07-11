@@ -9,11 +9,11 @@ timeline_data.forEach(f => {
                     <i class="fa ${f.icon}" aria-hidden="true"></i>
                 </div>
                 <div class="timeline-content ${f.direction}">
-                    <h2>${f.title}</h2>
-                    <p>
-                        ${f.content}
-                    </p>
-                    <span class="time-stamp">${f.time}</span>
+                    <h2>${f.time}</h2>
+                    <h3>
+                        ${f.title}
+                    </h3>
+                    <span class="time-stamp">${f.content}</span>
                 </div>
 
                 <div class="timeline-content">
@@ -34,11 +34,11 @@ timeline_data.forEach(f => {
                 </div>
 
                 <div class="timeline-content ${f.direction}">
-                    <h2>${f.title}</h2>
-                    <p>
-                        ${f.content}
-                    </p>
-                    <span class="time-stamp">${f.time}</span>
+                    <h2>${f.time}</h2>
+                    <h3>
+                        ${f.title}
+                    </h3>
+                    <span class="time-stamp">${f.content}</span>
                 </div>
             </div>
             `;

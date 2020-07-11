@@ -1,4 +1,3 @@
-@charset "UTF-8";
 #invisible-bar {
   width: 7%;
   min-width: 68px;
@@ -160,7 +159,7 @@
   width: 50%;
   height: 80%;
   margin: 0 0 0 0;
-  background-image: url("../img/layout/ill_food.png");
+  background-image: url("../img/guided_tour/ill_camp.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -259,7 +258,7 @@
 .home-page .paging-top .paging-food-text .food-text h1 {
   width: 100%;
   height: 65%;
-  background-image: url("../img/layout/營區導覽.svg");
+  background-image: url("../img/guided_tour/title_camp.svg");
   background-repeat: no-repeat;
 }
 

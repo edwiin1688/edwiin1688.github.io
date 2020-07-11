@@ -1,7 +1,6 @@
 // 首頁
-$.getScript('./js/guided_tour_data.js', function () {
-    var b = document.querySelector('#banner');
-    b.innerHTML += `
+var b = document.querySelector('#banner');
+b.innerHTML += `
                     <!-- Slider
                     Slider main container -->
                     <div class="swiper-container banner">
@@ -26,22 +25,21 @@ $.getScript('./js/guided_tour_data.js', function () {
                     </div>
                     `;
 
-    var swiper_banner = new Swiper('.banner', {
-        spaceBetween: 30,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        autoplay: 3000
-    });
-
-    $('.banner .swiper-button-next').hide();
-    $('.banner .swiper-button-prev').hide();
+var swiper_banner = new Swiper('.banner', {
+    spaceBetween: 30,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    autoplay: 3000
 });
+
+$('.banner .swiper-button-next').hide();
+$('.banner .swiper-button-prev').hide();
 
 
 

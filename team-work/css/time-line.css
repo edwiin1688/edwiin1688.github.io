@@ -9,7 +9,7 @@ body, html {
 }
 
 body {
-  background: #f9f9f9;
+  background: #f7f7c0;
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -30,11 +30,6 @@ a {
 h1, h2, h3, h4 {
   font-family: "Dosis", arial, tahoma, verdana;
   font-weight: 500;
-}
-
-.project-name {
-  text-align: center;
-  padding: 10px 0;
 }
 
 .success {
@@ -83,7 +78,7 @@ h1, h2, h3, h4 {
   position: relative;
 }
 #timeline .timeline-item .timeline-icon {
-  background: #1C71A4;
+  background: #ffffff;
   width: 50px;
   height: 50px;
   position: absolute;
@@ -122,7 +117,7 @@ h1, h2, h3, h4 {
 }
 #timeline .timeline-item .timeline-content h2 {
   padding: 15px;
-  background: #1C71A4;
+  background: #eea33b;
   color: #fff;
   margin: -20px -20px 0 -20px;
   font-weight: 300;
