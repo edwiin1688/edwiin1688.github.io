@@ -30,9 +30,9 @@
 .slider-nav {
   width: 7%;
   min-width: 68px;
-  height: 450px;
+  height: 100%;
   background-color: #608D4C;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0%;
   -webkit-animation: guide 2s ease-in-out;
@@ -177,7 +177,7 @@
   width: 50%;
   height: 80%;
   margin: 0 0 0 0;
-  background-image: url("../img/layout/ill_camp.png");
+  background-image: url("../img/layout/ill_event.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -232,6 +232,10 @@
     width: 70%;
     height: 50%;
   }
+
+  .home-page .paging-top .paging-food-text h5{
+    text-align: center;
+  }
 }
 
 @media (max-width: 588px) {
@@ -276,7 +280,7 @@
 .home-page .paging-top .paging-food-text .food-text h1 {
   width: 100%;
   height: 65%;
-  background-image: url("../img/layout/營區導覽.svg");
+  background-image: url("../img/layout/活動體驗.svg");
   background-repeat: no-repeat;
 }
 
@@ -294,7 +298,6 @@
 @media (max-width: 900px) {
   .home-page .paging-top .paging-food-text .food-text h5 {
     font-size: 28px;
-    text-align: center;
   }
 }
 
@@ -314,7 +317,6 @@
   .home-page .paging-top .paging-food-text h5 {
     line-height: 24px;
     font-size: 18px;
-    text-align: center;
   }
 }
 
@@ -1820,4 +1822,4 @@ h4 {
     left: 36px;
   }
 }
-/*# sourceMappingURL=page-camp-layout.css.map */
+/*# sourceMappingURL=layout.css.map */
