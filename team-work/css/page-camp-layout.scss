@@ -25,10 +25,10 @@
 .slider-nav {
   width: 7%;
   min-width: 68px;
-  height: 100%;
+  height: 450px;
   background-color:#608D4C;
  
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0%;
   animation: guide 2s ease-in-out;
@@ -423,9 +423,7 @@
           display: none;
         }
         a{
-          &:hover{
-            transform: skewX(5deg);
-          }
+          
           #title {
             width: 250px;
             // border: 1px solid blue;
@@ -437,9 +435,9 @@
             background-repeat: no-repeat;
             background-size: contain;
             transform: translateX(80px);
-            &:hover{
-              filter: drop-shadow(5px 5px 5px #333);
-            }
+            // &:hover{
+            //   filter: drop-shadow(5px 5px 5px #333);
+            // }
             @media(max-width: 700px){
               transform: translateX(45px);
             }
@@ -473,7 +471,7 @@
         }
         .info {
           width: 100%;
-          height: 55%;
+          height: 50%;
           min-height: 350px;
           padding: 1vh 0 0 0px;
           display: flex;
@@ -496,8 +494,9 @@
             min-height: 380px;
           }
           div {
+            font-family: "微軟正黑體";
             width: 100px;
-            height: 40px;
+            height: 35px;
             font-size: 24px;
             line-height: 40px;
             text-align: center;
@@ -529,9 +528,8 @@
              right: 0px;
              width: 100px;
              &:hover{
-              opacity: 0.7;
-              transform: skewX(5deg);
-              filter: drop-shadow(5px 5px 5px #333);
+              color: #eea33b;
+              border-bottom: 1px #eea33b solid;
             }
             }
           }
@@ -554,26 +552,23 @@
             bottom: calc(-40% + 30px);
         }
           #follow {
-           cursor: pointer;
+          cursor: context-menu;
           width: 130px;
           height: 30px;
           line-height: 30px;
-          font-size: 24px;
+          font-size: 20px;
           transform: translateX(90px);
           margin: 0 0 20px 0;
          
-         
+
           a {
+            cursor: context-menu;
             text-decoration: none;
             color: snow;
            position: absolute;
            right: 0px;
            width: 100%;
-            &:hover{
-            opacity: 0.7;
-            transform: skewX(5deg);
-            filter: drop-shadow(5px 5px 5px #333);
-            }
+           
           }
           // border: 1px solid blue;
           

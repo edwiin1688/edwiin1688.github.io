@@ -587,11 +587,6 @@
   }
 }
 
-.home-page .menu-container .menu-content .menu-title a:hover {
-  -webkit-transform: skewX(5deg);
-          transform: skewX(5deg);
-}
-
 .home-page .menu-container .menu-content .menu-title a #title {
   width: 250px;
   height: 120px;
@@ -603,11 +598,6 @@
   background-size: contain;
   -webkit-transform: translateX(80px);
           transform: translateX(80px);
-}
-
-.home-page .menu-container .menu-content .menu-title a #title:hover {
-  -webkit-filter: drop-shadow(5px 5px 5px #333);
-          filter: drop-shadow(5px 5px 5px #333);
 }
 
 @media (max-width: 700px) {
@@ -654,7 +644,7 @@
 
 .home-page .menu-container .menu-content .info-box .info {
   width: 100%;
-  height: 55%;
+  height: 50%;
   min-height: 350px;
   padding: 1vh 0 0 0px;
   display: -webkit-box;
@@ -696,8 +686,9 @@
 }
 
 .home-page .menu-container .menu-content .info-box .info div {
+  font-family: "微軟正黑體";
   width: 100px;
-  height: 40px;
+  height: 35px;
   font-size: 24px;
   line-height: 40px;
   text-align: center;
@@ -745,11 +736,8 @@
 }
 
 .home-page .menu-container .menu-content .info-box .info div a:hover {
-  opacity: 0.7;
-  -webkit-transform: skewX(5deg);
-          transform: skewX(5deg);
-  -webkit-filter: drop-shadow(5px 5px 5px #333);
-          filter: drop-shadow(5px 5px 5px #333);
+  color: #eea33b;
+  border-bottom: 1px #eea33b solid;
 }
 
 @media (max-width: 650px) {
@@ -774,30 +762,23 @@
 }
 
 .home-page .menu-container .menu-content .info-box .menu-footer #follow {
-  cursor: pointer;
+  cursor: context-menu;
   width: 130px;
   height: 30px;
   line-height: 30px;
-  font-size: 24px;
+  font-size: 20px;
   -webkit-transform: translateX(90px);
           transform: translateX(90px);
   margin: 0 0 20px 0;
 }
 
 .home-page .menu-container .menu-content .info-box .menu-footer #follow a {
+  cursor: context-menu;
   text-decoration: none;
   color: snow;
   position: absolute;
   right: 0px;
   width: 100%;
-}
-
-.home-page .menu-container .menu-content .info-box .menu-footer #follow a:hover {
-  opacity: 0.7;
-  -webkit-transform: skewX(5deg);
-          transform: skewX(5deg);
-  -webkit-filter: drop-shadow(5px 5px 5px #333);
-          filter: drop-shadow(5px 5px 5px #333);
 }
 
 @media (max-width: 700px) {
