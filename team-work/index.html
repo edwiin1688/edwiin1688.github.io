@@ -55,8 +55,6 @@
         .fixed-bottom {
             z-index: 1;
         }
-
-       
     </style>
 </head>
 
@@ -313,7 +311,6 @@
 
         <!-- 環境導覽 -->
         <section id="guided_tour" class="default_bg">
-            <!-- <script src="./js/guided_tour_data.js"></script> -->
 
             <div class="swiper-block">
 
@@ -324,21 +321,60 @@
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
                                 <div class="swiper-slide">
+
                                     <div class="picture">
-                                        <div class="mask"></div>
-                                        <img class="swiper-lazy" src="./img/guided_tour/ill_schedule.png" alt="">
+                                        <ul>
+                                            <li>
+                                                <div class="mask"></div>
+                                            </li>
+                                            <li>
+                                                <a href="schedule.html"></a>
+                                                <img class="swiper-lazy" src="./img/guided_tour/ill_schedule.png"
+                                                    alt="">
+                                                </a>
+                                            </li>
+                                            <li>
+
+                                                <img class="swiper-lazy" src="./img/guided_tour/title_schedule.svg"
+                                                    alt="">
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="picture">
-                                        <div class="mask"></div>
-                                        <img class="swiper-lazy" src="./img/guided_tour/ill_camp.png" alt="">
+                                        <ul>
+                                            <li>
+                                                <div class="mask"></div>
+                                            </li>
+                                            <li>
+                                                <a href="camp.html"></a>
+                                                <img class="swiper-lazy" src="./img/guided_tour/ill_camp.png" alt="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <img class="swiper-lazy" src="./img/guided_tour/title_camp.svg" alt="">
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
+
                                     <div class="picture">
-                                        <div class="mask"></div>
-                                        <img class="swiper-lazy" src="./img/guided_tour/ill_food.png" alt="">
+                                        <ul>
+                                            <li>
+                                                <div class="mask"></div>
+                                            </li>
+                                            <li>
+                                                <a href="food.html"></a>
+                                                <img class="swiper-lazy" src="./img/guided_tour/ill_food.png" alt="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <img class="swiper-lazy" src="./img/guided_tour/title_food.svg" alt="">
+
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -356,39 +392,39 @@
 
             <script>
                 var swiper = new Swiper(".swiper-container", {
-                        effect: "coverflow",
-                        grabCursor: true,
-                        centeredSlides: true,
-                        slidesPerView: "auto",
-                        loop: true,
-                        lazy: true,
-                        coverflowEffect: {
-                            rotate: 0,
-                            stretch: 400,
-                            depth: 300,
-                            modifier: 1,
-                            slideShadows: true
-                        },
-                        pagination: {
-                            el: ".swiper-pagination",
-                            type: 'custom',
-                            renderCustom: function (swiper, current, total) {
-                                return '<span class="pagination-text">' + ('0' + current).slice(-2) + '  /  ' + ('0' + total).slice(-2) + '</span>';
-                            }
-                        },
-                        loop: true,
-                        autoplay: {
-                            delay: 2000
-                        }
-
+                    effect: "coverflow",
+                    grabCursor: true,
+                    centeredSlides: true,
+                    slidesPerView: "auto",
+                    loop: true,
+                    lazy: true,
+                    coverflowEffect: {
+                        rotate: 0,
+                        stretch: 400,
+                        depth: 300,
+                        modifier: 1,
+                        slideShadows: true
                     },
-                        $('.swiper-button-next-custom').click(function () {
-                            swiper.slideNext();
-                        }),
-                        $('.swiper-button-prev-custom').click(function () {
-                            swiper.slidePrev();
-                        })
-                    );
+                    pagination: {
+                        el: ".swiper-pagination",
+                        type: 'custom',
+                        renderCustom: function (swiper, current, total) {
+                            return '<span class="pagination-text">' + ('0' + current).slice(-2) + '  /  ' + ('0' + total).slice(-2) + '</span>';
+                        }
+                    },
+                    loop: true,
+                    autoplay: {
+                        delay: 2000
+                    }
+
+                },
+                    $('.swiper-button-next-custom').click(function () {
+                        swiper.slideNext();
+                    }),
+                    $('.swiper-button-prev-custom').click(function () {
+                        swiper.slidePrev();
+                    })
+                );
             </script>
         </section>
 
@@ -557,7 +593,7 @@
         // 寫自己的 JS 程式碼在這邊
 
         window.addEventListener("scroll", () => {
-            
+
             var burger_top = document.querySelector(".burger-bun-top")
             var burger_filling = document.querySelector(".burger-filling")
             var burger_bot = document.querySelector(".burger-bun-bot")

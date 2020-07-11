@@ -32,11 +32,6 @@ h1, h2, h3, h4 {
   font-weight: 500;
 }
 
-.project-name {
-  text-align: center;
-  padding: 10px 0;
-}
-
 .success {
   background: #78AD42 !important;
 }
