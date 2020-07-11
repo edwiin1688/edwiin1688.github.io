@@ -4,41 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>美食饗宴</title>
+    <title>活動體驗</title>
 
-    <!-- ? link css -->
-    <link rel="stylesheet" href="./css/food.css">
-    <link rel="stylesheet" href="./css/bookman-for-paging.css">
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/layout-eventpage.css">
     <link rel="stylesheet" href="./css/the-footer.css">
-
-    <!-- ? 引用 bootstrap 的 css (離線版) -->
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <style>
-        main {
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/eventpage-content.css">
+    <link rel="stylesheet" href="./css/bookman-for-paging.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 
 
 </head>
 
-<body>
-    <!-- ? 引用 jQuery 的 js -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <!-- ? 引用 jQuery 的 js (離線版－沒辦法使用!?) -->
-    <!-- <script src="./node_modules/jquery/dist/jquery.min.js"></script> -->
-    <!-- ? Bootstrap 需要 jQuery (離線版) -->
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
+<body>
     <!-- nav-bar -->
     <div class="slider-nav">
-        <a href="" onclick="window.location.href='index.html'">
+        <a href="" onclick="window.location.href='https://edwiin1688.github.io/team-work/'">
             <div id="title"></div>
         </a>
     </div>
+
     <div id="invisible-bar"></div>
     <section class="home-page">
-
         <div class="paging-top">
             <!-- 分頁手繪圖 -->
             <div id="paging-food-pic"></div>
@@ -49,18 +38,12 @@
                     <h5>event</h5>
                 </div>
                 <h5>
-                    飛鳥恰恰在餐飲上投入的許多心思，以餐桌到產地作為核心<br>
-                    精神，創辦台灣唯一的一泊五食的露營行程，邀請飯店主櫥<br>
-                    料理露營行程的各式餐點，將頂級料理的水平推向營地中<br>
-                    實現。
+                    飛鳥恰恰提供多項戶外活動體驗，活動內容不但保有自在與舒適，也結合了在地元素與特色，這不僅是現在露營的新型態與旅行的新風潮，更是享受戶外美學和大自然的最佳體驗方式 。
                 </h5>
             </div>
         </div>
         <div id="paging-flag-r"></div>
         <div id="paging-flag-l"></div>
-
-
-
 
 
 
@@ -142,19 +125,78 @@
         </div>
     </section>
 
-    <main>
 
-    </main>
+    <!-- event-content -->
+    <div class="event-container">
+        <div class="section">
+            <div class="hidden-text1">DIY</div>
+            <div class="event-text diy-text" data-aos="fade-left" data-aos-duration="1800">
+                <h2>DIY</h2>
+            </div>
+            <div class="color-box diybox" data-aos="fade-left" data-aos-duration="1800"></div>
+            <div class="picbox-group-r" >
+                <div class="picbox" style="background-image: url(./img/eventpage/event1.jpg);"></div>
+                <div class="picbox" style="background-image: url(./img/eventpage/event2.jpg);"></div>
+                <div class="pictext">
+                    <div class="ill-pizza"></div>
+                    <h3>手做披薩</h3>
+                    <h4>手作披薩讓親子可以享受自炊的樂趣，促進家人親子關係增進彼此感情，除了滿足味蕾之餘，也可以獲得滿滿的成就感以及野營回憶。</h4>
+                </div>
+            </div>
+        </div>
 
 
+        <div class="section">
+            <div class="hidden-text2">PLAY</div>
+            <div class="color-box playbox" data-aos="fade-right" data-aos-duration="1800"></div>
+            <div class="event-text play-text" data-aos="fade-right" data-aos-duration="1800">
+                <h2>PLAY</h2>
+            </div>
+            <div class="picbox-group-l">
+                <div class="picbox" style="background-image: url(./img/eventpage/event3.jpg);"></div>
+                <div class="picbox" style="background-image: url(./img/eventpage/event4.jpg);"></div>
+                <div class="pictext">
+                    <h3>夜間抓蝦</h3>
+                    <h4>戴上準備好的頭燈及蝦網，小朋友們最期待的活動就是夜間的生態觀察。營區旁的澄澈溪流中充滿著各種魚、蝦、蟹，觀察牠們的生態後便釋放他們回家，教導孩子尊重和不破壞生態環境的重要。</h4>
+                </div>
+            </div>
+        </div>
 
+        <div class="section">
+            <div class="hidden-bg"></div>
+            <div class="event-text diy-text" data-aos="fade-left" data-aos-duration="1800">
+            </div>
+            <div class="color-box playbox" data-aos="fade-left" data-aos-duration="1800"></div>
+            <div class="picbox-group-r">
+                <div class="picbox" style="background-image: url(./img/eventpage/event5.jpg);"></div>
+                <div class="picbox" style="background-image: url(./img/eventpage/event6.jpg);"></div>
+                <div class="pictext">
+                    <h3>夜間賞螢</h3>
+                    <h4>每年4月~6月是螢火蟲季，豪華露營團隊也會帶著大家賞螢。由於營區未噴灑農藥，螢火蟲的數量每年在增加，靠近溪邊就可看到滿滿螢火蟲，更加讓人興奮。
+                    </h4>
+                </div>
+            </div>
+        </div>
 
+        <div class="section">
+            <div class="hidden-text3">ENJOY</div>
+            <div class="color-box enjoybox" data-aos="fade-right" data-aos-duration="1800"></div>
+            <div class="event-text enjoy-text" data-aos="fade-right" data-aos-duration="1800">
+                <h2>ENJOY</h2>
+            </div>
+            <div class="picbox-group-l">
+                <div class="picbox" style="background-image: url(./img/eventpage/event7.jpg);"></div>
+                <div class="picbox" style="background-image: url(./img/eventpage/event8.png);"></div>
+                <div class="pictext">
+                    <h3>星空影院</h3>
+                    <h4>在草地上擺上200吋的投影螢幕，有時播放孩子們喜愛的動畫片，有時則放映經典老片帶大家重溫舊時記憶，自然便成了最寬廣的星空電影院。</h4>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- footer -->
-    <footer id="end">
-        <a href="" id="to-booking">
-            <div id="booking"></div>
-        </a>
+     <!-- footer -->
+     <footer id="end">
         <a href="#thetop">
             <div id="top-btn">
                 <div id="f-arrow"></div>
@@ -191,17 +233,17 @@
         <div id="copyright">© 2020 Flybird Glamping</div>
     </footer>
 
-
-    <script src="./js/layout.js"></script>
-
-
+    <!-- JS -->
+    <script src="./js/home-page.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        // burger 滑動效果
         window.addEventListener("scroll", () => {
             var burger_top = document.querySelector(".burger-bun-top")
             var burger_filling = document.querySelector(".burger-filling")
             var burger_bot = document.querySelector(".burger-bun-bot")
             var scrolled = window.scrollY
-            if (scrolled >= 450) {
+            if (scrolled >= window.innerHeight - 85) {
                 burger_top.classList.add("black")
                 burger_filling.classList.add("black")
                 burger_bot.classList.add("black")
@@ -212,19 +254,10 @@
             }
         })
 
-        // 立即預購的小人卡在footer效果
-        window.addEventListener("scroll", () => {
-            var main = document.querySelector("main")
-            var booking = document.querySelector("#booking")
-            var scrolled = window.scrollY
-            var change = main.scrollHeight - 300
-            if (scrolled >= change) {
-                booking.classList.add("act")
-            } else {
-                booking.classList.remove("act")
-            }
-        })
+        // AOS動畫效果
+        AOS.init();
     </script>
+
 </body>
 
 </html>
