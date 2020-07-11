@@ -7,9 +7,13 @@
   right: 0%;
   background-color: rgb(255, 255, 255);
   opacity: 0;
+  z-index: 1;
   @media(max-width: 650px){
     display: none;
   }
+}
+#invisible-bar.z-index{
+  z-index: 99;
 }
 #invisible-bar:hover~ .home-page .burger-box .burger-bun-top{
   background-color: orange;
@@ -28,7 +32,7 @@
   height: 100%;
   background-color:#608D4C;
  
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0%;
   animation: guide 2s ease-in-out;

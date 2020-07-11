@@ -20,8 +20,11 @@
   width: 77vw;
   height: 56vw;
   /* max-height: 1080px; */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media (max-width: 576px) {
@@ -330,7 +333,9 @@
 
 #section-5 .slidetext-box #slidetext {
   width: 100%;
-  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
   line-height: 60px;
   font-size: 1.5vw;
   font-weight: bolder;
@@ -360,3 +365,4 @@
     height: 8vw;
   }
 }
+/*# sourceMappingURL=home-waterfall.css.map */
