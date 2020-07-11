@@ -25,6 +25,7 @@ var slider_nav = document.querySelector(".slider-nav")
 
 var burger_box = document.querySelector(".burger-box")
 var menu_container = document.querySelector(".menu-container")
+var invisible_bar=document.querySelector("#invisible-bar")
 burger_box.onclick = function () {
     if (menu_container.classList.contains("act")) {
         menu_container.classList.remove("act")
@@ -37,8 +38,8 @@ window.addEventListener("scroll", () => {
    
     var scrolled = window.scrollY
     if (scrolled >= 450) {
-       slider_nav.classList.add("opacity")
+        invisible_bar.classList.add("z-index")
     } else {
-        slider_nav.classList.remove("opacity")
+        invisible_bar.classList.remove("z-index")
     }
 })

@@ -14,7 +14,7 @@ var burger_top = document.querySelector(".burger-bun-top")
 var burger_filling = document.querySelector(".burger-filling")
 var burger_bot = document.querySelector(".burger-bun-bot")
 var slider_nav = document.querySelector(".slider-nav")
-
+var invisible_bar=document.querySelector("#invisible-bar")
 
 // burger.onmouseover = function () {
 //     slider_nav.classList.add("opacity")
@@ -37,8 +37,8 @@ window.addEventListener("scroll", () => {
    
     var scrolled = window.scrollY
     if (scrolled >= window.innerHeight - 85) {
-       slider_nav.classList.add("opacity")
+        invisible_bar.classList.add("z-index")
     } else {
-        slider_nav.classList.remove("opacity")
+        invisible_bar.classList.remove("z-index")
     }
 })

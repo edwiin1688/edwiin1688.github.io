@@ -7,13 +7,9 @@
   right: 0%;
   background-color: rgb(255, 255, 255);
   opacity: 0;
-  z-index: 1;
   @media(max-width: 650px){
     display: none;
   }
-}
-#invisible-bar.z-index{
-  z-index: 99;
 }
 #invisible-bar:hover~ .home-page .burger-box .burger-bun-top{
   background-color: orange;
@@ -32,7 +28,7 @@
   height: 100%;
   background-color:#608D4C;
  
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0%;
   animation: guide 2s ease-in-out;
@@ -131,7 +127,7 @@
     height: 80%;
     // border: blue 1px solid;
     margin: 0 0 0 0;
-    background-image: url("../img/layout/ill_food.png");
+    background-image: url("../img/layout/ill_camp.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -204,6 +200,7 @@
         font-size: 24px;
         @media (max-width:900px){
           font-size: 28px;
+          text-align: center;
         }
       }
     }
@@ -217,6 +214,7 @@
       @media (max-width:900px){
         line-height: 24px;
         font-size: 18px;
+        text-align: center;
       }
       @media (max-width:500px){
         font-size: 16px;
