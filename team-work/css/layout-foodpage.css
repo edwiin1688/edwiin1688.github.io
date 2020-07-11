@@ -30,9 +30,9 @@
 .slider-nav {
   width: 7%;
   min-width: 68px;
-  height: 100%;
+  height: 450px;
   background-color: #608D4C;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0%;
   -webkit-animation: guide 2s ease-in-out;
@@ -589,10 +589,10 @@
   }
 }
 
-.home-page .menu-container .menu-content .menu-title a:hover {
+/* .home-page .menu-container .menu-content .menu-title a:hover {
   -webkit-transform: skewX(5deg);
           transform: skewX(5deg);
-}
+} */
 
 .home-page .menu-container .menu-content .menu-title a #title {
   width: 250px;
@@ -607,10 +607,10 @@
           transform: translateX(80px);
 }
 
-.home-page .menu-container .menu-content .menu-title a #title:hover {
+/* .home-page .menu-container .menu-content .menu-title a #title:hover {
   -webkit-filter: drop-shadow(5px 5px 5px #333);
           filter: drop-shadow(5px 5px 5px #333);
-}
+} */
 
 @media (max-width: 700px) {
   .home-page .menu-container .menu-content .menu-title a #title {
@@ -748,10 +748,12 @@
 
 .home-page .menu-container .menu-content .info-box .info div a:hover {
   opacity: 0.7;
-  -webkit-transform: skewX(5deg);
+  /* -webkit-transform: skewX(5deg);
           transform: skewX(5deg);
   -webkit-filter: drop-shadow(5px 5px 5px #333);
-          filter: drop-shadow(5px 5px 5px #333);
+          filter: drop-shadow(5px 5px 5px #333); */
+          color: #eea33b;
+          border-bottom: 1px #eea33b solid;
 }
 
 @media (max-width: 650px) {
@@ -776,7 +778,7 @@
 }
 
 .home-page .menu-container .menu-content .info-box .menu-footer #follow {
-  cursor: pointer;
+  cursor: context-menu;
   width: 130px;
   height: 30px;
   line-height: 30px;
@@ -792,15 +794,10 @@
   position: absolute;
   right: 0px;
   width: 100%;
+  cursor: context-menu;
 }
 
-.home-page .menu-container .menu-content .info-box .menu-footer #follow a:hover {
-  opacity: 0.7;
-  -webkit-transform: skewX(5deg);
-          transform: skewX(5deg);
-  -webkit-filter: drop-shadow(5px 5px 5px #333);
-          filter: drop-shadow(5px 5px 5px #333);
-}
+
 
 @media (max-width: 700px) {
   .home-page .menu-container .menu-content .info-box .menu-footer #follow {
