@@ -7,6 +7,15 @@
 #philosophy {
     background-color: $bg_color_code;
 
+    .about_line {
+        width: 100%;
+        img {
+            width: 100%;
+            // 裁切超出的圖片範圍
+            overflow: hidden;
+        }
+    }
+
     // ? 圓圈
     #circle_parallax_1 {
         left: 30%;

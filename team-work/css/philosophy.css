@@ -11,6 +11,15 @@
   background-color: #f3ece2;
 }
 
+#philosophy .about_line {
+  width: 100%;
+}
+
+#philosophy .about_line img {
+  width: 100%;
+  overflow: hidden;
+}
+
 #philosophy #circle_parallax_1 {
   left: 30%;
 }
