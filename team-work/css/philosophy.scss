@@ -7,6 +7,39 @@
 #philosophy {
     background-color: $bg_color_code;
 
+    // 手繪插圖
+    .hand_drawn_1 {
+        width: 50vw;
+        position: absolute;;
+        top: 40%;
+        left: -70%;
+        img {
+            width: 25%;
+        }
+    }
+
+    // 手繪插圖
+    .hand_drawn_2 {
+        width: 50vw;
+        position: absolute;;
+        top: -70%;
+        left: 15%;
+        img {
+            width: 25%;
+        }
+    }
+
+    // 手繪插圖
+    .hand_drawn_3 {
+        width: 50vw;
+        position: absolute;;
+        top: 40%;
+        left: -70%;
+        img {
+            width: 25%;
+        }
+    }
+
     .about_line {
         width: 100%;
         img {
@@ -48,7 +81,7 @@
     }
 
     .bp_container {
-        position: relative;
+        position: relative;// position 參考點
         .bp_title {
             display: none;
         }
@@ -58,7 +91,7 @@
     }
 
     .bp_container_2 {
-        position: relative;
+        position: relative;// position 參考點
         .bp_title {
             display: none;
         }
@@ -68,7 +101,7 @@
     }
 
     .bp_container_3 {
-        position: relative;
+        position: relative;// position 參考點
         .bp_title {
             display: none;
         }
@@ -79,6 +112,8 @@
 
     .pb_text_area {
         display: inline;
+
+        position: relative;// position 參考點
     }
 
     // ! col-sm 是 540px 以下
@@ -88,7 +123,6 @@
         }
 
         .bp_container_3 {
-            position: relative;
             .bp_title {
                 width: 40vw;
                 display: inline;
@@ -109,7 +143,6 @@
         }
 
         .bp_container_2 {
-            position: relative;
             .bp_title {
                 width: 40vw;
                 display: inline;
@@ -130,7 +163,6 @@
         }
 
         .bp_container {
-            position: relative;
             .bp_title {
                 width: 40vw;
                 display: inline;
@@ -219,7 +251,7 @@
 
         position: absolute;
         top: 15%;
-        left: 10%;
+        left: 0;
 
         z-index: 2;
 
@@ -245,9 +277,6 @@
     // 大圖
     // 2. 創造美好 露營回憶
     .philosophy_2 {
-        // 檢視一下顯示範圍
-        // background-color: yellow;
-
         img {
             // 100% 照片才會貼邊緣
             width: 100%;
@@ -262,9 +291,6 @@
     // 大圖
     // 1. 帶著家人 走進自然
     .philosophy_1 {
-        // 檢視一下顯示範圍
-        // background-color: red;
-
         img {
             // 100% 照片才會貼邊緣
             width: 100%;
@@ -281,9 +307,6 @@
     // 大圖
     // 3. 享受自然 森林芬多精
     .philosophy_3 {
-        // 檢視一下顯示範圍
-        // background-color: red;
-
         img {
             // 100% 照片才會貼邊緣
             width: 100%;
