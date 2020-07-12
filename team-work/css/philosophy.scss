@@ -58,6 +58,16 @@
         }
     }
 
+    .bp_container_3 {
+        position: relative;
+        .bp_title {
+            display: none;
+        }
+        .bp_text {
+            display: none;
+        }
+    }
+
     .pb_text_area {
         display: inline;
     }
@@ -68,9 +78,31 @@
             max-width: 100vw;
         }
 
+        .bp_container_3 {
+            position: relative;
+            .bp_title {
+                width: 40vw;
+                display: inline;
+                top: 55%;
+                left: 30%;
+            }
+            .bp_text {
+                width: 100%;
+
+                display: inline;
+                top: 60%;
+                left: 0;
+                color: black;
+
+                font-size: 1vw;
+                line-height: 5vw;
+            }
+        }
+
         .bp_container_2 {
             position: relative;
             .bp_title {
+                width: 40vw;
                 display: inline;
                 top: 65%;
                 left: 30%;
@@ -87,9 +119,11 @@
                 line-height: 5vw;
             }
         }
+
         .bp_container {
             position: relative;
             .bp_title {
+                width: 40vw;
                 display: inline;
                 top: 50%;
                 left: 30%;
@@ -98,7 +132,7 @@
                 width: 100%;
 
                 display: inline;
-                top: 60%;
+                top: 55%;
                 left: 0;
                 color: black;
 
