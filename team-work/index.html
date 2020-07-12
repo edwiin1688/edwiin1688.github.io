@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Work - Project F</title>
 
-    <!-- ! FIXME 解決 favicon 錯誤方法 -->
+    <!-- ! FIX 解決 favicon 錯誤方法 -->
     <!-- <link rel="shortcut icon" href="#" /> -->
     <link href="favicon.ico" rel="shortcut icon">
 
@@ -33,10 +33,12 @@
     <link rel="stylesheet" href="./css/default.css">
     <!-- index -->
     <link rel="stylesheet" href="./css/index.css">
-    <!-- 「Banner」與「環境導覽」引用 Swiper 的 css  -->
-    <link rel="stylesheet" href="./css/swiper.css">
+    <!-- 環境導覽 -->
+    <link rel="stylesheet" href="./css/guided_tour.css">
+    <!-- 引用 banner 的 css  -->
+    <link rel="stylesheet" href="./css/banner.css">
     <!-- 經營理念 -->
-    <link rel="stylesheet" href="./css/business-philosophy.css">
+    <link rel="stylesheet" href="./css/philosophy.css">
     <!-- 首頁活動區塊(section-4)部分 -->
     <link rel="stylesheet" href="./css/homepage-activity.css">
     <!-- 首頁瀑布流(section-5)部分 -->
@@ -188,7 +190,7 @@
     <!-- 首頁 備註:從main裡面改出來讓影片能固定在上面不跑位-->
 
     <section id="banner">
-        <script src="./js/swiper.js"></script>
+        <script src="./js/banner.js"></script>
     </section>
 
     <main>
@@ -202,16 +204,28 @@
                 <!-- 1. 帶著家人 走進自然 -->
                 <div class="row">
 
-                    <div class="col-12 col-sm-8 order-1 no_padding">
-                        <div class="business_philosophy_1">
-                            <img src="./img/explore.webp" alt="...">
+                    <div class="bp_container col-12 col-sm-8 order-0 order-sm-1 no_padding">
+                        <div class="philosophy_1">
+                            <img src="./img/about/explore.png" alt="...">
+                            <div class="bp_title">
+                                帶著家人<br>
+                                &emsp;走進自然<br>
+                            </div>
+                            <div class="bp_text">
+                                帶著衣物即可輕鬆走入大自<br>
+                                然，各式各樣活動促進親子互<br>
+                                動，在地生態資源、頂級露營<br>
+                                設備，依照季節變化與在地食<br>
+                                材，營照出台灣指標性的「一<br>
+                                泊五食」新露營體驗。<br>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-4 order-0 bp_left">
+                    <div class="pb_text_area col-12 col-sm-4 order-1 order-sm-0 bp_left">
                         <div class="bp_title">
                             帶著家人<br>
-                            &emsp;&emsp;走進自然<br>
+                            &emsp;走進自然<br>
                         </div>
                         <div class="bp_text">
                             帶著衣物即可輕鬆走入大自<br>
@@ -224,9 +238,9 @@
                         <!-- 圓框 parallax -->
                         <div id="circle_parallax_1">
                             <!-- 圓圈 -->
-                            <img data-depth="0.2" src="./img/circle.svg" lt="...">
+                            <img data-depth="0.2" src="./img/about/circle.svg" lt="...">
                             <!-- 圓框 -->
-                            <img data-depth="-2" src="./img/circle-red.svg" alt="...">
+                            <img data-depth="-2" src="./img/about/circle-red.svg" alt="...">
                         </div>
                     </div>
 
@@ -235,16 +249,26 @@
 
                 <!-- 2. 創造美好 露營回憶 -->
                 <div class="row">
-                    <div class="col-12 col-sm-8 no_padding">
-                        <div id="business_philosophy_2">
-                            <img src="./img/create.webp" alt="...">
+                    <div class="bp_container_2 col-12 col-sm-8 no_padding">
+                        <div class="philosophy_2">
+                            <img src="./img/about/create.png" alt="...">
+                            <div class="bp_title">
+                                創造美好<br>
+                                &emsp;露營回憶<br>
+                            </div>
+                            <div class="bp_text">
+                                自然環境是露營不可取代之元<br>
+                                素，我們擁有絕佳的天然環境<br>
+                                ，不但鮮少蛟蟲，溪流溫度適<br>
+                                宜物種豐富，四季都能樂在中。<br>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-4 bp_right">
+                    <div class="pb_text_area col-12 col-sm-4 bp_right">
                         <div class="bp_title">
                             創造美好<br>
-                            &emsp;&emsp;露營回憶<br>
+                            &emsp;露營回憶<br>
                         </div>
                         <div class="bp_text">
                             自然環境是露營不可取代之元<br>
@@ -255,9 +279,9 @@
                         <!-- 圓框 parallax -->
                         <div id="circle_parallax_2">
                             <!-- 圓圈 -->
-                            <img data-depth="0.2" src="./img/circle.svg" lt="...">
+                            <img data-depth="0.2" src="./img/about/circle.svg" lt="...">
                             <!-- 圓框 -->
-                            <img class="img_top" data-depth="-2" src="./img/circle-red.svg" alt="...">
+                            <img data-depth="-2" src="./img/about/circle-red.svg" alt="...">
                         </div>
                     </div>
                 </div>
@@ -265,16 +289,27 @@
                 <!-- 3. 享受自然 森林芬多精 -->
                 <div class="row">
 
-                    <div class="col-12 col-sm-8 order-1 no_padding">
-                        <div class="business_philosophy_1">
-                            <img src="./img/enjoy.webp" alt="...">
+                    <div class="bp_container col-12 col-sm-8 order-sm-1 order-0 no_padding">
+                        <div class="philosophy_3">
+                            <img src="./img/about/enjoy.png" alt="...">
+                            <div class="bp_title">
+                                享受自然<br>
+                                &emsp;森林芬多精<br>
+                            </div>
+                            <div class="bp_text">
+                                飛鳥恰恰位於新竹五峰山區，<br>
+                                依山傍水、草地聚實、景觀優<br>
+                                美，望著山谷風景，孩子們開<br>
+                                心溪水嬉戲沉浸在原始溪流<br>
+                                與森林芬多精內。<br>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-4 order-0 bp_left">
+                    <div class="pb_text_area col-12 col-sm-4 order-sm-0 order-1 bp_left">
                         <div class="bp_title">
                             享受自然<br>
-                            &emsp;&emsp;森林芬多精<br>
+                            &emsp;森林芬多精<br>
                         </div>
                         <div class="bp_text">
                             飛鳥恰恰位於新竹五峰山區，<br>
@@ -286,9 +321,9 @@
                         <!-- 圓框 parallax -->
                         <div id="circle_parallax_3">
                             <!-- 圓圈 -->
-                            <img data-depth="0.2" src="./img/circle.svg" lt="...">
+                            <img data-depth="0.2" src="./img/about/circle.svg" lt="...">
                             <!-- 圓框 -->
-                            <img data-depth="-2" src="./img/circle-red.svg" alt="...">
+                            <img data-depth="-2" src="./img/about/circle-red.svg" alt="...">
                         </div>
                     </div>
 
@@ -306,7 +341,7 @@
 
         <!-- TODO -->
 
-        <!-- 環境導覽 -->
+        <!-- ? 環境導覽 -->
         <section id="guided_tour" class="default_bg">
 
             <div class="swiper-block">
@@ -386,43 +421,8 @@
 
             </div>
 
-
-            <script>
-                var swiper = new Swiper(".swiper-container", {
-                    effect: "coverflow",
-                    grabCursor: true,
-                    centeredSlides: true,
-                    slidesPerView: "auto",
-                    loop: true,
-                    lazy: true,
-                    coverflowEffect: {
-                        rotate: 0,
-                        stretch: 400,
-                        depth: 300,
-                        modifier: 1,
-                        slideShadows: true
-                    },
-                    pagination: {
-                        el: ".swiper-pagination",
-                        type: 'custom',
-                        renderCustom: function (swiper, current, total) {
-                            return '<span class="pagination-text">' + ('0' + current).slice(-2) + '  /  ' + ('0' + total).slice(-2) + '</span>';
-                        }
-                    },
-                    loop: true,
-                    autoplay: {
-                        delay: 2000
-                    }
-
-                },
-                    $('.swiper-button-next-custom').click(function () {
-                        swiper.slideNext();
-                    }),
-                    $('.swiper-button-prev-custom').click(function () {
-                        swiper.slidePrev();
-                    })
-                );
-            </script>
+            <!-- ? 環境導覽 -->
+            <script src="./js/guided_tour.js"></script>
         </section>
 
         <!-- TODO -->
@@ -511,7 +511,7 @@
 
 
         <a href="" id="to-booking">
-            <!-- ! FIXME 小人不擋影片 -->
+            <!-- ! FIX 小人不擋影片 -->
             <div id="booking" class="lax" data-lax-opacity="0 0, 100 1"></div>
         </a>
     </main>
@@ -559,12 +559,13 @@
     </footer>
 
 
-    <!-- SCROLL DOWN -->
+    <!-- FIXME: 顯示 scrollTop -->
     <div class="d-flex justify-content-center fixed-top">
         <h6 style="z-index: 2;">scrollTop</h6>
     </div>
+    <!-- SCROLL DOWN -->
     <div class="d-flex justify-content-center fixed-bottom">
-        <img id="scroll_down" class="lax" data-lax-opacity="0 1, 100 0" src="./img/scroll_down.webp" alt="SCROLL DOWN">
+        <img id="scroll_down" class="lax" data-lax-opacity="0 1, 100 0" src="./img/scroll_down.png" alt="SCROLL DOWN">
         <!-- data-lax-opacity 語法參考網址：https://github.com/alexfoxy/lax.js -->
     </div>
     <script>
@@ -619,7 +620,7 @@
                 booking.classList.remove("act")
             }
         })
-        
+
 
 
 

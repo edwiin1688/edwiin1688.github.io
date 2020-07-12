@@ -44,14 +44,8 @@ video {
   background-position: center center;
   background-size: cover;
   /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -71,4 +65,3 @@ video {
 #guided_tour .swiper-button-next:hover {
   background-color: red;
 }
-/*# sourceMappingURL=swiper.css.map */

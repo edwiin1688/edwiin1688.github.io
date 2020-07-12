@@ -2,7 +2,7 @@
 
 // 指定預設背景顏色
 .default_bg {
-    background-color: $bg_color;
+    background-color: $bg_color_code;
 
     border: none;
 }
@@ -11,4 +11,17 @@
 .transparent_bg {
     background-color: rgba(0,0,0,0);
 }
+
+// ul 不出現點點
+@mixin remove_ul_dot {
+    ul {
+        list-style-type:none;
+    }
+}
+
+// 設定為透明
+@mixin opacity_0 {
+    opacity: 0;
+}
+
 
