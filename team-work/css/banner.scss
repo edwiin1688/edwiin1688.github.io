@@ -3,6 +3,7 @@
 #banner {
     .swiper-container {
         width: 100%;
+        max-width: 100vw;
         height: 100vh;
 
         position: absolute;
@@ -20,10 +21,14 @@
 
 /* 影片填滿畫面 */
 video {
-    margin-left: calc( (100vw - (100vh * 1.7))/2 );
-    margin-right: calc( (100vw - (100vh * 1.7))/2 );
+    margin-left: 0;
+    margin-right: 0;
     min-height: 100vh;
     min-width: 100vw;
+
+    margin: auto;
+
+    overflow: hidden;
 
     /* mask:url('../img/tile.png');
     -webkit-mask-box-image:url('../img/tile.png'); */
@@ -31,59 +36,9 @@ video {
 
 @media (min-aspect-ratio: 16/9) {
     video {
-      margin-left: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
-// ? 環境導覽
-#guided_tour {
-    .swiper-container {
-        width: 100%;
-        height: 100vh;
-    }
-
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: $bg_color_code;
-        // width: 100%;
-        width: 100vw;
-        // height: 100vh;
-
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-
-        img {
-            width: 100%;// ! 不設定 圖片會很大
-            background-color: $bg_color_code;
-        }
-
-        h1 {
-            background-color: $bg_color_code;
-        }
-    }
-
-    .swiper-button-prev:hover {
-        background-color: red;
-    }
-
-    .swiper-button-next:hover {
-        background-color: red;
-    }
-}
 
