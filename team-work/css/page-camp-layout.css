@@ -519,10 +519,7 @@
 .home-page .menu-container .nav-bg {
   width: 66%;
   height: 100%;
-  background-image: url("../img/menu1.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
 }
 
 @media (max-width: 1200px) {
@@ -555,6 +552,153 @@
 @media (max-width: 650px) {
   .home-page .menu-container .nav-bg {
     display: none;
+  }
+}
+
+@media (max-height: 530px) {
+  .home-page .menu-container .nav-bg {
+    margin: 50px 0 0 0;
+    height: 60%;
+  }
+}
+
+@media (max-height: 480px) {
+  .home-page .menu-container .nav-bg {
+    margin: 0;
+    height: 45%;
+  }
+}
+
+@media (max-height: 400px) {
+  .home-page .menu-container .nav-bg {
+    height: 200px;
+  }
+}
+
+.home-page .menu-container .nav-bg div:nth-child(1) {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/menu1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: menupics 25s infinite ease-in-out;
+          animation: menupics 25s infinite ease-in-out;
+  opacity: 0;
+}
+
+@media (max-width: 900px) {
+  .home-page .menu-container .nav-bg div:nth-child(1) {
+    background-size: contain;
+  }
+}
+
+.home-page .menu-container .nav-bg div:nth-child(2) {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/menu2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: menupics 25s infinite ease-in-out;
+          animation: menupics 25s infinite ease-in-out;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  opacity: 0;
+}
+
+@media (max-width: 900px) {
+  .home-page .menu-container .nav-bg div:nth-child(2) {
+    background-size: contain;
+  }
+}
+
+.home-page .menu-container .nav-bg div:nth-child(3) {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/menu3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: menupics 25s infinite ease-in-out;
+          animation: menupics 25s infinite ease-in-out;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+  opacity: 0;
+}
+
+@media (max-width: 900px) {
+  .home-page .menu-container .nav-bg div:nth-child(3) {
+    background-size: contain;
+  }
+}
+
+.home-page .menu-container .nav-bg div:nth-child(4) {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/menu4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: menupics 25s infinite ease-in-out;
+          animation: menupics 25s infinite ease-in-out;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  opacity: 0;
+}
+
+@media (max-width: 900px) {
+  .home-page .menu-container .nav-bg div:nth-child(4) {
+    background-size: contain;
+  }
+}
+
+.home-page .menu-container .nav-bg div:nth-child(5) {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/menu5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: menupics 25s infinite ease-in-out;
+          animation: menupics 25s infinite ease-in-out;
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
+  opacity: 0;
+}
+
+@media (max-width: 900px) {
+  .home-page .menu-container .nav-bg div:nth-child(5) {
+    background-size: contain;
+  }
+}
+
+@-webkit-keyframes menupics {
+  4% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  24% {
+    opacity: 0;
+  }
+}
+
+@keyframes menupics {
+  4% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  24% {
+    opacity: 0;
   }
 }
 
