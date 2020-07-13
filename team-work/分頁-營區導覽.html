@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/page-camp.css">
     <link rel="stylesheet" href="./css/bookman-for-paging.css">
     <style>
-
+       
     </style>
 
 
@@ -125,7 +125,7 @@
             </div>
         </div>
     </section>
-    <main>
+    <main id="camp-main">
         <section id="tent" class="pt-5">
             <div class="container">
                 <div class="row">
@@ -373,10 +373,10 @@
 
         // 立即預購的小人卡在footer效果
         window.addEventListener("scroll", () => {
-            var main = document.querySelector("main")
+            var main = document.querySelector("#camp-main")
             var booking = document.querySelector("#booking")
             var scrolled = window.scrollY
-            var change = main.scrollHeight - 300
+            var change = main.scrollHeight - 500
             if (scrolled >= change) {
                 booking.classList.add("act")
             } else {
