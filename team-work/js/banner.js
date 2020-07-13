@@ -35,11 +35,30 @@ var swiper_banner = new Swiper('.banner', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    autoplay: 3000
+    autoplay: 30000
 });
 
 $('.banner .swiper-button-next').hide();
 $('.banner .swiper-button-prev').hide();
+
+
+var mm = window.matchMedia("(max-width: 650px)");
+mm.addListener(resizeWidth);
+resizeWidth(mm);
+
+function resizeWidth(pMatchMedia){
+  if (pMatchMedia.matches) {
+    //小於650px時執行的js
+    if ($('.banner').is(":visible")){
+        $('.banner').hide();
+    }
+  }else {
+    //大於650px時執行的js
+    if ($('.banner').is(":hidden")){
+        $('.banner').show();
+    }
+  }
+}
 
 
 
