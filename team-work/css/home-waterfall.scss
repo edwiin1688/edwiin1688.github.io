@@ -26,7 +26,7 @@
         div{
             width: 23%;
             height: 18.5%;
-            border: cadetblue 1px solid;
+            // border: cadetblue 1px solid;
             margin: 10px 10px 10px 10px;
         }
         #sliderpic-1{
@@ -132,6 +132,9 @@
                background-size: cover;
                animation: slider2 20s infinite ease-in-out;
                opacity:0;
+               @media (max-width:576px){
+                border-radius: 0 0 50px 0;
+            }
             }
             div:nth-child(2){
                 width: 100%;
@@ -143,6 +146,9 @@
                animation: slider2 20s infinite ease-in-out;
                opacity:0;
                animation-delay: 5s;
+               @media (max-width:576px){
+                border-radius: 0 0 50px 0;
+            }
             }
             div:nth-child(3){
                 width: 100%;
@@ -157,6 +163,9 @@
                animation: slider2 20s infinite ease-in-out;
                opacity:0;
                animation-delay: 10s;
+               @media (max-width:576px){
+                border-radius: 0 0 50px 0;
+            }
             }
             div:nth-child(4){
                 width: 100%;
@@ -171,6 +180,9 @@
                animation: slider2 20s infinite ease-in-out;
                opacity:0;
                animation-delay: 15s;
+               @media (max-width:576px){
+                   border-radius: 0 0 50px 0;
+               }
             }
             @media (max-width:576px){
                 width: calc(35% + 20px);
@@ -620,6 +632,10 @@
                 background-size: cover;
                 animation: slider8 20s infinite ease-in-out;
                 opacity:0;
+                 border-radius: 0 0 50px 0;
+                  @media (max-width:576px){
+                    border-radius: 0;
+                 }
             }
             div:nth-child(2){
                 width: 100%;
@@ -635,6 +651,10 @@
                 animation: slider8 20s infinite ease-in-out;
                 animation-delay: 5s;
                 opacity:0;
+                 border-radius: 0 0 50px 0;
+                 @media (max-width:576px){
+                    border-radius: 0;
+                 }
             }
             div:nth-child(3){
                 width: 100%;
@@ -650,6 +670,10 @@
                 animation: slider8 20s infinite ease-in-out;
                 animation-delay: 10s;
                 opacity:0;
+                 border-radius: 0 0 50px 0;
+                 @media (max-width:576px){
+                    border-radius: 0;
+                 }
             }
             div:nth-child(4){
                 width: 100%;
@@ -665,6 +689,9 @@
                 animation: slider8 20s infinite ease-in-out;
                 animation-delay: 15s;
                 opacity:0;
+                @media (max-width:576px){
+                    border-radius: 0;
+                 }
             }
            
             @media (max-width:576px){
@@ -840,13 +867,25 @@
         #slidetext{
             width: 100%;
             writing-mode: vertical-rl;
+            padding:  150px 0 0 0;
             line-height: 60px;
             font-size: 1.5vw;
             font-weight: bolder;
-            letter-spacing: 5px;
+            letter-spacing: 7px;
             // border: 1px blue solid;
+            @media (max-width:1500px){
+                font-size: 1.8vw;
+            }
+            @media (max-width:1200px){
+                padding: 130px 0 0 0;
+            }
+           
             @media (max-width:1050px){
                 font-size: 2vw;
+                padding: 100px 0 0 0;
+            }
+            @media (max-width:750px){
+                padding: 60px 0 0 0;
             }
             @media (max-width:576px){
                 font-size: 4vw;

@@ -49,6 +49,106 @@
           animation-fill-mode: backwards;
 }
 
+.home-page .animation-pic:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: center;
+  background-position-x: -410px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: phone-banner 25s infinite ease-in-out;
+          animation: phone-banner 25s infinite ease-in-out;
+  background-image: url("../img/menu1.png");
+  opacity: 0;
+}
+
+.home-page .animation-pic:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: center right;
+  background-position-x: -400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: phone-banner 25s infinite ease-in-out;
+          animation: phone-banner 25s infinite ease-in-out;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  background-image: url("../img/menu2.jpg");
+  opacity: 0;
+}
+
+.home-page .animation-pic:nth-child(3) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: phone-banner 25s infinite ease-in-out;
+          animation: phone-banner 25s infinite ease-in-out;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+  background-image: url("../img/menu3.jpg");
+  opacity: 0;
+}
+
+.home-page .animation-pic:nth-child(4) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: center;
+  background-position-x: -100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: phone-banner 25s infinite ease-in-out;
+          animation: phone-banner 25s infinite ease-in-out;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  background-image: url("../img/menu4.jpg");
+  opacity: 0;
+}
+
+.home-page .animation-pic:nth-child(5) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: phone-banner 25s infinite ease-in-out;
+          animation: phone-banner 25s infinite ease-in-out;
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
+  background-image: url("../img/menu5.png");
+  opacity: 0;
+}
+
+@-webkit-keyframes phone-banner {
+  4% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  24% {
+    opacity: 0;
+  }
+}
+
+@keyframes phone-banner {
+  4% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  24% {
+    opacity: 0;
+  }
+}
+
 .home-page .slider-nav {
   width: 7%;
   min-width: 68px;
