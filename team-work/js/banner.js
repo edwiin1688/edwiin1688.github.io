@@ -35,7 +35,7 @@ var swiper_banner = new Swiper('.banner', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    autoplay: 3000
+    autoplay: 30000
 });
 
 $('.banner .swiper-button-next').hide();
