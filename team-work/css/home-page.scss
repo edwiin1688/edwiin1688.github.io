@@ -138,10 +138,7 @@ z-index: 999;
     .nav-bg {
       width: 66%;
       height: 100%;
-      background-image: url("../img/menu1.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+      
       position: relative;
       @media(max-width: 1200px){
         width: 60%;
