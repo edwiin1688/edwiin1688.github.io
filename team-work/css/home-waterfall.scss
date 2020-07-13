@@ -35,14 +35,78 @@
              margin: 10px 10px 10px 0;
             width: 23%;
             height: calc(37% + 20px);
-            background-image: url("../img/homepage-jpg/waterfall3.jpg");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
+          
+            
+            div:nth-child(1){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+               left: -10px;
+               top: -10px;
+                background-image: url("../img/homepage-jpg//waterfall5.jpg");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation: slider1 20s infinite ease-in-out;
+               opacity:0;
+            }
+            div:nth-child(2){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+               background-image: url("../img/homepage-jpg/waterfall2.jpg");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation: slider1 20s infinite ease-in-out;
+               opacity:0;
+               animation-delay: 5s;
+            }
+            div:nth-child(3){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+                 background-image: url("../img/homepage-jpg/waterfall10.jpg");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation: slider1 20s infinite ease-in-out;
+               opacity:0;
+               animation-delay: 10s;
+            }
+            div:nth-child(4){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+                 background-image: url("../img/homepage-jpg/menu3.jpg");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation: slider1 20s infinite ease-in-out;
+               opacity:0;
+               animation-delay: 15s;
+            }
             @media (max-width:576px){
                width: calc(35% + 20px);
                 height: calc(42% + 20px);
                 top: 0;
+            }
+        }
+        @keyframes slider1 {
+            5%{
+                opacity: 1;
+            }
+            25%{
+                opacity: 1;
+            }
+            30%{
+                opacity: 0;
             }
         }
         #sliderpic-2{
@@ -56,12 +120,75 @@
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
+            div:nth-child(1){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+                background-image: url("../img/homepage-jpg/waterfall3.jpg");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation: slider2 20s infinite ease-in-out;
+               opacity:0;
+            }
+            div:nth-child(2){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+               background-color: #CBE59A;
+               animation: slider2 20s infinite ease-in-out;
+               opacity:0;
+               animation-delay: 5s;
+            }
+            div:nth-child(3){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+                background-image: url("../img/homepage-jpg/diy1.jpg");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation: slider2 20s infinite ease-in-out;
+               opacity:0;
+               animation-delay: 10s;
+            }
+            div:nth-child(4){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+                background-image: url("../img/homepage-jpg/waterfall6.png");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation: slider2 20s infinite ease-in-out;
+               opacity:0;
+               animation-delay: 15s;
+            }
             @media (max-width:576px){
                 width: calc(35% + 20px);
                 height: calc(21% + 0px);
                 top: calc(84% + 80px);
                 left: calc(35% + 40px);
                 border-radius: 0 0 50px 0;
+            }
+        }
+        @keyframes slider2 {
+            5%{
+                opacity: 1;
+            }
+            25%{
+                opacity: 1;
+            }
+            30%{
+                opacity: 0;
             }
         }
         #sliderpic-3{
@@ -71,15 +198,79 @@
              margin: 10px 10px 10px 0px;
             width: 23%;
             height: calc(37% + 20px);
-            background-image: url("../img/homepage-jpg/waterfall2.jpg");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
+           
+            div:nth-child(1){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+               background-image: url("../img/homepage-jpg/waterfall2.jpg");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation: slider3 20s infinite ease-in-out;
+               opacity:0;
+            }
+            div:nth-child(2){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+                background-image: url("../img/homepage-jpg/waterfall7.jpg");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation: slider3 20s infinite ease-in-out;
+               opacity:0;
+               animation-delay: 5s;
+            }
+            div:nth-child(3){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+                background-image: url("../img/homepage-jpg/menu3.jpg");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation: slider3 20s infinite ease-in-out;
+               opacity:0;
+               animation-delay: 10s;
+            }
+            div:nth-child(4){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+                background-image: url("../img/homepage-jpg/menu4.jpg");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation: slider3 20s infinite ease-in-out;
+               opacity:0;
+               animation-delay: 15s;
+            }
             @media (max-width:576px){
                 width: calc(35% + 20px);
                 height: calc(42% + 20px);
                 left: 0;
                 top: calc(63% + 60px);
+                
+            }
+        }
+        @keyframes slider3 {
+            5%{
+                opacity: 1;
+            }
+            25%{
+                opacity: 1;
+            }
+            30%{
+                opacity: 0;
             }
         }
         #sliderpic-4{
@@ -89,16 +280,76 @@
              margin: 10px 10px 10px 0;
             width: 23%;
             height: 18%.5;
-            background-image: url("../img/homepage-jpg/waterfall8.jpg");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
+           
+            div:nth-child(1){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+               background-image: url("../img/homepage-jpg/menu3.jpg");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation: slider4 20s infinite ease-in-out;
+               opacity:0;
+            }
+            div:nth-child(2){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+               background-image: url("../img/homepage-jpg/waterfall5.jpg");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation: slider4 20s infinite ease-in-out;
+               opacity:0;
+               animation-delay: 5s;
+            }
+            div:nth-child(3){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+               background-image: url("../img/homepage-jpg/menu1.png");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation: slider4 20s infinite ease-in-out;
+               opacity:0;
+               animation-delay: 10s;
+            }
+            div:nth-child(4){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+               background-color:#EFB6C8;
+               animation: slider4 20s infinite ease-in-out;
+               opacity:0;
+               animation-delay: 15s;
+            }
             @media (max-width:576px){
                 width: calc(35% + 20px);
                 height: calc(21% + 0px);
                 top: calc(63% + 60px);
                 left: calc(35% + 40px);
                 border-radius: 0;
+            }
+        }
+        @keyframes slider4 {
+            5%{
+                opacity: 1;
+            }
+            25%{
+                opacity: 1;
+            }
+            30%{
+                opacity: 0;
             }
         }
         #sliderpic-5{
@@ -108,16 +359,80 @@
              margin: 10px 10px 10px 0;
             width: 23%;
             height: 18%.5;
-            background-image: url("../img/homepage-jpg/waterfall4.jpg");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
+          
+            div:nth-child(1){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+                  background-image: url("../img/homepage-jpg/menu1.png");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation: slider5 20s infinite ease-in-out;
+               opacity:0;
+              
+            }
+            div:nth-child(2){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+                  background-image: url("../img/homepage-jpg/waterfall6.png");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation: slider5 20s infinite ease-in-out;
+               opacity:0;
+               animation-delay: 5s;
+            }
+            div:nth-child(3){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+                  background-image: url("../img/homepage-jpg/waterfall9.jpg");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation: slider5 20s infinite ease-in-out;
+               opacity:0;
+               animation-delay: 10s;
+            }
+            div:nth-child(4){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+                  background-image: url("../img/homepage-jpg/waterfall1.jpg");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation: slider5 20s infinite ease-in-out;
+               opacity:0;
+               animation-delay: 15s;
+            }
             @media (max-width:576px){
                 width: calc(35% + 20px);
                  height: calc(21% + 0px);
                  top: calc(21% + 20px);
                  left: calc(35% + 40px);
              }
+        }
+        @keyframes slider5 {
+            5%{
+                opacity: 1;
+            }
+            25%{
+                opacity: 1;
+            }
+            30%{
+                opacity: 0;
+            }
         }
         #sliderpic-6{
             position: absolute;
@@ -126,17 +441,81 @@
              margin: 10px 10px 10px 0;
             width: 23%;
             height: 18%.5;
-            background-image: url("../img/homepage-jpg/waterfall5.jpg");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
+           
             border-radius: 0 50px 0 0 ;
+            div:nth-child(1){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+                border-radius: 0 50px 0 0 ;
+                background-image: url("../img/homepage-jpg/menu2.jpg");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation: slider6 20s infinite ease-in-out;
+               opacity:0;
+            }
+            div:nth-child(2){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+                border-radius: 0 50px 0 0 ;
+                background-image: url("../img/homepage-jpg/waterfall4.jpg");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation: slider6 20s infinite ease-in-out;
+               opacity:0;
+               animation-delay: 5s;
+            }
+            div:nth-child(3){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+                border-radius: 0 50px 0 0 ;
+                background-color: #EFC97D;
+               animation: slider6 20s infinite ease-in-out;
+               opacity:0;
+               animation-delay: 10s;
+            }
+            div:nth-child(4){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+                border-radius: 0 50px 0 0 ;
+                background-image: url("../img/homepage-jpg/menu3.jpg");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation: slider6 20s infinite ease-in-out;
+               opacity:0;
+               animation-delay: 15s;
+            }
             @media (max-width:576px){
                 width: calc(35% + 20px);
                 height: calc(21% + 0px);
                  top: 0;
                  left: calc(35% + 40px);
              }
+        }
+        @keyframes slider6 {
+            5%{
+                opacity: 1;
+            }
+            25%{
+                opacity: 1;
+            }
+            30%{
+                opacity: 0;
+            }
         }
         #sliderpic-7{
             position: absolute;
@@ -145,12 +524,75 @@
              margin: 10px 10px 10px 0;
             width: 23%;
             height: 18%.5;
-            background-image: url("../img/homepage-jpg/waterfall1.jpg");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
+            // background-image: url("../img/homepage-jpg/waterfall1.jpg");
+            // background-position: center;
+            // background-size: cover;
+            // background-repeat: no-repeat;
+            div:nth-child(1){
+                 width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+               background-image: url("../img/homepage-jpg/waterfall9.jpg");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation: slider7 20s infinite ease-in-out;
+               opacity:0;
+            }
+            div:nth-child(2){
+                 width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+               background-color: #ADC9E0;
+               animation: slider7 20s infinite ease-in-out;
+               opacity:0;
+               animation-delay: 5s;
+            }
+            div:nth-child(3){
+                 width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+                background-image: url("../img/homepage-jpg/waterfall7.jpg");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation: slider7 20s infinite ease-in-out;
+               opacity:0;
+               animation-delay: 10s;
+            }
+            div:nth-child(4){
+                 width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+                background-image: url("../img/homepage-jpg/waterfall4.jpg");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation: slider7 20s infinite ease-in-out;
+               opacity:0;
+               animation-delay: 15s;
+            }
             @media (max-width:576px){
                display: none;
+            }
+        }
+        @keyframes slider7 {
+            5%{
+                opacity: 1;
+            }
+            25%{
+                opacity: 1;
+            }
+            30%{
+                opacity: 0;
             }
         }
         #sliderpic-8{
@@ -160,11 +602,71 @@
              margin: 10px 10px 10px 0;
             width: calc(46% + 20px);
             height: calc(37% + 20px);
-            background-image: url("../img/homepage-jpg/waterfall9.jpg");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
+            // background-image: url("../img/homepage-jpg/waterfall9.jpg");
+            // background-position: center;
+            // background-size: cover;
+            // background-repeat: no-repeat;
             border-radius: 0 0 50px 0;
+            div:nth-child(1){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+                border-radius: 0 0 50px 0;
+                background-image: url("../img/homepage-jpg/waterfall1.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                animation: slider8 20s infinite ease-in-out;
+                opacity:0;
+            }
+            div:nth-child(2){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+                border-radius: 0 0 50px 0;
+                 background-image: url("../img/homepage-jpg/schedule2.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                animation: slider8 20s infinite ease-in-out;
+                animation-delay: 5s;
+                opacity:0;
+            }
+            div:nth-child(3){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+                border-radius: 0 0 50px 0;
+                 background-image: url("../img/homepage-jpg/diy1.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                animation: slider8 20s infinite ease-in-out;
+                animation-delay: 10s;
+                opacity:0;
+            }
+            div:nth-child(4){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+                border-radius: 0 0 50px 0;
+                 background-image: url("../img/homepage-jpg/waterfall8.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                animation: slider8 20s infinite ease-in-out;
+                animation-delay: 15s;
+                opacity:0;
+            }
+           
             @media (max-width:576px){
                 width: calc(70% + 60px);
                 height: calc(21% + 0px);
@@ -172,7 +674,19 @@
                 left: 0;
                 border-radius: 0;
             }
-        }
+            @keyframes slider8 {
+                5%{
+                    opacity: 1;
+                }
+                25%{
+                    opacity: 1;
+                }
+                30%{
+                    opacity: 0;
+                }
+            }
+        }   
+        
         #sliderpic-9{
             position: absolute;
             top: calc(18.5% + 23px);
@@ -214,13 +728,47 @@
             width: 23%;
             height: 18%.5;
             background-color:#EFB6C8;
-            // opacity: 0.9;
-            /* background-image: url("./img/waterfall4.jpg"); */
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
+            div:nth-child(1){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+               left: -10px;
+               top: -10px;
+                background-image: url("../img/homepage-jpg//waterfall5.jpg");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation: slider11 20s infinite ease-in-out;
+               opacity:0;
+               animation-delay: 5s;
+            }
+            div:nth-child(2){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                 left: -10px;
+               top: -10px;
+               background-image: url("../img/homepage-jpg/waterfall2.jpg");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation: slider11 20s infinite ease-in-out;
+               opacity:0;
+               animation-delay: 15s;
+            }
             @media (max-width:576px){
                 display: none;
+            }
+        }
+        @keyframes slider11 {
+            5%{
+                opacity: 1;
+            }
+            25%{
+                opacity: 1;
+            }
+            30%{
+                opacity: 0;
             }
         }
         #sliderpic-12{
@@ -248,13 +796,33 @@
             width: 23%;
             height: 18%.5;
             background-color: #E6B6E4;
-            // opacity: 0.9;
-            /* background-image: url("./img/waterfall4.jpg"); */
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
+            div:nth-child(1){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+               left: -10px;
+               top: -10px;
+                background-image: url("../img/homepage-jpg/menu4.jpg");
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               animation: slider13 20s infinite ease-in-out;
+               opacity:0;
+               animation-delay: 5s;
+            }
             @media (max-width:576px){
                 display: none;
+            }
+        }
+        @keyframes slider13 {
+            5%{
+                opacity: 1;
+            }
+            25%{
+                opacity: 1;
+            }
+            30%{
+                opacity: 0;
             }
         }
     }
