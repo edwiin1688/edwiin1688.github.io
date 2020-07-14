@@ -14,22 +14,23 @@ var swiper = new Swiper(".guided_tour", {
         slideShadows: true
     },
     pagination: {
-        el: ".swiper-pagination",
-        type: 'custom',
-        renderCustom: function (swiper, current, total) {
-            return '<span class="pagination-text">' + ('0' + current).slice(-2) + '  /  ' + ('0' + total).slice(-2) + '</span>';
-        }
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
     loop: true,
     autoplay: {
-        delay: 2000
+        delay: 3000
     }
 
 },
-    $('.swiper-button-next-custom').click(function () {
+    $('.swiper-button-next').click(function () {
         swiper.slideNext();
     }),
-    $('.swiper-button-prev-custom').click(function () {
+    $('.swiper-button-prev').click(function () {
         swiper.slidePrev();
     })
 );
@@ -42,47 +43,39 @@ resizeWidth(mm);
 function resizeWidth(pMatchMedia) {
     if (pMatchMedia.matches) {
         //小於540px時執行的js
-        $('#philosophy .bp_title').each(function(index,item){
-            if($(item).hasClass('pc_title_font_size'))
-            {
+        $('#philosophy .bp_title').each(function (index, item) {
+            if ($(item).hasClass('pc_title_font_size')) {
                 $(item).removeClass('pc_title_font_size');
             }
-            if(!$(item).hasClass('mobile_title_font_size'))
-            {
+            if (!$(item).hasClass('mobile_title_font_size')) {
                 $(item).addClass('mobile_title_font_size');
             }
         });
 
-        $('#philosophy .bp_text').each(function(index,item){
-            if($(item).hasClass('pc_content_font_size'))
-            {
+        $('#philosophy .bp_text').each(function (index, item) {
+            if ($(item).hasClass('pc_content_font_size')) {
                 $(item).removeClass('pc_content_font_size');
             }
-            if(!$(item).hasClass('mobile_content_font_size'))
-            {
+            if (!$(item).hasClass('mobile_content_font_size')) {
                 $(item).addClass('mobile_content_font_size');
             }
         });
     } else {
         //大於540px時執行的js
-        $('#philosophy .bp_title').each(function(index,item){
-            if(!$(item).hasClass('pc_title_font_size'))
-            {
+        $('#philosophy .bp_title').each(function (index, item) {
+            if (!$(item).hasClass('pc_title_font_size')) {
                 $(item).addClass('pc_title_font_size');
             }
-            if($(item).hasClass('mobile_title_font_size'))
-            {
+            if ($(item).hasClass('mobile_title_font_size')) {
                 $(item).removeClass('mobile_title_font_size');
             }
         });
 
-        $('#philosophy .bp_text').each(function(index,item){
-            if(!$(item).hasClass('pc_content_font_size'))
-            {
+        $('#philosophy .bp_text').each(function (index, item) {
+            if (!$(item).hasClass('pc_content_font_size')) {
                 $(item).addClass('pc_content_font_size');
             }
-            if($(item).hasClass('mobile_content_font_size'))
-            {
+            if ($(item).hasClass('mobile_content_font_size')) {
                 $(item).removeClass('mobile_content_font_size');
             }
         });

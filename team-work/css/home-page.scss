@@ -536,12 +536,17 @@ z-index: 999;
             bottom: calc(-40% + 30px);
          }
          @media(max-height: 480px){
-           bottom: 50px;
-           left: -250px;
-         }
-         @media(max-height: 400px){
-           bottom: 80px;
-         }
+          bottom: 25px;
+          left: -115%;
+        }
+        @media(max-height: 420px){
+          bottom: 45px;
+          left: -150%;
+        }
+        @media(max-height: 400px){
+          bottom: 80px;
+          left: -95%;
+        }
           #follow {
            cursor: context-menu;
           width: 130px;
