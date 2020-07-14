@@ -38,6 +38,12 @@ footer a #top-btn #f-arrow {
           transform: rotate(-45deg);
 }
 
+@media (max-width: 650px) {
+  footer a #top-btn #f-arrow {
+    left: 57px;
+  }
+}
+
 footer a #top-btn #f-top {
   width: 30px;
   height: 20px;
