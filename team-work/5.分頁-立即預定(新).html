@@ -18,6 +18,55 @@
             background-color: rgb(236, 67, 101);
             opacity: 0.2;
         } */
+        #booking-main{
+            position: relative;
+            top: -120px;
+        }
+        .booknow-container{
+            position: absolute;
+        }
+
+
+
+        #end{
+            position: relative;
+            top: 1050px;
+        }
+        @media (max-width: 1200px){
+            #end{
+            top: 1350px;
+            }
+        }
+
+        @media (max-width: 1356px) {
+            #booking-main{
+                top: -140px;
+            }
+        }
+
+
+        @media (max-width: 900px) {
+            #booking-main{
+                top: -250px;
+            }
+            #end{
+            top: 1200px;
+            }
+        }
+        @media (max-width: 650px){
+            #end{
+            top: 1280px;
+            }
+        }
+        @media (max-width:450px){
+            #booking-main{
+                top: -300px;
+            }
+            #end{
+            top: 1220px;
+            }
+        }
+        
     </style>
 
 
@@ -30,19 +79,19 @@
         <div id="thetop"></div>
         <div class="paging-top">
             <!-- 分頁手繪圖 -->
-            <div id="paging-food-pic"></div>
+            <!-- <div id="paging-food-pic"></div> -->
             <!-- 文字區塊 -->
             <div class="paging-food-text">
                 <div class="food-text">
                     <h1></h1>
-                    <h5>event</h5>
+                    <h5>Book now</h5>
                 </div>
-                <h5>
+                <!-- <h5>
                     飛鳥恰恰在餐飲上投入許多心思，以餐桌到產地做為核心
                     精神，創辦台灣唯一的一泊五食的露營行程，邀請飯店主廚
                     料理露營行程中的各式餐點，將頂級料理的水平推向營地中
                     實現。
-                </h5>
+                </h5> -->
             </div>
         </div>
         <div id="paging-flag-r"></div>
@@ -128,7 +177,7 @@
     </section>
 
     <!-- 立即預定內容 -->
-    <main>
+    <main id="booking-main">
         <div class="booknow-container">
             <div class="booknowmem">
                 <img src="./img/booknowpage/bookmen.png" alt="">

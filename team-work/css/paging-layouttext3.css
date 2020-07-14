@@ -577,7 +577,7 @@
 
 @media (max-height: 480px) {
   .home-page .menu-container .nav-bg {
-    margin: 0;
+    margin: 0 0 0 30px;
     height: 45%;
   }
 }
@@ -971,7 +971,7 @@
 @media (max-height: 420px) {
   .home-page .menu-container .menu-content .info-box .menu-footer {
     bottom: 45px;
-    left: -150%;
+    left: -110%;
   }
 }
 

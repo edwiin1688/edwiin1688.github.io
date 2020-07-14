@@ -38,6 +38,7 @@
 
 .home-page {
   width: 100%;
+  background-image: url("../img/layout/bg.png");
   position: relative;
   overflow: hidden;
   -webkit-animation: home-page 2s ease-out;
@@ -79,6 +80,13 @@
     width: 80%;
     height: 660px;
     margin: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .home-page .paging-top {
+    height: 650px;
+    position: relative;
   }
 }
 
@@ -134,6 +142,8 @@
 .home-page .paging-top .paging-food-text {
   width: 50%;
   height: 70%;
+  margin: auto;
+  padding-top: 50px;
 }
 
 @media (max-width: 1100px) {
@@ -149,6 +159,14 @@
   }
 }
 
+@media (max-width: 650px) {
+  .home-page .paging-top .paging-food-text {
+    padding: 0;
+    position: absolute;
+    top: 110px;
+  }
+}
+
 @media (max-width: 588px) {
   .home-page .paging-top .paging-food-text {
     width: 80%;
@@ -157,9 +175,10 @@
 }
 
 .home-page .paging-top .paging-food-text .food-text {
-  margin: 40px 0 0 0;
+  margin: 40px auto 0 auto;
   width: 198px;
   height: 40%;
+  text-align: center;
   padding: 10px 0 0 0;
 }
 
@@ -577,7 +596,7 @@
 
 @media (max-height: 480px) {
   .home-page .menu-container .nav-bg {
-    margin: 0 0 0 30px;
+    margin: 0;
     height: 45%;
   }
 }
@@ -971,7 +990,7 @@
 @media (max-height: 420px) {
   .home-page .menu-container .menu-content .info-box .menu-footer {
     bottom: 45px;
-    left: -110%;
+    left: -150%;
   }
 }
 
