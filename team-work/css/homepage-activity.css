@@ -1574,10 +1574,14 @@
     height: 40px;
     line-height: 40px;
     text-align: center;
-    background-color: #eea33b;
-    color: white;
+    border: 3px solid #eea33b;
+    color: #eea33b;
     font-weight: bolder;
     border-radius: 50px;
+  }
+  #section-4 .container .for-more-phone1:hover {
+    background-color: #eea33b;
+    color: white;
   }
 }
 
@@ -1602,10 +1606,14 @@
     height: 40px;
     line-height: 40px;
     text-align: center;
-    background-color: #eea33b;
-    color: white;
+    border: 3px solid #eea33b;
+    color: #eea33b;
     font-weight: bolder;
     border-radius: 50px;
+  }
+  #section-4 .container .for-more-phone2:hover {
+    background-color: #eea33b;
+    color: white;
   }
 }
 
@@ -1630,10 +1638,14 @@
     height: 40px;
     line-height: 40px;
     text-align: center;
-    background-color: #eea33b;
-    color: white;
+    border: 3px solid #eea33b;
+    color: #eea33b;
     font-weight: bolder;
     border-radius: 50px;
+  }
+  #section-4 .container .for-more-phone3:hover {
+    background-color: #eea33b;
+    color: white;
   }
 }
 
@@ -2147,4 +2159,3 @@
     z-index: 0;
   }
 }
-/*# sourceMappingURL=homepage-activity.css.map */
