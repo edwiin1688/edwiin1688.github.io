@@ -46,18 +46,18 @@ var mm = window.matchMedia("(max-width: 650px)");
 mm.addListener(resizeWidth);
 resizeWidth(mm);
 
-function resizeWidth(pMatchMedia){
-  if (pMatchMedia.matches) {
-    //小於650px時執行的js
-    if ($('.banner').is(":visible")){
-        $('.banner').hide();
+function resizeWidth(pMatchMedia) {
+    if (pMatchMedia.matches) {
+        //小於650px時執行的js
+        if ($('.banner').is(":visible")) {
+            $('.banner').hide();
+        }
+    } else {
+        //大於650px時執行的js
+        if ($('.banner').is(":hidden")) {
+            $('.banner').show();
+        }
     }
-  }else {
-    //大於650px時執行的js
-    if ($('.banner').is(":hidden")){
-        $('.banner').show();
-    }
-  }
 }
 
 
