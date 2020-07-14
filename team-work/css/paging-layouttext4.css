@@ -38,6 +38,7 @@
 
 .home-page {
   width: 100%;
+  background-image: url("../img/layout/bg.png");
   position: relative;
   overflow: hidden;
   -webkit-animation: home-page 2s ease-out;
@@ -173,6 +174,7 @@
 @media (max-width: 900px) {
   .home-page .paging-top .paging-food-text .food-text {
     margin: 50px auto 0 auto;
+    text-align: center;
   }
 }
 
@@ -191,8 +193,9 @@
 .home-page .paging-top .paging-food-text .food-text h1 {
   width: 100%;
   height: 65%;
-  background-image: url("../img/layout/營區導覽.svg");
+  background-image: url("../img/layout/美食饗宴.svg");
   background-repeat: no-repeat;
+  margin: 0;
 }
 
 @media (max-width: 900px) {
@@ -202,6 +205,8 @@
 }
 
 .home-page .paging-top .paging-food-text .food-text h5 {
+  font-family: "微軟正黑體";
+  font-weight: 600;
   padding: 0;
   font-size: 24px;
 }
@@ -213,6 +218,8 @@
 }
 
 .home-page .paging-top .paging-food-text h5 {
+  font-family: "微軟正黑體";
+  font-weight: 600;
   font-size: 20px;
   line-height: 25px;
   padding: 10px 0 0 0;

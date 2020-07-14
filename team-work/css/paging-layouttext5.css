@@ -173,6 +173,7 @@
 @media (max-width: 900px) {
   .home-page .paging-top .paging-food-text .food-text {
     margin: 50px auto 0 auto;
+    text-align: center;
   }
 }
 
@@ -193,6 +194,7 @@
   height: 65%;
   background-image: url("../img/layout/立即預訂.svg");
   background-repeat: no-repeat;
+  margin: 0;
 }
 
 @media (max-width: 900px) {
@@ -202,6 +204,8 @@
 }
 
 .home-page .paging-top .paging-food-text .food-text h5 {
+  font-family: "微軟正黑體";
+  font-weight: 600;
   padding: 0;
   font-size: 24px;
 }
@@ -213,6 +217,7 @@
 }
 
 .home-page .paging-top .paging-food-text h5 {
+  font-family: "微軟正黑體";
   font-weight: 600;
   font-size: 20px;
   line-height: 25px;
