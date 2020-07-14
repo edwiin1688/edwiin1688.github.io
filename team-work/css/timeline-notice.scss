@@ -16,7 +16,10 @@
     }
   }
   .jss-btn.act{
-    filter:saturate(0.3);
+    filter:brightness(0.8);
+  }
+  .js-btn.act{
+    filter:brightness(0.8);
   }
   
 
@@ -280,7 +283,7 @@
         box-sizing: border-box;
         width: 60vw;
         min-width: 700px;
-        height: 1320px;
+        height: 1370px;
         background-color: #B7D7C9;
         padding: 0px 0 0 0;
         // border: 1px solid rgb(182, 41, 41);
@@ -310,6 +313,7 @@
                 margin: auto;
             }
             .temperature-box{
+                
                 width: 300px;
                 height: 370px;
                 border-radius: 20px;
@@ -323,6 +327,7 @@
                
                 }
                 @media (max-width:500px){
+                    cursor: pointer;
                     height: 60px;
                     width: 300px;
                     padding: 5px 0 0 0;
@@ -401,17 +406,22 @@
                 }
                }
             }
+            .tem-phone.act{
+                @media (max-width:500px){
+                    display: block;
+                }
+            }
             .tem-phone{
                 display: none;
             
                 @media (max-width:500px){
-                    display: block;
-                    padding: 2px 0 0 0;
+                    // display: ;
+                    padding: 7px 0 5px 0;
                     width: 300px;
                     // border: 1px solid black;
                     margin: 30px auto 0 auto;
                     border-radius: 20px;
-                    height: 150px;
+                    height: 160px;
                     background-color: #F1F9FE;
                 }
                 .tem{
@@ -457,6 +467,7 @@
                 }
 
                 @media (max-width:500px){
+                    cursor: pointer;
                     height: 60px;
                     width: 300px;
                     padding: 5px 0 0 0;
@@ -491,16 +502,19 @@
             #sweet-phone{
                 display: none;
                 @media (max-width:500px){
-                    display: block;
+                    // display: block;
                     width: 300px;
                     margin: 30px auto 0 auto;
                     padding: 20px;
                     background-color: #F1F9FE;
                     border-radius: 20px;
                 }
-            #sweet-phone.act{
-                display: block;
             }
+            #sweet-phone.act{
+                @media (max-width:500px){
+                    display: block;
+                }
+                
             }
         }
         
@@ -521,6 +535,7 @@
                 left: calc(50% - 192.5px);
             }
             @media (max-width:500px){
+                cursor: pointer;
                 height: 60px;
                 position: unset;
                 width: 300px;
@@ -556,11 +571,15 @@
                 }
             }
         }
-
+        #notice-phone.act{
+            @media (max-width:500px){
+                display: block;
+            }
+        }
         #notice-phone{
             display: none;
             @media (max-width:500px){
-                display: block;
+                // display: block;
                 width: 300px;
                 margin: 30px auto 0 auto;
                 padding: 20px;

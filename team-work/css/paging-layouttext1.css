@@ -94,7 +94,7 @@
   width: 50%;
   height: 80%;
   margin: 0 0 0 0;
-  background-image: url("../img/layout/ill_food.png");
+  background-image: url("../img/layout/ill_camp.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -215,6 +215,8 @@
 }
 
 .home-page .paging-top .paging-food-text h5 {
+  font-family: Microsoft JhengHei;
+  font-weight: 600;
   font-size: 20px;
   line-height: 25px;
   padding: 10px 0 0 0;
