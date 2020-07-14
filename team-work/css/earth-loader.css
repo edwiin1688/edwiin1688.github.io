@@ -1,0 +1,124 @@
+body>.loading-mask {
+    position: fixed;
+    z-index: 9999999;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+
+    background-color: #f3ece2;
+}
+
+body>.loading-mask>.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 300px;/* default: 140px */
+    width: 300px;/* default: 140px */
+    min-width: auto;
+    overflow: hidden;
+    border: 2px solid #263238;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body>.loading-mask .loader {
+    min-width: 0;
+    background: none;
+}
+
+body>.loading-mask>.wrapper>svg {
+    stroke: #263238;
+    /* animation: rotation 5s linear 0s infinite; */
+    max-width: 1000px;
+}
+
+body>.loading-mask>.text {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding-top: 15px;
+    font-size: 20px;
+    line-height: 1;
+    font-family: Helvetica;
+    text-transform: uppercase;
+    color: #263238;
+}
+
+body>.loading-mask>.text>.letter:nth-child(0) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 0s infinite linear alternate;
+}
+
+body>.loading-mask>.text>.letter:nth-child(1) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 0.2s infinite linear alternate;
+}
+
+body>.loading-mask>.text>.letter:nth-child(2) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 0.4s infinite linear alternate;
+}
+
+body>.loading-mask>.text>.letter:nth-child(3) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 0.6s infinite linear alternate;
+}
+
+body>.loading-mask>.text>.letter:nth-child(4) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 0.8s infinite linear alternate;
+}
+
+body>.loading-mask>.text>.letter:nth-child(5) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 1s infinite linear alternate;
+}
+
+body>.loading-mask>.text>.letter:nth-child(6) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 1.2s infinite linear alternate;
+}
+
+body>.loading-mask>.text>.letter:nth-child(7) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 1.4s infinite linear alternate;
+}
+
+body>.loading-mask>.text>.letter:nth-child(8) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 1.6s infinite linear alternate;
+}
+
+body>.loading-mask>.text>.letter:nth-child(9) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 1.8s infinite linear alternate;
+}
+
+body>.loading-mask>.text>.letter:nth-child(10) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 2s infinite linear alternate;
+}
+
+@keyframes rotation {
+    from {
+        transform: translateX(0);
+    }
+
+    from {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes blur-text {
+    0% {
+        filter: blur(0px);
+    }
+
+    100% {
+        filter: blur(3px);
+    }
+}
