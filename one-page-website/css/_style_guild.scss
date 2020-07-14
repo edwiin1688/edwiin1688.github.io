@@ -14,13 +14,13 @@ $doc-text-color:"#FCB13C";
     background-color: $c;
 
     // 字型大小
-    font-size: large;
+    font-size: 2vh;
 
     // 字距
-    letter-spacing: 10px;
+    letter-spacing: 1vh;
 
     // 行距
-    line-height: 50px;
+    line-height: 3vh;
 };
 // @include doc-text-font( red );
 

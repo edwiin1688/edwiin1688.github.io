@@ -8,9 +8,9 @@
   color: white;
   text-align: center;
   background-color: black;
-  font-size: large;
-  letter-spacing: 10px;
-  line-height: 50px;
+  font-size: 2vh;
+  letter-spacing: 1vh;
+  line-height: 3vh;
 }
 
 .row_padding {
@@ -24,7 +24,7 @@
 .text_background_1 {
   width: 100%;
   height: 100%;
-  background-image: url("../img/about-1-text-bg.webp");
+  background-image: url("../img/about-1-text-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -51,16 +51,16 @@
 
 .card_text_bg_color_1 {
   background-color: rgba(255, 255, 255, 0.5);
-  font-size: large;
-  letter-spacing: 10px;
-  line-height: 50px;
+  font-size: 2vh;
+  letter-spacing: 1vh;
+  line-height: 3vh;
 }
 
 .card_text_bg_color_2 {
   background-color: #FCB13C;
-  font-size: large;
-  letter-spacing: 10px;
-  line-height: 50px;
+  font-size: 2vh;
+  letter-spacing: 1vh;
+  line-height: 3vh;
 }
 
 .img_abs {
@@ -89,7 +89,7 @@
 
 .parallax {
   /* The image used */
-  background-image: url("../img/logo.webp");
+  background-image: url("../img/logo.jpg");
   /* Set a specific height */
   height: 500px;
   /* Create the parallax scrolling effect */
