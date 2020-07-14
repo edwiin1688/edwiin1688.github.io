@@ -10,23 +10,27 @@
     // 手繪插圖-宣告
     .hand_drawn_1,
     .hand_drawn_3 {
-        width: 50vw;
+        // width: 100%;// 不要設大小 可能會超出畫面
         position: absolute;;
         top: 40%;
         left: -25%;
         img {
             width: 25%;
+            // 裁切超出的圖片範圍
+            overflow: hidden;
         }
     }
 
     // 手繪插圖-宣告
     .hand_drawn_2 {
-        width: 50vw;
+        // width: 100%;// 不要設大小 可能會超出畫面
         position: absolute;;
         top: -70%;
         left: 30%;
         img {
             width: 25%;
+            // 裁切超出的圖片範圍
+            overflow: hidden;
         }
     }
 
@@ -37,6 +41,8 @@
             width: 100%;
             // 裁切超出的圖片範圍
             overflow: hidden;
+            // 換圖
+            content:url('../img/about/line.png');
         }
     }
 
@@ -125,6 +131,14 @@
     @media (max-width:540px){
         #philosophy {
             max-width: 100vw;
+        }
+
+            // 分隔線-宣告
+        .about_line {
+            img {
+                // 換圖
+                content:url('../img/about/line-320px.png');
+            }
         }
 
         // 手機版的圖文區-col-sm

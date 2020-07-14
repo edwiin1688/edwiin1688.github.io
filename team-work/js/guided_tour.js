@@ -60,6 +60,11 @@ function resizeWidth(pMatchMedia) {
                 $(item).addClass('mobile_content_font_size');
             }
         });
+
+        // 手機板隱藏
+        $('.swiper-button-prev').hide();
+        $('.swiper-button-next').hide();
+
     } else {
         //大於540px時執行的js
         $('#philosophy .bp_title').each(function (index, item) {
@@ -79,5 +84,8 @@ function resizeWidth(pMatchMedia) {
                 $(item).removeClass('mobile_content_font_size');
             }
         });
+
+        $('.swiper-button-prev').show();
+        $('.swiper-button-next').show();
     }
 }
