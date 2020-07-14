@@ -290,23 +290,6 @@ input:focus{
 }
 
 
-/* JS */
-.campimg-mask{
-    width: 100%;
-    height: 100%;
-    background-color: black;
-}
-
-.camp-pic.active{
-    width: 110%;
-}
-
-.camp-text.active{
-    color: orange;
-}
-
-
-
 
 /* RWD */
 
