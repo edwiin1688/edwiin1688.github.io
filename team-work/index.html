@@ -669,13 +669,13 @@
         <p style="z-index: 9; display: none;">scrollTop</p>
     </div>
 
-    <!-- SCROLL DOWN -->
+    <!-- * SCROLL DOWN -->
     <div class="d-flex justify-content-center fixed-bottom" style="width: 100vw;">
         <img id="scroll_down" class="lax" data-lax-opacity="0 1, 100 0" src="./img/scroll_down.png" alt="SCROLL DOWN">
-        <!-- data-lax-opacity 語法參考網址：https://github.com/alexfoxy/lax.js -->
+        <!-- * data-lax-opacity 語法參考網址：https://github.com/alexfoxy/lax.js -->
     </div>
     <script>
-        // 偵測 scroll 高
+        // <!-- ? 偵測 scroll 高 -->
         $(window).scroll(function () {
             $('.scroll_top').text('scrollTop: ' + $(window).scrollTop());
         });
@@ -692,8 +692,7 @@
     <!-- todo index !? -->
     <script src="./js/index.js"></script>
     <script>
-        // 寫自己的 JS 程式碼在這邊
-
+        // <!-- ! 寫自己的 JS 程式碼在這邊 -->
         window.addEventListener("scroll", () => {
 
             var burger_top = document.querySelector(".burger-bun-top")

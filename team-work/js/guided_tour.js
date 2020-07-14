@@ -1,5 +1,5 @@
 // 環境導覽
-var swiper = new Swiper(".swiper-container", {
+var swiper = new Swiper(".guided_tour", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,

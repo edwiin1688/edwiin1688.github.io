@@ -1,8 +1,15 @@
-// SCROLL DOWN
+// ?　SCROLL DOWN
 var scroll_down = document.querySelector('#scroll_down');
 scroll_down.addEventListener('click', function() {
-    console.log('SCROLL DOWN');
-    $('html, body').animate({scrollTop: $('#end').offset().top}, 1000)
+    
+    
+    console.log('#banner: '+ $('#banner').offset().top);
+    console.log('#philosophyN: '+ $('#philosophy').offset().top);
+
+    var scroll_pos = $('#philosophy').offset().top;
+    console.log('SCROLL DOWN: '+ scroll_pos);
+
+    $('html, body').animate({ scrollTop:(scroll_pos) }, 1500);
 });
 
 
