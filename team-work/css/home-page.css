@@ -744,14 +744,22 @@
 
 @media (max-height: 480px) {
   .home-page .menu-container .menu-content .info-box .menu-footer {
-    bottom: 50px;
-    left: -250px;
+    bottom: 25px;
+    left: -115%;
+  }
+}
+
+@media (max-height: 420px) {
+  .home-page .menu-container .menu-content .info-box .menu-footer {
+    bottom: 45px;
+    left: -150%;
   }
 }
 
 @media (max-height: 400px) {
   .home-page .menu-container .menu-content .info-box .menu-footer {
     bottom: 80px;
+    left: -95%;
   }
 }
 
