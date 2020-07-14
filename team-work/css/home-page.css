@@ -89,7 +89,7 @@
 
 @media (max-width: 450px) {
   .home-page .animation-pic:nth-child(2) {
-    background-position-x: -370px;
+    background-position-x: -250px;
   }
 }
 
