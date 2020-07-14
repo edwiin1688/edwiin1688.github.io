@@ -7,29 +7,8 @@
 #philosophy {
     background-color: $bg_color_code;
 
-    // 手繪插圖
-    .hand_drawn_1 {
-        width: 50vw;
-        position: absolute;;
-        top: 40%;
-        left: -70%;
-        img {
-            width: 25%;
-        }
-    }
-
-    // 手繪插圖
-    .hand_drawn_2 {
-        width: 50vw;
-        position: absolute;;
-        top: -70%;
-        left: 15%;
-        img {
-            width: 25%;
-        }
-    }
-
-    // 手繪插圖
+    // 手繪插圖-宣告
+    .hand_drawn_1,
     .hand_drawn_3 {
         width: 50vw;
         position: absolute;;
@@ -40,6 +19,18 @@
         }
     }
 
+    // 手繪插圖-宣告
+    .hand_drawn_2 {
+        width: 50vw;
+        position: absolute;;
+        top: -70%;
+        left: 15%;
+        img {
+            width: 25%;
+        }
+    }
+
+    // 分隔線-宣告
     .about_line {
         width: 100%;
         img {
@@ -49,7 +40,7 @@
         }
     }
 
-    // ? 圓圈
+    // ? 圓圈-宣告
     #circle_parallax_1 {
         left: 30%;
         img {
@@ -80,40 +71,54 @@
         }
     }
 
-    .bp_container {
+    // 手機版的圖文區-宣告
+    .p_mobile_1,
+    .p_mobile_2,
+    .p_mobile_3 {
         position: relative;// position 參考點
         .bp_title {
-            display: none;
+            display: none;// 隱藏
         }
         .bp_text {
-            display: none;
+            display: none;// 隱藏
         }
     }
 
-    .bp_container_2 {
-        position: relative;// position 參考點
-        .bp_title {
-            display: none;
-        }
-        .bp_text {
-            display: none;
-        }
-    }
-
-    .bp_container_3 {
-        position: relative;// position 參考點
-        .bp_title {
-            display: none;
-        }
-        .bp_text {
-            display: none;
-        }
-    }
-
-    .pb_text_area {
+    // PC 圖文樣式-顯示-宣告
+    .p_pc {
         display: inline;
 
         position: relative;// position 參考點
+    }
+
+    // ! 720px - 970px
+    @media (min-width: 720px) and (max-width: 970px) {
+        .p_pc {
+            .bp_title {
+                font-size: 36px !important;
+                line-height: 54px !important;
+            }
+
+            .bp_text {
+                font-size: 16px !important;
+                line-height: 24px !important;
+            }
+        }        
+    }
+
+    // ! 540px - 720px
+    @media (min-width: 540px) and (max-width: 720px) {
+        .p_pc {
+            .bp_title {
+                font-size: 30px !important;
+                line-height: 40px !important;
+            }
+
+            .bp_text {
+                font-size: 15px !important;
+                line-height: 22px !important;
+            }
+        }        
     }
 
     // ! col-sm 是 540px 以下
@@ -122,67 +127,74 @@
             max-width: 100vw;
         }
 
-        .bp_container_3 {
+        // 手機版的圖文區-col-sm
+        .p_mobile_3 {
+            // 取消 padding
+            padding-right: 0; 
+            padding-left: 0;
             .bp_title {
-                width: 40vw;
+                width: 75vw;
+
                 display: inline;
                 top: 55%;
-                left: 30%;
+                left: 50%;
             }
             .bp_text {
-                width: 100%;
+                width: 70vw;
 
                 display: inline;
-                top: 60%;
-                left: 0;
+                top: 70%;
+                left: 50%;
                 color: black;
-
-                font-size: 1vw;
-                line-height: 5vw;
             }
         }
 
-        .bp_container_2 {
+        // 手機版的圖文區-col-sm
+        .p_mobile_2 {
+            // 取消 padding
+            padding-right: 0; 
+            padding-left: 0;
             .bp_title {
-                width: 40vw;
+                width: 70vw;
+
                 display: inline;
                 top: 65%;
-                left: 30%;
+                left: 50%;
             }
             .bp_text {
-                width: 100%;
+                width: 70vw;
 
                 display: inline;
-                top: 75%;
-                left: 0;
+                top: 83%;
+                left: 50%;
                 color: black;
-
-                font-size: 1vw;
-                line-height: 5vw;
             }
         }
 
-        .bp_container {
+        // 手機版的圖文區-col-sm
+        .p_mobile_1 {
+            // 取消 padding
+            padding-right: 0; 
+            padding-left: 0;
             .bp_title {
-                width: 40vw;
+                width: 70vw;
+
                 display: inline;
                 top: 50%;
-                left: 30%;
+                left: 50%;
             }
             .bp_text {
-                width: 100%;
+                width: 70vw;
 
                 display: inline;
-                top: 55%;
-                left: 0;
+                top: 66%;
+                left: 50%;
                 color: black;
-
-                font-size: 1vw;
-                line-height: 5vw;
             }
         }
 
-        .pb_text_area {
+        // PC 圖文樣式-隱藏
+        .p_pc {
             display: none;
         }
 
@@ -225,56 +237,66 @@
         }
     }
 
-
+    // 大圖1、3特化-宣告
     .bp_left {
         .bp_title {
             color: black;
         }
     }
 
+    // 大圖2特化-宣告
     .bp_right {
         .bp_title {
             color: black;
 
-            top: 8%;
+            top: 17%;
+            left: 32%;
         }
 
         .bp_text {
-            left: 10%;
+            left: 40%;
         }
     }
 
+    // 標題-宣告
     .bp_title {
         color: black;
 
-        width: 30vw;
+        width: 50vw;
 
         position: absolute;
-        top: 15%;
-        left: 0;
-
-        z-index: 2;
-
-        text-align: center;
-        @include big_title;
-    }
-
-    .bp_text {
-        color: white;
-
-        width: 15vw;
-
-        position: absolute;
-        top: 45%;
+        top: 25%;
         left: 60%;
 
         z-index: 2;
 
         text-align: center;
-        @include text_content;
+        @include text_title;
+
+        // 置中
+        transform: translate(-50%, -50%);
     }
 
-    // 大圖
+    // 內文-宣告
+    .bp_text {
+        color: white;
+
+        width: 40vw;
+
+        position: absolute;
+        top: 60%;
+        left: 70%;
+
+        z-index: 2;
+
+        text-align: center;
+        @include text_content;
+
+        // 置中
+        transform: translate(-50%, -50%);
+    }
+
+    // 大圖-宣告
     // 2. 創造美好 露營回憶
     .philosophy_2 {
         img {
@@ -288,7 +310,7 @@
         padding-bottom: 0;
     }
 
-    // 大圖
+    // 大圖-宣告
     // 1. 帶著家人 走進自然
     .philosophy_1 {
         img {
@@ -304,7 +326,7 @@
         // margin-left: 10%;
     }
 
-    // 大圖
+    // 大圖-宣告
     // 3. 享受自然 森林芬多精
     .philosophy_3 {
         img {
@@ -318,10 +340,5 @@
         padding-bottom: 30%;
 
         // margin-left: 10%;
-    }
-
-    .no_padding {
-        padding-right: 0; 
-        padding-left: 0;
     }
 }

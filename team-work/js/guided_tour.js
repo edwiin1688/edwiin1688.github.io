@@ -33,3 +33,58 @@ var swiper = new Swiper(".swiper-container", {
         swiper.slidePrev();
     })
 );
+
+// RWD
+var mm = window.matchMedia("(max-width: 540px)");
+mm.addListener(resizeWidth);
+resizeWidth(mm);
+
+function resizeWidth(pMatchMedia) {
+    if (pMatchMedia.matches) {
+        //小於540px時執行的js
+        $('#philosophy .bp_title').each(function(index,item){
+            if($(item).hasClass('pc_title_font_size'))
+            {
+                $(item).removeClass('pc_title_font_size');
+            }
+            if(!$(item).hasClass('mobile_title_font_size'))
+            {
+                $(item).addClass('mobile_title_font_size');
+            }
+        });
+
+        $('#philosophy .bp_text').each(function(index,item){
+            if($(item).hasClass('pc_content_font_size'))
+            {
+                $(item).removeClass('pc_content_font_size');
+            }
+            if(!$(item).hasClass('mobile_content_font_size'))
+            {
+                $(item).addClass('mobile_content_font_size');
+            }
+        });
+    } else {
+        //大於540px時執行的js
+        $('#philosophy .bp_title').each(function(index,item){
+            if(!$(item).hasClass('pc_title_font_size'))
+            {
+                $(item).addClass('pc_title_font_size');
+            }
+            if($(item).hasClass('mobile_title_font_size'))
+            {
+                $(item).removeClass('mobile_title_font_size');
+            }
+        });
+
+        $('#philosophy .bp_text').each(function(index,item){
+            if(!$(item).hasClass('pc_content_font_size'))
+            {
+                $(item).addClass('pc_content_font_size');
+            }
+            if($(item).hasClass('mobile_content_font_size'))
+            {
+                $(item).removeClass('mobile_content_font_size');
+            }
+        });
+    }
+}

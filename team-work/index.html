@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Work - Project F</title>
 
+
+    <!-- Better Comments -->
+    <!--        Comments  -->
+    <!-- *      Comments  -->
+    <!-- //     Comments  -->
+    <!-- todo   Comments  -->
+    <!-- !      Comments  -->
+    <!-- ?      Comments  -->
+
+    <!-- TODO Highlight -->
+    <!-- TODO:  Comments  -->
+    <!-- FIXME: Comments  -->
+
+
     <!-- ! FIX 解決 favicon 錯誤方法 -->
     <!-- <link rel="shortcut icon" href="#" /> -->
     <link href="favicon.ico" rel="shortcut icon">
@@ -18,6 +32,9 @@
 
     <!-- x Parallax v3.1.0 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+    <!-- ? 安裝離線 vue -->
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
 
 
     <!-- // TODO 以上是外部引用 -->
@@ -86,7 +103,6 @@
     </script>
 
     <!-- npm install lazyload -->
-    <!-- <script type="text/javascript" src="jquery-1.11.3.min.js"></script> -->
     <script src="./node_modules/lazyload/lazyload.min.js"></script>
 
     <!-- 上面是相依的 js -->
@@ -236,8 +252,8 @@
 
                 <!-- 1. 帶著家人 走進自然 -->
                 <div class="row">
-
-                    <div class="bp_container col-12 col-sm-8 order-0 order-sm-1 no_padding">
+                    <!-- 手機圖文樣式 -->
+                    <div class="p_mobile_1 col-12 col-sm-8 order-0 order-sm-1">
                         <div class="philosophy_1">
                             <img src="./img/about/explore.png" alt="...">
                             <div class="bp_title">
@@ -253,8 +269,8 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="pb_text_area col-12 col-sm-4 order-1 order-sm-0 bp_left">
+                    <!-- PC 圖文樣式 -->
+                    <div class="p_pc col-12 col-sm-4 order-1 order-sm-0 bp_left">
                         <div class="bp_title">
                             帶著家人<br>
                             &emsp;走進自然<br>
@@ -284,7 +300,8 @@
 
                 <!-- 2. 創造美好 露營回憶 -->
                 <div class="row">
-                    <div class="bp_container_2 col-12 col-sm-8 no_padding">
+                    <!-- 手機圖文樣式 -->
+                    <div class="p_mobile_2 col-12 col-sm-8">
                         <div class="philosophy_2">
                             <img src="./img/about/create.png" alt="...">
                             <div class="bp_title">
@@ -298,8 +315,8 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="pb_text_area col-12 col-sm-4 bp_right">
+                    <!-- PC 圖文樣式 -->
+                    <div class="p_pc col-12 col-sm-4 bp_right">
                         <div class="bp_title">
                             創造美好<br>
                             &emsp;露營回憶<br>
@@ -325,8 +342,8 @@
 
                 <!-- 3. 享受自然 森林芬多精 -->
                 <div class="row">
-
-                    <div class="bp_container_3 col-12 col-sm-8 order-sm-1 order-0 no_padding">
+                    <!-- 手機圖文樣式 -->
+                    <div class="p_mobile_3 col-12 col-sm-8 order-sm-1 order-0">
                         <div class="philosophy_3">
                             <img src="./img/about/enjoy.png" alt="...">
                             <div class="bp_title">
@@ -341,8 +358,8 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="pb_text_area col-12 col-sm-4 order-sm-0 order-1 bp_left">
+                    <!-- PC 圖文樣式 -->
+                    <div class="p_pc col-12 col-sm-4 order-sm-0 order-1 bp_left">
                         <div class="bp_title">
                             享受自然<br>
                             &emsp;森林芬多精<br>
@@ -647,10 +664,11 @@
     </footer>
 
 
-    <!-- FIXME: 顯示 scrollTop -->
-    <div class="d-flex justify-content-center fixed-top" style="width: 100vw;">
-        <h6 style="z-index: 2;">scrollTop</h6>
+    <!-- TODO: 顯示 scrollTop -->
+    <div class="scroll_top d-flex justify-content-center fixed-top" style="width: 100vw;">
+        <p style="z-index: 9; display: none;">scrollTop</p>
     </div>
+
     <!-- SCROLL DOWN -->
     <div class="d-flex justify-content-center fixed-bottom" style="width: 100vw;">
         <img id="scroll_down" class="lax" data-lax-opacity="0 1, 100 0" src="./img/scroll_down.png" alt="SCROLL DOWN">
@@ -659,7 +677,7 @@
     <script>
         // 偵測 scroll 高
         $(window).scroll(function () {
-            $('h6').text('scrollTop: ' + $(window).scrollTop());
+            $('.scroll_top').text('scrollTop: ' + $(window).scrollTop());
         });
 
         console.log('#banner:　' + document.querySelector('#banner').offsetTop);
@@ -671,12 +689,9 @@
 
     <script src="./js/home-page.js"></script>
 
-    <!-- index !? -->
+    <!-- todo index !? -->
     <script src="./js/index.js"></script>
     <script>
-        // TODO:
-        // FIXME:
-
         // 寫自己的 JS 程式碼在這邊
 
         window.addEventListener("scroll", () => {
