@@ -936,6 +936,7 @@
             transform: translateX(0);
     margin: 25px auto 0 auto;
     height: 40px;
+    font-size: 24px;
   }
 }
 

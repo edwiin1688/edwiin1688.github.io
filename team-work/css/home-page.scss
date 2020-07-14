@@ -496,8 +496,10 @@ z-index: 999;
               transform: translateX(0);
               margin: 25px auto 0 auto;
               height: 40px;
-             
-              
+              font-size: 18px;
+
+              // 測試10/11 22:11
+              font-size: 24px;
             }
             @media(max-width: 450px){
               height: 40px;
