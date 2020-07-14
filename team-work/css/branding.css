@@ -41,27 +41,45 @@ body {
 .branding svg #small-peak {
   stroke-dasharray: 40.26 20.74 40.26 20.74;
   stroke-dashoffset: 0;
-  animation: smallPeakAnimation 3s cubic-bezier(0.79, 0.14, 0.15, 0.86) infinite;
-  animation-delay: 0.5s;
+  -webkit-animation: smallPeakAnimation 3s cubic-bezier(0.79, 0.14, 0.15, 0.86) infinite;
+          animation: smallPeakAnimation 3s cubic-bezier(0.79, 0.14, 0.15, 0.86) infinite;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .branding svg #first-peak {
   stroke-dasharray: 93.72 48.28 93.72 48.28;
   stroke-dashoffset: 0;
-  animation: largePeakAnimation 5s cubic-bezier(0.79, 0.14, 0.15, 0.86) infinite;
-  animation-delay: 2s;
+  -webkit-animation: largePeakAnimation 5s cubic-bezier(0.79, 0.14, 0.15, 0.86) infinite;
+          animation: largePeakAnimation 5s cubic-bezier(0.79, 0.14, 0.15, 0.86) infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .branding svg #second-peak {
   stroke-dasharray: 93.72 48.28 93.72 48.28;
   stroke-dashoffset: 0;
-  animation: largePeakAnimation 5s cubic-bezier(0.79, 0.14, 0.15, 0.86) infinite;
+  -webkit-animation: largePeakAnimation 5s cubic-bezier(0.79, 0.14, 0.15, 0.86) infinite;
+          animation: largePeakAnimation 5s cubic-bezier(0.79, 0.14, 0.15, 0.86) infinite;
 }
 
 .branding svg #sun {
   stroke-dasharray: 129 43 129 43;
   stroke-dashoffset: 0;
-  animation: sunAnimation 4s cubic-bezier(0.79, 0.14, 0.15, 0.86) infinite;
+  -webkit-animation: sunAnimation 4s cubic-bezier(0.79, 0.14, 0.15, 0.86) infinite;
+          animation: sunAnimation 4s cubic-bezier(0.79, 0.14, 0.15, 0.86) infinite;
+}
+
+@-webkit-keyframes smallPeakAnimation {
+  33% {
+    stroke-dashoffset: 20.13;
+  }
+  66% {
+    stroke-dashoffset: 40.26;
+  }
+  100% {
+    stroke-dashoffset: 61;
+  }
 }
 
 @keyframes smallPeakAnimation {
@@ -76,6 +94,18 @@ body {
   }
 }
 
+@-webkit-keyframes largePeakAnimation {
+  33% {
+    stroke-dashoffset: 46.86;
+  }
+  66% {
+    stroke-dashoffset: 93.72;
+  }
+  100% {
+    stroke-dashoffset: 142;
+  }
+}
+
 @keyframes largePeakAnimation {
   33% {
     stroke-dashoffset: 46.86;
@@ -85,6 +115,21 @@ body {
   }
   100% {
     stroke-dashoffset: 142;
+  }
+}
+
+@-webkit-keyframes sunAnimation {
+  25% {
+    stroke-dashoffset: 43;
+  }
+  50% {
+    stroke-dashoffset: 86;
+  }
+  75% {
+    stroke-dashoffset: 129;
+  }
+  100% {
+    stroke-dashoffset: 172;
   }
 }
 
@@ -102,3 +147,4 @@ body {
     stroke-dashoffset: 172;
   }
 }
+/*# sourceMappingURL=branding.css.map */
