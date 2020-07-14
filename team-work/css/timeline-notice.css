@@ -18,8 +18,13 @@
 }
 
 #schedule-main .jss-btn.act {
-  -webkit-filter: saturate(0.3);
-          filter: saturate(0.3);
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+}
+
+#schedule-main .js-btn.act {
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
 }
 
 #schedule-main .js-tab {
@@ -410,7 +415,7 @@
           box-sizing: border-box;
   width: 60vw;
   min-width: 700px;
-  height: 1320px;
+  height: 1370px;
   background-color: #B7D7C9;
   padding: 0px 0 0 0;
   margin: auto;
@@ -473,6 +478,7 @@
 
 @media (max-width: 500px) {
   #notice .notice-container .space-flex .temperature-box {
+    cursor: pointer;
     height: 60px;
     width: 300px;
     padding: 5px 0 0 0;
@@ -569,18 +575,23 @@
   text-align: center;
 }
 
+@media (max-width: 500px) {
+  #notice .notice-container .space-flex .tem-phone.act {
+    display: block;
+  }
+}
+
 #notice .notice-container .space-flex .tem-phone {
   display: none;
 }
 
 @media (max-width: 500px) {
   #notice .notice-container .space-flex .tem-phone {
-    display: block;
-    padding: 2px 0 0 0;
+    padding: 7px 0 5px 0;
     width: 300px;
     margin: 30px auto 0 auto;
     border-radius: 20px;
-    height: 150px;
+    height: 160px;
     background-color: #F1F9FE;
   }
 }
@@ -634,6 +645,7 @@
 
 @media (max-width: 500px) {
   #notice .notice-container .space-flex .sweet-box {
+    cursor: pointer;
     height: 60px;
     width: 300px;
     padding: 5px 0 0 0;
@@ -680,7 +692,6 @@
 
 @media (max-width: 500px) {
   #notice .notice-container .space-flex #sweet-phone {
-    display: block;
     width: 300px;
     margin: 30px auto 0 auto;
     padding: 20px;
@@ -689,8 +700,10 @@
   }
 }
 
-#notice .notice-container .space-flex #sweet-phone #sweet-phone.act {
-  display: block;
+@media (max-width: 500px) {
+  #notice .notice-container .space-flex #sweet-phone.act {
+    display: block;
+  }
 }
 
 #notice .notice-container .detail-box {
@@ -715,6 +728,7 @@
 
 @media (max-width: 500px) {
   #notice .notice-container .detail-box {
+    cursor: pointer;
     height: 60px;
     position: unset;
     width: 300px;
@@ -761,13 +775,18 @@
   }
 }
 
+@media (max-width: 500px) {
+  #notice .notice-container #notice-phone.act {
+    display: block;
+  }
+}
+
 #notice .notice-container #notice-phone {
   display: none;
 }
 
 @media (max-width: 500px) {
   #notice .notice-container #notice-phone {
-    display: block;
     width: 300px;
     margin: 30px auto 0 auto;
     padding: 20px;
