@@ -837,7 +837,7 @@
   width: 60px;
   height: 60px;
   border-radius: 100%;
-  background-image: url(../img/icon_fb.png);
+  background-image: url("../img/icon_fb.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -846,7 +846,7 @@
 }
 
 .home-page .menu-container .menu-content .info-box .menu-footer .menu-icon-box div:nth-child(1):hover {
-  background-image: url(../img/icon_fb_h.png);
+  background-image: url("../img/icon_fb_h.png");
 }
 
 @media (max-height: 740px) {
@@ -860,7 +860,7 @@
   width: 60px;
   height: 60px;
   border-radius: 100%;
-  background-image: url(../img/icon_line.png);
+  background-image: url("../img/icon_ig.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -868,7 +868,7 @@
 }
 
 .home-page .menu-container .menu-content .info-box .menu-footer .menu-icon-box div:nth-child(2):hover {
-  background-image: url(../img/icon_line_h.png);
+  background-image: url("../img/icon_ig_h.png");
 }
 
 @media (max-height: 740px) {

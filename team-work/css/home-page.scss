@@ -603,14 +603,14 @@ z-index: 999;
               height: 60px;
               border-radius: 100%;
               // background-color: steelblue;
-              background-image: url(../img/icon_fb.png);
+              background-image: url("../img/icon_fb.png");
               background-position: center;
               background-size: cover;
               background-repeat: no-repeat;
               cursor: pointer;
               margin: 0 20px 0 0;
               &:hover{
-                background-image: url(../img/icon_fb_h.png);
+                background-image: url("../img/icon_fb_h.png");
               }
               @media(max-height: 740px){
                 width: 50px;
@@ -622,14 +622,14 @@ z-index: 999;
               width: 60px;
               height: 60px;
               border-radius: 100%;
-              background-image: url(../img/icon_line.png);
+              background-image: url("../img/icon_ig.png");
               background-position: center;
               background-size: cover;
               background-repeat: no-repeat;
               // background-color: steelblue;
               cursor: pointer;
               &:hover{
-                background-image: url(../img/icon_line_h.png);
+                background-image: url("../img/icon_ig_h.png");
               }
               @media(max-height: 740px){
                 width: 50px;
