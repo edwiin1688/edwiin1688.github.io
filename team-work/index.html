@@ -195,7 +195,7 @@
             </div>
             <div class="menu-content">
                 <div class="menu-title">
-                    <a href="https://edwiin1688.github.io/team-work/index.html" >
+                    <a href="https://edwiin1688.github.io/team-work/index.html">
                         <div id="title"></div>
                     </a>
                 </div>
@@ -409,7 +409,7 @@
 
                 <div class="row mb-cunstom">
                     <div class="col-12 swiper-block">
-                        <div class="swiper-container">
+                        <div class="swiper-container guided_tour">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
@@ -421,14 +421,15 @@
                                                 <div class="mask"></div>
                                             </li>
                                             <li>
-                                                <a href="schedule.html"></a>
+                                                <a href="分頁-行程表.html"></a>
                                                 <img class="swiper-lazy" src="./img/guided_tour/ill_schedule.png"
                                                     alt="">
                                                 </a>
                                             </li>
                                             <li>
 
-                                                <img class="swiper-lazy" src="./img/guided_tour/title_schedule.svg" alt="" style="width: 70%;">
+                                                <img class="swiper-lazy" src="./img/guided_tour/title_schedule.svg"
+                                                    alt="" style="width: 70%;">
                                             </li>
                                         </ul>
                                     </div>
@@ -440,12 +441,13 @@
                                                 <div class="mask"></div>
                                             </li>
                                             <li>
-                                                <a href="camp.html"></a>
+                                                <a href="分頁-營區導覽.html"></a>
                                                 <img class="swiper-lazy" src="./img/guided_tour/ill_camp.png" alt="">
                                                 </a>
                                             </li>
                                             <li>
-                                                <img class="swiper-lazy" src="./img/guided_tour/title_camp.svg" alt="" style="width: 70%;">
+                                                <img class="swiper-lazy" src="./img/guided_tour/title_camp.svg" alt=""
+                                                    style="width: 70%;">
                                             </li>
                                         </ul>
                                     </div>
@@ -458,12 +460,13 @@
                                                 <div class="mask"></div>
                                             </li>
                                             <li>
-                                                <a href="food.html"></a>
+                                                <a href="分頁-美食饗宴.html"></a>
                                                 <img class="swiper-lazy" src="./img/guided_tour/ill_food.png" alt="">
                                                 </a>
                                             </li>
                                             <li>
-                                                <img class="swiper-lazy" src="./img/guided_tour/title_food.svg" alt="" style="width: 70%;">
+                                                <img class="swiper-lazy" src="./img/guided_tour/title_food.svg" alt=""
+                                                    style="width: 70%;">
 
                                             </li>
                                         </ul>
@@ -472,8 +475,9 @@
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
-                        <i class="swiper-button-prev-custom swiper-button fas fa-chevron-circle-left"></i>
-                        <i class="swiper-button-next-custom swiper-button fas fa-chevron-circle-right"></i>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev swiper-button-black"></div>
+                        <div class="swiper-button-next swiper-button-black"></div>
                     </div>
 
                 </div>
@@ -665,9 +669,10 @@
 
 
     <!-- TODO: 顯示 scrollTop -->
+    <!--     
     <div class="scroll_top d-flex justify-content-center fixed-top" style="width: 100vw;">
-        <p style="z-index: 9; display: none;">scrollTop</p>
-    </div>
+        <p style="z-index: 9;">scrollTop</p>
+    </div> -->
 
     <!-- * SCROLL DOWN -->
     <div class="d-flex justify-content-center fixed-bottom" style="width: 100vw;">
@@ -679,12 +684,6 @@
         $(window).scroll(function () {
             $('.scroll_top').text('scrollTop: ' + $(window).scrollTop());
         });
-
-        console.log('#banner:　' + document.querySelector('#banner').offsetTop);
-        console.log('#philosophy:　' + document.querySelector('#philosophy').offsetTop);
-        console.log('#guided_tour:　' + document.querySelector('#guided_tour').offsetTop);
-        console.log('#section-4:　' + document.querySelector('#section-4').offsetTop);
-        console.log('#end:　' + document.querySelector('#end').offsetTop);
     </script>
 
     <script src="./js/home-page.js"></script>

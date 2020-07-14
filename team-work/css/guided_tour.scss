@@ -15,6 +15,14 @@
         height: 100vh;
     }
 
+    .swiper-button-prev {
+        left: 33%;
+    }
+
+    .swiper-button-next {
+        right: 33%;
+    }
+
     .swiper-slide {
         text-align: center;
         font-size: 18px;
@@ -50,13 +58,5 @@
         h1 {
             background-color: $bg_color_code;
         }
-    }
-
-    .swiper-button-prev:hover {
-        background-color: red;
-    }
-
-    .swiper-button-next:hover {
-        background-color: red;
     }
 }
