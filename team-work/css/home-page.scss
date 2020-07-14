@@ -30,12 +30,111 @@ z-index: 999;
   width: 100%;
   height: 100vh;
   min-height: 650px;
-  background-color: rgb(52, 80, 80);
+  // background-color: rgb(52, 80, 80);
+  background-color: black;
   position: relative;
   overflow: hidden;
   animation: home-page 2s ease-out;
   animation-fill-mode: backwards;
+  .animation-pic:nth-child(1){
+     @media (max-width:650px) {
+      width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: phone-banner 25s infinite ease-in-out;
+    background-image: url("../img/menu1.png");
+    opacity:0;
+    }
+    @media (max-width:450px){
+      background-position-x: -410px;
+    }
+    
+  }
+  .animation-pic:nth-child(2){
+     @media (max-width:650px) {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-position: center right;
+     
+      background-repeat: no-repeat;
+      background-size: cover;
+      animation: phone-banner 25s infinite ease-in-out;
+      animation-delay: 5s;
+      background-image: url("../img/menu2.jpg");
+      opacity:0;
+    }
+    @media (max-width:450px){
+      background-position-x: -370px;
+    }
+   
+  }
+  .animation-pic:nth-child(3){
+     @media (max-width:650px) {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      animation: phone-banner 25s infinite ease-in-out;
+      animation-delay: 10s;
+      background-image: url("../img/menu3.jpg");
+      opacity:0;
+    }
+   
+  }
+  .animation-pic:nth-child(4){
+     @media (max-width:650px) {
+      width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: phone-banner 25s infinite ease-in-out;
+    animation-delay: 15s;
+    background-image: url("../img/menu4.jpg");
+    opacity:0;
+    }
+    @media (max-width:450px){
+      background-position-x: -100px;
+    }
+    
+  }
+  .animation-pic:nth-child(5){
+    @media (max-width:650px) {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      animation: phone-banner 25s infinite ease-in-out;
+      animation-delay: 20s;
+      background-image: url("../img/menu5.png");
+      opacity:0;
+    }
+   
+  }
+  @keyframes phone-banner {
+    4%{
+      opacity: 1;
+    }
+    20%{
+      opacity: 1;
+    }
+    25%{
+      opacity: 0;
+    }
+  }
  
+
+
   .slider-nav {
     width: 7%;
     min-width: 68px;
@@ -80,6 +179,16 @@ z-index: 999;
         background-repeat: no-repeat;
         box-sizing: unset;
       }
+        @media(max-width: 500px){
+          margin: 0 0 0 45px;
+       }
+     
+        @media(max-width: 400px){
+          margin: 0 0 0 30px;
+       }
+       @media(max-width: 350px){
+        margin: 0 0 0 10px;
+        }
     }
     @media(max-width: 650px){
       width: 100%;
@@ -121,14 +230,15 @@ z-index: 999;
       height: calc(100% - 68px);
       min-height: unset;
     }
+    @media(max-height: 530px){
+      align-items: flex-start;
+    }
     
     .nav-bg {
       width: 66%;
       height: 100%;
-      background-image: url("../img/menu1.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+      
+      position: relative;
       @media(max-width: 1200px){
         width: 60%;
       }
@@ -146,6 +256,109 @@ z-index: 999;
       }
       @media(max-width: 650px){
         display: none;
+      }
+      @media(max-height: 530px){
+        margin: 50px 0 0 0;
+        height: 60%;
+        // border: 1px black solid;
+      }
+      @media(max-height: 480px){
+        margin: 0;
+        height: 45%;
+      }
+      @media(max-height: 400px){
+        height: 200px;
+      }
+      div:nth-child(1){
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/menu1.png");
+          background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: menupics 25s infinite ease-in-out;
+        opacity: 0;
+        @media(max-width: 900px){
+          background-size: contain;
+        
+        }
+      }
+      div:nth-child(2){
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/menu2.jpg");
+          background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: menupics 25s infinite ease-in-out;
+        animation-delay: 5s;
+        opacity: 0;
+         @media(max-width: 900px){
+          background-size: contain;
+          
+        }
+      }
+      div:nth-child(3){
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/menu3.jpg");
+          background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: menupics 25s infinite ease-in-out;
+        animation-delay: 10s;
+        opacity: 0;
+         @media(max-width: 900px){
+          background-size: contain;
+         
+        }
+      }
+      div:nth-child(4){
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/menu4.jpg");
+          background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: menupics 25s infinite ease-in-out;
+        animation-delay: 15s;
+        opacity: 0;
+         @media(max-width: 900px){
+          background-size: contain;
+        
+        }
+      }
+      div:nth-child(5){
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/menu5.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: menupics 25s infinite ease-in-out;
+        animation-delay: 20s;
+        opacity: 0;
+         @media(max-width: 900px){
+          background-size: contain;
+         
+        }
+      }
+      @keyframes menupics {
+        4%{
+          opacity: 1;
+        }
+        20%{
+          opacity: 1;
+        }
+        24%{
+          opacity: 0;
+        }
+       
       }
     }
     .menu-content {
@@ -165,6 +378,11 @@ z-index: 999;
         top: 30px;
         @media(max-width: 650px){
           display: none;
+        }
+        @media(max-height: 400px){
+          height: 10%;
+          width: 60%;
+          top: 10px;
         }
         a{
           // &:hover{
@@ -211,9 +429,22 @@ z-index: 999;
           position: absolute;
           top: 23%;
         }
+        @media(max-height: 600px){
+          height: 50%;
+        }
+        @media(max-height: 530px){
+         top: 15%;
+        }
+        @media(max-height: 480px){
+          height: 40%;
+          padding: 30px 0 0 0;
+        }
+        @media(max-height: 400px){
+          padding: 0px;
+          top: 75px;
+        }
         @media(max-width: 650px){
           top: 0px;
-          
         }
         .info {
           
@@ -231,6 +462,9 @@ z-index: 999;
             height: 50%;
             // border: 1px red solid;
             min-height: 270px;
+          }
+          @media(max-height: 600px){
+            min-height: 220px;
           }
           @media(max-width: 650px){
             min-height: 500px;
@@ -300,7 +534,14 @@ z-index: 999;
          bottom: 8%;
          @media(max-width: 650px){
             bottom: calc(-40% + 30px);
-        }
+         }
+         @media(max-height: 480px){
+           bottom: 50px;
+           left: -250px;
+         }
+         @media(max-height: 400px){
+           bottom: 80px;
+         }
           #follow {
            cursor: context-menu;
           width: 130px;
@@ -309,6 +550,9 @@ z-index: 999;
           font-size: 20px;
           transform: translateX(90px);
           margin: 0 0 20px 0;
+          @media(max-height: 400px){
+            // border: 1px solid red;
+          }
          
           a {
             text-decoration: none;
@@ -409,6 +653,9 @@ z-index: 999;
             @media(max-width: 650px){
               display: none;
             }
+            @media(max-height: 400px){
+              margin: 5px 0 0 0;
+            }
           }
           @media(max-width: 650px){
             min-height: unset;
@@ -449,6 +696,20 @@ z-index: 999;
        @media(max-height: 740px){
          height: 50%;
          top: calc(13% + 170px);
+       }
+       @media(max-height: 600px){
+         height: 40%;
+        //  border: 1px orangered solid;
+         top: calc(25% + 100px);
+       }
+       @media(max-height: 530px){
+         top: calc(25% + 40px);
+       }
+       @media(max-height: 480px){
+         top: 16%;
+       }
+       @media(max-height: 400px){
+         top: 8%;
        }
         @media(max-width: 650px){
           display: none;

@@ -384,10 +384,7 @@
     .nav-bg {
       width: 66%;
       height: 100%;
-      background-image: url("../img/menu1.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+     position: relative;
       @media(max-width: 1200px){
         width: 60%;
       }
@@ -405,6 +402,109 @@
       }
       @media(max-width: 650px){
         display: none;
+      }
+      @media(max-height: 530px){
+        margin: 50px 0 0 0;
+        height: 60%;
+        // border: 1px black solid;
+      }
+      @media(max-height: 480px){
+        margin: 0;
+        height: 45%;
+      }
+      @media(max-height: 400px){
+        height: 200px;
+      }
+      div:nth-child(1){
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/menu1.png");
+          background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: menupics 25s infinite ease-in-out;
+        opacity: 0;
+        @media(max-width: 900px){
+          background-size: contain;
+        
+        }
+      }
+      div:nth-child(2){
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/menu2.jpg");
+          background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: menupics 25s infinite ease-in-out;
+        animation-delay: 5s;
+        opacity: 0;
+         @media(max-width: 900px){
+          background-size: contain;
+          
+        }
+      }
+      div:nth-child(3){
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/menu3.jpg");
+          background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: menupics 25s infinite ease-in-out;
+        animation-delay: 10s;
+        opacity: 0;
+         @media(max-width: 900px){
+          background-size: contain;
+         
+        }
+      }
+      div:nth-child(4){
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/menu4.jpg");
+          background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: menupics 25s infinite ease-in-out;
+        animation-delay: 15s;
+        opacity: 0;
+         @media(max-width: 900px){
+          background-size: contain;
+        
+        }
+      }
+      div:nth-child(5){
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/menu5.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: menupics 25s infinite ease-in-out;
+        animation-delay: 20s;
+        opacity: 0;
+         @media(max-width: 900px){
+          background-size: contain;
+         
+        }
+      }
+      @keyframes menupics {
+        4%{
+          opacity: 1;
+        }
+        20%{
+          opacity: 1;
+        }
+        24%{
+          opacity: 0;
+        }
+       
       }
     }
     .menu-content {

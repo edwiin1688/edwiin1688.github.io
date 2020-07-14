@@ -13,8 +13,6 @@ body{
     text-decoration: none ;
 }
 
-
-
 .booknow-container{
     margin: auto;
     padding: 100px 0 200px 0;
@@ -186,6 +184,7 @@ input:focus{
 .modal-header h5{
     font-size: 24px;
     margin: 30px 0 0 150px;
+    margin: 30px 0 0 170px;
     text-align: center;
     font-weight: 600;
 }
@@ -357,9 +356,6 @@ input:focus{
     .btn-primary{
         margin: unset;
     }
-
-
-
 }
 
 @media(max-width: 650px){

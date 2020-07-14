@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Work - Project F</title>
 
+
+    <!-- Better Comments -->
+    <!--        Comments  -->
+    <!-- *      Comments  -->
+    <!-- //     Comments  -->
+    <!-- todo   Comments  -->
+    <!-- !      Comments  -->
+    <!-- ?      Comments  -->
+
+    <!-- TODO Highlight -->
+    <!-- TODO:  Comments  -->
+    <!-- FIXME: Comments  -->
+
+
     <!-- ! FIX 解決 favicon 錯誤方法 -->
     <!-- <link rel="shortcut icon" href="#" /> -->
     <link href="favicon.ico" rel="shortcut icon">
@@ -18,6 +32,9 @@
 
     <!-- x Parallax v3.1.0 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+    <!-- ? 安裝離線 vue -->
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
 
 
     <!-- // TODO 以上是外部引用 -->
@@ -86,7 +103,6 @@
     </script>
 
     <!-- npm install lazyload -->
-    <!-- <script type="text/javascript" src="jquery-1.11.3.min.js"></script> -->
     <script src="./node_modules/lazyload/lazyload.min.js"></script>
 
     <!-- 上面是相依的 js -->
@@ -125,6 +141,11 @@
 
     <div id="invisible-bar"></div>
     <section class="home-page">
+        <div class="animation-pic"></div>
+        <div class="animation-pic"></div>
+        <div class="animation-pic"></div>
+        <div class="animation-pic"></div>
+        <div class="animation-pic"></div>
         <div class="slider-nav">
             <a href="" onclick="window.location.href='https://edwiin1688.github.io/team-work/'">
                 <div id="title"></div>
@@ -165,35 +186,41 @@
         </div>
 
         <div class="menu-container">
-            <div class="nav-bg"></div>
+            <div class="nav-bg">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
             <div class="menu-content">
                 <div class="menu-title">
-                    <a href="" onclick="window.location.href='https://edwiin1688.github.io/team-work/'">
+                    <a href="https://edwiin1688.github.io/team-work/index.html" >
                         <div id="title"></div>
                     </a>
                 </div>
                 <div class="info-box">
                     <div class="info">
                         <div>
-                            <a href="">營區導覽</a>
+                            <a href="https://edwiin1688.github.io/team-work/分頁-營區導覽.html">營區導覽</a>
                         </div>
                         <div>
-                            <a href="">活動體驗</a>
+                            <a href="https://edwiin1688.github.io/team-work/分頁-活動體驗.html">活動體驗</a>
                         </div>
                         <div>
-                            <a href="">行程資訊</a>
+                            <a href="https://edwiin1688.github.io/team-work/分頁-行程表.html">行程資訊</a>
                         </div>
                         <div>
-                            <a href="">美食饗宴</a>
+                            <a href="https://edwiin1688.github.io/team-work/分頁-美食饗宴.html">美食饗宴</a>
                         </div>
                         <div>
-                            <a href="">立即預定</a>
+                            <a href="https://edwiin1688.github.io/team-work/分頁-立即預定.html">立即預定</a>
                         </div>
                     </div>
                     <div class="menu-footer">
                         <div id="follow">follow us</div>
                         <div class="menu-icon-box">
-                            <div></div>
+                            <div onclick="location.href='https://www.facebook.com/flybirdchacha/'"></div>
                             <div></div>
                         </div>
                         <div id="copyright">©2020 Flybird copyright</div>
@@ -225,8 +252,8 @@
 
                 <!-- 1. 帶著家人 走進自然 -->
                 <div class="row">
-
-                    <div class="bp_container col-12 col-sm-8 order-0 order-sm-1 no_padding">
+                    <!-- 手機圖文樣式 -->
+                    <div class="p_mobile_1 col-12 col-sm-8 order-0 order-sm-1">
                         <div class="philosophy_1">
                             <img src="./img/about/explore.png" alt="...">
                             <div class="bp_title">
@@ -242,8 +269,8 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="pb_text_area col-12 col-sm-4 order-1 order-sm-0 bp_left">
+                    <!-- PC 圖文樣式 -->
+                    <div class="p_pc col-12 col-sm-4 order-1 order-sm-0 bp_left">
                         <div class="bp_title">
                             帶著家人<br>
                             &emsp;走進自然<br>
@@ -273,7 +300,8 @@
 
                 <!-- 2. 創造美好 露營回憶 -->
                 <div class="row">
-                    <div class="bp_container_2 col-12 col-sm-8 no_padding">
+                    <!-- 手機圖文樣式 -->
+                    <div class="p_mobile_2 col-12 col-sm-8">
                         <div class="philosophy_2">
                             <img src="./img/about/create.png" alt="...">
                             <div class="bp_title">
@@ -287,8 +315,8 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="pb_text_area col-12 col-sm-4 bp_right">
+                    <!-- PC 圖文樣式 -->
+                    <div class="p_pc col-12 col-sm-4 bp_right">
                         <div class="bp_title">
                             創造美好<br>
                             &emsp;露營回憶<br>
@@ -314,8 +342,8 @@
 
                 <!-- 3. 享受自然 森林芬多精 -->
                 <div class="row">
-
-                    <div class="bp_container_3 col-12 col-sm-8 order-sm-1 order-0 no_padding">
+                    <!-- 手機圖文樣式 -->
+                    <div class="p_mobile_3 col-12 col-sm-8 order-sm-1 order-0">
                         <div class="philosophy_3">
                             <img src="./img/about/enjoy.png" alt="...">
                             <div class="bp_title">
@@ -330,8 +358,8 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="pb_text_area col-12 col-sm-4 order-sm-0 order-1 bp_left">
+                    <!-- PC 圖文樣式 -->
+                    <div class="p_pc col-12 col-sm-4 order-sm-0 order-1 bp_left">
                         <div class="bp_title">
                             享受自然<br>
                             &emsp;森林芬多精<br>
@@ -466,7 +494,7 @@
                     <div class="pic2"></div>
                     <div class="pic3"></div>
                     <div class="mask mask1"></div>
-                    <a href="">
+                    <a href="https://edwiin1688.github.io/team-work/分頁-活動體驗.html">
                         <div class="for-more for-more1">了解更多 ></div>
                     </a>
                 </div>
@@ -475,7 +503,7 @@
                     <div class="pic2"></div>
                     <div class="pic3"></div>
                     <div class="mask mask2"></div>
-                    <a href="">
+                    <a href="https://edwiin1688.github.io/team-work/分頁-活動體驗.html">
                         <div class="for-more for-more2">了解更多 ></div>
                     </a>
                 </div>
@@ -484,7 +512,7 @@
                     <div class="pic2"></div>
                     <div class="pic3"></div>
                     <div class="mask mask3"></div>
-                    <a href="">
+                    <a href="https://edwiin1688.github.io/team-work/分頁-活動體驗.html">
                         <div class="for-more for-more3">了解更多 ></div>
                     </a>
                 </div>
@@ -502,13 +530,13 @@
                 </div>
                 <div id="flag-l"></div>
                 <div id="flag-r"></div>
-                <a href="">
+                <a href="https://edwiin1688.github.io/team-work/分頁-活動體驗.html">
                     <div class="for-more-phone1">了解更多 ></div>
                 </a>
-                <a href="">
+                <a href="https://edwiin1688.github.io/team-work/分頁-活動體驗.html">
                     <div class="for-more-phone2">了解更多 ></div>
                 </a>
-                <a href="">
+                <a href="https://edwiin1688.github.io/team-work/分頁-活動體驗.html">
                     <div class="for-more-phone3">了解更多 ></div>
                 </a>
             </div>
@@ -519,19 +547,64 @@
         <!-- 瀑布流 -->
         <section id="section-5">
             <div class="waterflow-container">
-                <div id="sliderpic-1"></div>
-                <div id="sliderpic-2"></div>
-                <div id="sliderpic-3"></div>
-                <div id="sliderpic-4"></div>
-                <div id="sliderpic-5"></div>
-                <div id="sliderpic-6"></div>
-                <div id="sliderpic-7"></div>
-                <div id="sliderpic-8"></div>
+                <div id="sliderpic-1">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div id="sliderpic-2">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div id="sliderpic-3">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div id="sliderpic-4">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div id="sliderpic-5">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div id="sliderpic-6">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div id="sliderpic-7">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div id="sliderpic-8">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
                 <div id="sliderpic-9"></div>
                 <div id="sliderpic-10"></div>
-                <div id="sliderpic-11"></div>
+                <div id="sliderpic-11">
+                    <div></div>
+                    <div></div>
+                </div>
                 <div id="sliderpic-12"></div>
-                <div id="sliderpic-13"></div>
+                <div id="sliderpic-13">
+                    <div></div>
+                </div>
             </div>
             <div class="slidetext-box">
                 <div id="slidetext">
@@ -578,7 +651,7 @@
                 </div>
             </div>
             <div class="f-icon-box">
-                <a href="">
+                <a href="https://www.facebook.com/flybirdchacha/">
                     <div id="f-fb"></div>
                 </a>
                 <a href="">
@@ -591,19 +664,20 @@
     </footer>
 
 
-    <!-- FIXME: 顯示 scrollTop -->
-    <div class="d-flex justify-content-center fixed-top" style="width: 100vw;">
-        <h6 style="z-index: 2;">scrollTop</h6>
+    <!-- TODO: 顯示 scrollTop -->
+    <div class="scroll_top d-flex justify-content-center fixed-top" style="width: 100vw;">
+        <p style="z-index: 9; display: none;">scrollTop</p>
     </div>
-    <!-- SCROLL DOWN -->
+
+    <!-- * SCROLL DOWN -->
     <div class="d-flex justify-content-center fixed-bottom" style="width: 100vw;">
         <img id="scroll_down" class="lax" data-lax-opacity="0 1, 100 0" src="./img/scroll_down.png" alt="SCROLL DOWN">
-        <!-- data-lax-opacity 語法參考網址：https://github.com/alexfoxy/lax.js -->
+        <!-- * data-lax-opacity 語法參考網址：https://github.com/alexfoxy/lax.js -->
     </div>
     <script>
-        // 偵測 scroll 高
+        // <!-- ? 偵測 scroll 高 -->
         $(window).scroll(function () {
-            $('h6').text('scrollTop: ' + $(window).scrollTop());
+            $('.scroll_top').text('scrollTop: ' + $(window).scrollTop());
         });
 
         console.log('#banner:　' + document.querySelector('#banner').offsetTop);
@@ -615,14 +689,10 @@
 
     <script src="./js/home-page.js"></script>
 
-    <!-- index !? -->
+    <!-- todo index !? -->
     <script src="./js/index.js"></script>
     <script>
-        // TODO:
-        // FIXME:
-
-        // 寫自己的 JS 程式碼在這邊
-
+        // <!-- ! 寫自己的 JS 程式碼在這邊 -->
         window.addEventListener("scroll", () => {
 
             var burger_top = document.querySelector(".burger-bun-top")

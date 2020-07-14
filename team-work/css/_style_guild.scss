@@ -7,22 +7,15 @@ $bg_color_code: #f3ece2;
 $time_line_color_code: #eea33b;
 
 // 大標題
-@mixin big_title {
-    font-size: 4vw;
+@mixin text_title {
+    font-size: 72px;
     font-weight: bolder;
-    line-height: 5vw;
-}
-
-// 附標題
-@mixin sub_title {
-    font-size: 3vw;
-    font-weight: bolder;
-    line-height: 4vw;
+    line-height: 108px;
 }
 
 // 內文
 @mixin text_content {
-    font-size: 1vw;
+    font-size: 24px;
     font-weight: bolder;
-    line-height: 2vw;
+    line-height: 36px;
 }
