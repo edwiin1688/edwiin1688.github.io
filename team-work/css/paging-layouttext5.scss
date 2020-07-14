@@ -125,7 +125,7 @@
          h1{
            width: 100%;
            height: 65%;
-           background-image: url("../img/layout/營區導覽.svg");
+           background-image: url("../img/layout/立即預訂.svg");
            background-repeat: no-repeat;
            @media (max-width:900px){
              font-size: 48px;
@@ -140,6 +140,7 @@
          }
        }
        h5{
+         font-weight: 600;
          font-size: 20px;
          line-height: 25px;
          padding: 10px 0 0 0;

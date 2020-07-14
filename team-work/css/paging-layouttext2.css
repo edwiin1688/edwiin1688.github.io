@@ -38,6 +38,8 @@
 
 .home-page {
   width: 100%;
+  background-image: url("../img/layout/bg.png");
+  background-size: cover;
   position: relative;
   overflow: hidden;
   -webkit-animation: home-page 2s ease-out;
@@ -2056,3 +2058,4 @@ h4 {
     left: 36px;
   }
 }
+/*# sourceMappingURL=paging-layouttext2.css.map */
