@@ -30,72 +30,96 @@ z-index: 999;
   width: 100%;
   height: 100vh;
   min-height: 650px;
-  background-color: rgb(52, 80, 80);
+  // background-color: rgb(52, 80, 80);
+  background-color: black;
   position: relative;
   overflow: hidden;
   animation: home-page 2s ease-out;
   animation-fill-mode: backwards;
   .animation-pic:nth-child(1){
-    width: 100%;
+     @media (max-width:650px) {
+      width: 100%;
     height: 100%;
     position: absolute;
     background-position: center;
-    background-position-x: -410px;
     background-repeat: no-repeat;
     background-size: cover;
     animation: phone-banner 25s infinite ease-in-out;
     background-image: url("../img/menu1.png");
     opacity:0;
+    }
+    @media (max-width:450px){
+      background-position-x: -410px;
+    }
+    
   }
   .animation-pic:nth-child(2){
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-position: center right;
-    background-position-x: -400px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: phone-banner 25s infinite ease-in-out;
-    animation-delay: 5s;
-    background-image: url("../img/menu2.jpg");
-    opacity:0;
+     @media (max-width:650px) {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-position: center right;
+     
+      background-repeat: no-repeat;
+      background-size: cover;
+      animation: phone-banner 25s infinite ease-in-out;
+      animation-delay: 5s;
+      background-image: url("../img/menu2.jpg");
+      opacity:0;
+    }
+    @media (max-width:450px){
+      background-position-x: -370px;
+    }
+   
   }
   .animation-pic:nth-child(3){
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: phone-banner 25s infinite ease-in-out;
-    animation-delay: 10s;
-    background-image: url("../img/menu3.jpg");
-    opacity:0;
+     @media (max-width:650px) {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      animation: phone-banner 25s infinite ease-in-out;
+      animation-delay: 10s;
+      background-image: url("../img/menu3.jpg");
+      opacity:0;
+    }
+   
   }
   .animation-pic:nth-child(4){
-    width: 100%;
+     @media (max-width:650px) {
+      width: 100%;
     height: 100%;
     position: absolute;
     background-position: center;
-    background-position-x: -100px;
+   
     background-repeat: no-repeat;
     background-size: cover;
     animation: phone-banner 25s infinite ease-in-out;
     animation-delay: 15s;
     background-image: url("../img/menu4.jpg");
     opacity:0;
+    }
+    @media (max-width:450px){
+      background-position-x: -100px;
+    }
+    
   }
   .animation-pic:nth-child(5){
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: phone-banner 25s infinite ease-in-out;
-    animation-delay: 20s;
-    background-image: url("../img/menu5.png");
-    opacity:0;
+    @media (max-width:650px) {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      animation: phone-banner 25s infinite ease-in-out;
+      animation-delay: 20s;
+      background-image: url("../img/menu5.png");
+      opacity:0;
+    }
+   
   }
   @keyframes phone-banner {
     4%{
@@ -104,7 +128,7 @@ z-index: 999;
     20%{
       opacity: 1;
     }
-    24%{
+    25%{
       opacity: 0;
     }
   }
