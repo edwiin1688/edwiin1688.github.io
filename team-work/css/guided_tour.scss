@@ -7,12 +7,16 @@
 
     .swiper-block {
         width:  100%;
+
+        // 去除 padding
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .swiper-container {
         width:  100%;
         max-width: 100vw;
-        height: 100vh;
+        // height: 100vh;// 這個會限制 height 為固定高度 100vh
     }
 
     .swiper-button-prev {
@@ -30,7 +34,7 @@
         font-size: 18px;
         background: $bg_color_code;
         width: 100%;
-        height: 100vh;
+        // height: 100vh;// 100vh 會讓圖片滿版
 
         background-repeat: no-repeat;
         background-position: center center;
@@ -61,4 +65,15 @@
             background-color: $bg_color_code;
         }
     }
+
+
+    // @media (max-width:650px){
+    //     #guided_tour {
+    //         .swiper-block {
+    //             padding-top: 25px;
+    //             padding-bottom: 25px;
+    //         }
+    //     }
+    // }
+
 }

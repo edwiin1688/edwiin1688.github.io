@@ -18,7 +18,8 @@
   
   @media (max-width: 1199px) {
       .swiper-block .swiper-container {
-      margin-bottom: 105px;
+        /* 手機版多一個留白 */
+      /* margin-bottom: 105px;  */ 
       height: 430px;
     }
   }
