@@ -1,8 +1,4 @@
 @charset "UTF-8";
-.burger-box.z-index {
-  z-index: 999;
-}
-
 #invisible-bar {
   width: 7%;
   min-width: 68px;
@@ -211,7 +207,9 @@
 
 @media (max-width: 650px) {
   .home-page .slider-nav div {
-    z-index: 99;
+    z-index: 999;
+    -webkit-transform: scaleZ(999px);
+            transform: scaleZ(999px);
     width: 235px;
     height: 60px;
     display: block;
@@ -289,7 +287,7 @@
   display: flex;
   position: relative;
   position: fixed;
-  z-index: 11;
+  z-index: 1200;
   opacity: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1201,7 +1199,7 @@ h4 {
   position: absolute;
   right: 0%;
   position: fixed;
-  z-index: 5;
+  z-index: 1300;
 }
 
 .burger-box:hover .burger-bun-bot {
