@@ -241,7 +241,7 @@
         </section>
 
         <!-- TODO: 主要內容 -->
-        <main>
+        <main id="boobman">
 
 
             <!-- TODO -->
@@ -705,7 +705,7 @@
             <a href="http://127.0.0.1:5501/5.%E5%88%86%E9%A0%81-%E7%AB%8B%E5%8D%B3%E9%A0%90%E5%AE%9A(%E6%96%B0).html"
                 id="to-booking">
                 <!-- ! FIX 小人不擋影片 -->
-                <div id="booking" class="lax" data-lax-opacity="0 0, 100 1"></div>
+                <div id="booking"></div>
             </a>
         </main>
 
@@ -802,7 +802,7 @@
 
         // 立即預購的小人卡在footer效果
         window.addEventListener("scroll", () => {
-            var main = document.querySelector("main")
+            var main = document.querySelector("#boobman")
             var booking = document.querySelector("#booking")
             var scrolled = window.scrollY
             var change = main.scrollHeight - 0
