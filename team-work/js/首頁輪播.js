@@ -1,8 +1,48 @@
- // function on
- jQuery(document).ready(function () {
-    slider3dInit();
-});
-
+//  // function on
+//  jQuery(document).ready(function () {
+//     slider3dInit();
+// });
+var w = $(window).width();
+window.onload=function(){
+    if(window.innerWidth>1400){
+        slider3dInit()
+      
+    }else if(window.innerWidth > 1150){
+        slider3dInit2()
+       
+    }else if(window.innerWidth > 990){
+        slider3dInit3()
+       
+    }else if(window.innerWidth > 850){
+        slider3dInit4()
+    }else if(window.innerWidth > 650){
+        slider3dInit5()
+    }else if(window.innerWidth > 430){
+        slider3dInit6()
+    }else{
+        slider3dInit7()
+    }
+}
+window.onresize=function(){
+    if(window.innerWidth > 1400){
+        slider3dInit()
+       
+    }else if(window.innerWidth > 1150){
+        slider3dInit2()
+        
+    }else if(window.innerWidth > 990){
+        slider3dInit3()
+        
+    }else if(window.innerWidth > 850){
+        slider3dInit4()
+    }else if(window.innerWidth > 650){
+        slider3dInit5()
+    }else if(window.innerWidth > 430){
+        slider3dInit6()
+    }else{
+        slider3dInit7()
+    }
+}
 // function init  初始化
 // 有設初始化的值所以預設值會被蓋過，所以要改東西從這裡改
 function slider3dInit() {
@@ -19,7 +59,91 @@ function slider3dInit() {
         showTime: 4000
     });
 }
+function slider3dInit2() {
+    jQuery('.slider3d').carousel({
+        num: 5,
+        maxWidth: 450,
+        maxHeight: 350,
+        // 後面兩個物件的距離，數字越大兩物件水平距離越遠
+        distance: 230,
+        // 後面兩物件與中央物件的前後距離
+        scale: 0.6,
+        animationTime: 800,
+        autoPlay: false,
+        showTime: 4000
+    });
+}
 
+function slider3dInit3() {
+    jQuery('.slider3d').carousel({
+        num: 5,
+        maxWidth: 370,
+        maxHeight: 300,
+        // 後面兩個物件的距離，數字越大兩物件水平距離越遠
+        distance: 180,
+        // 後面兩物件與中央物件的前後距離
+        scale: 0.6,
+        animationTime: 800,
+        autoPlay: false,
+        showTime: 4000
+    });
+}
+function slider3dInit4() {
+    jQuery('.slider3d').carousel({
+        num: 5,
+        maxWidth: 370,
+        maxHeight: 300,
+        // 後面兩個物件的距離，數字越大兩物件水平距離越遠
+        distance: 180,
+        // 後面兩物件與中央物件的前後距離
+        scale: 0.6,
+        animationTime: 800,
+        autoPlay: false,
+        showTime: 4000
+    });
+}
+function slider3dInit5() {
+    jQuery('.slider3d').carousel({
+        num: 5,
+        maxWidth: 370,
+        maxHeight: 300,
+        // 後面兩個物件的距離，數字越大兩物件水平距離越遠
+        distance: 80,
+        // 後面兩物件與中央物件的前後距離
+        scale: 0.6,
+        animationTime: 800,
+        autoPlay: false,
+        showTime: 4000
+    });
+}
+function slider3dInit6() {
+    jQuery('.slider3d').carousel({
+        num: 5,
+        maxWidth: 370,
+        maxHeight: 300,
+        // 後面兩個物件的距離，數字越大兩物件水平距離越遠
+        distance: 10,
+        // 後面兩物件與中央物件的前後距離
+        scale: 0,
+        animationTime: 800,
+        autoPlay: false,
+        showTime: 4000
+    });
+}
+function slider3dInit7() {
+    jQuery('.slider3d').carousel({
+        num: 5,
+        maxWidth: 260,
+        maxHeight: 180,
+        // 後面兩個物件的距離，數字越大兩物件水平距離越遠
+        distance: 10,
+        // 後面兩物件與中央物件的前後距離
+        scale: 0,
+        animationTime: 800,
+        autoPlay: false,
+        showTime: 4000
+    });
+}
 /**
 * Created by tingyuan on 15/12/29.
 */
@@ -68,6 +192,7 @@ function slider3dInit() {
         }
         var config = $container.data('config');
         var halfShowNum = (config.num - 1) / 2;
+        
         var scales, i, newIndex;
         var totalNum = $container.data('totalNum');
         var targetCss;
@@ -113,10 +238,11 @@ function slider3dInit() {
             // scales
             if (i !== undefined) {
                 scales = Math.pow(config.scale, Math.abs(i - halfShowNum));
+                // scale1 = Math.pow(0, Math.abs(i - halfShowNum));
                 $container.data('isanimating', true);
                 $(element).css({
                     display: 'block',
-                    'z-index': zIndexs[i] + 99
+                    'z-index': zIndexs[i] + 3
                     // 動畫按了按鈕後的動畫
                 }).animate({
                     opacity: scales,
@@ -212,7 +338,7 @@ function slider3dInit() {
     function initStyle($container) {
         var showIndexsInfo = getShowIndexs($container);
 
-        var zIndex = 9999;
+        var zIndex = 3;
         var scales;
         var config = $container.data('config');
         var halfShowNum = (config.num - 1) / 2;
@@ -242,33 +368,118 @@ function slider3dInit() {
             margin: 0,
             marginLeft: '50%',
             left: -listWidth / 2,
-            top: ($container.height() - config.maxHeight) / 2
+            // top: ($container.height() - config.maxHeight) / 2
         });
+        function btn_left(){
+            $container.find('.left').css({
+                position: 'absolute',
+                // 調整左邊按鈕水平距離
+                left: -100,
+                // 調整左邊按鈕高度
+                top: '70%',
+                'z-index': 3 + $container.data('totalNum') + 1
+            });
+        }
+        function btn_left2(){
+            $container.find('.left').css({
+                position: 'absolute',
+                // 調整左邊按鈕水平距離
+                left: "30%",
+                // 調整左邊按鈕高度
+                top: '140%',
+                'z-index': 3 + $container.data('totalNum') + 1
+            });
+        }
+        function btn_left3(){
+            $container.find('.left').css({
+                position: 'absolute',
+                // 調整左邊按鈕水平距離
+                left: "15%",
+                // 調整左邊按鈕高度
+                top: '140%',
+                'z-index': 3 + $container.data('totalNum') + 1
+            });
+        }function btn_left4(){
+            $container.find('.left').css({
+                position: 'absolute',
+                // 調整左邊按鈕水平距離
+                left: "15%",
+                // 調整左邊按鈕高度
+                top: '175%',
+                'z-index': 3 + $container.data('totalNum') + 1
+            });
+        }
+        // btn_left()
+               
+        
+        
 
-        $container.find('.left').css({
-            position: 'absolute',
-            // 調整左邊按鈕水平距離
-            left: -100,
-            // 調整左邊按鈕高度
-            top: '70%',
-            'z-index': 99 + $container.data('totalNum') + 1
-        });
+        function btn_right(){
+            $container.find('.right').css({
+                position: 'absolute',
+                // 調整右邊按鈕水平距離
+                right: -100,
+                // 調整右邊按鈕高度
+                top: '70%',
+                'z-index': 3 + $container.data('totalNum') + 1
+            });
+        }
+        function btn_right2(){
+            $container.find('.right').css({
+                position: 'absolute',
+                // 調整右邊按鈕水平距離
+                right: "30%",
+                // 調整右邊按鈕高度
+                top: '140%',
+                'z-index': 3 + $container.data('totalNum') + 1
+            });
+        }
+        function btn_right3(){
+            $container.find('.right').css({
+                position: 'absolute',
+                // 調整右邊按鈕水平距離
+                right: "15%",
+                // 調整右邊按鈕高度
+                top: '140%',
+                'z-index': 3 + $container.data('totalNum') + 1
+            });
+        }
 
-        $container.find('.right').css({
-            position: 'absolute',
-            // 調整右邊按鈕水平距離
-            right: -100,
-            // 調整右邊按鈕高度
-            top: '70%',
-            'z-index': 99 + $container.data('totalNum') + 1
-        });
+        function btn_right4(){
+            $container.find('.right').css({
+                position: 'absolute',
+                // 調整右邊按鈕水平距離
+                right: "15%",
+                // 調整右邊按鈕高度
+                top: '175%',
+                'z-index': 3 + $container.data('totalNum') + 1
+            });
+        }
 
+        if(window.innerWidth > 990){
+            btn_left()
+            btn_right()
+        }else if(window.innerWidth > 850){
+            btn_left2()
+            btn_right2()
+        }else if(window.innerWidth > 430){
+            btn_left3()
+            btn_right3()
+        }else{
+            btn_left4()
+            btn_right4()
+        }
+       
+
+
+        // btn_right()
+        
         // 點開分頁後未點擊左右按鈕頁面呈現的樣式
         $container.find('ul li').each(function (index, element) {
             var i = showIndexsInfo.hashIndexs[index];
             if (i !== undefined) {
                 scales = Math.pow(config.scale, Math.abs(i - halfShowNum));
-                zIndex = 99 + (i > halfShowNum ? (config.num - 1 - i) : i);
+                zIndex = 3 + (i > halfShowNum ? (config.num - 1 - i) : i);
                 $(element).css({
                     display: 'block',
                     position: 'absolute',
@@ -296,6 +507,16 @@ function slider3dInit() {
 
         });
     }
+   
+    
+
+
+
+
+
+
+
+
 
 
     $.fn.carousel = function (param) {

@@ -1,16 +1,15 @@
 #new-section{
     width: 100%;
     height: 100vh;
+    min-height: 800px;
     /* border: 1px black solid; */
     background-image: url("../img/layout/bg.png");
     background-size: cover;
-}
-.slider-3d {
-    background-color: rgba(0, 0, 0, .5);
-}
-
-.slider3d-list {
-    top: 30vh !important;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .slider3d {
@@ -27,7 +26,7 @@
 .slider3d-list .left {
     position: absolute;
     top: 50%;
-    z-index: 90;
+    z-index: 3;
     left: -100px;
 }
 
@@ -54,8 +53,17 @@
 }
 .card-container{
     height: 500px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     overflow: unset;
     position: relative;
    
+}
+@media(max-width:430px){
+    #new-section{
+        min-height: unset;
+        
+    }
+    .slider3d{
+        margin-top: 50px;
+    }
 }
