@@ -4,23 +4,80 @@
 // });
 var w = $(window).width();
 window.onload=function(){
+
     if(window.innerWidth>1400){
         slider3dInit()
+        lax.setup() // init
+
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
+
+            window.requestAnimationFrame(updateLax)
       
     }else if(window.innerWidth > 1150){
         slider3dInit2()
+        lax.setup() // init
+
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
+
+            window.requestAnimationFrame(updateLax)
        
     }else if(window.innerWidth > 990){
         slider3dInit3()
+        lax.setup() // init
+
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
+
+            window.requestAnimationFrame(updateLax)
        
     }else if(window.innerWidth > 850){
         slider3dInit4()
+        lax.setup() // init
+
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
+
+            window.requestAnimationFrame(updateLax)
     }else if(window.innerWidth > 650){
         slider3dInit5()
+        lax.setup() // init
+
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
+
+            window.requestAnimationFrame(updateLax)
     }else if(window.innerWidth > 430){
         slider3dInit6()
+        lax.setup() // init
+
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
+
+            window.requestAnimationFrame(updateLax)
     }else{
         slider3dInit7()
+        lax.setup() // init
+
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
+
+            window.requestAnimationFrame(updateLax)
     }
 }
 window.onresize=function(){
