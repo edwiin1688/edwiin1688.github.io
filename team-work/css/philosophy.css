@@ -37,6 +37,7 @@
 
 #philosophy .hand_drawn_1,
 #philosophy .hand_drawn_3 {
+  width: 100%;
   position: absolute;
   top: 40%;
   left: -25%;
@@ -49,6 +50,7 @@
 }
 
 #philosophy .hand_drawn_2 {
+  width: 100%;
   position: absolute;
   top: -70%;
   left: 30%;
