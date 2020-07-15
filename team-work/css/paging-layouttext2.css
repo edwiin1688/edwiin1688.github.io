@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.burger-box.z-index {
+  z-index: 1301;
+}
+
 #invisible-bar {
   width: 7%;
   min-width: 68px;

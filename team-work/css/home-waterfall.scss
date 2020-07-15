@@ -5,6 +5,8 @@
     max-height: 1330px;
     background-color: blanchedalmond;
     position: relative;
+    background-image: url("../img/layout/bg.png");
+    background-size: cover;
     @media (max-width:576px){
         height: calc(250vw + 160px);
         max-height: 900px;
