@@ -27,7 +27,7 @@
 .slider3d-list .left {
     position: absolute;
     top: 50%;
-    z-index: 10003;
+    z-index: 90;
     left: -100px;
 }
 
@@ -54,7 +54,8 @@
 }
 .card-container{
     height: 500px;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     overflow: unset;
     position: relative;
+   
 }

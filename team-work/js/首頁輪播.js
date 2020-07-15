@@ -116,7 +116,7 @@ function slider3dInit() {
                 $container.data('isanimating', true);
                 $(element).css({
                     display: 'block',
-                    'z-index': zIndexs[i] + 9999
+                    'z-index': zIndexs[i] + 99
                     // 動畫按了按鈕後的動畫
                 }).animate({
                     opacity: scales,
@@ -251,7 +251,7 @@ function slider3dInit() {
             left: -100,
             // 調整左邊按鈕高度
             top: '70%',
-            'z-index': 9999 + $container.data('totalNum') + 1
+            'z-index': 99 + $container.data('totalNum') + 1
         });
 
         $container.find('.right').css({
@@ -260,7 +260,7 @@ function slider3dInit() {
             right: -100,
             // 調整右邊按鈕高度
             top: '70%',
-            'z-index': 9999 + $container.data('totalNum') + 1
+            'z-index': 99 + $container.data('totalNum') + 1
         });
 
         // 點開分頁後未點擊左右按鈕頁面呈現的樣式
@@ -268,7 +268,7 @@ function slider3dInit() {
             var i = showIndexsInfo.hashIndexs[index];
             if (i !== undefined) {
                 scales = Math.pow(config.scale, Math.abs(i - halfShowNum));
-                zIndex = 9999 + (i > halfShowNum ? (config.num - 1 - i) : i);
+                zIndex = 99 + (i > halfShowNum ? (config.num - 1 - i) : i);
                 $(element).css({
                     display: 'block',
                     position: 'absolute',
