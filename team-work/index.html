@@ -65,7 +65,7 @@
     <!-- footer 的 css -->
     <link rel="stylesheet" href="./css/the-footer.css">
 
-
+    <link rel="stylesheet" href="./css/首頁輪播.css">
     <link rel="stylesheet" href="./css/Product.css">
 
 
@@ -73,6 +73,17 @@
         /* 貓咪和向下箭頭 */
         .fixed-bottom {
             z-index: 1;
+        }
+        #guided_tour{
+            display: none;
+        }
+        @media (max-width: 1400px) {
+            #new-section{
+                display: none;
+            }
+            #guided_tour{
+            display: block;
+        }
         }
     </style>
 </head>
@@ -382,6 +393,83 @@
 
         <!-- TODO -->
 
+
+
+
+
+        <section id="new-section">
+            <div class="slider3d">
+                <ul class="slider3d-list">
+                    <li class="card-container">
+                        
+                        <img src="./img/ill_camp.png" alt="" />
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">營區導覽
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </button>
+        
+                    </li>
+                    
+                    <li class="card-container">
+                        
+                        <img src="./img/ill_food.png" alt="" />
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">美食饗宴
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </button>
+        
+                        
+                    </li>
+                    <li class="card-container">
+                        
+                        <img src="./img/ill_schedule.png" alt="" />
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">立即預定
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </button>
+        
+                    </li>
+                    <img src="./img/left2.png" class="left" />
+                    <img src="./img/right2.png" class="right" />
+                </ul>
+            </div>
+    
+        </section>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- ? 環境導覽 -->
         <section id="guided_tour" class="default_bg">
 
@@ -667,6 +755,7 @@
             $('.scroll_top').text('scrollTop: ' + $(window).scrollTop());
         });
     </script>
+     <script src="./js/首頁輪播.js"></script>
 
     <script src="./js/home-page.js"></script>
 
