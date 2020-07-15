@@ -1,8 +1,4 @@
 @charset "UTF-8";
-.burger-box.z-index {
-  z-index: 999;
-}
-
 #invisible-bar {
   width: 7%;
   min-width: 68px;
@@ -506,7 +502,7 @@
   display: flex;
   position: relative;
   position: fixed;
-  z-index: 4;
+  z-index: 1000;
   opacity: 0;
   top: 0;
   -webkit-box-align: center;
@@ -1418,7 +1414,7 @@ h4 {
   position: absolute;
   right: 0%;
   position: fixed;
-  z-index: 5;
+  z-index: 1100;
   top: 0;
 }
 

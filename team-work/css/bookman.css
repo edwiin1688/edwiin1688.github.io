@@ -5,6 +5,7 @@ main {
 
 #to-booking {
     display: inline;
+    
 }
 
 #booking {
@@ -18,7 +19,7 @@ main {
     position: fixed;
     right: 0px;
     bottom: 0px;
-    z-index: 3;
+    z-index: 1119;
     /* border: 1px red solid; */
 }
 
@@ -33,6 +34,7 @@ main {
     position: absolute;
     right: 0px;
     bottom: -20px;
+   
 }
 
 @media (max-width: 750px) {

@@ -1,5 +1,5 @@
 .burger-box.z-index{
-  z-index: 999;
+    z-index: 1301;
   }
   #invisible-bar{
     width: 7%;
@@ -370,7 +370,7 @@
       display: flex;
       position: relative;
       position: fixed;
-      z-index: 4;
+      z-index: 1000;
       opacity: 0;
       top: 0;
       align-items: center;
@@ -1020,7 +1020,7 @@
     position: absolute;
     right: 0%;
     position: fixed;
-    z-index: 5;
+    z-index: 1100;
     top: 0;
     &:hover .burger-bun-bot{
       background-color: orange;
