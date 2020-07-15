@@ -431,7 +431,9 @@
 
 @media (max-width: 650px) {
   .home-page .slider-nav div {
-    z-index: 200;
+    z-index: 999;
+    -webkit-transform: translateZ(999px);
+            transform: translateZ(999px);
     width: 235px;
     height: 60px;
     display: block;

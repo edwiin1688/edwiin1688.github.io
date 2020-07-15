@@ -310,7 +310,8 @@
       div{
         display: none;
         @media(max-width: 650px){
-          z-index: 200;
+          z-index: 999;
+          transform: translateZ(999px);
           width: 235px;
           height: 60px;
           display: block;
