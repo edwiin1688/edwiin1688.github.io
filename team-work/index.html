@@ -79,17 +79,9 @@
             display: none;
         }
 
-        @media (max-width: 1400px) {
-            #new-section {
-                display: none;
-            }
 
-            #guided_tour {
-                display: block;
-            }
-        }
 
-        #the-all{
+        #the-all {
             overflow: hidden;
         }
     </style>
@@ -144,7 +136,7 @@
             <div class="animation-pic"></div>
             <div class="animation-pic"></div>
             <div class="slider-nav">
-                <a href="" onclick="window.location.href='https://edwiin1688.github.io/team-work/'">
+                <a href="index.html">
                     <div id="title"></div>
                 </a>
             </div>
@@ -241,7 +233,7 @@
         </section>
 
         <!-- TODO: 主要內容 -->
-        <main>
+        <main id="bookbman">
 
 
             <!-- TODO -->
@@ -411,7 +403,8 @@
                         <li class="card-container">
 
                             <img src="./img/ill_camp.png" alt="" />
-                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                            <a href="1.分頁-營區導覽(新).html">
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
                                 data-target="#exampleModalCenter">營區導覽
                                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right"
                                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -419,13 +412,16 @@
                                         d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
                                 </svg>
                             </button>
+                            </a>
+                            
 
                         </li>
 
                         <li class="card-container">
 
                             <img src="./img/ill_food.png" alt="" />
-                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                            <a href="4.分頁-美食饗宴(新) .html">
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
                                 data-target="#exampleModalCenter">美食饗宴
                                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right"
                                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -433,13 +429,16 @@
                                         d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
                                 </svg>
                             </button>
+                            </a>
+                            
 
 
                         </li>
                         <li class="card-container">
 
                             <img src="./img/ill_schedule.png" alt="" />
-                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                            <a href="5.分頁-立即預定(新).html">
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
                                 data-target="#exampleModalCenter">立即預定
                                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right"
                                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -447,6 +446,8 @@
                                         d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
                                 </svg>
                             </button>
+                            </a>
+                            
 
                         </li>
                         <img src="./img/left2.png" class="left" />
@@ -705,7 +706,7 @@
             <a href="http://127.0.0.1:5501/5.%E5%88%86%E9%A0%81-%E7%AB%8B%E5%8D%B3%E9%A0%90%E5%AE%9A(%E6%96%B0).html"
                 id="to-booking">
                 <!-- ! FIX 小人不擋影片 -->
-                <div id="booking" class="lax" data-lax-opacity="0 0, 100 1"></div>
+                <div id="booking"></div>
             </a>
         </main>
 
@@ -775,12 +776,16 @@
             $('.scroll_top').text('scrollTop: ' + $(window).scrollTop());
         });
     </script>
-    <script src="./js/首頁輪播.js"></script>
+    <script src="./js/首頁輪播加lax初始化.js"></script>
 
     <script src="./js/home-page.js"></script>
 
     <!-- todo index !? -->
     <script src="./js/index.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
     <script>
         // <!-- ! 寫自己的 JS 程式碼在這邊 -->
         window.addEventListener("scroll", () => {
@@ -802,7 +807,7 @@
 
         // 立即預購的小人卡在footer效果
         window.addEventListener("scroll", () => {
-            var main = document.querySelector("main")
+            var main = document.querySelector("#bookbman")
             var booking = document.querySelector("#booking")
             var scrolled = window.scrollY
             var change = main.scrollHeight - 0
@@ -813,7 +818,7 @@
             }
         })
 
-
+        
 
 
 
