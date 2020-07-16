@@ -383,6 +383,18 @@
   background: #B7D7C9;
 }
 
+@media (max-width: 740px) {
+  #notice {
+    padding-bottom: 150px;
+  }
+}
+
+@media (max-width: 500px) {
+  #notice {
+    padding-bottom: 25px;
+  }
+}
+
 #notice .intro2 {
   background: #B7D7C9;
   padding: 20px 0 0 0;
@@ -633,7 +645,6 @@
 #notice .notice-container .space-flex .sweet-box {
   border-radius: 20px;
   width: 385px;
-  height: 370px;
   background-color: #F1F9FE;
 }
 
@@ -710,18 +721,17 @@
   border-radius: 20px;
   background-color: #F1F9FE;
   width: 720px;
-  height: 870px;
   position: absolute;
   left: calc(50% - 350px);
   top: 360px;
   margin: 35px 0 0 0;
+  padding: 20px;
 }
 
 @media (max-width: 740px) {
   #notice .notice-container .detail-box {
     top: 770px;
     width: 385px;
-    height: 1420px;
     left: calc(50% - 192.5px);
   }
 }

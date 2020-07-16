@@ -34,7 +34,8 @@ footer a #top-btn #f-arrow {
   position: relative;
   left: 55px;
   top: 15px;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 @media (max-width: 650px) {
@@ -57,6 +58,8 @@ footer .container {
   margin: 0 auto 0 auto;
   position: relative;
   top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 5px;
 }
@@ -65,8 +68,11 @@ footer .container {
   footer .container {
     width: 350px;
     height: 185px;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -87,7 +93,8 @@ footer .container #footer-title {
 }
 
 footer .container #footer-title:hover {
-  filter: drop-shadow(5px 5px 5px #333);
+  -webkit-filter: drop-shadow(5px 5px 5px #333);
+          filter: drop-shadow(5px 5px 5px #333);
 }
 
 @media (max-width: 768px) {
@@ -129,6 +136,8 @@ footer .container .f-infomation-box {
 footer .container .f-infomation-box .f-phone {
   width: 305px;
   height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -154,6 +163,8 @@ footer .container .f-infomation-box .f-phone #phone-text {
 footer .container .f-infomation-box .f-mail {
   width: 290px;
   height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 2.5px 0 2.5px 0;
 }
@@ -186,6 +197,8 @@ footer .container .f-infomation-box .f-mail #mail-text {
 footer .container .f-infomation-box .f-adress {
   width: 305px;
   height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -211,9 +224,15 @@ footer .container .f-infomation-box .f-adress #adress-text {
 footer .container .f-icon-box {
   width: 150px;
   height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 footer .container .f-icon-box a #f-fb {
