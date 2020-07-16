@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Work - Project F</title>
+
+
+    <!-- Better Comments -->
+    <!--        Comments  -->
+    <!-- *      Comments  -->
+    <!-- //     Comments  -->
+    <!-- todo   Comments  -->
+    <!-- !      Comments  -->
+    <!-- ?      Comments  -->
+
+    <!-- TODO Highlight -->
+    <!-- TODO:  Comments  -->
+    <!-- FIXME: Comments  -->
+
+
+    <!-- ! FIX 解決 favicon 錯誤方法 -->
+    <!-- <link rel="shortcut icon" href="#" /> -->
+    <link href="favicon.ico" rel="shortcut icon">
+
+    <!-- ? 引用 bootstrap 的 css (離線版) -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- todo 引用 swiper 的 css (離線版) -->
+    <link rel="stylesheet" href="./node_modules/swiper/css/swiper.min.css">
+
+    <!-- x Parallax v3.1.0 -->
+    <script src="./js/parallax/3.1.0/parallax.min.js"></script>
+
+    <!-- ? 安裝離線 vue -->
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
+
+
+    <!-- // TODO 以上是外部引用 -->
+    <!-- // TODO 以上是外部引用 -->
+    <!-- // TODO 以上是外部引用 -->
+
+
+    <!-- loading -->
+    <link rel="stylesheet" href="./css/loading.css">
+    <!-- navbar 的 css -->
+    <link rel="stylesheet" href="./css/home-page.css">
+    <!-- 主要的 css -->
+    <link rel="stylesheet" href="./css/default.css">
+    <!-- index -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- 環境導覽 -->
+    <link rel="stylesheet" href="./css/guided_tour.css">
+    <!-- 引用 banner 的 css  -->
+    <link rel="stylesheet" href="./css/banner.css">
+    <!-- 經營理念 -->
+    <link rel="stylesheet" href="./css/philosophy.css">
+    <!-- 首頁活動區塊(section-4)部分 -->
+    <link rel="stylesheet" href="./css/homepage-activity.css">
+    <!-- 首頁瀑布流(section-5)部分 -->
+    <link rel="stylesheet" href="./css/home-waterfall.css">
+    <!-- booking小人 -->
+    <link rel="stylesheet" href="./css/bookman.css">
+
+
+    <link rel="stylesheet" href="./css/首頁輪播.css">
+    <link rel="stylesheet" href="./css/Product.css">
+    <!-- footer 的 css -->
+    <link rel="stylesheet" href="./css/the-footer.css">
+
+    <style>
+        /* 貓咪和向下箭頭 */
+        .fixed-bottom {
+            z-index: 1;
+        }
+
+        #guided_tour {
+            display: none;
+        }
+
+
+
+        #the-all {
+            overflow: hidden;
+        }
+
+        /* html {
+    scroll-behavior: smooth;
+    } */
+    </style>
+</head>
+
+<body>
+    <!-- 引用 jQuery 的 js -->
+    <script src="./js/jquery/2.2.4/jquery.min.js"></script>
+    <!-- 引用 jQuery 的 js (離線版－沒辦法使用!?) -->
+    <!-- <script src="./node_modules/jquery/dist/jquery.min.js"></script> -->
+    <!-- Bootstrap 需要 jQuery (離線版) -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- 引用 Swiper 的 js (離線版) -->
+    <script src="./node_modules/swiper/js/swiper.min.js"></script>
+    <!-- 引用 lax.js 的 js (離線版) -->
+    <script src="./node_modules/lax.js/lib/lax.min.js"></script>
+    <script>
+        // 初始化 lax.js
+        window.onload = function () {
+            lax.setup() // init
+
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
+
+            window.requestAnimationFrame(updateLax);
+        }
+    </script>
+
+    <!-- npm install lazyload -->
+    <script src="./node_modules/lazyload/lazyload.min.js"></script>
+
+    <!-- 上面是相依的 js -->
+    <!-- 上面是相依的 js -->
+    <!-- 上面是相依的 js -->
+
+    <!-- loading -->
+    <div class="loading-mask">
+    </div>
+    <script src="./js/loading.js"></script>
+
+
+
+    <!-- TODO -->
+    <main id="the-all">
+        <div id="invisible-bar"></div>
+        <section class="home-page">
+            <div class="animation-pic"></div>
+            <div class="animation-pic"></div>
+            <div class="animation-pic"></div>
+            <div class="animation-pic"></div>
+            <div class="animation-pic"></div>
+            <div class="slider-nav">
+                <a href="index.html">
+                    <div id="title"></div>
+                </a>
+            </div>
+            <div id="white-line"></div>
+            <div class="burger-box">
+                <div id="hamburger" class="hamburglar">
+                    <div class="burger-icon">
+                        <div class="burger-container">
+                            <span class="burger-bun-top"></span>
+                            <span class="burger-filling"></span>
+                            <span class="burger-bun-bot"></span>
+                        </div>
+                    </div>
+
+                    <!-- svg ring containter -->
+                    <div class="burger-ring">
+                        <svg class="svg-ring">
+                            <path class="path" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"
+                                d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2" />
+                        </svg>
+                    </div>
+                    <!-- the masked path that animates the fill to the ring -->
+
+                    <svg width="0" height="0">
+                        <mask id="mask">
+                            <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000" stroke-miterlimit="10"
+                                stroke-width="4"
+                                d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4" />
+                        </mask>
+                    </svg>
+                    <div class="path-burger">
+                        <div class="animate-path">
+                            <!-- <div class="path-rotation"></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-container">
+                <div class="nav-bg">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="menu-content">
+                    <div class="menu-title">
+                        <a href="index.html">
+                            <div id="title"></div>
+                        </a>
+                    </div>
+                    <div class="info-box">
+                        <div class="info">
+                            <div>
+                                <a href="1.分頁-營區導覽(新).html">營區導覽</a>
+                            </div>
+                            <div>
+                                <a href="2.分頁-活動體驗(新) .html">活動體驗</a>
+                            </div>
+                            <div>
+                                <a href="3.分頁-行程資訊(新) .html">行程資訊</a>
+                            </div>
+                            <div>
+                                <a href="4.分頁-美食饗宴(新) .html">美食饗宴</a>
+                            </div>
+                            <div>
+                                <a href="5.分頁-立即預定(新).html">立即預定</a>
+                            </div>
+                        </div>
+                        <div class="menu-footer">
+                            <div id="follow">follow us</div>
+                            <div class="menu-icon-box">
+                                <div onclick="location.href='https://www.facebook.com/flybirdchacha/'"></div>
+                                <div onclick="location.href='https://www.instagram.com/flybird.chacha/'"></div>
+                            </div>
+                            <div id="copyright">©2020 Flybird copyright</div>
+                        </div>
+                    </div>
+                    <div class="menu-drawing"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- TODO -->
+
+        <!-- to-top的錨點 -->
+        <div id="thetop"></div>
+        <!-- 首頁 備註:從main裡面改出來讓影片能固定在上面不跑位-->
+
+        <section id="banner">
+            <script src="./js/banner.js"></script>
+        </section>
+
+        <!-- TODO: 主要內容 -->
+        <main id="bookbman">
+
+
+            <!-- TODO -->
+            <!-- 經營理念 -->
+            <section id="philosophy" class="">
+                <div class="container-fluid">
+
+                    <!-- 1. 帶著家人 走進自然 -->
+                    <div class="row">
+                        <!-- 手機圖文樣式 -->
+                        <div class="p_mobile_1 col-12 col-sm-8 order-0 order-sm-1">
+                            <div class="philosophy_1">
+                                <img src="./img/about/explore.png" alt="...">
+                                <div class="bp_title">
+                                    帶著家人走進自然<br>
+                                </div>
+                                <div class="bp_text">
+                                    帶著衣物即可輕鬆走入大自<br>
+                                    然，各式各樣活動促進親子互<br>
+                                    動，在地生態資源、頂級露營<br>
+                                    設備，依照季節變化與在地食<br>
+                                    材，營照出台灣指標性的「一<br>
+                                    泊五食」新露營體驗。<br>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- PC 圖文樣式 -->
+                        <div class="p_pc col-12 col-sm-4 order-1 order-sm-0 bp_left">
+                            <div class="bp_title">
+                                帶著家人<br>
+                                &emsp;走進自然<br>
+                                <div class="hand_drawn_1">
+                                    <img src="./img/about/hand_drawn_1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="bp_text">
+                                帶著衣物即可輕鬆走入大自<br>
+                                然，各式各樣活動促進親子互<br>
+                                動，在地生態資源、頂級露營<br>
+                                設備，依照季節變化與在地食<br>
+                                材，營照出台灣指標性的「一<br>
+                                泊五食」新露營體驗。<br>
+                            </div>
+                            <!-- 圓框 parallax -->
+                            <div id="circle_parallax_1">
+                                <!-- 圓圈 -->
+                                <img data-depth="0.2" src="./img/about/circle.svg" lt="...">
+                                <!-- 圓框 -->
+                                <img data-depth="-2" src="./img/about/circle-red.svg" alt="...">
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- 2. 創造美好 露營回憶 -->
+                    <div class="row">
+                        <!-- 手機圖文樣式 -->
+                        <div class="p_mobile_2 col-12 col-sm-8">
+                            <div class="philosophy_2">
+                                <img src="./img/about/create.png" alt="...">
+                                <div class="bp_title">
+                                    創造美好露營回憶<br>
+                                </div>
+                                <div class="bp_text">
+                                    自然環境是露營不可取代之元<br>
+                                    素，我們擁有絕佳的天然環境<br>
+                                    ，不但鮮少蛟蟲，溪流溫度適<br>
+                                    宜物種豐富，四季都能樂在中。<br>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- PC 圖文樣式 -->
+                        <div class="p_pc col-12 col-sm-4 bp_right">
+                            <div class="bp_title">
+                                創造美好<br>
+                                &emsp;露營回憶<br>
+                                <div class="hand_drawn_2">
+                                    <img src="./img/about/hand_drawn_2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="bp_text">
+                                自然環境是露營不可取代之元<br>
+                                素，我們擁有絕佳的天然環境<br>
+                                ，不但鮮少蛟蟲，溪流溫度適<br>
+                                宜物種豐富，四季都能樂在中。<br>
+                            </div>
+                            <!-- 圓框 parallax -->
+                            <div id="circle_parallax_2">
+                                <!-- 圓圈 -->
+                                <img data-depth="0.2" src="./img/about/circle.svg" lt="...">
+                                <!-- 圓框 -->
+                                <img data-depth="-2" src="./img/about/circle-red.svg" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. 享受自然 森林芬多精 -->
+                    <div class="row">
+                        <!-- 手機圖文樣式 -->
+                        <div class="p_mobile_3 col-12 col-sm-8 order-sm-1 order-0">
+                            <div class="philosophy_3">
+                                <img src="./img/about/enjoy.png" alt="...">
+                                <div class="bp_title">
+                                    享受自然森林芬多精<br>
+                                </div>
+                                <div class="bp_text">
+                                    飛鳥恰恰位於新竹五峰山區，<br>
+                                    依山傍水、草地聚實、景觀優<br>
+                                    美，望著山谷風景，孩子們開<br>
+                                    心溪水嬉戲沉浸在原始溪流<br>
+                                    與森林芬多精內。<br>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- PC 圖文樣式 -->
+                        <div class="p_pc col-12 col-sm-4 order-sm-0 order-1 bp_left">
+                            <div class="bp_title">
+                                享受自然<br>
+                                &emsp;森林芬多精<br>
+                                <div class="hand_drawn_3">
+                                    <img src="./img/about/hand_drawn_3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="bp_text">
+                                飛鳥恰恰位於新竹五峰山區，<br>
+                                依山傍水、草地聚實、景觀優<br>
+                                美，望著山谷風景，孩子們開<br>
+                                心溪水嬉戲沉浸在原始溪流<br>
+                                與森林芬多精內。<br>
+                            </div>
+                            <!-- 圓框 parallax -->
+                            <div id="circle_parallax_3">
+                                <!-- 圓圈 -->
+                                <img data-depth="0.2" src="./img/about/circle.svg" lt="...">
+                                <!-- 圓框 -->
+                                <img data-depth="-2" src="./img/about/circle-red.svg" alt="...">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <script>
+                    // 圓框 parallax.js
+                    var parallaxInstance1 = new Parallax(document.getElementById("circle_parallax_1"));
+                    var parallaxInstance2 = new Parallax(document.getElementById("circle_parallax_2"));
+                    var parallaxInstance3 = new Parallax(document.getElementById("circle_parallax_3"));
+                </script>
+
+                <!-- 分隔線 -->
+                <div class="about_line">
+                    <img src="./img/about/line.png" alt="">
+                </div>
+
+            </section>
+
+            <!-- TODO -->
+
+
+
+
+
+            <section id="new-section">
+                <div class="slider3d">
+                    <ul class="slider3d-list">
+                        <li class="card-container">
+
+                            <img src="./img/ill_camp.png" alt="" />
+                            <a href="1.分頁-營區導覽(新).html">
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#exampleModalCenter">營區導覽
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </button>
+                            </a>
+
+
+                        </li>
+
+                        <li class="card-container">
+
+                            <img src="./img/ill_food.png" alt="" />
+                            <a href="4.分頁-美食饗宴(新) .html">
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#exampleModalCenter">美食饗宴
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </button>
+                            </a>
+
+
+
+                        </li>
+                        <li class="card-container">
+
+                            <img src="./img/ill_schedule.png" alt="" />
+                            <a href="5.分頁-立即預定(新).html">
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#exampleModalCenter">立即預定
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </button>
+                            </a>
+
+
+                        </li>
+                        <img src="./img/left2.png" class="left" />
+                        <img src="./img/right2.png" class="right" />
+                    </ul>
+                </div>
+
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- ? 環境導覽 -->
+            <section id="guided_tour" class="default_bg">
+
+                <div class="swiper-block d-flex justify-content-center">
+
+                    <div class="row mb-cunstom">
+                        <div class="col-12 swiper-block">
+                            <div class="swiper-container guided_tour">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+
+                                        <div class="picture">
+                                            <ul>
+                                                <li>
+                                                    <div class="mask"></div>
+                                                </li>
+                                                <li>
+                                                    <a href="3.分頁-行程資訊(新) .html"></a>
+                                                    <img class="swiper-lazy" src="./img/guided_tour/ill_schedule.png"
+                                                        alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+
+                                                    <img class="swiper-lazy" src="./img/guided_tour/title_schedule.svg"
+                                                        alt="" style="width: 70%;">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="picture">
+                                            <ul>
+                                                <li>
+                                                    <div class="mask"></div>
+                                                </li>
+                                                <li>
+                                                    <a href="4.分頁-美食饗宴(新) .html"></a>
+                                                    <img class="swiper-lazy" src="./img/guided_tour/ill_camp.png"
+                                                        alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <img class="swiper-lazy" src="./img/guided_tour/title_camp.svg"
+                                                        alt="" style="width: 70%;">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+
+                                        <div class="picture">
+                                            <ul>
+                                                <li>
+                                                    <div class="mask"></div>
+                                                </li>
+                                                <li>
+                                                    <a href="4.分頁-美食饗宴(新) .html"></a>
+                                                    <img class="swiper-lazy" src="./img/guided_tour/ill_food.png"
+                                                        alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <img class="swiper-lazy" src="./img/guided_tour/title_food.svg"
+                                                        alt="" style="width: 70%;">
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev swiper-button-black"></div>
+                            <div class="swiper-button-next swiper-button-black"></div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <!-- ? 環境導覽 -->
+                <script src="./js/guided_tour.js"></script>
+            </section>
+
+            <!-- TODO -->
+
+            <section id="section-4">
+                <div class="container">
+                    <div class="activity-box activity-box1">
+                        <div class="pic1"></div>
+                        <div class="pic2"></div>
+                        <div class="pic3"></div>
+                        <div class="mask mask1"></div>
+                        <a href="2.分頁-活動體驗(新) .html">
+                            <div class="for-more for-more1">了解更多 ></div>
+                        </a>
+                    </div>
+                    <div class="activity-box activity-box2">
+                        <div class="pic1"></div>
+                        <div class="pic2"></div>
+                        <div class="pic3"></div>
+                        <div class="mask mask2"></div>
+                        <a href="2.分頁-活動體驗(新) .html">
+                            <div class="for-more for-more2">了解更多 ></div>
+                        </a>
+                    </div>
+                    <div class="activity-box activity-box3">
+                        <div class="pic1"></div>
+                        <div class="pic2"></div>
+                        <div class="pic3"></div>
+                        <div class="mask mask3"></div>
+                        <a href="2.分頁-活動體驗(新) .html">
+                            <div class="for-more for-more3">了解更多 ></div>
+                        </a>
+                    </div>
+                    <div class="text-box1">
+                        <div class="big-text">ENJOY</div>
+                        <div class="text">星空影院</div>
+                    </div>
+                    <div class="text-box2">
+                        <div class="big-text">PLAY</div>
+                        <div class="text">生態體驗</div>
+                    </div>
+                    <div class="text-box3">
+                        <div class="big-text">DIY</div>
+                        <div class="text">手做披薩</div>
+                    </div>
+                    <div id="flag-l"></div>
+                    <div id="flag-r"></div>
+                    <a href="2.分頁-活動體驗(新) .html">
+                        <div class="for-more-phone1">了解更多 ></div>
+                    </a>
+                    <a href="2.分頁-活動體驗(新) .html">
+                        <div class="for-more-phone2">了解更多 ></div>
+                    </a>
+                    <a href="2.分頁-活動體驗(新) .html">
+                        <div class="for-more-phone3">了解更多 ></div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- TODO -->
+
+            <!-- 瀑布流 -->
+            <section id="section-5">
+                <div class="waterflow-container">
+                    <div id="sliderpic-1">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div id="sliderpic-2">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div id="sliderpic-3">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div id="sliderpic-4">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div id="sliderpic-5">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div id="sliderpic-6">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div id="sliderpic-7">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div id="sliderpic-8">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div id="sliderpic-9"></div>
+                    <div id="sliderpic-10"></div>
+                    <div id="sliderpic-11">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div id="sliderpic-12"></div>
+                    <div id="sliderpic-13">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="slidetext-box">
+                    <div id="slidetext">
+                        <pre>加入飛鳥   體驗樂活人生</pre>
+                    </div>
+                    <div id="slideline"></div>
+                </div>
+            </section>
+
+
+            <a href="5.分頁-立即預定(新).html" id="to-booking">
+                <!-- ! FIX 小人不擋影片 -->
+                <div id="booking" class="find"></div>
+            </a>
+        </main>
+
+
+        <!-- TODO -->
+
+
+        <!-- footer -->
+        <footer id="end">
+            <a href="#thetop">
+                <div id="top-btn">
+                    <div id="f-arrow"></div>
+                    <div id="f-top">Top</div>
+                </div>
+            </a>
+            <div class="container">
+                <div id="footer-title" onclick="window.location.href='index.html'"></div>
+                <div id="footer-line"></div>
+                <div class="f-infomation-box">
+                    <div class="f-phone">
+                        <div id="phone-icon"></div>
+                        <div id="phone-text">預約專線 0930816898</div>
+                    </div>
+                    <div class="f-mail">
+                        <div id="mail-icon"></div>
+                        <div id="mail-text">info@icaping.tw</div>
+                    </div>
+                    <div class="f-adress">
+                        <div id="adress-icon"></div>
+                        <div id="adress-text">新竹縣五峰鄉花園村10鄰天湖205-12號</div>
+                    </div>
+                </div>
+                <div class="f-icon-box">
+                    <a href="https://www.facebook.com/flybirdchacha/">
+                        <div id="f-fb"></div>
+                    </a>
+                    <a href="https://www.instagram.com/flybird.chacha/">
+                        <div id="f-line"></div>
+                    </a>
+                </div>
+            </div>
+
+            <div id="copyright">© 2020 Flybird Glamping</div>
+        </footer>
+
+
+
+        <!-- TODO: 顯示 scrollTop -->
+        <!--     
+    <div class="scroll_top d-flex justify-content-center fixed-top" style="width: 100vw;">
+        <p style="z-index: 9;">scrollTop</p>
+    </div> -->
+
+        <!-- * SCROLL DOWN -->
+        <div class="d-flex justify-content-center fixed-bottom" style="width: 100vw;">
+            <img id="scroll_down" class="lax" data-lax-opacity="0 1, 100 0" src="./img/scroll_down.png"
+                alt="SCROLL DOWN">
+            <!-- * data-lax-opacity 語法參考網址：https://github.com/alexfoxy/lax.js -->
+        </div>
+
+    </main>
+
+
+    <script>
+        // <!-- ? 偵測 scroll 高 -->
+        $(window).scroll(function () {
+            $('.scroll_top').text('scrollTop: ' + $(window).scrollTop());
+        });
+    </script>
+    <script src="./js/首頁輪播加lax初始化.js"></script>
+
+    <script src="./js/home-page.js"></script>
+
+    <!-- todo index !? -->
+    <script src="./js/index.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+    <script>
+        // <!-- ! 寫自己的 JS 程式碼在這邊 -->
+
+
+
+        window.addEventListener("scroll", () => {
+
+            var burger_top = document.querySelector(".burger-bun-top")
+            var burger_filling = document.querySelector(".burger-filling")
+            var burger_bot = document.querySelector(".burger-bun-bot")
+            var scrolled = window.scrollY
+            if (scrolled >= window.innerHeight - 85) {
+                burger_top.classList.add("black")
+                burger_filling.classList.add("black")
+                burger_bot.classList.add("black")
+            } else {
+                burger_top.classList.remove("black")
+                burger_filling.classList.remove("black")
+                burger_bot.classList.remove("black")
+            }
+        })
+
+        // 立即預購的小人卡在footer效果
+        window.addEventListener("scroll", () => {
+            var main = document.querySelector("#bookbman")
+            var booking = document.querySelector("#booking")
+            var scrolled = window.scrollY
+            var change = main.scrollHeight - 0
+            if (scrolled >= change) {
+
+                booking.classList.add("act")
+            }
+            else if (scrolled >= 100) {
+                booking.classList.remove("act")
+                booking.classList.remove("find")
+            } else {
+                booking.classList.remove("act")
+                booking.classList.add("find")
+            }
+        })
+
+        // window.addEventListener("scroll", () => {
+        //     var main = document.querySelector("#bookbman")
+        //     var booking = document.querySelector("#booking.act")
+        //     var scrolled = window.scrollY
+        //     if (scrolled >= 1080) {
+        //         booking.classList.add("find")
+        //     } else {
+        //         booking.classList.remove("find")
+        //     }
+        // })
+
+
+
+
+
+        // lazyload
+        $("img.lazyload").lazyload();
+    </script>
+</body>
+
+</html>

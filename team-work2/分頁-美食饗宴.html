@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美食饗宴</title>
+
+    <link rel="stylesheet" href="./css/layout-foodpage.css">
+    <link rel="stylesheet" href="./css/the-footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/foodpage-content.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bookman-for-paging.css">
+    <style>
+        .swiper-button-next {
+            z-index: 99;
+        }
+
+        .swiper-button-prev {
+            z-index: 99;
+            left: 1%;
+        }
+
+        .swiper-button-prev:active {
+            border: none;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- nav-bar -->
+    <div class="slider-nav">
+        <a href="" onclick="window.location.href='https://edwiin1688.github.io/team-work/'">
+            <div id="title"></div>
+        </a>
+    </div>
+
+    <div id="invisible-bar"></div>
+    <section class="home-page">
+        <div class="paging-top">
+            <!-- 分頁手繪圖 -->
+            <div id="paging-food-pic"></div>
+            <!-- 文字區塊 -->
+            <div class="paging-food-text">
+                <div class="food-text">
+                    <h1></h1>
+                    <h5>food</h5>
+                </div>
+                <h5>
+                    飛鳥恰恰在餐飲上投入的許多心思，以餐桌到產地作為核心精神，創辦台灣唯一的一泊五食的露營行程，邀請飯店主廚料理露營行程中的各式餐點，將頂級料理的水平推向營地中實現。
+                </h5>
+            </div>
+        </div>
+        <div id="paging-flag-r"></div>
+        <div id="paging-flag-l"></div>
+
+
+
+
+
+
+
+        <div id="white-line"></div>
+        <div class="burger-box">
+            <div id="hamburger" class="hamburglar">
+                <div class="burger-icon">
+                    <div class="burger-container">
+                        <span class="burger-bun-top"></span>
+                        <span class="burger-filling"></span>
+                        <span class="burger-bun-bot"></span>
+                    </div>
+                </div>
+
+                <!-- svg ring containter -->
+                <div class="burger-ring">
+                    <svg class="svg-ring">
+                        <path class="path" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"
+                            d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2" />
+                    </svg>
+                </div>
+                <!-- the masked path that animates the fill to the ring -->
+
+                <svg width="0" height="0">
+                    <mask id="mask">
+                        <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000" stroke-miterlimit="10"
+                            stroke-width="4" d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4" />
+                    </mask>
+                </svg>
+                <div class="path-burger">
+                    <div class="animate-path">
+                        <!-- <div class="path-rotation"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-container">
+            <div class="nav-bg">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="menu-content">
+                <div class="menu-title">
+                    <a href="index.html" >
+                        <div id="title"></div>
+                    </a>
+                </div>
+                <div class="info-box">
+                    <div class="info">
+
+                        <div>
+                            <a href="1.分頁-營區導覽(新).html">營區導覽</a>
+                        </div>
+                        <div>
+                            <a href="2.分頁-活動體驗(新) .html">活動體驗</a>
+                        </div>
+                        <div>
+                            <a href="3.分頁-行程資訊(新) .html">行程資訊</a>
+                        </div>
+                        <div>
+                            <a href="4.分頁-美食饗宴(新) .html">美食饗宴</a>
+                        </div>
+                        <div>
+                            <a href="5.分頁-立即預定(新).html">立即預定</a>
+                        </div>
+                    </div>
+                    <div class="menu-footer">
+                        <div id="follow"><a href="">follow us</a></div>
+                        <div class="menu-icon-box">
+                            <div onclick="location.href='https://www.facebook.com/flybirdchacha/'"></div>
+                            <div></div>
+                        </div>
+                        <div id="copyright">©2020 Flybird copyright</div>
+                    </div>
+                </div>
+                <div class="menu-drawing"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- food-content -->
+    <main>
+        <div id="thetop"></div>
+        <div class="food-container">
+            <div class="foodbox text-right" data-aos="zoom-out-up" data-aos-duration="1500">
+                <div class="food-text">
+                    <div class="ill-morning1"><img src="./img/foodpage/food_goodmorning.png" alt=""></div>
+                    <div class="ill-morning2"><img src="./img/foodpage/food_breakfast.png" alt=""></div>
+                    <h3>美味早餐</h3>
+                    <h5>飛鳥恰恰早餐皆採自助式，是主廚從早上五點開始準備，每一樣皆是親手做的美味餐點，新鮮多汁的水果，配上美味無窮的炒蛋和麵包，一邊曬太陽一邊享用餐點，好不愜意。</h5>
+                </div>
+
+                <div class="foodmask">
+                    <img src="./img/foodpage/food-picmask.png" alt="">
+                </div>
+
+                <div class="picbox">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./img/foodpage/breakfast1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/foodpage/breakfast2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/foodpage//breakfast3.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/foodpage/breakfast4.jpg" alt=""></div>
+                        </div>
+
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+
+                        <!-- Add Pagination 點點-->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="foodbox text-left" data-aos="zoom-out-up" data-aos-duration="1500">
+                <div class="picbox">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./img/foodpage/pizza1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/foodpage/pizza2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/foodpage/pizza3.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/foodpage/pizza4.jpg" alt=""></div>
+                        </div>
+
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+
+                        <!-- Add Pagination 點點-->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <div class="foodmask-r">
+                    <img src="./img/foodpage/food-picmask-r.png" alt="">
+                </div>
+
+                <div class="food-text-r">
+                    <div class="ill-pizza"><img src="./img/foodpage/food_pizza.png" alt=""></div>
+                    <div class="ill-leaf"><img src="./img/foodpage/food_leaf.png" alt=""></div>
+                    <h3>手作午餐</h3>
+                    <h5>吃過了頂級大廚的巧手餐點，換自己動手做Pizza，感受如野炊般的樂趣。撒上自己喜愛的配料，在400多度的烤箱中烤90秒後就能出爐上桌，一步一步跟著做，享受滿滿的成就感與飽足感。</h5>
+                </div>
+            </div>
+
+            <div class="foodbox text-right" data-aos="zoom-out-up" data-aos-duration="1500">
+                <div class="food-text">
+                    <div class="ill-tea"><img src="./img/foodpage/food_tea.png" alt=""></div>
+                    <h3>精緻下午茶</h3>
+                    <h5>精緻的糕點配上香醇的咖啡，耳中再傳來優雅的音樂，不論視覺、聽覺與味覺皆能獲得享受。恰如其分的高級戶外下午茶，有種偷得浮生半日閒的美妙。</h5>
+                </div>
+                <div class="foodmask">
+                    <img src="./img/foodpage/food-picmask.png" alt="">
+                </div>
+                <div class="picbox">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./img/foodpage/teatime1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/foodpage/teatime2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/foodpage/teatime3.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/foodpage/teatime4.jpg" alt=""></div>
+                        </div>
+
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+
+                        <!-- Add Pagination 點點-->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="foodbox text-left" data-aos="zoom-out-up" data-aos-duration="1500">
+                <div class="picbox">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./img/foodpage/dinner1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/foodpage/dinner2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/foodpage/dinner3.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/foodpage/dinner4.jpg" alt=""></div>
+                        </div>
+
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+
+                        <!-- Add Pagination 點點-->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <div class="foodmask-r">
+                    <img src="./img/foodpage/food-picmask-r.png" alt="">
+                </div>
+
+                <div class="food-text-r">
+                    <h3>豪華晚餐</h3>
+                    <h5>主廚精心設計的晚宴佳餚，從前菜到豐盛的主菜一道道色香味俱全，再加上露營團隊費盡心思佈置的浪漫晚餐空間，營火、燭光整體的氛圍與餐點的結合讓你體驗一場視覺及味覺滿分的豪華燭光野宴。
+                    </h5>
+                </div>
+            </div>
+
+            <div class="foodbox text-right" data-aos="zoom-out-up" data-aos-duration="1500">
+                <div class="food-text">
+                    <div class="ill-heart"><img src="./img/foodpage/food_heart.png" alt=""></div>
+                    <h3>享受消夜</h3>
+                    <h5>夜晚營區有主廚為大家親煮宵夜，依照季節也有不同的菜單設計，冬天準備熱紅酒、關東煮來暖暖身，夏天則準備清爽的調酒以及串烤沁涼人心。在星空的照耀下，所有自然美景都成了最美的配菜。</h5>
+                </div>
+                <div class="foodmask">
+                    <img src="./img/foodpage/food-picmask.png" alt="">
+                </div>
+                <div class="picbox">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./img/foodpage/latenight1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/foodpage/latenight2.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/foodpage/latenight3.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/foodpage/latenight4.png" alt=""></div>
+                        </div>
+
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+
+                        <!-- Add Pagination 點點-->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+
+
+    <!-- footer -->
+    <footer id="end">
+        <a href="" id="to-booking">
+            <div id="booking"></div>
+        </a>
+        <a href="#thetop">
+            <div id="top-btn">
+                <div id="f-arrow"></div>
+                <div id="f-top">Top</div>
+            </div>
+        </a>
+        <div class="container">
+            <div id="footer-title" onclick="window.location.href='https://edwiin1688.github.io/team-work/'"></div>
+            <div id="footer-line"></div>
+            <div class="f-infomation-box">
+                <div class="f-phone">
+                    <div id="phone-icon"></div>
+                    <div id="phone-text">預約專線 0930816898</div>
+                </div>
+                <div class="f-mail">
+                    <div id="mail-icon"></div>
+                    <div id="mail-text">info@icaping.tw</div>
+                </div>
+                <div class="f-adress">
+                    <div id="adress-icon"></div>
+                    <div id="adress-text">新竹縣五峰鄉花園村10鄰天湖205-12號</div>
+                </div>
+            </div>
+            <div class="f-icon-box">
+                <a href="https://www.facebook.com/flybirdchacha/" >
+                    <div id="f-fb"></div>
+                </a>
+                <a href="">
+                    <div id="f-line"></div>
+                </a>
+            </div>
+        </div>
+
+        <div id="copyright">© 2020 Flybird Glamping</div>
+    </footer>
+
+
+
+    <!-- JS -->
+    <script src="./js/home-page.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            // 箭頭JS
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // LOOP JS 無限輪播
+            slidesPerView: 1,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // 點點JS
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            },
+
+            // 自動撥放
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+
+        // burger 滑動效果
+        window.addEventListener("scroll", () => {
+            var burger_top = document.querySelector(".burger-bun-top")
+            var burger_filling = document.querySelector(".burger-filling")
+            var burger_bot = document.querySelector(".burger-bun-bot")
+            var scrolled = window.scrollY
+            if (scrolled >= window.innerHeight - 85) {
+                burger_top.classList.add("black")
+                burger_filling.classList.add("black")
+                burger_bot.classList.add("black")
+            } else {
+                burger_top.classList.remove("black")
+                burger_filling.classList.remove("black")
+                burger_bot.classList.remove("black")
+            }
+        })
+
+        // 立即預購的小人卡在footer效果
+        window.addEventListener("scroll", () => {
+            var main = document.querySelector("main")
+            var booking = document.querySelector("#booking")
+            var scrolled = window.scrollY
+            var change = main.scrollHeight - 500
+            if (scrolled >= change) {
+                booking.classList.add("act")
+            } else {
+                booking.classList.remove("act")
+            }
+        })
+
+        // AOS動畫效果
+        AOS.init();
+
+
+    </script>
+
+
+</body>
+
+</html>

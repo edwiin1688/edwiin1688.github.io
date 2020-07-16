@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>營區導覽</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/page-camp-layout.css">
+    <link rel="stylesheet" href="./css/the-footer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/page-camp.css">
+    <link rel="stylesheet" href="./css/bookman-for-paging.css">
+    <style>
+       
+    </style>
+
+
+</head>
+
+<body>
+    <!-- nav-bar -->
+    <div class="slider-nav">
+        <a href="" onclick="window.location.href='https://edwiin1688.github.io/team-work/'">
+            <div id="title"></div>
+        </a>
+    </div>
+    <div id="invisible-bar"></div>
+    <section class="home-page">
+        <div class="paging-top">
+            <!-- 分頁手繪圖 -->
+            <div id="paging-food-pic"></div>
+            <!-- 文字區塊 -->
+            <div class="paging-food-text">
+                <div class="food-text">
+                    <h1></h1>
+                    <h5>camp tour</h5>
+                </div>
+                <h5>
+                    飛鳥恰恰位於新竹五峰山區，傍著溪流而建，草地緊實景觀優美。以「80%露營20%飯店」的體驗比例，帳篷皆使用頂級露營設備，公共設施及衛浴也都以高規格打造，提供台灣唯一的「一泊五食」頂級露營體驗。
+                </h5>
+            </div>
+        </div>
+        <div id="paging-flag-r"></div>
+        <div id="paging-flag-l"></div>
+
+
+
+
+
+
+
+        <div id="white-line"></div>
+        <div class="burger-box">
+            <div id="hamburger" class="hamburglar">
+                <div class="burger-icon">
+                    <div class="burger-container">
+                        <span class="burger-bun-top"></span>
+                        <span class="burger-filling"></span>
+                        <span class="burger-bun-bot"></span>
+                    </div>
+                </div>
+
+                <!-- svg ring containter -->
+                <div class="burger-ring">
+                    <svg class="svg-ring">
+                        <path class="path" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"
+                            d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2" />
+                    </svg>
+                </div>
+                <!-- the masked path that animates the fill to the ring -->
+
+                <svg width="0" height="0">
+                    <mask id="mask">
+                        <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000" stroke-miterlimit="10"
+                            stroke-width="4" d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4" />
+                    </mask>
+                </svg>
+                <div class="path-burger">
+                    <div class="animate-path">
+                        <!-- <div class="path-rotation"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-container">
+            <div class="nav-bg">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="menu-content">
+                <div class="menu-title">
+                    <a href="index.html" >
+                        <div id="title"></div>
+                    </a>
+                </div>
+                <div class="info-box">
+                    <div class="info">
+                      
+                        <div>
+                            <a href="1.分頁-營區導覽(新).html">營區導覽</a>
+                        </div>
+                        <div>
+                            <a href="2.分頁-活動體驗(新) .html">活動體驗</a>
+                        </div>
+                        <div>
+                            <a href="3.分頁-行程資訊(新) .html">行程資訊</a>
+                        </div>
+                        <div>
+                            <a href="4.分頁-美食饗宴(新) .html">美食饗宴</a>
+                        </div>
+                        <div>
+                            <a href="5.分頁-立即預定(新).html">立即預定</a>
+                        </div>
+                    </div>
+                    <div class="menu-footer">
+                        <div id="follow"><a href="">follow us</a></div>
+                        <div class="menu-icon-box">
+                            <div onclick="location.href='https://www.facebook.com/flybirdchacha/'"></div>
+                            <div></div>
+                        </div>
+                        <div id="copyright">©2020 Flybird copyright</div>
+                    </div>
+                </div>
+                <div class="menu-drawing"></div>
+            </div>
+        </div>
+    </section>
+    <main id="camp-main">
+        <div id="thetop"></div>
+        <section id="tent" class="pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="text-box col-12">
+                        <div class="title mb-2">帳篷區介紹</div>
+                    </div>
+                    <div class="text-box col-lg-6 col-12 mb-5">
+                        <p>營區帳篷皆採用日本原裝百年大廠品牌帳篷，專業設計睡起來舒適無壓迫感，夜晚免裝冷氣也是透氣涼爽</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <div class="card" data-aos="flip-right" data-aos-duration="1500">
+                            <img width="100%" src="./img/camp-img/camp1.jpg" class="card-img-top" alt="...">
+                            <div class="body">
+                                <div class="card-taxt-t d-flex ">
+                                    <div class="card-title ">公共區&nbsp;&nbsp;精靈帳</div>
+                                    <div class="card-price ">每帳&nbsp;&nbsp;<span style="color: brown;">NT$9,800</span>
+                                    </div>
+                                </div>
+                                <div class="card-taxt-b mt-4">
+                                    <p class="card-contant">
+                                        <span>*&nbsp;每帳最多可睡4位大人或2位大人3位小孩</span>
+                                        <span>&nbsp;&nbsp;(其中1位小孩要在3歲以下) 共計5人</span>
+                                        <span>*&nbsp;帳篷內床墊尺寸為 150x188cm 2張</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 ">
+                        <div class="card" data-aos="flip-right" data-aos-duration="1500">
+                            <img src="./img/camp-img/camp2.jpg" class="card-img-top" alt="...">
+                            <div class="body">
+                                <div class="card-taxt-t d-flex">
+                                    <div class="card-title ">河邊棧板&nbsp;&nbsp;屋式帳</div>
+                                    <div class="card-price ">每帳&nbsp;&nbsp;<span style="color: brown;">NT$10,800</span>
+                                    </div>
+                                </div>
+                                <div class="card-taxt-b mt-4">
+                                    <p class="card-contant">
+                                        <span>*&nbsp;每帳最多可睡4位大人或 2位大人3位小孩</span>
+                                        <span>&nbsp;&nbsp;(其中1位小孩要在3歲以下) 共計5人</span>
+                                        <span>*&nbsp;帳篷內床墊尺寸為 280x188cm</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 ">
+                        <div class="card" data-aos="flip-right" data-aos-duration="1500">
+                            <img src="./img/camp-img/camp3.jpg" class="card-img-top" alt="...">
+                            <div class="body">
+                                <div class="card-taxt-t d-flex">
+                                    <div class="card-title ">河邊棧板&nbsp;&nbsp;精靈帳</div>
+                                    <div class="card-price ">每帳&nbsp;&nbsp;<span style="color: brown;">NT$10,800</span>
+                                    </div>
+                                </div>
+                                <div class="card-taxt-b mt-4">
+                                    <p class="card-contant">
+                                        <span>*&nbsp;每帳最多可睡4位大人或 2位大人3位小孩</span>
+                                        <span>&nbsp;&nbsp;(其中1位小孩要在3歲以下) 共計5人</span>
+                                        <span>*&nbsp;帳篷內床墊尺寸為 150x188cm 2張</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-12 ">
+                        <div class="card" data-aos="flip-right" data-aos-duration="1500" data-aos-delay="100">
+                            <img src="./img/camp-img/camp4.png" class="card-img-top" alt="...">
+                            <div class="body">
+                                <div class="card-taxt-t d-flex" data-aos-duration="1500">
+                                    <div class="card-title ">草地B區&nbsp;&nbsp;屋式帳</div>
+                                    <div class="card-price ">每帳&nbsp;&nbsp;<span style="color: brown;">NT$10,800</span>
+                                    </div>
+                                </div>
+                                <div class="card-taxt-b mt-4">
+                                    <p class="card-contant">
+                                        <span>*&nbsp;每帳最多可睡4位大人或 2位大人3位小孩</span>
+                                        <span>&nbsp;&nbsp;(其中1位小孩要在3歲以下) 共計5人</span>
+                                        <span>*&nbsp;帳篷內床墊尺寸為 280x188cm</span>
+                                        <span>
+                                            <pre> </pre></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 ">
+                        <div class="card" data-aos="flip-right" data-aos-duration="1500" data-aos-delay="100">
+                            <img src="./img/camp-img/camp5.png" class="card-img-top" alt="...">
+                            <div class="body">
+                                <div class="card-taxt-t d-flex">
+                                    <div class="card-title ">草地C區&nbsp;&nbsp;屋式帳</div>
+                                    <div class="card-price ">每帳&nbsp;&nbsp;<span style="color: brown;">NT$9,800</span>
+                                    </div>
+                                </div>
+                                <div class="card-taxt-b mt-4">
+                                    <p class="card-contant">
+                                        <span>*&nbsp;每帳最多可睡4位大人或 2位大人3位小孩</span>
+                                        <span>&nbsp;&nbsp;(其中1位小孩要在3歲以下) 共計5人</span>
+                                        <span>*&nbsp;帳篷內床墊尺寸為 280x188cm</span>
+                                        <span>*&nbsp;離活動區稍遠、需爬坡</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 ">
+                        <div class="card" data-aos="flip-right" data-aos-duration="1500" data-aos-delay="100">
+                            <img src="./img/camp-img/camp6.png" class="card-img-top" alt="...">
+                            <div class="body">
+                                <div class="card-taxt-t d-flex">
+                                    <div class="card-title ">草地C區&nbsp;&nbsp;精靈帳</div>
+                                    <div class="card-price ">每帳&nbsp;&nbsp;<span style="color: brown;">NT$9,800</span>
+                                    </div>
+                                </div>
+                                <div class="card-taxt-b mt-4">
+                                    <p class="card-contant">
+                                        <span>*&nbsp;每帳最多可睡4位大人或 2位大人3位小孩</span>
+                                        <span>&nbsp;&nbsp;(其中1位小孩要在3歲以下) 共計5人</span>
+                                        <span>*&nbsp;帳篷內床墊尺寸為 150x188cm 2張</span>
+                                        <span>*&nbsp;離活動區稍遠、需爬坡</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="public-area" class="pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="text-box col-12 my-5">
+                        <div class="title">公共區域介紹</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card-container d-flex ">
+                        <div class="col-lg-4 col-12  p-0 m-3">
+                            <div class="card" data-aos="flip-right" data-aos-duration="1500">
+                                <img src="./img/camp-img/camp7.jpg" class="card-img-top" alt="...">
+                                <div class="body">
+                                    <div class="card-taxt-t d-flex">
+                                        <div class="card-title ">恰恰露營屋</div>
+                                    </div>
+                                    <div class="card-taxt-b mt-4">
+                                        <p class="card-contant">
+                                            <span>整間露營小屋，內部為木製的建築風格，室內空間前方以沙發椅規劃出休憩空間小巧的廚房，鍋碗瓢盆、微波爐、冰箱都一應俱全</span>
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12  p-0 m-3">
+                            <div class="card" data-aos="flip-right" data-aos-duration="1500">
+                                <img src="./img/camp-img/camp8.jpg" class="card-img-top" alt="...">
+                                <div class="body">
+                                    <div class="card-taxt-t d-flex">
+                                        <div class="card-title ">衛浴設施</div>
+                                    </div>
+                                    <div class="card-taxt-b mt-4">
+                                        <p class="card-contant">
+                                            <span>寬敞的空間、明亮的衛浴、新式的設計、乾淨的環境，是我們對衛浴與廁所的堅持與要求</span>
+                                            <span>
+                                                <pre> </pre></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </main>
+    <!-- footer -->
+    <footer id="end">
+        <a href="" id="to-booking">
+            <div id="booking"></div>
+        </a>
+        <a href="#thetop">
+            <div id="top-btn">
+                <div id="f-arrow"></div>
+                <div id="f-top">Top</div>
+            </div>
+        </a>
+        <div class="container">
+            <div id="footer-title" onclick="window.location.href='https://edwiin1688.github.io/team-work/'"></div>
+            <div id="footer-line"></div>
+            <div class="f-infomation-box">
+                <div class="f-phone">
+                    <div id="phone-icon"></div>
+                    <div id="phone-text">預約專線 0930816898</div>
+                </div>
+                <div class="f-mail">
+                    <div id="mail-icon"></div>
+                    <div id="mail-text">info@icaping.tw</div>
+                </div>
+                <div class="f-adress">
+                    <div id="adress-icon"></div>
+                    <div id="adress-text">新竹縣五峰鄉花園村10鄰天湖205-12號</div>
+                </div>
+            </div>
+            <div class="f-icon-box">
+                <a href="https://www.facebook.com/flybirdchacha/">
+                    <div id="f-fb"></div>
+                </a>
+                <a href="">
+                    <div id="f-line"></div>
+                </a>
+            </div>
+        </div>
+
+        <div id="copyright">© 2020 Flybird Glamping</div>
+    </footer>
+
+
+    <script src="./js/home-page.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+
+
+
+        // 立即預購的小人卡在footer效果
+        window.addEventListener("scroll", () => {
+            var main = document.querySelector("#camp-main")
+            var booking = document.querySelector("#booking")
+            var scrolled = window.scrollY
+            var change = main.scrollHeight - 500
+            if (scrolled >= change) {
+                booking.classList.add("act")
+            } else {
+                booking.classList.remove("act")
+            }
+        })
+
+    </script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

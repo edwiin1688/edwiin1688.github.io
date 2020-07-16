@@ -1,0 +1,180 @@
+/* ? 環境導覽 */
+
+  
+    .swiper-block {
+    padding-left: 0px;
+  }
+  
+  @media (max-width: 1199px) {
+      .swiper-block {
+      padding: unset;
+    }
+  }
+  
+    .swiper-block .swiper-container {
+    height: 650px;
+    overflow: hidden;
+  }
+  
+  @media (max-width: 1199px) {
+      .swiper-block .swiper-container {
+        /* 手機版多一個留白 */
+      /* margin-bottom: 105px;  */ 
+      height: 430px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+      .swiper-block .swiper-container {
+      height: 315px;
+    }
+  }
+  
+    .swiper-block .swiper-container .swiper-wrapper {
+    position: relative;
+    left: -50;
+  }
+  
+    .swiper-block .swiper-pagination {
+    bottom: -55px;
+  }
+  
+  @media (max-width: 1199px) {
+      .swiper-block .swiper-pagination {
+      bottom: 50px;
+    }
+  }
+  
+    .swiper-block .swiper-pagination .pagination-text {
+    font-size: 30px;
+    color: #000;
+  }
+  
+    .swiper-block .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    max-width: 595px !important;
+    max-height: 650px !important;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+    .swiper-block .swiper-slide .swiper-slide-shadow-left,
+    .swiper-block .swiper-slide .swiper-slide-shadow-right {
+    background-image: none;
+  }
+  
+    .swiper-block .swiper-slide.swiper-slide-active .mask {
+    height: 90%;
+    opacity: 0;
+  }
+  
+    .swiper-block .swiper-button {
+    position: absolute;
+    font-size: 40px;
+    color: #D1D1D1;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 99;
+  }
+  
+  @media (max-width: 1199px) {
+      .swiper-block .swiper-button {
+      top: unset;
+      bottom: 33px;
+      color: #D1D1D1;
+    }
+  }
+  
+    .swiper-block .swiper-button-prev-custom {
+    left: 60px;
+  }
+  
+  @media (max-width: 1199px) {
+      .swiper-block .swiper-button-prev-custom {
+      left: 20%;
+    }
+  }
+  
+    .swiper-block .swiper-button-next-custom {
+    right: 68px;
+  }
+  
+    .swiper-block .swiper-button-next-custom::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    z-index: -1;
+    background-color: white;
+  }
+  
+  @media (max-width: 1199px) {
+      .swiper-block .swiper-button-next-custom {
+      right: 20%;
+    }
+  }
+  
+    .swiper-block .picture {
+    width: 100%;
+    height: 100%;
+    max-width: 595px;
+    max-height: 650px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    position: relative;
+  }
+  
+    .swiper-block .picture .mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    z-index: 10;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  
+    .swiper-block .picture img {
+    display: block;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+    .swiper-block .picture a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+  }
+  
+    .swiper-block .picture a span {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    padding: 2px 4.5px 0 5px;
+    background-color: #848484;
+  }
+  
+    .swiper-block .picture a span:hover {
+    background-color: #BE1518;
+  }
+  
+    .swiper-block .picture a span i {
+    color: #fff;
+  }
+  
+  
+  

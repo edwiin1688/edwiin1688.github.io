@@ -1,0 +1,1261 @@
+@charset "UTF-8";
+#section-5 {
+  margin: auto;
+  width: 100%;
+  height: calc(80vw + 100px);
+  max-height: 1330px;
+  background-color: blanchedalmond;
+  position: relative;
+  background-image: url("../img/layout/bg.png");
+  background-size: cover;
+}
+
+@media (max-width: 576px) {
+  #section-5 {
+    height: calc(250vw + 160px);
+    max-height: 900px;
+  }
+}
+
+#section-5 .waterflow-container {
+  position: relative;
+  top: 80px;
+  width: 77vw;
+  height: 56vw;
+  /* max-height: 1080px; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 576px) {
+  #section-5 .waterflow-container {
+    min-height: 600px;
+    height: 120vh;
+    max-height: 600px;
+  }
+}
+
+#section-5 .waterflow-container div {
+  width: 23%;
+  height: 18.5%;
+  margin: 10px 10px 10px 10px;
+}
+
+#section-5 .waterflow-container #sliderpic-1 {
+  position: absolute;
+  top: calc(55.5% + 67px);
+  margin: 10px 10px 10px 0;
+  width: 23%;
+  height: calc(37% + 20px);
+}
+
+#section-5 .waterflow-container #sliderpic-1 div:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-image: url("../img/homepage-jpg//waterfall5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider1 24s infinite ease-in-out;
+          animation: slider1 24s infinite ease-in-out;
+  opacity: 0;
+}
+
+#section-5 .waterflow-container #sliderpic-1 div:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-image: url("../img/homepage-jpg/waterfall2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider1 24s infinite ease-in-out;
+          animation: slider1 24s infinite ease-in-out;
+  opacity: 0;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+#section-5 .waterflow-container #sliderpic-1 div:nth-child(3) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-image: url("../img/homepage-jpg/waterfall10.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider1 24s infinite ease-in-out;
+          animation: slider1 24s infinite ease-in-out;
+  opacity: 0;
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+
+#section-5 .waterflow-container #sliderpic-1 div:nth-child(4) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-image: url("../img/homepage-jpg/menu3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider1 24s infinite ease-in-out;
+          animation: slider1 24s infinite ease-in-out;
+  opacity: 0;
+  -webkit-animation-delay: 18s;
+          animation-delay: 18s;
+}
+
+@media (max-width: 576px) {
+  #section-5 .waterflow-container #sliderpic-1 {
+    width: calc(35% + 20px);
+    height: calc(42% + 20px);
+    top: 0;
+  }
+}
+
+@-webkit-keyframes slider1 {
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+@keyframes slider1 {
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+#section-5 .waterflow-container #sliderpic-2 {
+  position: absolute;
+  top: calc(37% + 45px);
+  left: calc(23% + 20px);
+  margin: 10px 10px 10px 0;
+  width: 23%;
+  height: calc(37% + 20px);
+  background-image: url("../img/homepage-jpg/waterfall7.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#section-5 .waterflow-container #sliderpic-2 div:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-image: url("../img/homepage-jpg/waterfall3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider2 32s infinite ease-in-out;
+          animation: slider2 32s infinite ease-in-out;
+  opacity: 0;
+}
+
+@media (max-width: 576px) {
+  #section-5 .waterflow-container #sliderpic-2 div:nth-child(1) {
+    border-radius: 0 0 50px 0;
+  }
+}
+
+#section-5 .waterflow-container #sliderpic-2 div:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-color: #CBE59A;
+  -webkit-animation: slider2 32s infinite ease-in-out;
+          animation: slider2 32s infinite ease-in-out;
+  opacity: 0;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+@media (max-width: 576px) {
+  #section-5 .waterflow-container #sliderpic-2 div:nth-child(2) {
+    border-radius: 0 0 50px 0;
+  }
+}
+
+#section-5 .waterflow-container #sliderpic-2 div:nth-child(3) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-image: url("../img/homepage-jpg/diy1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider2 32s infinite ease-in-out;
+          animation: slider2 32s infinite ease-in-out;
+  opacity: 0;
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
+}
+
+@media (max-width: 576px) {
+  #section-5 .waterflow-container #sliderpic-2 div:nth-child(3) {
+    border-radius: 0 0 50px 0;
+  }
+}
+
+#section-5 .waterflow-container #sliderpic-2 div:nth-child(4) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-image: url("../img/homepage-jpg/waterfall6.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider2 32s infinite ease-in-out;
+          animation: slider2 32s infinite ease-in-out;
+  opacity: 0;
+  -webkit-animation-delay: 24s;
+          animation-delay: 24s;
+}
+
+@media (max-width: 576px) {
+  #section-5 .waterflow-container #sliderpic-2 div:nth-child(4) {
+    border-radius: 0 0 50px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  #section-5 .waterflow-container #sliderpic-2 {
+    width: calc(35% + 20px);
+    height: calc(21% + 0px);
+    top: calc(84% + 80px);
+    left: calc(35% + 40px);
+    border-radius: 0 0 50px 0;
+  }
+}
+
+@-webkit-keyframes slider2 {
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+@keyframes slider2 {
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+#section-5 .waterflow-container #sliderpic-3 {
+  position: absolute;
+  top: 0%;
+  left: calc(46% + 45px);
+  margin: 10px 10px 10px 0px;
+  width: 23%;
+  height: calc(37% + 20px);
+}
+
+#section-5 .waterflow-container #sliderpic-3 div:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-image: url("../img/homepage-jpg/waterfall2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider3 24s infinite ease-in-out;
+          animation: slider3 24s infinite ease-in-out;
+  opacity: 0;
+}
+
+#section-5 .waterflow-container #sliderpic-3 div:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-image: url("../img/homepage-jpg/waterfall7.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider3 24s infinite ease-in-out;
+          animation: slider3 24s infinite ease-in-out;
+  opacity: 0;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+#section-5 .waterflow-container #sliderpic-3 div:nth-child(3) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-image: url("../img/homepage-jpg/menu3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider3 24s infinite ease-in-out;
+          animation: slider3 24s infinite ease-in-out;
+  opacity: 0;
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+
+#section-5 .waterflow-container #sliderpic-3 div:nth-child(4) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-image: url("../img/homepage-jpg/menu4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider3 24s infinite ease-in-out;
+          animation: slider3 24s infinite ease-in-out;
+  opacity: 0;
+  -webkit-animation-delay: 18s;
+          animation-delay: 18s;
+}
+
+@media (max-width: 576px) {
+  #section-5 .waterflow-container #sliderpic-3 {
+    width: calc(35% + 20px);
+    height: calc(42% + 20px);
+    left: 0;
+    top: calc(63% + 60px);
+  }
+}
+
+@-webkit-keyframes slider3 {
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+@keyframes slider3 {
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+#section-5 .waterflow-container #sliderpic-4 {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  margin: 10px 10px 10px 0;
+  width: 23%;
+  height: 18% 0.5;
+}
+
+#section-5 .waterflow-container #sliderpic-4 div:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-image: url("../img/homepage-jpg/menu3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider4 20s infinite ease-in-out;
+          animation: slider4 20s infinite ease-in-out;
+  opacity: 0;
+}
+
+#section-5 .waterflow-container #sliderpic-4 div:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-image: url("../img/homepage-jpg/waterfall5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider4 20s infinite ease-in-out;
+          animation: slider4 20s infinite ease-in-out;
+  opacity: 0;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+#section-5 .waterflow-container #sliderpic-4 div:nth-child(3) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-image: url("../img/homepage-jpg/menu1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider4 20s infinite ease-in-out;
+          animation: slider4 20s infinite ease-in-out;
+  opacity: 0;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+#section-5 .waterflow-container #sliderpic-4 div:nth-child(4) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-color: #EFB6C8;
+  -webkit-animation: slider4 20s infinite ease-in-out;
+          animation: slider4 20s infinite ease-in-out;
+  opacity: 0;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+
+@media (max-width: 576px) {
+  #section-5 .waterflow-container #sliderpic-4 {
+    width: calc(35% + 20px);
+    height: calc(21% + 0px);
+    top: calc(63% + 60px);
+    left: calc(35% + 40px);
+    border-radius: 0;
+  }
+}
+
+@-webkit-keyframes slider4 {
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+@keyframes slider4 {
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+#section-5 .waterflow-container #sliderpic-5 {
+  position: absolute;
+  top: calc(18.5% + 20px);
+  left: calc(23% + 20px);
+  margin: 10px 10px 10px 0;
+  width: 23%;
+  height: 18% 0.5;
+}
+
+#section-5 .waterflow-container #sliderpic-5 div:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-image: url("../img/homepage-jpg/menu1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider5 28s infinite ease-in-out;
+          animation: slider5 28s infinite ease-in-out;
+  opacity: 0;
+}
+
+#section-5 .waterflow-container #sliderpic-5 div:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-image: url("../img/homepage-jpg/waterfall6.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider5 28s infinite ease-in-out;
+          animation: slider5 28s infinite ease-in-out;
+  opacity: 0;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+#section-5 .waterflow-container #sliderpic-5 div:nth-child(3) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-image: url("../img/homepage-jpg/waterfall9.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider5 28s infinite ease-in-out;
+          animation: slider5 28s infinite ease-in-out;
+  opacity: 0;
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+}
+
+#section-5 .waterflow-container #sliderpic-5 div:nth-child(4) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-image: url("../img/homepage-jpg/waterfall1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider5 28s infinite ease-in-out;
+          animation: slider5 28s infinite ease-in-out;
+  opacity: 0;
+  -webkit-animation-delay: 21s;
+          animation-delay: 21s;
+}
+
+@media (max-width: 576px) {
+  #section-5 .waterflow-container #sliderpic-5 {
+    width: calc(35% + 20px);
+    height: calc(21% + 0px);
+    top: calc(21% + 20px);
+    left: calc(35% + 40px);
+  }
+}
+
+@-webkit-keyframes slider5 {
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+@keyframes slider5 {
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+#section-5 .waterflow-container #sliderpic-6 {
+  position: absolute;
+  top: 0%;
+  left: calc(69% + 65px);
+  margin: 10px 10px 10px 0;
+  width: 23%;
+  height: 18% 0.5;
+  border-radius: 0 50px 0 0;
+}
+
+#section-5 .waterflow-container #sliderpic-6 div:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  border-radius: 0 50px 0 0;
+  background-image: url("../img/homepage-jpg/menu2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider6 28s infinite ease-in-out;
+          animation: slider6 28s infinite ease-in-out;
+  opacity: 0;
+}
+
+#section-5 .waterflow-container #sliderpic-6 div:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  border-radius: 0 50px 0 0;
+  background-image: url("../img/homepage-jpg/waterfall4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider6 28s infinite ease-in-out;
+          animation: slider6 28s infinite ease-in-out;
+  opacity: 0;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+#section-5 .waterflow-container #sliderpic-6 div:nth-child(3) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  border-radius: 0 50px 0 0;
+  background-color: #EFC97D;
+  -webkit-animation: slider6 28s infinite ease-in-out;
+          animation: slider6 28s infinite ease-in-out;
+  opacity: 0;
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+}
+
+#section-5 .waterflow-container #sliderpic-6 div:nth-child(4) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  border-radius: 0 50px 0 0;
+  background-image: url("../img/homepage-jpg/menu3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider6 28s infinite ease-in-out;
+          animation: slider6 28s infinite ease-in-out;
+  opacity: 0;
+  -webkit-animation-delay: 21s;
+          animation-delay: 21s;
+}
+
+@media (max-width: 576px) {
+  #section-5 .waterflow-container #sliderpic-6 {
+    width: calc(35% + 20px);
+    height: calc(21% + 0px);
+    top: 0;
+    left: calc(35% + 40px);
+  }
+}
+
+@-webkit-keyframes slider6 {
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+@keyframes slider6 {
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+#section-5 .waterflow-container #sliderpic-7 {
+  position: absolute;
+  top: calc(37% + 45px);
+  left: calc(69% + 65px);
+  margin: 10px 10px 10px 0;
+  width: 23%;
+  height: 18% 0.5;
+}
+
+#section-5 .waterflow-container #sliderpic-7 div:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-image: url("../img/homepage-jpg/waterfall9.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider7 20s infinite ease-in-out;
+          animation: slider7 20s infinite ease-in-out;
+  opacity: 0;
+}
+
+#section-5 .waterflow-container #sliderpic-7 div:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-color: #ADC9E0;
+  -webkit-animation: slider7 20s infinite ease-in-out;
+          animation: slider7 20s infinite ease-in-out;
+  opacity: 0;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+#section-5 .waterflow-container #sliderpic-7 div:nth-child(3) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-image: url("../img/homepage-jpg/waterfall7.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider7 20s infinite ease-in-out;
+          animation: slider7 20s infinite ease-in-out;
+  opacity: 0;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+#section-5 .waterflow-container #sliderpic-7 div:nth-child(4) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-image: url("../img/homepage-jpg/waterfall4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider7 20s infinite ease-in-out;
+          animation: slider7 20s infinite ease-in-out;
+  opacity: 0;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+
+@media (max-width: 576px) {
+  #section-5 .waterflow-container #sliderpic-7 {
+    display: none;
+  }
+}
+
+@-webkit-keyframes slider7 {
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+@keyframes slider7 {
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+#section-5 .waterflow-container #sliderpic-8 {
+  position: absolute;
+  top: calc(55.5% + 67px);
+  left: calc(46% + 45px);
+  margin: 10px 10px 10px 0;
+  width: calc(46% + 20px);
+  height: calc(37% + 20px);
+  border-radius: 0 0 50px 0;
+}
+
+#section-5 .waterflow-container #sliderpic-8 div:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  border-radius: 0 0 50px 0;
+  background-image: url("../img/homepage-jpg/waterfall1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider8 20s infinite ease-in-out;
+          animation: slider8 20s infinite ease-in-out;
+  opacity: 0;
+  border-radius: 0 0 50px 0;
+}
+
+@media (max-width: 576px) {
+  #section-5 .waterflow-container #sliderpic-8 div:nth-child(1) {
+    border-radius: 0;
+  }
+}
+
+#section-5 .waterflow-container #sliderpic-8 div:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  border-radius: 0 0 50px 0;
+  background-image: url("../img/homepage-jpg/schedule2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider8 20s infinite ease-in-out;
+          animation: slider8 20s infinite ease-in-out;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  opacity: 0;
+  border-radius: 0 0 50px 0;
+}
+
+@media (max-width: 576px) {
+  #section-5 .waterflow-container #sliderpic-8 div:nth-child(2) {
+    border-radius: 0;
+  }
+}
+
+#section-5 .waterflow-container #sliderpic-8 div:nth-child(3) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  border-radius: 0 0 50px 0;
+  background-image: url("../img/homepage-jpg/diy1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider8 20s infinite ease-in-out;
+          animation: slider8 20s infinite ease-in-out;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+  opacity: 0;
+  border-radius: 0 0 50px 0;
+}
+
+@media (max-width: 576px) {
+  #section-5 .waterflow-container #sliderpic-8 div:nth-child(3) {
+    border-radius: 0;
+  }
+}
+
+#section-5 .waterflow-container #sliderpic-8 div:nth-child(4) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  border-radius: 0 0 50px 0;
+  background-image: url("../img/homepage-jpg/waterfall8.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider8 20s infinite ease-in-out;
+          animation: slider8 20s infinite ease-in-out;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  opacity: 0;
+}
+
+@media (max-width: 576px) {
+  #section-5 .waterflow-container #sliderpic-8 div:nth-child(4) {
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  #section-5 .waterflow-container #sliderpic-8 {
+    width: calc(70% + 60px);
+    height: calc(21% + 0px);
+    top: calc(42% + 40px);
+    left: 0;
+    border-radius: 0;
+  }
+}
+
+@-webkit-keyframes slider8 {
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+@keyframes slider8 {
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+#section-5 .waterflow-container #sliderpic-9 {
+  position: absolute;
+  top: calc(18.5% + 23px);
+  margin: 10px 10px 10px 0;
+  width: 23%;
+  height: calc(37% + 20px);
+  background-color: #ADC9E0;
+  /* background-image: url("./img/waterfall3.jpg"); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 576px) {
+  #section-5 .waterflow-container #sliderpic-9 {
+    display: none;
+  }
+}
+
+#section-5 .waterflow-container #sliderpic-10 {
+  position: absolute;
+  top: 0%;
+  left: calc(23% + 20px);
+  margin: 10px 10px 10px 0;
+  width: 23%;
+  height: 18% 0.5;
+  background-color: #EFC97D;
+  /* background-image: url("./img/waterfall4.jpg"); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 576px) {
+  #section-5 .waterflow-container #sliderpic-10 {
+    display: none;
+  }
+}
+
+#section-5 .waterflow-container #sliderpic-11 {
+  position: absolute;
+  top: calc(37% + 45px);
+  left: calc(46% + 45px);
+  margin: 10px 10px 10px 0;
+  width: 23%;
+  height: 18% 0.5;
+  background-color: #EFB6C8;
+}
+
+#section-5 .waterflow-container #sliderpic-11 div:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-color: #ADC9E0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider11 20s infinite;
+          animation: slider11 20s infinite;
+  opacity: 0;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+#section-5 .waterflow-container #sliderpic-11 div:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-image: url("../img/homepage-jpg/waterfall10.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider11 20s infinite;
+          animation: slider11 20s infinite;
+  opacity: 0;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+#section-5 .waterflow-container #sliderpic-11 div:nth-child(3) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-color: #EFB6C8;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider11 20s infinite;
+          animation: slider11 20s infinite;
+  opacity: 0;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+#section-5 .waterflow-container #sliderpic-11 div:nth-child(4) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-image: url("../img/homepage-jpg/waterfall5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider11 20s infinite;
+          animation: slider11 20s infinite;
+  opacity: 0;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@media (max-width: 576px) {
+  #section-5 .waterflow-container #sliderpic-11 {
+    display: none;
+  }
+}
+
+@-webkit-keyframes slider11 {
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+@keyframes slider11 {
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+#section-5 .waterflow-container #sliderpic-12 {
+  position: absolute;
+  top: calc(18.5% + 20px);
+  left: calc(69% + 65px);
+  margin: 10px 10px 10px 0;
+  width: 23%;
+  height: 18% 0.5;
+  background-color: #CBE59A;
+  /* background-image: url("./img/waterfall4.jpg"); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 576px) {
+  #section-5 .waterflow-container #sliderpic-12 {
+    display: none;
+  }
+}
+
+#section-5 .waterflow-container #sliderpic-13 {
+  position: absolute;
+  top: calc(74% + 87px);
+  left: calc(23% + 20px);
+  margin: 10px 10px 10px 0;
+  width: 23%;
+  height: 18% 0.5;
+  background-color: #E6B6E4;
+}
+
+#section-5 .waterflow-container #sliderpic-13 div:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  background-image: url("../img/homepage-jpg/menu4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider13 10s infinite ease-in-out;
+          animation: slider13 10s infinite ease-in-out;
+  opacity: 0;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+@media (max-width: 576px) {
+  #section-5 .waterflow-container #sliderpic-13 {
+    display: none;
+  }
+}
+
+@-webkit-keyframes slider13 {
+  10% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+@keyframes slider13 {
+  10% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+#section-5 .slidetext-box {
+  width: 60px;
+  height: 44vw;
+  position: absolute;
+  top: 90px;
+  left: 86vw;
+}
+
+@media (max-width: 576px) {
+  #section-5 .slidetext-box {
+    left: 76vw;
+  }
+}
+
+#section-5 .slidetext-box #slidetext {
+  width: 100%;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  padding: 150px 0 0 0;
+  line-height: 60px;
+  font-size: 1.5vw;
+  font-weight: bolder;
+  font-family: "微軟正黑體" !important;
+  font-weight: 600;
+  letter-spacing: 7px;
+}
+
+@media (max-width: 1500px) {
+  #section-5 .slidetext-box #slidetext {
+    font-size: 1.8vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  #section-5 .slidetext-box #slidetext {
+    padding: 130px 0 0 0;
+  }
+}
+
+@media (max-width: 1050px) {
+  #section-5 .slidetext-box #slidetext {
+    font-size: 2vw;
+    padding: 100px 0 0 0;
+  }
+}
+
+@media (max-width: 750px) {
+  #section-5 .slidetext-box #slidetext {
+    padding: 60px 0 0 0;
+  }
+}
+
+@media (max-width: 576px) {
+  #section-5 .slidetext-box #slidetext {
+    font-size: 4vw;
+  }
+}
+
+#section-5 .slidetext-box #slideline {
+  width: 50%;
+  height: 4vw;
+  border-right: 1px black solid;
+}
+
+@media (max-width: 576px) {
+  #section-5 .slidetext-box #slideline {
+    height: 8vw;
+  }
+}

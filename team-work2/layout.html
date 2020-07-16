@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/bookman-for-paging.css">
+    <link rel="stylesheet" href="./css/the-footer.css">
+<style>
+   main{
+       width: 100%;
+       height: 100vh;
+       background-color: rgb(236, 67, 101);
+       opacity: 0.2;
+   }
+   
+</style>
+
+
+</head>
+
+<body>
+    <!-- nav-bar -->
+    <div class="slider-nav">
+        <a href="" onclick="window.location.href='https://edwiin1688.github.io/team-work/'">
+            <div id="title"></div>
+        </a>
+    </div>
+    <div id="invisible-bar"></div>
+    <section class="home-page">
+       
+        <div class="paging-top">
+            <!-- 分頁手繪圖 -->
+            <div id="paging-food-pic"></div>
+            <!-- 文字區塊 -->
+            <div class="paging-food-text">
+                <div class="food-text">
+                    <h1></h1>
+                    <h5>event</h5>
+                </div>
+                <h5>
+                    飛鳥恰恰在餐飲上投入許多心思，以餐桌到產地做為核心
+                    精神，創辦台灣唯一的一泊五食的露營行程，邀請飯店主廚
+                    料理露營行程中的各式餐點，將頂級料理的水平推向營地中
+                    實現。
+                </h5>
+            </div>
+        </div>
+        <div id="paging-flag-r"></div>
+        <div id="paging-flag-l"></div>
+       
+
+
+
+
+
+      
+        <div id="white-line"></div>
+        <div class="burger-box">
+            <div id="hamburger" class="hamburglar">
+                <div class="burger-icon">
+                    <div class="burger-container">
+                        <span class="burger-bun-top"></span>
+                        <span class="burger-filling"></span>
+                        <span class="burger-bun-bot"></span>
+                    </div>
+                </div>
+
+                <!-- svg ring containter -->
+                <div class="burger-ring">
+                    <svg class="svg-ring">
+                        <path class="path" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"
+                            d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2" />
+                    </svg>
+                </div>
+                <!-- the masked path that animates the fill to the ring -->
+
+                <svg width="0" height="0">
+                    <mask id="mask">
+                        <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000" stroke-miterlimit="10"
+                            stroke-width="4" d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4" />
+                    </mask>
+                </svg>
+                <div class="path-burger">
+                    <div class="animate-path">
+                        <!-- <div class="path-rotation"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-container">
+            <div class="nav-bg"></div>
+            <div class="menu-content">
+                <div class="menu-title">
+                    <a href="" onclick="window.location.href='https://edwiin1688.github.io/team-work/'">
+                        <div id="title"></div>
+                    </a>
+                </div>
+                <div class="info-box">
+                    <div class="info">
+                        <div>
+                            <a href="" id="a-margin">經營理念</a>
+                        </div>
+                        <div>
+                            <a href="">營區導覽</a>
+                        </div>
+                        <div>
+                            <a href="">活動體驗</a>
+                        </div>
+                        <div>
+                            <a href="">行程資訊</a>
+                        </div>
+                        <div>
+                            <a href="">美食佳餚</a>
+                        </div>
+                        <div>
+                            <a href="">媒體報導</a>
+                        </div>
+                    </div>
+                    <div class="menu-footer">
+                        <div id="follow"><a href="">follow us</a></div>
+                        <div class="menu-icon-box">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div id="copyright">©2020 Flybird copyright</div>
+                    </div>
+                </div>
+                <div class="menu-drawing"></div>
+            </div>
+        </div>
+    </section>
+
+<main>
+
+</main>
+
+
+
+
+
+<!-- footer -->
+<footer id="end">
+    <a href="" id="to-booking">
+        <div id="booking"></div>
+    </a>
+    <a href="#thetop">
+        <div id="top-btn">
+            <div id="f-arrow"></div>
+            <div id="f-top">Top</div>
+        </div>
+    </a>
+    <div class="container">
+        <div id="footer-title" onclick="window.location.href='https://edwiin1688.github.io/team-work/'"></div>
+        <div id="footer-line"></div>
+        <div class="f-infomation-box">
+            <div class="f-phone">
+                <div id="phone-icon"></div>
+                <div id="phone-text">預約專線 0930816898</div>
+            </div>
+            <div class="f-mail">
+                <div id="mail-icon"></div>
+                <div id="mail-text">info@icaping.tw</div>
+            </div>
+            <div class="f-adress">
+                <div id="adress-icon"></div>
+                <div id="adress-text">新竹縣五峰鄉花園村10鄰天湖205-12號</div>
+            </div>
+        </div>
+        <div class="f-icon-box">
+            <a href="">
+                <div id="f-fb"></div>
+            </a>
+            <a href="">
+                <div id="f-line"></div>
+            </a>
+        </div>
+    </div>
+
+    <div id="copyright">© 2020 Flybird Glamping</div>
+</footer>
+
+
+    <script src="./js/layout.js"></script>
+
+
+    <script>
+        //  window.addEventListener("scroll", () => {
+        //         var burger_top = document.querySelector(".burger-bun-top")
+        //         var burger_filling = document.querySelector(".burger-filling")
+        //         var burger_bot = document.querySelector(".burger-bun-bot")
+        //         var scrolled = window.scrollY
+        //         if (scrolled >= 450) {
+        //             burger_top.classList.add("black")
+        //             burger_filling.classList.add("black")
+        //             burger_bot.classList.add("black")
+        //         } else {
+        //             burger_top.classList.remove("black")
+        //             burger_filling.classList.remove("black")
+        //             burger_bot.classList.remove("black")
+        //         }
+        //     })
+    
+            // 立即預購的小人卡在footer效果
+            window.addEventListener("scroll", () => {
+                var main = document.querySelector("main")
+                var booking = document.querySelector("#booking")
+                var scrolled = window.scrollY
+                var change = main.scrollHeight - 300
+                if (scrolled >= change) {
+                    booking.classList.add("act")
+                } else {
+                    booking.classList.remove("act")
+                }
+            })
+    </script>
+</body>
+
+</html>

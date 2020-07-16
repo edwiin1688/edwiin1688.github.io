@@ -1,0 +1,21 @@
+// TODO 定義常用的色調與字型大小
+
+// 背景
+$bg_color_code: #f3ece2;
+
+// time-line
+$time_line_color_code: #eea33b;
+
+// 大標題
+@mixin text_title {
+    font-size: 72px;
+    font-weight: bolder;
+    line-height: 108px;
+}
+
+// 內文
+@mixin text_content {
+    font-size: 24px;
+    font-weight: bolder;
+    line-height: 36px;
+}

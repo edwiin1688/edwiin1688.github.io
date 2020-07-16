@@ -1,0 +1,42 @@
+#to-booking {
+    display: inline;
+}
+
+#booking {
+    width: 200px;
+    height: 200px;
+    background-image: url("../img/layout/booking.gif");
+    background-position: center;
+    background-position-y: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    z-index: 999;
+    /* border: 1px red solid; */
+}
+
+#booking.act {
+    width: 200px;
+    height: 200px;
+    background-image: url("../img/layout/booking.gif");
+    background-position: center;
+    background-position-y: 10x;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0px;
+    top: -187px;
+    
+}
+
+@media (max-width: 750px) {
+    #booking {
+        display: none;
+    }
+
+    #booking.act {
+        display: none;
+    }
+}

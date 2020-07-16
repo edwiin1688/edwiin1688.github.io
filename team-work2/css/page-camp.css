@@ -1,0 +1,128 @@
+section{
+    background-color: #E7F4C3;
+}
+.container{
+    width: 1140px;
+    /* background-color: wheat; */
+
+}
+
+p{
+    font-family: Microsoft JhengHei;
+    
+}
+pre{
+    line-height: 0.3;
+}
+    
+
+span{
+    display: block;
+}
+
+.card{
+    box-shadow: 5px 4px 15px #7d7d7d;
+}
+.title{
+    font-family: Microsoft JhengHei;
+    font-size: 36px;
+    text-align: center;
+} 
+
+.card-taxt-t{
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card-title{
+    font-size: 20px;
+    margin-bottom: unset;
+    font-family: Microsoft JhengHei;
+    width: 160px;
+}
+
+.card-price{
+    font-size: 16px;
+    font-family: Microsoft JhengHei;
+    margin-bottom:1px;
+    width: 130px;
+}
+
+.card-price span{
+    font-size: 16px;
+    font-family: Microsoft JhengHei;
+    display: unset;
+    
+}
+
+
+.card-contant{
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Microsoft JhengHei;
+}
+
+.text-box{
+    margin: auto;
+    text-align: center;
+}
+
+#tent .container .row .text-box p{
+    font-size: 18px;
+    line-height: 28px;
+}
+
+#tent .container .row .col-12 .card{
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+#tent .container .row .col-12 .card img{
+    border-radius: 30px 30px 0 0;
+}
+.body{
+    padding: 30px 30px 30px 30px;
+}
+
+#public-area .container .row .col-12 .card{
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+#public-area .container .row .col-12 .card img{
+    border-radius: 30px 30px 0 0;
+}
+
+#public-area .container .row .card-container{
+    padding-left: 250px;
+}
+@media(max-width:1200px){
+    .card-taxt-t{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media(max-width:990px){
+    #public-area .container .row .card-container{
+        padding-left:unset;
+        flex-wrap: wrap;
+    }
+    #public-area .container .row .card-container .col-12 {
+        margin: unset!important;
+        padding: 15px!important;
+    } 
+    .card-title{
+        text-align: center;
+    }
+    
+}
+@media(max-width:576px){
+    .container{
+        width: 100%;
+    
+    }
+    .card-taxt-t{
+    align-items: center;
+    flex-direction: column;
+    }
+}

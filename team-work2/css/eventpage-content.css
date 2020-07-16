@@ -1,0 +1,545 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif, 微軟正黑體;
+    font-weight: 600;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('../img/layout/bg.png');
+}
+
+
+.event-container{
+    padding: 120px 0 120px 0;
+    overflow:hidden;
+}
+
+.section{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 0 350px 0;
+}
+
+.event-container .section .hidden-text1{
+    width: 100%;
+    font-weight: 700;
+    text-align: center;
+    display: none;
+}
+
+.event-container .section .hidden-text2{
+    width: 100%;
+    font-weight: 700;
+    text-align: center;
+    display: none;
+}
+
+.event-container .section .hidden-text3{
+    width: 100%;
+    font-weight: 700;
+    text-align: center;
+    display: none;
+}
+
+.event-container .section .hidden-bg{
+    width: 100%;
+    height: 69px;
+    display: none;
+}
+
+.event-container .section .event-text{
+    width: 30%;
+    height: 350px;
+    /* background-color: blue; */
+    position: relative;
+}
+
+.event-container .section .diy-text h2{
+    font-size: 100px;
+    margin: 0;
+    position: absolute;
+    top: -50px;
+    right: 30px;
+    color:  #FAD084;
+}
+
+.event-container .section .play-text h2{
+    font-size: 100px;
+    margin: 0;
+    position: absolute;
+    top: -50px;
+    left: 30px;
+    color:#AEC78B ;
+}
+
+.event-container .section .enjoy-text h2{
+    font-size: 100px;
+    margin: 0;
+    position: absolute;
+    top: -50px;
+    left: 30px;
+    color: #ADC9E0;
+}
+
+.event-container .section .color-box{
+    width: 70%;
+    height: 350px;
+    /* background-color: brown; */
+}
+
+.event-container .section .diybox{
+    background-color: #FAD084;
+}
+
+.event-container .playbox{
+    background-color: #AEC78B;
+}
+
+.event-container .enjoybox{
+    background-color: #ADC9E0;
+}
+
+.event-container .section .picbox-group-r{
+    width: 1030px;
+    /* height: 500px; */
+    /* background-color: cadetblue; */
+    position: absolute;
+    left: 20vw;
+    top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.event-container .section .picbox-group-l{
+    width: 1030px;
+    /* background-color: cadetblue; */
+    position: absolute;
+    right: 20vw;
+    top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.event-container .section .picbox-group-r .picbox{
+    width: 500px;
+    height: 350px;
+    border-radius: 30px;
+    background-size: cover;
+    box-shadow: 5px 4px 15px #7D7D7D;
+}
+
+.event-container .section .picbox-group-l .picbox{
+    width: 500px;
+    height: 350px;
+    border-radius: 30px;
+    background-size: cover;
+    box-shadow: 5px 4px 15px #7D7D7D;
+}
+
+.pictext{
+    padding: 20px 30px 20px 100px;
+    display: flex;
+    text-align: justify;
+    position: relative;
+}
+
+.pictext h3{
+    width: 300px;
+    margin: 0 20px 0 0;
+    font-size: 24px;
+}
+
+.pictext h4{
+    margin: 0;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif, 微軟正黑體;
+    font-weight: 600;
+    text-align: left;
+}
+
+
+/* 小插圖定位 */
+.ill-pizza img{
+    width: 150px;
+    position: absolute;
+    top: -30px;
+    left: -100px;
+}
+
+.ill-shrimp img{
+    width: 80px;
+    position: absolute;
+    top: 50px;
+    left: -100px;
+}
+
+.ill-water img{
+    width: 80px;
+    position: absolute;
+    top: 90px;
+    left: -10px;
+}
+
+.ill-star1 img{
+    width: 70px;
+    position: absolute;
+    top: -500px;
+    right: 180px;
+    z-index: 10;
+}
+
+.ill-star2 img{
+    width: 70px;
+    position: absolute;
+    top: -300px;
+    right: -110px;
+    z-index: 10;
+}
+
+.ill-star3 img{
+    width: 70px;
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    z-index: 10;
+}
+
+
+
+
+/* RWD */
+@media(max-width: 1300px){
+
+    .event-container{
+        padding: 100px 0 100px 0;
+    }
+
+    .section{
+        margin: 0 0 250px 0;
+    }
+
+    .event-container .section .event-text{
+        height: 200px;
+    }
+
+    .event-container .section .diy-text h2{
+        top: -30px;
+        right: 20px;
+        font-size: 60px;
+    }
+
+    .event-container .section .play-text h2{
+        top: -30px;
+        left: 20px;
+        font-size: 60px;
+    }
+
+    .event-container .section .enjoy-text h2{
+        top: -30px;
+        left: 20px;
+        font-size: 60px;
+    }
+
+    .event-container .section .color-box{
+        height: 200px;
+    }
+
+    .event-container .section .picbox-group-r{
+        width: 620px;
+        top:50px;
+
+    }
+
+    .event-container .section .picbox-group-l{
+        width: 620px;
+        top: 50px;
+    }
+
+    .event-container .section .picbox-group-r .picbox{
+        width: 300px;
+        height: 200px;
+    }
+
+    .event-container .section .picbox-group-l .picbox{
+        width: 300px;
+        height: 200px;
+    }
+
+    .pictext{
+        padding: 15px 30px 15px 30px;
+    }
+
+    .pictext h3{
+        width: 100px;
+    }
+
+    .pictext h4{
+        width: 450px;
+
+    }
+
+    .ill-pizza img{
+        width: 100px;
+        height: 100px;
+        top: -30px;
+        left: -100px;
+    }
+
+    .ill-shrimp img{
+        width: 80px;
+        top: 50px;
+        left: -100px;
+    }
+    
+    .ill-water img{
+        width: 70px;
+        top: 90px;
+        left: -10px;
+    }
+    
+    .ill-star1 img{
+        width: 50px;
+        top: -320px;
+        right: 180px;
+        z-index: 10;
+    }
+    
+    .ill-star2 img{
+        width: 50px;
+        top: -200px;
+        right: -110px;
+        z-index: 10;
+    }
+    
+    .ill-star3 img{
+        width: 50px;
+        bottom: -20px;
+        left: -10px;
+        z-index: 10;
+    }
+
+
+}
+
+@media(max-width: 900px){
+
+    .section{
+        margin: 0 0 300px 0;
+    }
+
+    .event-container{
+        padding: 100px 0 100px 0;
+    }
+
+    .event-container .section .hidden-text1{
+        font-size: 60px;
+        display:block;
+        color:#FAD084;
+    }
+
+    .event-container .section .hidden-text2{
+        font-size: 60px;
+        display:block;
+        color:#AEC78B ;
+    }
+
+    .event-container .section .hidden-text3{
+        font-size: 60px;
+        display:block;
+        color:#ADC9E0 ;
+    }
+
+    .event-container .section .hidden-bg{
+        display:block;
+    }
+
+    .event-container .section .hidden-text:nth-child(3){
+        color: tomato;
+    }
+
+    .event-container .section .diy-text h2{
+        display: none;
+    }
+
+    .event-container .section .play-text h2{
+        display: none;
+    }
+
+    .event-container .section .enjoy-text h2{
+        display: none;
+    }
+
+    .event-container .section .picbox-group-r .picbox:nth-child(2){
+        display: none;
+    }
+
+    .event-container .section .picbox-group-l .picbox:nth-child(2){
+        display: none;
+    }
+
+    .event-container .section .picbox-group-r{
+        width: 85%;
+        margin: auto;
+
+        left:50%;
+        top: 120px;
+        transform: translate(-50%,0);
+    }
+
+    .event-container .section .picbox-group-l{
+        width: 85%;
+        margin: auto;
+
+        left:50%;
+        top: 120px;
+        transform: translate(-50%,0);
+    }
+    
+    .event-container .section .picbox-group-r .picbox{
+        width: 400px;
+        height: 30vh;
+        margin: auto;
+    }
+
+    .event-container .section .picbox-group-l .picbox{
+        width: 400px;
+        height: 30vh;
+        margin: auto;
+    }
+
+    .pictext{
+        display: unset;
+        margin: auto;
+        width: 400px;
+    }
+
+    .pictext h3{
+        font-size: 18px;
+        margin: auto;
+    }
+
+    .pictext h4{
+        font-size: 14px;
+        margin: 15px 0;
+        width: 100%;
+    }
+
+    .ill-pizza img{
+        width: 100px;
+        height: 100px;
+        top: -10px;
+        left: -90px;
+    }
+
+    .ill-shrimp img{
+        width: 70px;
+        top: 150px;
+        left: unset;
+        right: 10px;
+    }
+    
+    .ill-water img{
+        width: 60px;
+        top: 180px;
+        left:unset;
+        right: -45px;
+    }
+    
+    .ill-star1 img{
+        width: 50px;
+        top: -340px;
+        right: unset;
+        left: -20px;
+        z-index: 10;
+    }
+    
+    .ill-star2 img{
+        width: 50px;
+        top: -200px;
+        right: -110px;
+        z-index: 10;
+    }
+    
+    .ill-star3 img{
+        width: 50px;
+        bottom: -30px;
+        left: unset;
+        right: 100px;
+        z-index: 10;
+    }
+}
+
+@media(max-width: 500px){
+    .section{
+        margin: 0 0 280px 0;
+    }
+
+    .event-container{
+        padding: 30px 0 70px 0;
+    }
+
+    .ill-pizza img{
+        width: 70px;
+        height: 70px;
+        top: 140px;
+        left: unset;
+        right: 0px;
+    }    
+
+    .ill-shrimp img{
+        width: 50px;
+        top: 185px;
+        left: unset;
+        right: 50px;
+    }
+    
+    .ill-water img{
+        width: 40px;
+        top: 220px;
+        left:unset;
+        right: 10px;
+    }
+    
+    .ill-star1 img{
+        width: 50px;
+        top: -340px;
+        right: unset;
+        left: -20px;
+        z-index: 10;
+    }
+    
+    .ill-star2 img{
+        display: none;
+    }
+    
+    .ill-star3 img{
+        width: 50px;
+        bottom: -20px;
+        left: unset;
+        right: 50px;
+        z-index: 10;
+    }
+
+    
+}
+
+@media (max-height: 320px){
+    .event-container .section .picbox-group-r .picbox {
+        width: 400px;
+        height: 200px;
+        margin: auto;
+    }
+
+    .event-container .section .picbox-group-l .picbox {
+        width: 400px;
+        height: 200px;
+        margin: auto;
+    }
+}

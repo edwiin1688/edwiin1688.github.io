@@ -1,0 +1,79 @@
+@import '_style_guild', 'default';
+
+// ? 環境導覽
+#guided_tour {
+    // ! FIX ul 不出現點點
+    @include remove_ul_dot;
+
+    .swiper-block {
+        width:  100%;
+
+        // 去除 padding
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .swiper-container {
+        width:  100%;
+        max-width: 100vw;
+        // height: 100vh;// 這個會限制 height 為固定高度 100vh
+    }
+
+    .swiper-button-prev {
+        left: 33%;
+        bottom: 33%;
+    }
+
+    .swiper-button-next {
+        right: 33%;
+        bottom: 33%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: $bg_color_code;
+        width: 100%;
+        // height: 100vh;// 100vh 會讓圖片滿版
+
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+
+        img {
+            width: 100%;// ! 不設定 圖片會很大
+            background-color: $bg_color_code;
+            overflow: hidden;
+            margin:auto;
+        }
+
+        h1 {
+            background-color: $bg_color_code;
+        }
+    }
+
+
+    // @media (max-width:650px){
+    //     #guided_tour {
+    //         .swiper-block {
+    //             padding-top: 25px;
+    //             padding-bottom: 25px;
+    //         }
+    //     }
+    // }
+
+}

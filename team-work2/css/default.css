@@ -1,0 +1,32 @@
+.default_bg {
+  background-image: url("../img/layout/bg.png");
+  border: none;
+}
+
+.transparent_bg {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.mobile_title_font_size {
+  font-size: 24px !important;
+  line-height: 36px !important;
+}
+
+.mobile_content_font_size {
+  font-size: 14px !important;
+  line-height: 21px !important;
+}
+
+.pc_title_font_size {
+  font-size: 72px !important;
+  line-height: 108px !important;
+}
+
+.pc_title_content_font_size {
+  font-size: 20px !important;
+  line-height: 30px !important;
+}
+
+.hide_object {
+  display: none;
+}

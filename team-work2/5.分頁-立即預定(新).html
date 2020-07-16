@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/paging-layouttext5.css">
+    <link rel="stylesheet" href="./css/bookman-for-paging.css">
+    <link rel="stylesheet" href="./css/the-footer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/booknowpage-content.css">
+    <style>
+        /* main {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(236, 67, 101);
+            opacity: 0.2;
+        } */
+        #booking-main{
+            position: relative;
+            top: -120px;
+        }
+        .booknow-container{
+            position: absolute;
+        }
+        html {
+    scroll-behavior: smooth;
+    }
+
+
+        #end{
+            position: relative;
+            top: 1050px;
+        }
+        @media (max-width: 1200px){
+            #end{
+            top: 1350px;
+            }
+        }
+
+        @media (max-width: 1356px) {
+            #booking-main{
+                top: -140px;
+            }
+        }
+
+
+        @media (max-width: 900px) {
+            #booking-main{
+                top: -250px;
+            }
+            #end{
+            top: 1200px;
+            }
+        }
+        @media (max-width: 650px){
+            #end{
+            top: 1280px;
+            }
+        }
+        @media (max-width:450px){
+            #booking-main{
+                top: -300px;
+            }
+            #end{
+            top: 1220px;
+            }
+        }
+        
+    </style>
+
+
+</head>
+
+<body>
+    <!-- nav-bar -->
+    <div id="invisible-bar"></div>
+    <section class="home-page">
+        <div id="thetop"></div>
+        <div class="paging-top">
+            <!-- 分頁手繪圖 -->
+            <!-- <div id="paging-food-pic"></div> -->
+            <!-- 文字區塊 -->
+            <div class="paging-food-text">
+                <div class="food-text">
+                    <h1></h1>
+                    <h5>Book now</h5>
+                </div>
+                <!-- <h5>
+                    飛鳥恰恰在餐飲上投入許多心思，以餐桌到產地做為核心
+                    精神，創辦台灣唯一的一泊五食的露營行程，邀請飯店主廚
+                    料理露營行程中的各式餐點，將頂級料理的水平推向營地中
+                    實現。
+                </h5> -->
+            </div>
+        </div>
+        <div id="paging-flag-r"></div>
+        <div id="paging-flag-l"></div>
+
+        <div class="slider-nav">
+            <a href="index.html">
+                <div id="title"></div>
+            </a>
+        </div>
+        <div id="white-line"></div>
+        <div class="burger-box" style="z-index: 100;">
+            <div id="hamburger" class="hamburglar">
+                <div class="burger-icon">
+                    <div class="burger-container">
+                        <span class="burger-bun-top"></span>
+                        <span class="burger-filling"></span>
+                        <span class="burger-bun-bot"></span>
+                    </div>
+                </div>
+
+                <!-- svg ring containter -->
+                <div class="burger-ring">
+                    <svg class="svg-ring">
+                        <path class="path" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"
+                            d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2" />
+                    </svg>
+                </div>
+              
+               
+                <div class="path-burger">
+                    <div class="animate-path">
+                        <!-- <div class="path-rotation"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-container" style="z-index: 99;">
+            <div class="nav-bg">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="menu-content">
+                <div class="menu-title">
+                    <a href="index.html">
+                        <div id="title"></div>
+                    </a>
+                </div>
+                <div class="info-box">
+                    <div class="info">
+                        <div>
+                            <a href="1.分頁-營區導覽(新).html">營區導覽</a>
+                        </div>
+                        <div>
+                            <a href="2.分頁-活動體驗(新) .html">活動體驗</a>
+                        </div>
+                        <div>
+                            <a href="3.分頁-行程資訊(新) .html">行程資訊</a>
+                        </div>
+                        <div>
+                            <a href="4.分頁-美食饗宴(新) .html">美食饗宴</a>
+                        </div>
+                        <div>
+                            <a href="5.分頁-立即預定(新).html">立即預定</a>
+                        </div>
+                    </div>
+                    <div class="menu-footer">
+                        <div id="follow">follow us</div>
+                        <div class="menu-icon-box">
+                            <div onclick="location.href='https://www.facebook.com/flybirdchacha/'"></div>
+                            <div onclick="location.href='https://www.instagram.com/flybird.chacha/'"></div>
+                        </div>
+                        <div id="copyright">©2020 Flybird copyright</div>
+                    </div>
+                </div>
+                <div class="menu-drawing"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 立即預定內容 -->
+    <main id="booking-main">
+        <div class="booknow-container">
+            <div class="booknowmem">
+                <img src="./img/booknowpage/bookmen.png" alt="">
+            </div>
+            <div class="formbox">
+
+                <div class="form-toptbox">
+                    <div class="textgroup">
+                        <h2>線上預約表單</h2>
+                        <h3>飛鳥恰恰僅提供周五周六(平日)、周六周日(假日)兩個時段的豪華露營服務，公休日為星期一到星期四 </h3>
+                    </div>
+                </div>
+
+
+
+                <div class="form-downbox d-flex">
+                    <!-- 表單 -->
+                    <div class="from-leftbox col-xl-6 col-lg-12">
+                        <div class="form-group col-xl-12">
+                            <label for="inputName">入住日期</label>
+                            <input type="date" name="bday" required class="form-control" id="inputdate"
+                                placeholder="請選擇入住日期">
+                        </div>
+                    </div>
+
+                    <div class="from-rightbox col-xl-6 col-lg-12">
+                        <form class="d-flex justify-content-center flex-column">
+                            <div class="form-row">
+                                <div class="form-group col-xl-6">
+                                    <label for="inputName">姓名</label>
+                                    <input type="text" required class="form-control" id="inputName" placeholder="請輸入姓名">
+                                </div>
+
+                                <div class="form-group col-xl-6">
+                                    <label for="inputNumber">手機號碼</label>
+                                    <input type="text" required class="form-control" id="inputNumber"
+                                        placeholder="0912345678">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputEmail">電子信箱</label>
+                                <input type="email" required class="form-control" id="inputEmail" placeholder="請輸入電子信箱">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-xl-6">
+                                    <label for="input-plusadult">加購滿12歲以上大人</label>
+                                    <!-- <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label> -->
+                                    <select class="custom-select mr-sm-2" id="input-plusadult">
+                                        <option selected>請選擇加購人數</option>
+                                        <option value="1">一人</option>
+                                        <option value="2">二人</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group col-xl-6">
+                                    <label for="input-pluschild">加購12歲以下小孩</label>
+                                    <!-- <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label> -->
+                                    <select class="custom-select mr-sm-2" id="input-pluschild">
+                                        <option selected>請選擇加購人數</option>
+                                        <option value="1">一人</option>
+                                        <option value="2">二人</option>
+                                        <option value="3">三人</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-xl-6">
+                                    <label for="input-pluspag">加購租用睡袋組</label>
+                                    <!-- <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label> -->
+                                    <select class="custom-select mr-sm-2" id="input-pluspag">
+                                        <option selected>請選擇加購數量</option>
+                                        <option value="1">一組</option>
+                                        <option value="2">二組</option>
+                                        <option value="3">三組</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group col-xl-6">
+                                    <label for="input-plusbeef">加購戰斧牛排</label>
+                                    <!-- <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label> -->
+                                    <select class="custom-select mr-sm-2" id="input-plusbeef">
+                                        <option selected>請選擇加購數量</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row camp-row">
+                                <div class="form-group col-xl-12">
+                                    <label for="input-camp">帳篷種類</label>
+                                    <select class="custom-select mr-sm-2" id="input-camp">
+                                        <option selected>請選擇預約帳篷</option>
+                                        <option value="1">公共區 精靈帳</option>
+                                        <option value="2">河邊棧板 屋式帳</option>
+                                        <option value="3">河邊棧板 精靈帳</option>
+                                        <option value="4">草地B區 屋式帳</option>
+                                        <option value="5">草地C區 屋式帳</option>
+                                        <option value="6">草地C區 精靈帳</option>
+
+                                    </select>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+
+                    <div class="campbox col-xl-12 d-flex">
+                        <div class="camp-group row">
+
+                            <div class="camp col-xl-2">
+                                <img src="./img/booknowpage/camp1.jpg" alt="" class="camp-pic">
+                                <input type="radio" name="campkind" value="公共區 精靈帳" required>  公共區 精靈帳
+                                <!-- <h5 class="camp-text">公共區 精靈帳</h5> -->
+                            </div>
+
+                            <div class="camp col-xl-2">
+                                <img src="./img/booknowpage/camp2.jpg" alt="" class="camp-pic">
+                                <input type="radio" name="campkind" value="河邊棧板 屋式帳" required>  河邊棧板 屋式帳
+                                <!-- <h5 class="camp-text">河邊棧板 屋式帳</h5> -->
+                            </div>
+
+                            <div class="camp col-xl-2">
+                                <img src="./img/booknowpage/camp3.jpg" alt="" class="camp-pic">
+                                <input type="radio" name="campkind" value="河邊棧板 精靈帳" required>  河邊棧板 精靈帳
+                                <!-- <h5 class="camp-text">河邊棧板 精靈帳</h5> -->
+                            </div>
+
+                            <div class="camp col-xl-2">
+                                <img src="./img/booknowpage/camp4.png" alt="" class="camp-pic">
+                                <input type="radio" name="campkind" value="草地B區 屋式帳" required>  草地B區 屋式帳
+                                <!-- <h5 class="camp-text">草地B區 屋式帳</h5> -->
+                            </div>
+
+                            <div class="camp col-xl-2">
+                                <img src="./img/booknowpage/camp5.png" alt="" class="camp-pic">
+                                <input type="radio" name="campkind" value="草地C區 屋式帳" required>  草地C區 屋式帳
+                                <!-- <h5 class="camp-text">草地C區 屋式帳</h5> -->
+                            </div>
+
+                            <div class="camp col-xl-2">
+                                <img src="./img/booknowpage/camp6.png" alt="" class="camp-pic">
+                                <input type="radio" name="campkind" value="草地C區 精靈帳" required class="camp-text">  草地C區 精靈帳
+                                <!-- <h5 class="camp-text">草地C區 精靈帳</h5> -->
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-check d-flex">
+                        <div class="check">
+                            <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                                <label class="custom-control-label" for="customControlAutosizing">
+                                    我已詳細閱讀
+                                        <button type="button" class="btn btn-primary btn-notice" data-toggle="modal" data-target="#exampleModalLong">
+                                        入住須知
+                                        </button>
+                                        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content modal-notice">
+                                                    <div class="modal-header ">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle" style="z-index: 999;">入住須知</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <div class="circle"><span aria-hidden="true">&times;</span></div>
+                                                    </button>
+                                                    </div>
+                                                    <div class="modal-body modal-noticebody">
+                                                        <p>1. 嚴禁在營區內、帳棚或帳篷內外吸菸、吃檳榔、賭博、炊事、生火、烤肉，請至指定區域吸菸、吃檳榔。 飛鳥恰恰為維護森林安全與其他貴賓權益，在非指定區域，如營區、衛浴抽煙者將要求您即刻停止活動並離開營區，且無退費。</p>
+                                                        <p>2. 活動進行前，如遇下雨過量、瞬間陣風、落石、土石流、道路中斷、路況、天氣颱風警預報、設備損壞、或任何無法進行活動之事件，將另行通知活動是否取消、延期，本公司保有最後決定權，且本公司保留不賠償取消而延伸之交通費、租賃車費或任何其他費用。活動進行中，本公司保留合理取消任何部分活動、提供設施、提供任何設備之權益。</p>
+                                                        <p>3. 請預先詳讀「活動行前說明書」，並遵照時間參加活動、穿著建議的服裝、攜帶裝備，這樣會更能體會這趟旅途的樂趣和發覺更多的驚喜，營區內部分活動有攝影人員紀錄活動、花絮分享，如不願入鏡者請預先告知。</p>
+                                                        <p>4. 活動期間請遵照活動人員的安全指示、活動規劃，履勸不聽者，主辦單位有權立即停止活動，並要求離開營區無法退費。</p>
+                                                        <p>5. 帳篷與活動空間皆在於森林、溪流邊與昆蟲、野獸共存，為尊重萬物則不噴灑農藥滅蟲、殺生，故請貴賓們自行防蚊蟲蛇獸，主辦單位將不因大自然生物所產生的任何叮、咬、破壞之損失而負責賠償責任。</p>
+                                                        <p>6. 孩童嚴禁野放，活動進行期間敬請家長一定全程陪同，注意孩童安全且不離開視線，如孩童有任何損傷本公司無須負責與賠償，無心陪伴小孩之家長請勿訂位。</p>
+                                                        <p>7. 為保障所有貴賓權益，營區內禁止任何球類、不受控丟擲球遊戲、玩具。</p>
+                                                        <p>8. 山間野遊，年長者請自行評估體能狀況是否適合前往。</p>
+                                                        <p>9. 禁止攜帶寵物，如自主帶寵物至現場則禁止進入園區且不退費。</p>
+                                                        <p>10. 請勿將用餐區食物、餐具、餐盤、杯子拿到帳棚區食用，請勿穿鞋入帳篷。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                          </div>
+                                </label>
+                                
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModalCenter">立即預定
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </button>
+
+                            <!-- 互動視窗Modal -->
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalCenterTitle">預約表單已送出</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <div class="circle"><span aria-hidden="true">&times;</span></div>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            感謝您的預約，提醒您填單不代表預約完成，我們會盡快確認空房狀況並在24小時內以電話回覆您。
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <!-- footer -->
+    <footer id="end">
+        <!-- <a href="" id="to-booking">
+            <div id="booking"></div>
+        </a> -->
+        <a href="#thetop">
+            <div id="top-btn">
+                <div id="f-arrow"></div>
+                <div id="f-top">Top</div>
+            </div>
+        </a>
+        <div class="container">
+            <div id="footer-title" onclick="window.location.href='index.html'"></div>
+            <div id="footer-line"></div>
+            <div class="f-infomation-box">
+                <div class="f-phone">
+                    <div id="phone-icon"></div>
+                    <div id="phone-text">預約專線 0930816898</div>
+                </div>
+                <div class="f-mail">
+                    <div id="mail-icon"></div>
+                    <div id="mail-text">info@icaping.tw</div>
+                </div>
+                <div class="f-adress">
+                    <div id="adress-icon"></div>
+                    <div id="adress-text">新竹縣五峰鄉花園村10鄰天湖205-12號</div>
+                </div>
+            </div>
+            <div class="f-icon-box">
+                <a href="https://www.facebook.com/flybirdchacha/">
+                    <div id="f-fb"></div>
+                </a>
+                <a href="https://www.instagram.com/flybird.chacha/">
+                    <div id="f-line"></div>
+                </a>
+            </div>
+        </div>
+
+        <div id="copyright">© 2020 Flybird Glamping</div>
+    </footer>
+
+
+    <script src="./js/home-page.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+     
+
+        // // 立即預購的小人卡在footer效果
+        // window.addEventListener("scroll", () => {
+        //     var main = document.querySelector("main")
+        //     var booking = document.querySelector("#booking")
+        //     var scrolled = window.scrollY
+        //     var change = main.scrollHeight - 500
+        //     if (scrolled >= change) {
+        //         booking.classList.add("act")
+        //     } else {
+        //         booking.classList.remove("act")
+        //     }
+        // })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,434 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif, 微軟正黑體;
+    font-weight: 600;
+}
+
+body{
+    margin: 0;
+    background-image: url('../img/layout/bg.png');
+}
+
+.form-check>a{
+    text-decoration: none ;
+}
+
+.booknow-container{
+    margin: auto;
+    padding: 100px 0 200px 0;
+    position: relative;
+}
+
+
+.booknow-container .formbox{
+    width: 70%;
+    background-color: #F0F9D2;
+    border-radius: 50px;
+    box-shadow: 5px 4px 15px #7D7D7D;
+    margin: auto;
+}
+
+.booknow-container .formbox .form-toptbox{
+    width: 100%;
+    background-color: #608D4B;
+    border-radius: 50px 50px 0 0;
+    padding: 40px 0;
+}
+
+.booknow-container .formbox .form-toptbox .textgroup{
+    margin: auto;
+    color: white;
+}
+
+.booknow-container .formbox .form-toptbox .textgroup h2{
+    font-size: 26px;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.booknow-container .formbox .form-toptbox .textgroup h3{
+    font-size: 16px;
+    text-align: center;
+    padding: 0 30px;
+}
+
+
+.form-downbox{
+    width: 100%;
+    height: 750px;
+    /* background-color: paleturquoise; */
+    border-radius: 0 0 50px 50px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.from-leftbox{
+    padding: 0 50px;
+}
+
+
+.from-rightbox .form-group{
+    margin: 0 0 30px 0;
+}
+
+.campbox{
+    padding: 0 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+
+.campbox .camp-group{
+    width: 100%;
+    height: 150px;
+    /* background-color: royalblue; */
+}
+
+.campbox .camp-group .camp img{
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 0 10px 0;
+}
+
+.camp-group .camp h5{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form-check{
+    width: 100%;
+    padding: 0 65px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.btn{
+    padding: 5px 30px;
+    border-radius: 50px;
+    background-color: unset;
+    border: 3px solid orange;
+    color: orange;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 0 50px;
+    display: flex;
+    align-items: center;
+}
+
+.btn:hover{
+    color: white;
+    background-color: orange;
+    border: 3px solid orange;
+}
+
+.btn:active{
+    display: unset !important;
+}
+
+.btn:focus{
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+
+.camp-row{
+    display: none;
+}
+
+.btn-notice{
+    padding:unset;
+    border-radius: unset;
+    background-color: unset;
+    border:unset;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    display: unset;
+    align-items: unset;
+    color: blue;
+}
+
+.btn-notice:hover{
+    color: blue;
+    background-color: unset;
+    border: unset;
+}
+
+
+
+/* 調整欄位寬度 */
+
+#inputName{
+    width: 80%;
+}
+
+#inputNumber{
+    width: 80%;
+}
+
+#inputEmail{
+    width: 90%;
+}
+
+#input-plusadult{
+    width: 80%;
+    border: none;
+}
+
+#input-pluschild{
+    width: 80%;
+    border: none;
+}
+
+#input-pluspag{
+    width: 80%;
+    border: none;
+}
+
+#input-plusbeef{
+    width: 80%;
+    border: none;
+}
+
+
+/* 送出表單樣式調整 */
+.form-control{
+    border: none;
+}
+
+input:focus{
+    outline:none
+}
+
+.modal-body {   
+    height: unset;
+    padding: 0 30px 30px 30px;
+    text-align: left;
+}
+
+.modal-header{
+    border: unset;
+}
+
+.modal-header h5{
+    font-size: 24px;
+    margin: 30px 0 0 150px;
+    font-weight: 600;
+}
+
+.modal-notice h5{
+    font-size: 24px;
+    margin: 30px 0 0 180px;
+    font-weight: 600;
+}
+
+.modal-header .close{
+    font-size:1.8rem;
+    color: white;
+}
+
+.modal-header .circle{
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+/* #exampleModalLong{
+    z-index: 2;
+} */
+
+
+/* 拿掉按鈕藍框 */
+.form-control:focus{
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+
+#input-plusadult:focus{
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+
+#input-pluschild:focus{
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+
+#input-pluspag:focus{
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+
+#input-plusbeef:focus{
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+
+#input-plusadult:focus{
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+
+#input-camp:focus{
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+
+.btn-primary:focus{
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+
+
+.modal-header button{
+    border: none;
+}
+
+.modal-header button:focus{
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    outline:none
+}
+
+/* 入住須知調整 */
+.modal-noticeboby{
+    height: 950px;
+    text-align: left;
+}
+
+
+
+
+/* 預約小人定位 */
+
+.booknowmem img{
+    position: absolute;
+    right: 380px;
+    top: -82px;
+}
+
+
+
+/* RWD */
+
+@media(max-width: 1200px){
+    .booknow-container .formbox{
+        height: 1250px;
+    }
+
+    /* 圖片消失 */
+    .campbox .camp-group{
+        display: none;
+    }
+
+    /* 欄位寬度調整 */
+    #inputName{
+        width: 100%;
+    }
+    
+    #inputNumber{
+        width: 100%;
+    }
+    
+    #inputEmail{
+        width: 100%;
+    }
+    
+    #input-plusadult{
+        width: 100%;
+        border: none;
+    }
+    
+    #input-pluschild{
+        width: 100%;
+        border: none;
+    }
+    
+    #input-pluspag{
+        width: 100%;
+        border: none;
+    }
+    
+    #input-plusbeef{
+        width: 100%;
+        border: none;
+    }
+
+    #inputdate{
+        width: 100%;
+        border: none;
+    }
+
+    .from-leftbox{
+        padding: unset;
+    }
+
+    .booknowmem img{
+        position: absolute;
+        right: 280px;
+        top: -82px;
+    }
+
+    .camp-row{
+        display: block;
+    }
+
+    .form-check{
+        padding: 0 15px;
+        flex-direction:column;
+        justify-content: flex-start;
+        align-items: unset;
+    }
+
+    .check{
+        margin: 0 0 30px 0;
+    }
+
+    .btn-primary{
+        margin: unset;
+    }
+}
+
+@media(max-width: 650px){
+    .booknow-container .formbox{
+        height: 1280px;
+    }
+
+    .booknow-container .formbox{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .booknow-container .formbox .form-toptbox{
+        width: 100%;
+        border-radius:0;
+        padding: 40px 0;
+    }
+
+    .booknow-container .formbox .form-toptbox .textgroup h3{
+        margin: 0 0 20px 0;
+    }
+
+    .booknowmem img{
+        width: 150px;
+        position: absolute;
+        right: 100px;
+        top: -44px;
+    }
+
+    .modal-header h5{
+        font-size: 24px;
+        margin: 30px 0 0 50px;
+        font-weight: 600;
+    }
+
+    .modal-notice h5{
+        font-size: 24px;
+        margin: 30px 0 0 90px;
+        font-weight: 600;
+    }
+}
+
+
+
