@@ -5,7 +5,8 @@
 @import '_style_guild', 'default';
 
 #philosophy {
-    background-color: $bg_color_code;
+    background-color: red;
+    background-image: url('../img/layout/bg.png');
 
     // 手繪插圖-宣告
     .hand_drawn_1,

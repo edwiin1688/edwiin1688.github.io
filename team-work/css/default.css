@@ -1,5 +1,6 @@
 .default_bg {
-  background-color: #f3ece2;
+  background-color: red;
+  background-image: url("../img/layout/bg.png");
   border: none;
 }
 
@@ -30,4 +31,3 @@
 .hide_object {
   display: none;
 }
-/*# sourceMappingURL=default.css.map */
