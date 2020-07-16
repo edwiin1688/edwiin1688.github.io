@@ -80,7 +80,7 @@
         }
 
 
-
+       
         #the-all {
             overflow: hidden;
         }
@@ -703,10 +703,10 @@
             </section>
 
 
-            <a href="http://127.0.0.1:5501/5.%E5%88%86%E9%A0%81-%E7%AB%8B%E5%8D%B3%E9%A0%90%E5%AE%9A(%E6%96%B0).html"
+            <a href="5.分頁-立即預定(新).html"
                 id="to-booking">
                 <!-- ! FIX 小人不擋影片 -->
-                <div id="booking"></div>
+                <div id="booking" class="find"></div>
             </a>
         </main>
 
@@ -788,6 +788,9 @@
     <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
     <script>
         // <!-- ! 寫自己的 JS 程式碼在這邊 -->
+
+
+
         window.addEventListener("scroll", () => {
 
             var burger_top = document.querySelector(".burger-bun-top")
@@ -811,12 +814,29 @@
             var booking = document.querySelector("#booking")
             var scrolled = window.scrollY
             var change = main.scrollHeight - 0
-            if (scrolled >= change) {
+            if(scrolled >= change){
+               
                 booking.classList.add("act")
+            }
+            else if(scrolled >= 100) {
+                booking.classList.remove("act")
+                booking.classList.remove("find")
             } else {
                 booking.classList.remove("act")
+                booking.classList.add("find")
             }
         })
+
+        // window.addEventListener("scroll", () => {
+        //     var main = document.querySelector("#bookbman")
+        //     var booking = document.querySelector("#booking.act")
+        //     var scrolled = window.scrollY
+        //     if (scrolled >= 1080) {
+        //         booking.classList.add("find")
+        //     } else {
+        //         booking.classList.remove("find")
+        //     }
+        // })
 
         
 
