@@ -107,7 +107,10 @@
       height: 30px;
       border-radius: 50%;
       background: inherit;
+      display: none;
     }
+
+  
 
     .timeline ul li .color-bar {
       position: relative;
