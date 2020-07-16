@@ -62,12 +62,12 @@
     <link rel="stylesheet" href="./css/home-waterfall.css">
     <!-- booking小人 -->
     <link rel="stylesheet" href="./css/bookman.css">
-    <!-- footer 的 css -->
-    <link rel="stylesheet" href="./css/the-footer.css">
+
 
     <link rel="stylesheet" href="./css/首頁輪播.css">
     <link rel="stylesheet" href="./css/Product.css">
-
+    <!-- footer 的 css -->
+    <link rel="stylesheet" href="./css/the-footer.css">
 
     <style>
         /* 貓咪和向下箭頭 */
@@ -80,7 +80,7 @@
         }
 
 
-       
+
         #the-all {
             overflow: hidden;
         }
@@ -405,15 +405,15 @@
                             <img src="./img/ill_camp.png" alt="" />
                             <a href="1.分頁-營區導覽(新).html">
                                 <button type="button" class="btn btn-primary" data-toggle="modal"
-                                data-target="#exampleModalCenter">營區導覽
-                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right"
-                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                                </svg>
-                            </button>
+                                    data-target="#exampleModalCenter">營區導覽
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </button>
                             </a>
-                            
+
 
                         </li>
 
@@ -422,15 +422,15 @@
                             <img src="./img/ill_food.png" alt="" />
                             <a href="4.分頁-美食饗宴(新) .html">
                                 <button type="button" class="btn btn-primary" data-toggle="modal"
-                                data-target="#exampleModalCenter">美食饗宴
-                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right"
-                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                                </svg>
-                            </button>
+                                    data-target="#exampleModalCenter">美食饗宴
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </button>
                             </a>
-                            
+
 
 
                         </li>
@@ -439,15 +439,15 @@
                             <img src="./img/ill_schedule.png" alt="" />
                             <a href="5.分頁-立即預定(新).html">
                                 <button type="button" class="btn btn-primary" data-toggle="modal"
-                                data-target="#exampleModalCenter">立即預定
-                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right"
-                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                                </svg>
-                            </button>
+                                    data-target="#exampleModalCenter">立即預定
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </button>
                             </a>
-                            
+
 
                         </li>
                         <img src="./img/left2.png" class="left" />
@@ -703,8 +703,7 @@
             </section>
 
 
-            <a href="5.分頁-立即預定(新).html"
-                id="to-booking">
+            <a href="5.分頁-立即預定(新).html" id="to-booking">
                 <!-- ! FIX 小人不擋影片 -->
                 <div id="booking" class="find"></div>
             </a>
@@ -814,11 +813,11 @@
             var booking = document.querySelector("#booking")
             var scrolled = window.scrollY
             var change = main.scrollHeight - 0
-            if(scrolled >= change){
-               
+            if (scrolled >= change) {
+
                 booking.classList.add("act")
             }
-            else if(scrolled >= 100) {
+            else if (scrolled >= 100) {
                 booking.classList.remove("act")
                 booking.classList.remove("find")
             } else {
@@ -838,7 +837,7 @@
         //     }
         // })
 
-        
+
 
 
 
