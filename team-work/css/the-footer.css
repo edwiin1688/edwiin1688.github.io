@@ -52,8 +52,8 @@ footer a #top-btn #f-top {
   top: 9px;
 }
 
-footer a:hover #f-top {
-  color: orange;
+footer a:hover {
+  color: #eea33b;
 }
 
 footer .container {

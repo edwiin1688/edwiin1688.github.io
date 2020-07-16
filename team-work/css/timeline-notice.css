@@ -442,6 +442,12 @@
   }
 }
 
+@media (max-height: 500px) {
+  #notice .notice-container {
+    height: 2450px;
+  }
+}
+
 @media (max-width: 500px) {
   #notice .notice-container {
     width: 100%;

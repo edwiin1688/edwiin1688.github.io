@@ -299,7 +299,10 @@
             height: 2300px;
             min-width: unset;
             width: 80vw;
-        }   
+        }  
+        @media (max-height:500px){
+            height: 2450px;
+        }
         @media (max-width:500px){
             width: 100%;
             height: unset;
