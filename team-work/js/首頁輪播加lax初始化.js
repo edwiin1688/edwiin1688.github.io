@@ -81,13 +81,13 @@ window.onload=function(){
     }
 }
 window.onresize=function(){
-    if(window.innerWidth > 1400){
+    if(window.innerWidth > 1600){
         slider3dInit()
        
-    }else if(window.innerWidth > 1150){
+    }else if(window.innerWidth > 1250){
         slider3dInit2()
         
-    }else if(window.innerWidth > 990){
+    }else if(window.innerWidth > 900){
         slider3dInit3()
         
     }else if(window.innerWidth > 850){
@@ -119,8 +119,8 @@ function slider3dInit() {
 function slider3dInit2() {
     jQuery('.slider3d').carousel({
         num: 5,
-        maxWidth: 450,
-        maxHeight: 350,
+        maxWidth: 400,
+        maxHeight: 320,
         // 後面兩個物件的距離，數字越大兩物件水平距離越遠
         distance: 230,
         // 後面兩物件與中央物件的前後距離
@@ -437,6 +437,16 @@ function slider3dInit7() {
                 'z-index': 3 + $container.data('totalNum') + 1
             });
         }
+        function btn_left1_2(){
+            $container.find('.left').css({
+                position: 'absolute',
+                // 調整左邊按鈕水平距離
+                left: "30%",
+                // 調整左邊按鈕高度
+                top: '140%',
+                'z-index': 3 + $container.data('totalNum') + 1
+            });
+        }
         function btn_left2(){
             $container.find('.left').css({
                 position: 'absolute',
@@ -481,6 +491,17 @@ function slider3dInit7() {
                 'z-index': 3 + $container.data('totalNum') + 1
             });
         }
+        
+        function btn_right1_2(){
+            $container.find('.right').css({
+                position: 'absolute',
+                // 調整右邊按鈕水平距離
+                right: "30%",
+                // 調整右邊按鈕高度
+                top: '140%',
+                'z-index': 3 + $container.data('totalNum') + 1
+            });
+        }
         function btn_right2(){
             $container.find('.right').css({
                 position: 'absolute',
@@ -512,10 +533,14 @@ function slider3dInit7() {
                 'z-index': 3 + $container.data('totalNum') + 1
             });
         }
-
-        if(window.innerWidth > 990){
+        if(window.innerWidth >1300){
             btn_left()
             btn_right()
+        }
+        else if(window.innerWidth > 990){
+            btn_left1_2()
+            btn_right1_2()
+           
         }else if(window.innerWidth > 850){
             btn_left2()
             btn_right2()
