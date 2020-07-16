@@ -122,6 +122,15 @@ body{
     border: 3px solid orange;
 }
 
+.btn:active{
+    display: unset !important;
+}
+
+.btn:focus{
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+
 .camp-row{
     display: none;
 }
@@ -193,7 +202,7 @@ input:focus{
 
 .modal-body {   
     height: unset;
-    padding: 20px 30px;
+    padding: 0 30px 30px 30px;
     text-align: left;
 }
 

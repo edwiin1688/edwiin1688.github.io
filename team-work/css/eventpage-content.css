@@ -526,5 +526,20 @@ body {
         right: 50px;
         z-index: 10;
     }
+
+    
 }
 
+@media (max-height: 320px){
+    .event-container .section .picbox-group-r .picbox {
+        width: 400px;
+        height: 200px;
+        margin: auto;
+    }
+
+    .event-container .section .picbox-group-l .picbox {
+        width: 400px;
+        height: 200px;
+        margin: auto;
+    }
+}
