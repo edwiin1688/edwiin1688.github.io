@@ -13,8 +13,6 @@ b.innerHTML += `
                             </div>
 
                         </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
 
                         <!-- If we need scrollbar -->
                         <div class="swiper-scrollbar"></div>
