@@ -30,6 +30,10 @@
     left: -100px;
 }
 
+a:hover {
+    text-decoration: none !important;
+}
+
 .btn {
     padding: 5px 30px;
     border-radius: 50px;
@@ -59,6 +63,7 @@
     text-shadow: unset;
     box-shadow: unset;
     color: white;
+    text-decoration: none !important;
 }
 .card-container{
     height: 500px;

@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>行程資訊</title>
+  <!-- <link rel="stylesheet" href="./css/page-camp-layout.css"> -->
+  
+  <link rel="stylesheet" href="./css/timeline-layout.css">
+  <link rel="stylesheet" href="./css/bookman-for-paging.css">
+  <link rel="stylesheet" href="./css/paging-time-line.css">
+  <link rel="stylesheet" href="./css/timeline-notice.css">
+  <link rel="stylesheet" href="./css/the-footer.css">
+  <style>
+    #holiday {
+      display: none;
+    }
+    main{
+      position: relative;
+    }
+
+    
+  </style>
+
+
+</head>
+
+<body>
+  <!-- nav-bar -->
+  <div class="slider-nav">
+    <a href="" onclick="window.location.href='https://edwiin1688.github.io/team-work/'">
+      <div id="title"></div>
+    </a>
+  </div>
+  <div id="invisible-bar"></div>
+  <section class="home-page">
+    <div class="paging-top">
+      <!-- 分頁手繪圖 -->
+      <div id="paging-food-pic"></div>
+      <!-- 文字區塊 -->
+      <div class="paging-food-text">
+        <div class="food-text">
+          <h1></h1>
+          <h5>schedule</h5>
+        </div>
+        <h5>
+          飛鳥恰恰僅提供周五周六(平日)、周六周日(假日)兩個時段的豪華露營服務，其他時段則是在整護園區。不管是平日或假日行程，都準備了豐富的活動及豐盛餐點等您來體驗。
+        </h5>
+      </div>
+    </div>
+    <div id="paging-flag-r"></div>
+    <div id="paging-flag-l"></div>
+
+
+
+
+
+
+
+    <div id="white-line"></div>
+    <div class="burger-box">
+      <div id="hamburger" class="hamburglar">
+        <div class="burger-icon">
+          <div class="burger-container">
+            <span class="burger-bun-top"></span>
+            <span class="burger-filling"></span>
+            <span class="burger-bun-bot"></span>
+          </div>
+        </div>
+
+        <!-- svg ring containter -->
+        <div class="burger-ring">
+          <svg class="svg-ring">
+            <path class="path" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"
+              d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2" />
+          </svg>
+        </div>
+        <!-- the masked path that animates the fill to the ring -->
+
+        <svg width="0" height="0">
+          <mask id="mask">
+            <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000" stroke-miterlimit="10"
+              stroke-width="4" d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4" />
+          </mask>
+        </svg>
+        <div class="path-burger">
+          <div class="animate-path">
+            <!-- <div class="path-rotation"></div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-container">
+      <div class="nav-bg">
+        <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+      </div>
+      <div class="menu-content">
+        <div class="menu-title">
+          <a href="https://edwiin1688.github.io/team-work/" >
+            <div id="title"></div>
+          </a>
+        </div>
+        <div class="info-box">
+          <div class="info">
+
+            <div>
+              <a href="1.分頁-營區導覽(新).html">營區導覽</a>
+            </div>
+            <div>
+              <a href="2.分頁-活動體驗(新) .html">活動體驗</a>
+            </div>
+            <div>
+              <a href="3.分頁-行程資訊(新) .html">行程資訊</a>
+            </div>
+            <div>
+              <<a href="4.分頁-美食饗宴(新) .html">美食饗宴</a>
+            </div>
+            <div>
+              <a href="5.分頁-立即預定(新).html">立即預定</a>
+            </div>
+          </div>
+          <div class="menu-footer">
+            <div id="follow">follow us</div>
+            <div class="menu-icon-box">
+              <div onclick="location.href='https://www.facebook.com/flybirdchacha/'"></div>
+              <div></div>
+            </div>
+            <div id="copyright">©2020 Flybird copyright</div>
+          </div>
+        </div>
+        <div class="menu-drawing"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 行程部分行程部分 -->
+
+
+
+  <main id="schedule-main">
+    <div id="thetop"></div>
+    <div class="timeline-btn js-btn act" ></div>
+    <div class="timeline-btn js-btn" ></div>
+    <div class="timeline-btn js-btn"></div>
+    <div id="fri" class="jss-btn act"></div>
+    <div id="hol" class="jss-btn"></div>
+    <section id="friday" class="timeline-tab act  js-tab act">
+      <section class="intro">
+        <div class="timeline-container">
+          <h1>
+            <pre>飛鳥恰恰 平日行程</pre>
+          </h1>
+          <h3>平日行程為周五周六兩天一夜</h3>
+        </div>
+      </section>
+
+      <section class="timeline">
+        <ul>
+          <li>
+            <div class="color-bar">
+              <time>11:00</time>
+            </div>
+          </li>
+          <div class="schedule-container">
+            <div id="schedule-pic1-1" class="schedule-pic move-pic"></div>
+            <div id="schedule-textbox" class="schedule-textbox">
+              <h3>入場介紹環境</h3>
+              <h5>抵達營區後管家會幫您安排入住登記與肩擔環境介紹，並開小牛車幫您把行李載運到帳篷旁。</h5>
+            </div>
+          </div>
+          <!-- 隱藏div隱藏div -->
+          <div></div>
+          <!-- 隱藏div隱藏div -->
+          <li>
+            <div class="color-bar color-bar-even" id="color-bar-even">
+              <time>12:00~13:00</time>
+            </div>
+          </li>
+          <div class="schedule-container">
+            <div id="schedule-pic2-1" class="schedule-pic2 move-pic"></div>
+            <div id="schedule-textbox2" class="schedule-textbox">
+              <h3>手作 PIZZA DIY</h3>
+              <h5>主廚親自教導大家如何手做 Pizza 麵皮，做好後即可撒上自己喜愛的配料放入烤爐，一步一步跟著做，享受滿滿的成就感與飽足感。</h5>
+            </div>
+          </div>
+          <!-- 
+              第三個 -->
+          <li class="li-odd">
+            <div class="color-bar color-bar-odd" id="color-bar-odd">
+              <time>13:00~15:00</time>
+            </div>
+          </li>
+          <div class="schedule-container">
+            <div id="schedule-pic3-1" class="schedule-pic move-pic"></div>
+            <div id="schedule-textbox" class="schedule-textbox">
+              <h3>溪遊玩水/野溪尋寶</h3>
+              <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ducimus numquam similique, delectus at
+                molestiae atque deleniti</h5>
+            </div>
+          </div>
+
+
+          <li>
+            <div class="color-bar color-bar-even" id="color-bar-even">
+              <time>15:00~17:00</time>
+            </div>
+          </li>
+          <div class="schedule-container">
+            <div id="schedule-pic4-1" class="schedule-pic2 move-pic"></div>
+            <div id="schedule-textbox2" class="schedule-textbox">
+              <h3>精緻下午茶點</h3>
+              <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem sequi recusandae odit quaerat ipsa
+                obcaecati! Voluptatum numqum</h5>
+            </div>
+          </div>
+
+
+          <li class="li-odd">
+            <div class="color-bar color-bar-odd" id="color-bar-odd">
+              <time>18:00~20:00</time>
+            </div>
+          </li>
+          <div class="schedule-container">
+            <div id="schedule-pic5-1" class="schedule-pic move-pic"></div>
+            <div id="schedule-textbox" class="schedule-textbox">
+              <h3>星光燭火晚餐</h3>
+              <h5>主廚精心設計的晚宴佳餚，從前菜一道道色香味俱全，加上誠意十足的豐盛主餐，吃的不僅僅是口胃的滿足，更是絕無僅有尊絕非凡。</h5>
+            </div>
+          </div>
+
+
+          <li>
+            <div class="color-bar color-bar-even" id="color-bar-even">
+              <time>19:00~21:00</time>
+            </div>
+          </li>
+          <div class="schedule-container">
+            <div id="schedule-pic6-1" class="schedule-pic2 move-pic up"></div>
+            <div id="schedule-textbox2" class="schedule-textbox">
+              <h3>戶外電影院、夜間抓蝦</h3>
+              <h5>在草地上擺上200吋的投影螢幕，自然便成了最寬廣的星空電影院。營區旁的澄澈溪流中充滿著各種魚、蝦、蟹，戴上準備好的頭燈及蝦網來場夜間生態觀察吧~</h5>
+            </div>
+          </div>
+
+
+          <li class="li-odd">
+            <div class="color-bar color-bar-odd" id="color-bar-odd">
+              <time>21:00~22:00</time>
+            </div>
+          </li>
+          <div class="schedule-container">
+            <div id="schedule-pic7-1" class="schedule-pic move-pic"></div>
+            <div id="schedule-textbox" class="schedule-textbox">
+              <h3>星空宵夜場</h3>
+              <h5>宵夜也是大廚的主場，冬天為旅客們準備燒酒雞、關東煮還有各式炸物外，還有暖身又暖心的熱紅酒，一絲溫暖的迷情醉意。</h5>
+            </div>
+          </div>
+
+
+          <li>
+            <div class="color-bar color-bar-even" id="color-bar-even">
+              <time>08:00~09:00</time>
+            </div>
+          </li>
+          <div class="schedule-container">
+            <div id="schedule-pic8-1" class="schedule-pic2 move-pic"></div>
+            <div id="schedule-textbox2" class="schedule-textbox">
+              <h3>早餐進場時間</h3>
+              <h5>飛鳥恰恰早餐皆採自助式，是主廚從早上五點開始準備，每一樣皆是親手做的美味餐點。</h5>
+            </div>
+          </div>
+
+
+          <li class="li-odd">
+            <div class="color-bar color-bar-odd" id="color-bar-odd">
+              <time>09:00~09:30</time>
+            </div>
+          </li>
+          <div class="schedule-container">
+            <div id="schedule-pic9-1" class="schedule-pic move-pic"></div>
+            <div id="schedule-textbox" class="schedule-textbox">
+              <h3>收拾行李 Check out</h3>
+              <h5>辦理退房手續，結束這兩天一夜夢幻般的豪華露營之旅。</h5>
+            </div>
+          </div>
+        </ul>
+      </section>
+    </section>
+
+
+
+
+
+
+
+
+    <section id="holiday" class="timeline-tab js-tab">
+      <section class="intro">
+        <div class="timeline-container">
+          <h1>
+            <pre>飛鳥恰恰 假日行程</pre>
+          </h1>
+          <h3>假日行程為周六周日兩天一夜</h3>
+        </div>
+      </section>
+
+      <section class="timeline">
+        <ul>
+          <li>
+            <div class="color-bar">
+              <time>14:00~15:00</time>
+            </div>
+          </li>
+          <div class="schedule-container">
+            <div id="schedule-pic1" class="schedule-pic move-pic"></div>
+            <div id="schedule-textbox" class="schedule-textbox">
+              <h3>入場介紹環境</h3>
+              <h5>抵達營區後管家會幫您安排入住登記與肩擔環境介紹，並開小牛車幫您把行李載運到帳篷旁。</h5>
+            </div>
+          </div>
+          <!-- 隱藏div隱藏div -->
+          <div></div>
+          <!-- 隱藏div隱藏div -->
+          <li>
+            <div class="color-bar color-bar-even" id="color-bar-even">
+              <time>15:00~17:00</time>
+            </div>
+          </li>
+          <div class="schedule-container">
+            <div id="schedule-pic2" class="schedule-pic2 move-pic"></div>
+            <div id="schedule-textbox2" class="schedule-textbox">
+              <h3>精緻下午餐點、溪游</h3>
+              <h5>入住整裝後緊接而來的是精緻下午茶與茶點，享用完美食後可前往營區旁的溪流玩水消暑。</h5>
+            </div>
+          </div>
+          <!-- 
+              第三個 -->
+          <li class="li-odd">
+            <div class="color-bar color-bar-odd" id="color-bar-odd">
+              <time>18:00~20:00</time>
+            </div>
+          </li>
+          <div class="schedule-container">
+            <div id="schedule-pic3" class="schedule-pic move-pic"></div>
+            <div id="schedule-textbox" class="schedule-textbox">
+              <h3>星光燭火晚餐</h3>
+              <h5>主廚精心設計的晚宴佳餚，從前菜一道道色香味俱全，加上誠意十足的豐盛主餐，吃的不僅僅是口胃的滿足，更是絕無僅有尊絕非凡。</h5>
+            </div>
+          </div>
+
+
+          <li>
+            <div class="color-bar color-bar-even" id="color-bar-even">
+              <time>19:00~21:00</time>
+            </div>
+          </li>
+          <div class="schedule-container">
+            <div id="schedule-pic4" class="schedule-pic2 move-pic up"></div>
+            <div id="schedule-textbox2" class="schedule-textbox">
+              <h3>戶外電影院、夜間抓蝦</h3>
+              <h5>在草地上擺上200吋的投影螢幕，自然便成了最寬廣的星空電影院。營區旁的澄澈溪流中充滿著各種魚、蝦、蟹，戴上準備好的頭燈及蝦網來場夜間生態觀察吧~</h5>
+            </div>
+          </div>
+
+
+          <li class="li-odd">
+            <div class="color-bar color-bar-odd" id="color-bar-odd">
+              <time>21:00~22:00</time>
+            </div>
+          </li>
+          <div class="schedule-container">
+            <div id="schedule-pic5" class="schedule-pic move-pic"></div>
+            <div id="schedule-textbox" class="schedule-textbox">
+              <h3>星空宵夜場</h3>
+              <h5>宵夜也是大廚的主場，冬天為旅客們準備燒酒雞、關東煮還有各式炸物外，還有暖身又暖心的熱紅酒，一絲溫暖的迷情醉意。</h5>
+            </div>
+          </div>
+
+
+          <li>
+            <div class="color-bar color-bar-even" id="color-bar-even">
+              <time>08:00~09:00</time>
+            </div>
+          </li>
+          <div class="schedule-container">
+            <div id="schedule-pic6" class="schedule-pic2 move-pic"></div>
+            <div id="schedule-textbox2" class="schedule-textbox">
+              <h3>早餐進場時間</h3>
+              <h5>飛鳥恰恰早餐皆採自助式，是主廚從早上五點開始準備，每一樣皆是親手做的美味餐點。</h5>
+            </div>
+          </div>
+
+
+          <li class="li-odd">
+            <div class="color-bar color-bar-odd" id="color-bar-odd">
+              <time>11:00~12:00</time>
+            </div>
+          </li>
+          <div class="schedule-container">
+            <div id="schedule-pic7" class="schedule-pic move-pic"></div>
+            <div id="schedule-textbox" class="schedule-textbox">
+              <h3>手作 PIZZA DIY</h3>
+              <h5>主廚親自教導大家如何手做 Pizza 麵皮，做好後即可撒上自己喜愛的配料放入烤爐，一步一步跟著做，享受滿滿的成就感與飽足感。</h5>
+            </div>
+          </div>
+
+
+          <li>
+            <div class="color-bar color-bar-even" id="color-bar-even">
+              <time>12:00~13:00</time>
+            </div>
+          </li>
+          <div class="schedule-container">
+            <div id="schedule-pic8" class="schedule-pic2 move-pic"></div>
+            <div id="schedule-textbox2" class="schedule-textbox">
+              <h3>收拾行李 Check out</h3>
+              <h5>辦理退房手續，結束這兩天一夜夢幻般的豪華露營之旅。</h5>
+            </div>
+          </div>
+
+        </ul>
+      </section>
+    </section>
+
+
+
+
+
+
+    <section id="notice" class="timeline-tab  timeline-tab-phone">
+      <section class="intro2">
+        <div class="container2">
+          <h1>
+            <pre>行前須知</pre>
+          </h1>
+        </div>
+      </section>
+      <main class="notice-container">
+        <div class="space-flex">
+          <div class="temperature-box">
+            <div class="notice-title" >平均溫度</div>
+            <div id="move-box1">
+              <div class="colum1">
+                <div>
+                  1月&nbsp&nbsp16°/10°
+                </div>
+                <div>
+                  2月&nbsp&nbsp16°/10°
+                </div>
+                <div>
+                  3月&nbsp&nbsp&nbsp18°/12°
+                </div>
+                <div>
+                  4月&nbsp&nbsp&nbsp22°/16°
+                </div>
+                <div>
+                  5月&nbsp&nbsp&nbsp 24°/19°
+                </div>
+                <div>
+                  6月&nbsp&nbsp&nbsp27°/22°
+                </div>
+              </div>
+              <div class="colum2">
+                <div>
+                  7月 29°/23°
+                </div>
+                <div>
+                  8月&nbsp&nbsp&nbsp29°/23°
+                </div>
+                <div>
+                  9月&nbsp&nbsp&nbsp27°/21°
+                </div>
+                <div>
+                  10月&nbsp&nbsp&nbsp24°/19°
+                  </pre>
+                </div>
+                <div>
+                  11月&nbsp&nbsp&nbsp21°/15°
+                </div>
+                <div>
+                  12月&nbsp&nbsp&nbsp19°/12°
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="tem-phone">
+             <div class="tem">
+              <div class="colum1-phone">
+                <div>
+                  1月&nbsp&nbsp16°/10°
+                </div>
+                <div>
+                  2月&nbsp&nbsp16°/10°
+                </div>
+                <div>
+                  3月&nbsp&nbsp&nbsp18°/12°
+                </div>
+                <div>
+                  4月&nbsp&nbsp&nbsp22°/16°
+                </div>
+                <div>
+                  5月&nbsp&nbsp&nbsp 24°/19°
+                </div>
+                <div>
+                  6月&nbsp&nbsp&nbsp27°/22°
+                </div>
+              </div>
+              <div class="colum2-phone">
+                <div>
+                  7月 29°/23°
+                </div>
+                <div>
+                  8月&nbsp&nbsp&nbsp29°/23°
+                </div>
+                <div>
+                  9月&nbsp&nbsp&nbsp27°/21°
+                </div>
+                <div>
+                  10月&nbsp&nbsp&nbsp24°/19°
+                  </pre>
+                </div>
+                <div>
+                  11月&nbsp&nbsp&nbsp21°/15°
+                </div>
+                <div>
+                  12月&nbsp&nbsp&nbsp19°/12°
+                </div>
+              </div>
+             </div>
+          </div>
+
+
+          <div class="sweet-box">
+            <div class="notice-title">提醒</div>
+            <div id="notice-text">
+              ●露宿溪流森林野外享受芬多精，必有大自然溪流聲、蟲鳴鳥叫，大地交響曲天然音樂關不掉，可自行評估睡覺是否需要攜帶耳塞。<br><br>
+              ●野遊山區海拔860公尺，早晚溫差約10-12度，請攜帶足量保暖衣物。<br><br>
+              ●如本身為蚊蟲過敏體質，請務必穿著長袖長褲衣物，避免引發過敏。<br><br>
+              ●當天進場工作人員會協助幫運行李至帳篷區，請勿拖運貴重或易碎物品。<br>
+            </div>
+          </div>
+
+          <div id="sweet-phone" class="sweet-phone">
+            ●露宿溪流森林野外享受芬多精，必有大自然溪流聲、蟲鳴鳥叫，大地交響曲天然音樂關不掉，可自行評估睡覺是否需要攜帶耳塞。<br><br>
+            ●野遊山區海拔860公尺，早晚溫差約10-12度，請攜帶足量保暖衣物。<br><br>
+            ●如本身為蚊蟲過敏體質，請務必穿著長袖長褲衣物，避免引發過敏。<br><br>
+            ●當天進場工作人員會協助幫運行李至帳篷區，請勿拖運貴重或易碎物品。<br>
+          </div>
+
+
+
+        </div>
+        <div class="detail-box">
+          <div class="notice-title" >注意事項</div>
+          <div>
+            ●嚴禁在營區內、帳棚或帳篷內外吸菸、吃檳榔、賭博、炊事、生火、烤肉，請至指定區域吸菸、吃檳榔。
+            飛鳥恰恰為維護森林安全與其他貴賓權益，在非指定區域，如營區、衛浴抽煙者將要求您即刻停止活動並離開營區，且無退費。<br><br>
+            ●活動進行前，如遇下雨過量、瞬間陣風、落石、土石流、道路中斷、路況、天氣颱風警預報、設備損壞、或任何無法進行活動之事件，將另行通知活動是否取消、延期，本公司保有最後決定權，且本公司保留不賠償取消而延伸之交通費、租賃車費或任何其他費用。活動進行中，本公司保留合理取消任何部分活動、提供設施、提供任何設備之權益。<br><br>
+            ●請預先詳讀「活動行前說明書」，並遵照時間參加活動、穿著建議的服裝、攜帶裝備，這樣會更能體會這趟旅途的樂趣和發覺更多的驚喜，營區內部分活動有攝影人員紀錄活動、花絮分享，如不願入鏡者請預先告知。<br><br>
+            ●活動期間請遵照活動人員的安全指示、活動規劃，履勸不聽者，主辦單位有權立即停止活動，並要求離開營區無法退費。<br><br>
+            ●帳篷與活動空間皆在於森林、溪流邊與昆蟲、野獸共存，為尊重萬物則不噴灑農藥滅蟲、殺生，故請貴賓們自行防蚊蟲蛇獸，主辦單位將不因大自然生物所產生的任何叮、咬、破壞之損失而負責賠償責任。<br><br>
+            ●孩童嚴禁野放，活動進行期間敬請家長一定全程陪同，注意孩童安全且不離開視線，如孩童有任何損傷本公司無須負責與賠償，無心陪伴小孩之家長請勿訂位。<br><br>
+            ●為保障所有貴賓權益，營區內禁止任何球類、不受控丟擲球遊戲、玩具。<br><br>
+            ●山間野遊，年長者請自行評估體能狀況是否適合前往。<br><br>
+            ●禁止攜帶寵物，如自主帶寵物至現場則禁止進入園區且不退費。<br><br>
+            ●請勿將用餐區食物、餐具、餐盤、杯子拿到帳棚區食用，請勿穿鞋入帳篷。<br>
+          </div>
+        </div>
+
+        <div id="notice-phone" class=".notice-box">
+          ●嚴禁在營區內、帳棚或帳篷內外吸菸、吃檳榔、賭博、炊事、生火、烤肉，請至指定區域吸菸、吃檳榔。
+          飛鳥恰恰為維護森林安全與其他貴賓權益，在非指定區域，如營區、衛浴抽煙者將要求您即刻停止活動並離開營區，且無退費。<br><br>
+          ●活動進行前，如遇下雨過量、瞬間陣風、落石、土石流、道路中斷、路況、天氣颱風警預報、設備損壞、或任何無法進行活動之事件，將另行通知活動是否取消、延期，本公司保有最後決定權，且本公司保留不賠償取消而延伸之交通費、租賃車費或任何其他費用。活動進行中，本公司保留合理取消任何部分活動、提供設施、提供任何設備之權益。<br><br>
+          ●請預先詳讀「活動行前說明書」，並遵照時間參加活動、穿著建議的服裝、攜帶裝備，這樣會更能體會這趟旅途的樂趣和發覺更多的驚喜，營區內部分活動有攝影人員紀錄活動、花絮分享，如不願入鏡者請預先告知。<br><br>
+          ●活動期間請遵照活動人員的安全指示、活動規劃，履勸不聽者，主辦單位有權立即停止活動，並要求離開營區無法退費。<br><br>
+          ●帳篷與活動空間皆在於森林、溪流邊與昆蟲、野獸共存，為尊重萬物則不噴灑農藥滅蟲、殺生，故請貴賓們自行防蚊蟲蛇獸，主辦單位將不因大自然生物所產生的任何叮、咬、破壞之損失而負責賠償責任。<br><br>
+          ●孩童嚴禁野放，活動進行期間敬請家長一定全程陪同，注意孩童安全且不離開視線，如孩童有任何損傷本公司無須負責與賠償，無心陪伴小孩之家長請勿訂位。<br><br>
+          ●為保障所有貴賓權益，營區內禁止任何球類、不受控丟擲球遊戲、玩具。<br><br>
+          ●山間野遊，年長者請自行評估體能狀況是否適合前往。<br><br>
+          ●禁止攜帶寵物，如自主帶寵物至現場則禁止進入園區且不退費。<br><br>
+          ●請勿將用餐區食物、餐具、餐盤、杯子拿到帳棚區食用，請勿穿鞋入帳篷。<br>
+        </div>
+
+      </main>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+  <!-- footer -->
+  <footer id="end">
+    <a href="" id="to-booking">
+      <div id="booking"></div>
+    </a>
+    <a href="#thetop">
+      <div id="top-btn">
+        <div id="f-arrow"></div>
+        <div id="f-top">Top</div>
+      </div>
+    </a>
+    <div class="container">
+      <div id="footer-title" onclick="window.location.href='https://edwiin1688.github.io/team-work/'"></div>
+      <div id="footer-line"></div>
+      <div class="f-infomation-box">
+        <div class="f-phone">
+          <div id="phone-icon"></div>
+          <div id="phone-text">預約專線 0930816898</div>
+        </div>
+        <div class="f-mail">
+          <div id="mail-icon"></div>
+          <div id="mail-text">info@icaping.tw</div>
+        </div>
+        <div class="f-adress">
+          <div id="adress-icon"></div>
+          <div id="adress-text">新竹縣五峰鄉花園村10鄰天湖205-12號</div>
+        </div>
+      </div>
+      <div class="f-icon-box">
+        <a href="https://www.facebook.com/flybirdchacha/">
+          <div id="f-fb"></div>
+        </a>
+        <a href="">
+          <div id="f-line"></div>
+        </a>
+      </div>
+    </div>
+
+    <div id="copyright">© 2020 Flybird Glamping</div>
+  </footer>
+
+
+  <script src="./js/home-page.js"></script>
+  <script src="./js/paging-time-line.js"></script>
+  <script src="./js/home-page.js"></script>
+
+
+  <script>
+
+
+
+    // 立即預購的小人卡在footer效果
+    window.addEventListener("scroll", () => {
+      var main = document.querySelector("#schedule-main")
+      var booking = document.querySelector("#booking")
+      var scrolled = window.scrollY
+      var change = main.scrollHeight - 500
+      if (scrolled >= change) {
+        booking.classList.add("act")
+      } else {
+        booking.classList.remove("act")
+      }
+    })
+
+  </script>
+  <script>
+    var btns = document.querySelectorAll(".js-btn")
+    var contents = document.querySelectorAll(".timeline-tab")
+    var items = document.querySelectorAll(".timeline li");
+    var items = document.querySelectorAll(".timeline li");
+    var pics = document.querySelectorAll(".move-pic");
+    
+    for (let index = 0; index < btns.length; index++) {
+      const btn = btns[index];
+      const content = contents[index]
+      
+      btn.onclick = function () {
+        clearAllActive()
+        btn.classList.add("act")
+        content.classList.add("act")
+        callbackFunc20()
+        callbackFunc30()
+      }
+    }
+    function clearAllActive() {
+      for (let index = 0; index < btns.length; index++) {
+        const btn = btns[index];
+        const content = contents[index];
+        btn.classList.remove("act")
+        content.classList.remove("act")
+      }
+    }
+
+
+
+
+    function callbackFunc30() {
+      for (var i = 0; i < items.length; i++) {
+        items[i].classList.add("in-view");
+      }
+    }
+
+
+    function callbackFunc20() {
+      for (var i = 0; i < pics.length; i++) {
+        pics[i].classList.remove("in-view");
+      }
+    }
+
+
+    var tabs = document.querySelectorAll(".js-tab")
+    var fri=document.querySelector("#fri")
+    var hol=document.querySelector("#hol")
+    var jss_btns = document.querySelectorAll(".jss-btn")
+    for (let index = 0; index < jss_btns.length; index++) {
+      const jssbtn = jss_btns[index];
+      const tab = tabs[index]
+      
+      jssbtn.onclick = function () {
+        clearAllActive()
+        tab.classList.add("act")
+        jssbtn.classList.add("act")
+
+      }
+    }
+    function clearAllActive() {
+      for (let index = 0; index < jss_btns.length; index++) {
+        const jssbtn = jss_btns[index];
+      const tab = tabs[index]
+      tab.classList.remove("act")
+      jssbtn.classList.remove("act")
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

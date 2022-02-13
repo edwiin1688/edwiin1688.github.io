@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .default_bg {
   background-image: url("../img/layout/bg.png");
   border: none;
@@ -29,4 +33,15 @@
 
 .hide_object {
   display: none;
+}
+
+#scroll_down{
+  cursor: pointer;
+}
+
+.declaration{
+  padding: 5px;
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
 }
